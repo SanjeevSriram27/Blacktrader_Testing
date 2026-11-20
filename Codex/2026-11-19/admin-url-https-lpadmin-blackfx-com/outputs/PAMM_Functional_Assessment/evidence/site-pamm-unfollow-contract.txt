@@ -1,0 +1,79 @@
+API REFERENCE / PAMM
+Settle and leave a PAMM pool
+POST
+/v1/oms/{instance}/pamm/unfollow
+Bearer token
+Write
+
+Settles the active subscription with this master: master_share = running_pnl x share_percent / 100 when running_pnl > 0, else 0; payout = deposit + running_pnl - master_share (rounded to 2 dp).
+
+The payout comes out of the manager's trading balance (which may go negative) into the follower's, on the instance the subscription was opened on (not necessarily the URL's instance).
+
+Funds events and history rows are written on both sides and the manager gets a pamm_unfollow websocket event.
+
+Behavior & account differences
+Choose an available account
+
+Examples use paper. First call GET /oms/_instances and replace the instance with a slug available to your account. Features vary by broker and account type.
+
+Path parameters
+instance
+string
+required
+
+The trading account (instance) slug.
+
+Engine accounts: paper, paper-net, real, real-net.
+
+External venue accounts: binance, zerodha (see the venue notes on each operation).
+
+Only the instances this install is licensed for exist; GET /oms/_instances lists them.
+
+An unknown slug answers 404 no such OMS instance: <slug>.
+
+Request body
+
+application/json
+
+master_client_id
+string
+required
+operation_key
+string
+Responses
+200
+202
+400
+401
+404
+501
+503
+
+OK
+
+200 · Example response
+Copy
+{
+  "success": true,
+  "pamm_id": "pmm_5e6f",
+  "deposit": 10000,
+  "running_pnl": 1000,
+  "master_share": 200,
+  "payout": 10800
+}
+Response fields
+cURL
+fetch
+Python
+cURL request
+Copy
+curl --request POST 'https://lpadmin.blackfx.com/v1/oms/paper/pamm/unfollow' \
+  --header "Authorization: Bearer $ACCESS_TOKEN" \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "master_client_id": "mem_9f3a21c0"
+}'
+
+Replace YOUR_* placeholders. Set API_KEY / ACCESS_TOKEN in your environment. Examples are never run on this page.
+
+Next: PAMM allocation statement →

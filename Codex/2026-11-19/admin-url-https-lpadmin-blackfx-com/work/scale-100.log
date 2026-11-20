@@ -1,0 +1,18 @@
+JOINED 25 / 100
+JOINED 50 / 100
+JOINED 75 / 100
+JOINED 100 / 100
+SCALE-100-JOIN PASS 100 independent admin-funded investors joined; deposit total 177149.99999999988.
+BTPAMM-F009 PASS Fresh funded QA investor joined with exactly 1000 through pamm/join; debit verified.
+BTPAMM-C001 PASS First scale close: 100 investor views reconciled; 100 unique new allocations; parent PNL 145.
+BTPAMM-A002 PASS 100-follower pool totals exactly 177150; first deposit 1000 and third 575; all recorded percentages match independent deposit/total calculations.
+BTPAMM-A003 PASS Recorded weights across 100 investors sum to 100.00000000000017.
+BTPAMM-A004 PASS The winning parent trade was apportioned by actual 100-investor weights within cent rounding.
+BTPAMM-C015 PASS 100-investor audit includes one unique subscription allocation per eligible investor.
+BTPAMM-C001 PASS Second scale close: 100 investor views reconciled; 100 unique new allocations; parent PNL -5.
+BTPAMM-A002 PASS 100-follower pool totals exactly 177150; first deposit 1000 and third 575; all recorded percentages match independent deposit/total calculations.
+BTPAMM-A003 PASS Recorded weights across 100 investors sum to 100.00000000000018.
+BTPAMM-A005 PASS The losing parent trade was apportioned by actual 100-investor weights within cent rounding.
+BTPAMM-C015 PASS 100-investor audit includes one unique subscription allocation per eligible investor.
+BTPAMM-A012 PASS Two consecutive scale closes each produced 100 investor allocations; running PNL continuity recorded in investor views.
+SCALE-100-CLEANUP PASS Isolated scale fixture has no open positions or pending orders; subscriptions remain as reusable QA data.

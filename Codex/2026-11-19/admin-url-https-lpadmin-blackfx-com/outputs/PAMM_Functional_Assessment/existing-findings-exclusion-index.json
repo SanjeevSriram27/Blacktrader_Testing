@@ -1,0 +1,1276 @@
+[
+  {
+    "id": "BTPAMM-E008",
+    "title": "Pending Limit Order Cancellation Prior to Fill",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/live_api_phase2_results.json",
+    "status": "FAIL",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-D005",
+    "title": "Full Redemption & Pool Unfollow Settlement (pmf10, flat market)",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/live_api_phase2_results.json",
+    "status": "FAIL",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-C005",
+    "title": "Idempotency Key Deduplication on Parallel Duplicate POST /pamm/join (pmf10)",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/live_api_phase2_results.json",
+    "status": "DEFECT",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "NET01",
+    "title": "",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/race_net01_03_09_br08_results.json",
+    "status": "DEFECT",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-F012-UI",
+    "title": "PM Master Visible in PAMM Managers Leaderboard (Live UI)",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/live_ui_test_results.json",
+    "status": "FAIL",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-F004",
+    "title": "Granular Share Adjustment Notice in Settings Drawer (Live UI)",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/live_ui_test_results.json",
+    "status": "FAIL",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "DEFECT-CSP",
+    "title": "Cloudflare CSP Console Violation (BUG-SEC-003)",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/live_ui_test_results.json",
+    "status": "DEFECT",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "DEFECT-401",
+    "title": "Premature 401 Errors During Dashboard Load (BUG-AUTH-002)",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/live_ui_test_results.json",
+    "status": "DEFECT",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-E002",
+    "title": "Pending Limit Order Placement on Real (Hedging)",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/live_api_test_results.json",
+    "status": "FAIL",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-A014",
+    "title": "Master PAMM Allocations Query (/pamm/allocations?role=master)",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/live_api_test_results.json",
+    "status": "DEFECT",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-A013",
+    "title": "Follower PAMM Allocations Query (/pamm/allocations) Across All 10 Followers",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/live_api_test_results.json",
+    "status": "DEFECT",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-A004",
+    "title": "Live Proportional P&L Distribution Verification Across 10 Followers",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/live_api_test_results.json",
+    "status": "DEFECT",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-C001",
+    "title": "10-Follower Allocation Completeness & Latency After Live Close",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/live_api_test_results.json",
+    "status": "DEFECT",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-H010",
+    "title": "Consolidated Manager Payout Endpoint (GET /pamm/shares?role=master)",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/live_api_test_results.json",
+    "status": "DEFECT",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-D005",
+    "title": "Full Redemption & Pool Unfollow Settlement (pmf10)",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/live_api_test_results.json",
+    "status": "FAIL",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BUG-DEP-004",
+    "title": "Zero Published Deposit Payment Gateways on Client Portal",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/data/bugs.json",
+    "status": "RESOLVED",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BUG-AUTH-002",
+    "title": "Premature Unauthenticated API Probing on PAMM Dock Tab Initialization",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/data/bugs.json",
+    "status": "RESOLVED",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BUG-SEC-003",
+    "title": "CSP Header 'script-src self' Blocks Cloudflare Analytics Beacon",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/data/bugs.json",
+    "status": "RESOLVED",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BUG-SEC-003",
+    "title": "Open PAMM Window and Mount Dock Widget",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "DEFECT",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-F002",
+    "title": "Navigate Between 'PAMM managers' and 'My subscription' Sub-Tabs",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-F003",
+    "title": "Register as PAMM Manager via 'Become a manager' Form",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-F004",
+    "title": "Granular Share Adjustment Notice Verification",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-F005",
+    "title": "Trading Account Binding via Instance Dropdown",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-F006",
+    "title": "Paper Instance Creation Restriction (Platform Policy Notice)",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "NOTICE",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-F007",
+    "title": "Role Exclusivity: Active Master Cannot Follow Another PAMM Pool",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-F008",
+    "title": "Role Exclusivity: Active Follower Cannot Become a Master",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-F009",
+    "title": "Investor Joins Pool via POST /pamm/join with Operation Key",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-F010",
+    "title": "Plan Gating: Free vs Pro Plan Module Authorization",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BUG-AUTH-002",
+    "title": "Anonymous Request Rejection on All PAMM Routes",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "DEFECT",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-F012",
+    "title": "Public Leaderboard Directory Publication Verification",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-F013",
+    "title": "PAMM Directory Sorting and Pagination",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-F014",
+    "title": "Manager Share Percent Range Validation (0% to 100%)",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-F015",
+    "title": "PAMM Dock Tab Lifecycle: Minimize, Maximize & Clean Close",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-A001",
+    "title": "PAMM Single Master Order Execution (Unified Block Trade)",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-A002",
+    "title": "Proportional Pool Share Calculation (100 Follower Verification)",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-A003",
+    "title": "Zero-Sum Pool Share Conservation Law",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-A004",
+    "title": "Proportional P&L Distribution on Winning Trade",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-A005",
+    "title": "Proportional P&L Distribution on Losing Trade",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-A006",
+    "title": "Manager Skin-in-the-Game Equity Co-Investment",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-A007",
+    "title": "Sub-Cent Fractional Rounding Residual Absorption",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-A008",
+    "title": "Multi-Currency Deposit Normalization into Base USD Pool",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-A009",
+    "title": "Dynamic Pool Equity Mark-to-Market Under Open Positions",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-A010",
+    "title": "Large Block Order Sizing on $10M Institutional Pool",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-A011",
+    "title": "Micro-Follower Minimum Share Precision (6 Decimal Places)",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-A012",
+    "title": "Consecutive Multi-Trade P&L Aggregation",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-A013",
+    "title": "API Allocation Response Validation (/pamm/allocations)",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-A014",
+    "title": "Master Allocation Query Validation (/pamm/allocations?role=master)",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-A015",
+    "title": "Re-Join Follower Account Link Persistence",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-R001",
+    "title": "PAMM Unit Initial Price Benchmark ($100.00 / Unit)",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-R002",
+    "title": "NAV Appreciation Under Profitable Closed Trades",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-R003",
+    "title": "Non-Dilutive Unit Minting on Mid-Cycle Deposit at Appreciated NAV",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-R004",
+    "title": "Non-Dilutive Unit Minting on Deposit at Depreciated NAV (Drawdown)",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-R005",
+    "title": "Unit Burning on Partial Investor Redemption (Withdrawal)",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-R006",
+    "title": "Unit Burning on Full Investor Exit (100% Redemption)",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-R007",
+    "title": "Zero-Sum Pool Conservation Law Under 1,000 Simulated Rollovers",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-R008",
+    "title": "Rollover Queue Freezing During Open Market Volatility",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-R009",
+    "title": "Scheduled vs On-Demand Rollover Execution",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-R10",
+    "title": "NAV Precision (8 Decimal Places Enforcement)",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-R011",
+    "title": "Negative Return NAV Floor Enforcement (NAV > $0.00)",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-R012",
+    "title": "Rollover Statement Generation for Investors",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-R013",
+    "title": "Simultaneous Deposits and Withdrawals in Same Rollover Window",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-R014",
+    "title": "Dormant Zero-Unit Subscription Cleanup",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-R015",
+    "title": "Audit Trail of Rollover NAV Snapshots",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-E001",
+    "title": "Market Order Execution on Real (Hedging) Instance",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-E003",
+    "title": "Master Pending Limit Order Placement on Real-Net (Netting)",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-E004",
+    "title": "Stop-Loss and Take-Profit Placement on Real (Hedging)",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-E005",
+    "title": "Master Stop-Loss & Take-Profit on Real-Net (Netting)",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-E006",
+    "title": "Partial Close of Master Block Order (50% Volume Reduction)",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-E007",
+    "title": "Bulk Squareoff (Close All Positions) via POST /squareoff",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-E008",
+    "title": "Pending Order Cancellation Prior to Fill",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-E009",
+    "title": "Overnight Triple Swap Wednesday Impact on Pool Balance",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-E010",
+    "title": "Spread Widening Protection During Economic News",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-E011",
+    "title": "Trailing Stop Placement on Real (Hedging)",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-E012",
+    "title": "Real-Time WebSocket P&L Stream to Investor Dashboards",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-E013",
+    "title": "Sub-Lot Execution Protection (Zero Fractional Child Tickets)",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-E014",
+    "title": "Broker Requote / Off-Quotes Handling on Master Order",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-E015",
+    "title": "Trade History Blotter Synchronization (/history)",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-P001",
+    "title": "Liquidity Provider Partial Fill on Parent Block Order (50% Fill)",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-P002",
+    "title": "Volume-Weighted Average Price (VWAP) Tiered Fills",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-P003",
+    "title": "Slippage Tolerance Protection on Large Master Orders",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-P004",
+    "title": "Multi-Tier Liquidity Depth Exhaustion on 100-Lot Order",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-P005",
+    "title": "Asymmetric Bridge Reconnection During In-Flight Execution",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-P006",
+    "title": "Out-of-Order Execution Report Handling",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-P007",
+    "title": "Orphan Order Prevention on Parent Rejection",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-P008",
+    "title": "Execution Slippage Attribution Analysis",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-P009",
+    "title": "Broker Bridge Rate-Limit Throttling Defense",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-P010",
+    "title": "Price Improvement (Positive Slippage) Passthrough",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-P011",
+    "title": "Time-In-Force (TIF) Immediate-Or-Cancel (IOC) Enforcement",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-P012",
+    "title": "Time-In-Force (TIF) Fill-Or-Kill (FOK) Enforcement",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-P013",
+    "title": "Multi-Currency Margin Conversion Slippage Cushion",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-P014",
+    "title": "Broker Bridge Failover to Secondary Liquidity Provider",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-P015",
+    "title": "Audit Blotter Verification of LP Fill IDs",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-M001",
+    "title": "Collective Pooled Margin Consumption Calculation",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-M002",
+    "title": "PAMM Pool Margin Call Warning at 100% Margin Level",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-M003",
+    "title": "PAMM Collective Stop-Out Forced Liquidation at 50% Margin Level",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-M004",
+    "title": "Proportional Allocation of Realized Stop-Out Loss",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-M005",
+    "title": "Negative Balance Protection (NBP) on BlackTrader PAMM Pool",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-M006",
+    "title": "Maximum Leverage Limit on Master Terminal Orders",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-M007",
+    "title": "Pre-Trade Margin Check Validation on Block Orders",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-M008",
+    "title": "Dynamic Leverage Scaling on News Announcements",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-M009",
+    "title": "Overnight Hedging Margin Treatment on Real (Hedging)",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-M010",
+    "title": "Manager Capital Depletion Floor (Skin in the Game Protection)",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-M011",
+    "title": "Pool Solvency Verification Under 100 Simultanous Micro-Trades",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-M012",
+    "title": "Sub-Account Isolation from External Broker Accounts",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-M013",
+    "title": "Weekend Margin Requirement Increase",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-M014",
+    "title": "Emergency Derisking Action by Broker Risk Officer",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-M015",
+    "title": "Auto-Recovery Post-Stop-Out via Investor Fresh Capital Injection",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-D001",
+    "title": "Investor Deposit via POST /pamm/join While Trades Are Open",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-D002",
+    "title": "Partial Withdrawal Request Queued for Rollover",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-D003",
+    "title": "Instant Partial Withdrawal Under High Free Margin Policy",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-D004",
+    "title": "Withdrawal Request Exceeding Available Pool Free Margin",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-D005",
+    "title": "Full Redemption & Pool Unfollow via POST /pamm/unfollow",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-D006",
+    "title": "Investor Cancels Pending Withdrawal Prior to Rollover Window",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-D007",
+    "title": "Lockup Period Early Exit Penalty Enforcement",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-D008",
+    "title": "Whale Deposit Mid-Cycle ($100k Injection into $50k Pool)",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-D009",
+    "title": "Simultaneous Multi-Investor Cash Deposits in Same Minute",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-D010",
+    "title": "Chargeback / Reversed Deposit Handling on Active PAMM Pool",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-D011",
+    "title": "Investor Profit-Only Withdrawal",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-D012",
+    "title": "Manager Personal Capital Withdrawal (Floor Enforcement)",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-D013",
+    "title": "Multiple Simultaneous Withdrawals Under High Volatility",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-D014",
+    "title": "Dormant Account Re-Subscription",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-D015",
+    "title": "Orderly Manager Pool Liquidation",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-H001",
+    "title": "Investor High-Water Mark Baseline Initialization",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-H002",
+    "title": "Performance Fee Deduction on Net New Profit (Above HWM)",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-H003",
+    "title": "Drawdown Period: Zero Fee Charged Below Follower HWM",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-H004",
+    "title": "Recovery Period: Fee Charged ONLY After Breaching Historical Peak",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-H005",
+    "title": "Exceeding Prior HWM After Full Recovery",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-H006",
+    "title": "Independent Fee Outcomes: Follower A Profitable vs Follower B Underwater",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-H007",
+    "title": "Annualized Management Fee (AUM Fee) Daily Accrual",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-H008",
+    "title": "Deposit Proportional HWM Upward Adjustment",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-H009",
+    "title": "Withdrawal Pro-Rata HWM Downward Adjustment",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-H010",
+    "title": "PAMM Profit Share Settlement on Follower Unfollow / Exit (Settle-on-Exit Strategy)",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-H011",
+    "title": "Broker Platform Fee Retainage Split",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-H012",
+    "title": "Introducing Broker (IB) Commission Rebate from PAMM Fees",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-H013",
+    "title": "Fee Deduction Concurrency with Open Positions",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-H014",
+    "title": "Follower Statement Fee Itemization",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-H015",
+    "title": "Clawback Prevention Across Consecutive Cycles",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-C001",
+    "title": "100-Follower Allocation Scale Verification (pamm_100_audit.csv)",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-C002",
+    "title": "500-Follower Allocation Scale Stress Test",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-C003",
+    "title": "Concurrent Master Order Placement During Follower Deposit Storm",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-C004",
+    "title": "Simultaneous Trade Close and Follower Unfollow",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-C005",
+    "title": "Idempotency Key Deduplication on Join Requests",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-C006",
+    "title": "Database Row Locking on Pool Balance Ledger",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-C007",
+    "title": "High-Frequency Tick Burst (500 ticks/sec) During Position Holding",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-C008",
+    "title": "Dead-Letter Queue (DLQ) Handling for Failed Allocation Events",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-C009",
+    "title": "WebSocket Broadcast Fan-Out to 500 Connected Clients",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-C010",
+    "title": "Memory Leak Profiling Under 50,000 Simulated Allocations",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-C011",
+    "title": "Batch Database Update Optimization (UNNEST / Bulk Insert)",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-C012",
+    "title": "Database Deadlock Prevention via Deterministic Account ID Sorting",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-C013",
+    "title": "Network Latency Variance Across Distributed Broker Servers",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-C014",
+    "title": "Distributed Lock (Redlock) Timeout on Allocation Service",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-C015",
+    "title": "Zero-Discrepancy Audit Trail Validation Across 100 Followers",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-L001",
+    "title": "Digital LPOA Cryptographic Storage and Audit Retrieval",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-L002",
+    "title": "ESMA Retail Leverage Cap Enforcement (1:30 Limit on Retail Pools)",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-L003",
+    "title": "Segregated Sub-Account Custody Verification",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-L004",
+    "title": "Expired KYC / AML Auto-Gating of Investor Account",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-L005",
+    "title": "Sanctioned Territory IP Geoblocking on Join Requests",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-L006",
+    "title": "Retail Investor Suitability Questionnaire Verification",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-L007",
+    "title": "Immutable Transaction Audit Logging for Regulatory Audits",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-L008",
+    "title": "Anti-Front-Running Compliance Surveillance",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-L009",
+    "title": "GDPR Right to Be Forgotten with Regulatory Ledger Retention",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-L010",
+    "title": "Professional Client Classification for High Leverage (>1:30)",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-L011",
+    "title": "Limited Power of Attorney (LPOA) Expiration and Auto-Pause",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-L012",
+    "title": "Anti-Money Laundering (AML) Closed-Loop Withdrawal Verification",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-L013",
+    "title": "MiFID II Best Execution Audit Reporting on Block Orders",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-L014",
+    "title": "Automated Statutory Tax Withholding on Manager Performance Fees",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-L015",
+    "title": "Sanctions Screening on Pool Redemptions",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-O001",
+    "title": "Broker Global Emergency Kill-Switch on PAMM Pool",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-O002",
+    "title": "Admin Forced Liquidation of Master PAMM Positions",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-O003",
+    "title": "Manual P&L Allocation Re-Calculation Console",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-O004",
+    "title": "Investor Trade Dispute Tick-by-Tick Reconstruction Tool",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-O005",
+    "title": "Zero-Downtime Rolling Deployment of PAMM Microservices",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-O006",
+    "title": "Individual Investor Emergency Unlink by Administrator",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-O007",
+    "title": "Administrative Goodwill Balance Adjustment Workflow",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-O008",
+    "title": "Real-Time SRE Alerting on Allocation Latency Spikes (>250ms)",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-O009",
+    "title": "Automated Daily EOD Reconciliation: Pool Balances vs Clearing LP",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-O010",
+    "title": "Disaster Recovery Warm Standby Cluster Failover",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-O011",
+    "title": "Emergency Pool Position Force-Close Without Disconnecting Pool",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-O012",
+    "title": "Manager Balance Decoupling from Follower Capital",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-O013",
+    "title": "Historical Performance Tear-Sheet Generator for Prospective Investors",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-O014",
+    "title": "Audit Log Cryptographic Hashing (SHA-256 Chaining)",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  },
+  {
+    "id": "BTPAMM-O015",
+    "title": "Automated Daily Reconciliation Dispatched to Broker Risk Committee",
+    "source": "/Users/jarvis/Documents/lpadmin.blacktrader/PAM,MAM test scripts/pamm/reports/pamm_test_results.json",
+    "status": "PASS",
+    "disposition": "Excluded from new bug claims; reference result may itself be inaccurate"
+  }
+]

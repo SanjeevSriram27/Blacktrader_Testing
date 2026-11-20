@@ -1,0 +1,194 @@
+{
+  "results": [
+    {
+      "tc_id": "BTPAMM-E004",
+      "module_num": 4,
+      "priority": "P0",
+      "title": "Stop-Loss and Take-Profit Placement on Real (Hedging)",
+      "status": "PASS",
+      "details": {
+        "slStatus": 200,
+        "entry": 64161.5,
+        "slPrice": 60953.4,
+        "tpPrice": 67369.6,
+        "hasSlTpOnPos": true,
+        "posKeys": [
+          "algo_id",
+          "avg_entry_price",
+          "closed_at",
+          "comment",
+          "current_price",
+          "full_margin",
+          "group_id",
+          "margin_percent",
+          "margin_used",
+          "market_order_id",
+          "net_qty",
+          "oco_key",
+          "opened_at",
+          "position_id",
+          "side",
+          "sl_order",
+          "source",
+          "status",
+          "strategy_name",
+          "symbol",
+          "tag",
+          "tp_order",
+          "trailing",
+          "unrealized_pnl"
+        ],
+        "slResp": "{\"order\":{\"order_id\":\"ord_01b196f1d55a820c64\",\"market_order_id\":\"ord_01b196f1d55a820c64\",\"symbol\":\"BINANCE:BTCUSDT.P\",\"side\":\"BUY\",\"type\":\"MARKET\",\"state\":\"FILLED\",\"requested_qty\":0.001,\"filled_qty\":0.001,\"avg_fill_price"
+      }
+    },
+    {
+      "tc_id": "BTPAMM-E002",
+      "module_num": 4,
+      "priority": "P0",
+      "title": "Pending Limit Order Placement via POST /orders/pending (Real Hedging)",
+      "status": "PASS",
+      "details": {
+        "status": 200,
+        "limPrice": 54537.3,
+        "pendId": "ord_98b46985357730ae34",
+        "pendListStatus": 404,
+        "body": "{\"order\":{\"order_id\":\"ord_98b46985357730ae34\",\"market_order_id\":\"ord_98b46985357730ae34\",\"symbol\":\"BINANCE:BTCUSDT.P\",\"side\":\"BUY\",\"type\":\"LIMIT\",\"state\":\"PENDING\",\"requested_qty\":0.001,\"filled_qty\":0,\"price\":54537.3,\"cr"
+      }
+    },
+    {
+      "tc_id": "BTPAMM-E008",
+      "module_num": 4,
+      "priority": "P0",
+      "title": "Pending Limit Order Cancellation Prior to Fill",
+      "status": "FAIL",
+      "details": {
+        "pendId": "ord_98b46985357730ae34",
+        "cancelStatus": 404,
+        "body": "404 page not found\n"
+      }
+    },
+    {
+      "tc_id": "BTPAMM-D001",
+      "module_num": 7,
+      "priority": "P0",
+      "title": "Mid-Cycle Unfollow & Re-Join While Master Holds Open Position (pmf10)",
+      "status": "INFO",
+      "details": {
+        "unfollowStatus": 400,
+        "unfollowBody": "{\"error\":\"You can leave once the manager's open trades you share in are closed.\"}\n"
+      }
+    },
+    {
+      "tc_id": "BTPAMM-A004-BIG",
+      "module_num": 2,
+      "priority": "P0",
+      "title": "PAMM P&L Allocation & Running P&L Verification After 0.05 BTC Trade",
+      "status": "PASS",
+      "details": {
+        "closedTrades": [
+          {
+            "id": "ord_01b196f1d55a820c64",
+            "qty": 0.001,
+            "status": 200,
+            "pnl": -0.010400000000001455,
+            "exit": 64151.1
+          },
+          {
+            "id": "ord_b7f90a9e6fbad1fe5a",
+            "qty": 0.05,
+            "status": 200,
+            "pnl": -0.2700000000000728,
+            "exit": 64156.1
+          }
+        ],
+        "totalRealizedThisRound": -0.2804,
+        "masterBalanceBefore": 1993.984,
+        "masterBalanceAfter": 1987.7036,
+        "masterAllocCount": 10,
+        "masterAllocSample": [
+          {
+            "alloc_id": 12102,
+            "at": "2026-11-18T10:37:46.750936Z",
+            "deposit": 100,
+            "follower": "mem_e26aa534f801d04237",
+            "follower_name": "PM Follower One",
+            "master": "mem_4669b36f00cc55347e",
+            "order_pnl": -0.2700000000000728,
+            "pamm_id": "pmm_cbb6cf0570fe937afb",
+            "percentage": 10,
+            "pool_total": 1000,
+            "running_pnl": -0.03,
+            "shared_pnl": -0.03,
+            "trade_id": 1391804
+          },
+          {
+            "alloc_id": 12101,
+            "at": "2026-11-18T10:37:46.749993Z",
+            "deposit": 100,
+            "follower": "mem_d418c85a28182db953",
+            "follower_name": "PM Follower Two",
+            "master": "mem_4669b36f00cc55347e",
+            "order_pnl": -0.2700000000000728,
+            "pamm_id": "pmm_29ee697c1401a4de18",
+            "percentage": 10,
+            "pool_total": 1000,
+            "running_pnl": -0.03,
+            "shared_pnl": -0.03,
+            "trade_id": 1391804
+          }
+        ],
+        "f1AllocCount": 1,
+        "poolRunningSum": -0.3,
+        "samplePoolFollower": {
+          "pamm_id": "pmm_e2c856e42324fbb8a3",
+          "master_client_id": "mem_4669b36f00cc55347e",
+          "follower_client_id": "mem_822cf51b32a092c7ac",
+          "instance": "real",
+          "deposit": 100,
+          "share_percent": 20,
+          "running_pnl": -0.03,
+          "status": "active",
+          "joined_at": "2026-11-18T09:26:40.689722Z",
+          "follower_name": "PM Follower Ten"
+        }
+      }
+    },
+    {
+      "tc_id": "BTPAMM-D005",
+      "module_num": 7,
+      "priority": "P0",
+      "title": "Full Redemption & Pool Unfollow Settlement (pmf10, flat market)",
+      "status": "FAIL",
+      "details": {
+        "status": 200,
+        "body": "{\"deposit\":100,\"master_share\":0,\"pamm_id\":\"pmm_e2c856e42324fbb8a3\",\"payout\":99.97,\"running_pnl\":-0.03,\"success\":true}\n",
+        "f10Delta": 99.97,
+        "masterDelta": -99.97,
+        "activeSubsRemaining": 1
+      }
+    },
+    {
+      "tc_id": "BTPAMM-C005",
+      "module_num": 9,
+      "priority": "P0",
+      "title": "Idempotency Key Deduplication on Parallel Duplicate POST /pamm/join (pmf10)",
+      "status": "DEFECT",
+      "details": {
+        "req1Status": 400,
+        "req1Body": "{\"error\":\"you already have an active subscription with this pool — leave it to settle before joining again\"}\n",
+        "req2Status": 200,
+        "req2Body": "{\"subscription\":{\"pamm_id\":\"pmm_a698f4327556876ab3\",\"master_client_id\":\"mem_4669b36f00cc55347e\",\"follower_client_id\":\"mem_822cf51b32a092c7ac",
+        "balanceBefore": 999.97,
+        "balanceAfter": 899.97,
+        "totalDebited": 100,
+        "activeSubscriptions": 2
+      }
+    }
+  ],
+  "finalPool": {
+    "activeFollowersInPool": 10,
+    "poolTotal": 1000,
+    "openPositions": 0,
+    "masterBalance": 1987.7336
+  }
+}

@@ -1,0 +1,106 @@
+API REFERENCE / PAMM
+PAMM allocation statement
+GET
+/v1/oms/{instance}/pamm/allocations
+Bearer token
+Read
+
+Every slice of a manager's closed trade allocated to a subscription, newest first, across all instances, with the pool total and percentage at the time.
+
+Follower side by default; role=master lists the slices of this account's own trades, each naming the investor.
+
+On a venue account (binance, zerodha): not supported; answers 501.
+
+Choose an available account
+
+Examples use paper. First call GET /oms/_instances and replace the instance with a slug available to your account. Features vary by broker and account type.
+
+Path parameters
+instance
+string
+required
+
+The trading account (instance) slug.
+
+Engine accounts: paper, paper-net, real, real-net.
+
+External venue accounts: binance, zerodha (see the venue notes on each operation).
+
+Only the instances this install is licensed for exist; GET /oms/_instances lists them.
+
+An unknown slug answers 404 no such OMS instance: <slug>.
+
+Query parameters
+role
+string
+
+master returns the manager's side (slices of this account's own trades).
+
+Any other value or absent returns the follower's side.
+
+The member id always comes from the token.
+
+Allowed: "master"
+
+limit
+integer
+
+Page size.
+
+Absent, <=0 or >500 means 50.
+
+Default: 50 · Minimum: 1 · Maximum: 500
+
+offset
+integer
+
+Rows to skip.
+
+Negative means 0.
+
+Default: 0 · Minimum: 0
+
+Responses
+200
+401
+404
+500
+501
+503
+
+OK
+
+200 · Example response
+Copy
+{
+  "success": true,
+  "allocations": [
+    {
+      "alloc_id": 7,
+      "pamm_id": "pmm_5e6f",
+      "master": "mem_9f3a21c0",
+      "follower": "mem_77c1",
+      "trade_id": 4411,
+      "order_pnl": 2000,
+      "pool_total": 20000,
+      "deposit": 10000,
+      "percentage": 50,
+      "shared_pnl": 1000,
+      "running_pnl": 1000,
+      "at": "2026-10-02T11:00:00Z"
+    }
+  ],
+  "count": 1
+}
+Response fields
+cURL
+fetch
+Python
+cURL request
+Copy
+curl --request GET 'https://lpadmin.blackfx.com/v1/oms/paper/pamm/allocations?limit=50&offset=0' \
+  --header "Authorization: Bearer $ACCESS_TOKEN"
+
+Replace YOUR_* placeholders. Set API_KEY / ACCESS_TOKEN in your environment. Examples are never run on this page.
+
+Next: Portal landing view →

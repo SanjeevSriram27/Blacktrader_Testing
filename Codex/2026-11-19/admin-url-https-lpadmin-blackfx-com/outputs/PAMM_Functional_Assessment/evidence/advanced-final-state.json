@@ -1,0 +1,383 @@
+{
+  "netmaster": {
+    "positions": {
+      "count": 0,
+      "funds": {
+        "balance": 20000,
+        "equity": 20000,
+        "free_margin": 20000,
+        "margin_call_level": 100,
+        "margin_level": null,
+        "starting_balance": 20000,
+        "stop_out_level": 50,
+        "unrealized_pnl": 0,
+        "used_margin": 0
+      },
+      "positions": [],
+      "success": true,
+      "total_unrealized_pnl": 0
+    },
+    "orders": {
+      "count": 5,
+      "orders": [
+        {
+          "order_id": "ord_356e54d322123dce33",
+          "market_order_id": "ord_b830113009dde8770f",
+          "symbol": "BINANCE:BTCUSDT.P",
+          "side": "SELL",
+          "type": "MARKET",
+          "state": "FILLED",
+          "requested_qty": 0.01,
+          "filled_qty": 0.01,
+          "avg_fill_price": 63760.5,
+          "source": "squareoff",
+          "created_at": "2026-11-19T10:59:59.139902Z",
+          "updated_at": "2026-11-19T10:59:59.139902Z",
+          "fee": 0
+        },
+        {
+          "order_id": "ord_da08d21ff8ceba24a9",
+          "parent_order_id": "ord_b830113009dde8770f",
+          "market_order_id": "ord_b830113009dde8770f",
+          "symbol": "BINANCE:BTCUSDT.P",
+          "side": "SELL",
+          "type": "SL",
+          "state": "CANCELLED",
+          "requested_qty": 0.01,
+          "filled_qty": 0,
+          "trigger_price": 50000,
+          "source": "algo_protection",
+          "created_at": "2026-11-19T10:59:59.008188Z",
+          "updated_at": "2026-11-19T10:59:59.143678Z"
+        },
+        {
+          "order_id": "ord_1ee91b46712a3061b9",
+          "parent_order_id": "ord_b830113009dde8770f",
+          "market_order_id": "ord_b830113009dde8770f",
+          "symbol": "BINANCE:BTCUSDT.P",
+          "side": "SELL",
+          "type": "TP",
+          "state": "CANCELLED",
+          "requested_qty": 0.01,
+          "filled_qty": 0,
+          "trigger_price": 80000,
+          "source": "algo_protection",
+          "created_at": "2026-11-19T10:59:59.008188Z",
+          "updated_at": "2026-11-19T10:59:59.144093Z"
+        },
+        {
+          "order_id": "ord_b830113009dde8770f",
+          "market_order_id": "ord_b830113009dde8770f",
+          "symbol": "BINANCE:BTCUSDT.P",
+          "side": "BUY",
+          "type": "MARKET",
+          "state": "FILLED",
+          "requested_qty": 0.01,
+          "filled_qty": 0.01,
+          "avg_fill_price": 63760.5,
+          "created_at": "2026-11-19T10:59:58.859323Z",
+          "updated_at": "2026-11-19T10:59:58.859323Z",
+          "fee": 0
+        },
+        {
+          "order_id": "ord_c1e7fc557bb08efdab",
+          "market_order_id": "ord_c1e7fc557bb08efdab",
+          "symbol": "BINANCE:BTCUSDT.P",
+          "side": "BUY",
+          "type": "LIMIT",
+          "state": "CANCELLED",
+          "requested_qty": 0.001,
+          "filled_qty": 0,
+          "price": 45000,
+          "created_at": "2026-11-19T10:59:58.738201Z",
+          "updated_at": "2026-11-19T10:59:58.808626Z"
+        }
+      ],
+      "success": true
+    },
+    "funds": {
+      "balance": 20000,
+      "equity": 20000,
+      "free_margin": 20000,
+      "margin_call_level": 100,
+      "margin_level": null,
+      "starting_balance": 20000,
+      "stop_out_level": 50,
+      "unrealized_pnl": 0,
+      "used_margin": 0
+    }
+  },
+  "directoryA": {
+    "positions": {
+      "count": 0,
+      "funds": {
+        "balance": 19999.999999999996,
+        "equity": 19999.999999999996,
+        "free_margin": 19999.999999999996,
+        "margin_call_level": 100,
+        "margin_level": null,
+        "starting_balance": 20000,
+        "stop_out_level": 50,
+        "unrealized_pnl": 0,
+        "used_margin": 0
+      },
+      "positions": [],
+      "success": true,
+      "total_unrealized_pnl": 0
+    },
+    "orders": {
+      "count": 2,
+      "orders": [
+        {
+          "order_id": "ord_3bc6a564345bcb511c",
+          "market_order_id": "ord_4377ff160f45b39dc7",
+          "symbol": "BINANCE:BTCUSDT.P",
+          "side": "SELL",
+          "type": "MARKET",
+          "state": "FILLED",
+          "requested_qty": 1,
+          "filled_qty": 1,
+          "avg_fill_price": 63764.7,
+          "source": "squareoff",
+          "created_at": "2026-11-19T11:00:01.819803Z",
+          "updated_at": "2026-11-19T11:00:01.819803Z",
+          "fee": 0
+        },
+        {
+          "order_id": "ord_4377ff160f45b39dc7",
+          "market_order_id": "ord_4377ff160f45b39dc7",
+          "symbol": "BINANCE:BTCUSDT.P",
+          "side": "BUY",
+          "type": "MARKET",
+          "state": "FILLED",
+          "requested_qty": 1,
+          "filled_qty": 1,
+          "avg_fill_price": 63760.5,
+          "created_at": "2026-11-19T10:59:59.525961Z",
+          "updated_at": "2026-11-19T10:59:59.525961Z",
+          "fee": 0
+        }
+      ],
+      "success": true
+    },
+    "funds": {
+      "balance": 19999.999999999996,
+      "equity": 19999.999999999996,
+      "free_margin": 19999.999999999996,
+      "margin_call_level": 100,
+      "margin_level": null,
+      "starting_balance": 20000,
+      "stop_out_level": 50,
+      "unrealized_pnl": 0,
+      "used_margin": 0
+    }
+  },
+  "directoryB": {
+    "positions": {
+      "count": 0,
+      "funds": {
+        "balance": 20003.199999999997,
+        "equity": 20003.199999999997,
+        "free_margin": 20003.199999999997,
+        "margin_call_level": 100,
+        "margin_level": null,
+        "starting_balance": 20000,
+        "stop_out_level": 50,
+        "unrealized_pnl": 0,
+        "used_margin": 0
+      },
+      "positions": [],
+      "success": true,
+      "total_unrealized_pnl": 0
+    },
+    "orders": {
+      "count": 2,
+      "orders": [
+        {
+          "order_id": "ord_df1213b4c69682f143",
+          "market_order_id": "ord_5cdb77b75e2bf86fb1",
+          "symbol": "BINANCE:BTCUSDT.P",
+          "side": "SELL",
+          "type": "MARKET",
+          "state": "FILLED",
+          "requested_qty": 1,
+          "filled_qty": 1,
+          "avg_fill_price": 63768,
+          "source": "squareoff",
+          "created_at": "2026-11-19T11:00:11.155402Z",
+          "updated_at": "2026-11-19T11:00:11.155402Z",
+          "fee": 0
+        },
+        {
+          "order_id": "ord_5cdb77b75e2bf86fb1",
+          "market_order_id": "ord_5cdb77b75e2bf86fb1",
+          "symbol": "BINANCE:BTCUSDT.P",
+          "side": "BUY",
+          "type": "MARKET",
+          "state": "FILLED",
+          "requested_qty": 1,
+          "filled_qty": 1,
+          "avg_fill_price": 63764.8,
+          "created_at": "2026-11-19T11:00:02.575784Z",
+          "updated_at": "2026-11-19T11:00:02.575784Z",
+          "fee": 0
+        }
+      ],
+      "success": true
+    },
+    "funds": {
+      "balance": 20003.199999999997,
+      "equity": 20003.199999999997,
+      "free_margin": 20003.199999999997,
+      "margin_call_level": 100,
+      "margin_level": null,
+      "starting_balance": 20000,
+      "stop_out_level": 50,
+      "unrealized_pnl": 0,
+      "used_margin": 0
+    }
+  },
+  "directoryC": {
+    "positions": {
+      "count": 0,
+      "funds": {
+        "balance": 19031.4,
+        "equity": 19031.4,
+        "free_margin": 19031.4,
+        "margin_call_level": 100,
+        "margin_level": null,
+        "starting_balance": 19000,
+        "stop_out_level": 50,
+        "unrealized_pnl": 0,
+        "used_margin": 0
+      },
+      "positions": [],
+      "success": true,
+      "total_unrealized_pnl": 0
+    },
+    "orders": {
+      "count": 3,
+      "orders": [
+        {
+          "order_id": "ord_56f6b5ee2d473d8e32",
+          "market_order_id": "ord_6fc2e8cbc1cbdf09f1",
+          "symbol": "BINANCE:BTCUSDT.P",
+          "side": "SELL",
+          "type": "MARKET",
+          "state": "FILLED",
+          "requested_qty": 1,
+          "filled_qty": 1,
+          "avg_fill_price": 63748.4,
+          "source": "stop_out",
+          "created_at": "2026-11-19T11:01:43.442312Z",
+          "updated_at": "2026-11-19T11:01:43.442312Z",
+          "fee": 0
+        },
+        {
+          "order_id": "ord_789aad084381770660",
+          "market_order_id": "ord_789aad084381770660",
+          "symbol": "BINANCE:BTCUSDT.P",
+          "side": "BUY",
+          "type": "MARKET",
+          "state": "REJECTED",
+          "reject_reason": "insufficient free margin: required 0.64, free -63.78",
+          "requested_qty": 0.001,
+          "filled_qty": 0,
+          "created_at": "2026-11-19T11:00:13.04044Z",
+          "updated_at": "2026-11-19T11:00:13.04044Z"
+        },
+        {
+          "order_id": "ord_6fc2e8cbc1cbdf09f1",
+          "market_order_id": "ord_6fc2e8cbc1cbdf09f1",
+          "symbol": "BINANCE:BTCUSDT.P",
+          "side": "BUY",
+          "type": "MARKET",
+          "state": "FILLED",
+          "requested_qty": 1,
+          "filled_qty": 1,
+          "avg_fill_price": 63779.8,
+          "created_at": "2026-11-19T11:00:12.820195Z",
+          "updated_at": "2026-11-19T11:00:12.820195Z",
+          "fee": 0
+        }
+      ],
+      "success": true
+    },
+    "funds": {
+      "balance": 19031.4,
+      "equity": 19031.4,
+      "free_margin": 19031.4,
+      "margin_call_level": 100,
+      "margin_level": null,
+      "starting_balance": 19000,
+      "stop_out_level": 50,
+      "unrealized_pnl": 0,
+      "used_margin": 0
+    }
+  },
+  "directoryE": {
+    "positions": {
+      "count": 0,
+      "funds": {
+        "balance": 9999990,
+        "equity": 9999990,
+        "free_margin": 9999990,
+        "margin_call_level": 100,
+        "margin_level": null,
+        "starting_balance": 10000000,
+        "stop_out_level": 50,
+        "unrealized_pnl": 0,
+        "used_margin": 0
+      },
+      "positions": [],
+      "success": true,
+      "total_unrealized_pnl": 0
+    },
+    "orders": {
+      "count": 2,
+      "orders": [
+        {
+          "order_id": "ord_cc2cd54896bb698d33",
+          "market_order_id": "ord_151c1252eb1426508d",
+          "symbol": "BINANCE:BTCUSDT.P",
+          "side": "SELL",
+          "type": "MARKET",
+          "state": "FILLED",
+          "requested_qty": 100,
+          "filled_qty": 100,
+          "avg_fill_price": 63779.7,
+          "source": "squareoff",
+          "created_at": "2026-11-19T11:00:12.360461Z",
+          "updated_at": "2026-11-19T11:00:12.360461Z",
+          "fee": 0
+        },
+        {
+          "order_id": "ord_151c1252eb1426508d",
+          "market_order_id": "ord_151c1252eb1426508d",
+          "symbol": "BINANCE:BTCUSDT.P",
+          "side": "BUY",
+          "type": "MARKET",
+          "state": "FILLED",
+          "requested_qty": 100,
+          "filled_qty": 100,
+          "avg_fill_price": 63779.8,
+          "created_at": "2026-11-19T11:00:12.258417Z",
+          "updated_at": "2026-11-19T11:00:12.258417Z",
+          "fee": 0
+        }
+      ],
+      "success": true
+    },
+    "funds": {
+      "balance": 9999990,
+      "equity": 9999990,
+      "free_margin": 9999990,
+      "margin_call_level": 100,
+      "margin_level": null,
+      "starting_balance": 10000000,
+      "stop_out_level": 50,
+      "unrealized_pnl": 0,
+      "used_margin": 0
+    }
+  }
+}

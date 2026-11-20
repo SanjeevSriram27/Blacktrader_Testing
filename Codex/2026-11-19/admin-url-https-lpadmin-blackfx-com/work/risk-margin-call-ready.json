@@ -1,0 +1,31 @@
+{
+  "member": {
+    "key": "directoryC",
+    "name": "PAMM QA Manager C",
+    "email": "pammqa.20261119.f452cc.directoryc@mailinator.com",
+    "member_id": "mem_550a4e91e0ce62a93f",
+    "public_id": "3e80dfe9-e7b4-491f-b475-9de0ea7c0450",
+    "instance": "real",
+    "balance": 20000,
+    "master": true,
+    "ready": true,
+    "pamm_master": {
+      "client_id": "mem_550a4e91e0ce62a93f",
+      "display_name": "PAMM QA Manager C",
+      "share_percent": 20,
+      "status": "active"
+    }
+  },
+  "called": {
+    "balance": 574.02,
+    "equity": 574.02,
+    "free_margin": -63.77800000000002,
+    "margin_call_level": 100,
+    "margin_level": 90.00028222101668,
+    "starting_balance": 574.02,
+    "stop_out_level": 50,
+    "unrealized_pnl": 0,
+    "used_margin": 637.798
+  },
+  "at": "2026-11-19T11:00:13.071Z"
+}

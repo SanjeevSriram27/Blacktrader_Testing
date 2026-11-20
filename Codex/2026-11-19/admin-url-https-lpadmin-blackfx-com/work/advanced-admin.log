@@ -1,0 +1,12 @@
+NETTING-PAMM-JOIN PASS Separate Real-Net PAMM investor joined a netting master.
+BTPAMM-E003 PASS Current Real-Net pending request returned 200 with state PENDING. This tests current supported behavior; the old no-netting-pending issue claim is not re-filed.
+BTPAMM-E005 PASS Current Real-Net protection update returned 200; position protection read back for current behavior.
+PAMM-X11-01 PASS Contract 0%, investor running PNL 4.2, paid manager fee 0, payout 1004.2.
+PAMM-X11-02 PASS Contract 100%, investor running PNL 3.2, paid manager fee 3.2, payout 1000.
+BTPAMM-A015 PARTIAL Exact 2000-dollar rejoin generated a new relationship and preserved closed history; the deployed schema exposes no HWM baseline field.
+BTPAMM-A010 PASS Admin-funded 10-million-dollar QA manager executed a 100-unit block order; used margin 63779.8.
+BTPAMM-M002 PARTIAL Isolated account margin level 90.00028222101668% crossed below 100%; a new order request returned 400. Banner and email assertions are separate from this API observation.
+RISK_UI_GATE_READY
+BTPAMM-M003 PASS Forced QA margin below 50%; automatic risk engine left 0 positions. Exit source stop_out.
+BTPAMM-M004 PARTIAL Stop-out allocation records were collected. The reference exact 50-percent investor loss/$25000 remainder fixture was not synthesized by this account-level margin trigger.
+ADVANCED-CLEANUP PASS All advanced QA fixture accounts have no open positions or pending orders. Original supplied accounts were not changed.

@@ -1,0 +1,177 @@
+- complementary:
+  - generic: blacktrader
+  - generic: Client Admin
+  - button "Collapse sidebar":
+  - navigation:
+    - button "Overview":
+      - generic: Overview
+    - button "Client Home":
+      - generic: Client Home
+    - button "Chart":
+      - generic: Chart
+    - button "OMS" [expanded] [active]:
+      - generic: OMS
+    - button "Accounts & feed":
+      - generic: Accounts & feed
+    - button "Trading terms":
+      - generic: Trading terms
+    - button "Trading rules":
+      - generic: Trading rules
+    - button "Liquidity":
+      - generic: Liquidity
+    - button "Order book":
+      - generic: Order book
+    - button "Money":
+      - generic: Money
+    - button "People" [expanded]:
+      - generic: People
+    - button "Members":
+      - generic: Members
+    - button "Staff":
+      - generic: Staff
+    - button "Trades":
+      - generic: Trades
+    - button "Account requests":
+      - generic: Account requests
+    - button "Install":
+      - generic: Install
+  - generic: LP
+  - generic "lpadmin@blacktrader.com"
+  - text: Client admin
+  - button "Sign out":
+    - text: Sign out
+- banner:
+  - heading "Accounts & feed" [level=1]
+  - generic: active
+  - button "v1.1.18 · Versions"
+  - button "Toggle theme":
+- main:
+  - heading "Brand" [level=2]
+  - paragraph: Your name and logo in the workspace, chart and trader home.
+  - generic: Brand name
+  - textbox "Brand name":
+    - /placeholder: BlackTrader
+  - generic: Up to 40 characters. Leave blank to use the default name.
+  - generic: Logo
+  - generic: BlackTrader
+  - text: Upload
+  - button "Upload"
+  - button "Remove" [disabled]
+  - generic: PNG, JPEG or WebP, up to 256 KB. A wide transparent mark reads best.
+  - button "Save brand"
+  - heading "Accounts" [level=2]
+  - paragraph: Choose the accounts available to your members.
+  - table:
+    - rowgroup:
+      - row "Account Icon Name shown to traders Route Engine Broker State Actions":
+        - columnheader "Account"
+        - columnheader "Icon"
+        - columnheader "Name shown to traders"
+        - columnheader "Route"
+        - columnheader "Engine"
+        - columnheader "Broker"
+        - columnheader "State"
+        - columnheader "Actions":
+          - generic: Actions
+    - rowgroup:
+      - row "Paper (Hedging) paper Add Paper (Hedging) /v1/oms/paper Hedging paper on":
+        - cell "Paper (Hedging) paper":
+          - generic: Paper (Hedging)
+          - generic: paper
+        - cell "Add":
+          - generic "Square PNG, JPEG, WebP or GIF under 32 KB — traders see this beside the account name": Add
+        - cell "Paper (Hedging)":
+          - button "Paper (Hedging)":
+            - generic: Paper (Hedging)
+        - cell "/v1/oms/paper":
+          - code: /v1/oms/paper
+        - cell "Hedging"
+        - cell "paper":
+          - code: paper
+        - cell "on":
+          - generic: "on"
+        - cell:
+          - button "Actions for Paper (Hedging)":
+      - row "Real (Hedging) REAL money Add Real (Hedging) /v1/oms/real Hedging real on":
+        - cell "Real (Hedging) REAL money":
+          - generic: Real (Hedging)
+          - generic: REAL money
+        - cell "Add":
+          - generic "Square PNG, JPEG, WebP or GIF under 32 KB — traders see this beside the account name": Add
+        - cell "Real (Hedging)":
+          - button "Real (Hedging)":
+            - generic: Real (Hedging)
+        - cell "/v1/oms/real":
+          - code: /v1/oms/real
+        - cell "Hedging"
+        - cell "real":
+          - code: real
+        - cell "on":
+          - generic: "on"
+        - cell:
+          - button "Actions for Real (Hedging)":
+      - row "Paper (Netting) paper Add Paper (Netting) /v1/oms/paper-net Netting paper-net on":
+        - cell "Paper (Netting) paper":
+          - generic: Paper (Netting)
+          - generic: paper
+        - cell "Add":
+          - generic "Square PNG, JPEG, WebP or GIF under 32 KB — traders see this beside the account name": Add
+        - cell "Paper (Netting)":
+          - button "Paper (Netting)":
+            - generic: Paper (Netting)
+        - cell "/v1/oms/paper-net":
+          - code: /v1/oms/paper-net
+        - cell "Netting"
+        - cell "paper-net":
+          - code: paper-net
+        - cell "on":
+          - generic: "on"
+        - cell:
+          - button "Actions for Paper (Netting)":
+      - row "Real (Netting) REAL money Add Real (Netting) /v1/oms/real-net Netting real-net on":
+        - cell "Real (Netting) REAL money":
+          - generic: Real (Netting)
+          - generic: REAL money
+        - cell "Add":
+          - generic "Square PNG, JPEG, WebP or GIF under 32 KB — traders see this beside the account name": Add
+        - cell "Real (Netting)":
+          - button "Real (Netting)":
+            - generic: Real (Netting)
+        - cell "/v1/oms/real-net":
+          - code: /v1/oms/real-net
+        - cell "Netting"
+        - cell "real-net":
+          - code: real-net
+        - cell "on":
+          - generic: "on"
+        - cell:
+          - button "Actions for Real (Netting)":
+  - paragraph: Disabling keeps every order, position and balance the account owns — its routes simply stop answering, and enabling it again brings the account back as it was. An account your plan does not include cannot be switched on here; your provider grants it.
+  - heading "Market data feed" [level=2]
+  - paragraph:
+    - text: "Centralised feed for this install — one connection shared by all your OMS (paper, white-labels…). On startup the OMS connects to this websocket, subscribes to every symbol from the catalogs below, and receives bid / ask / ltp ticks. Format: see"
+    - code: docs/feed.md
+    - text: .
+  - generic: live · 18/17 symbols priced · 164,467 ticks · last 16:09:24
+  - generic: Set by an unknown (legacy) setting
+  - generic: Feed URL
+  - textbox "wss://… or https://…": wss://api.blacktrader.com/feed/tick
+  - text: Feed token
+  - generic: set — blank keeps it
+  - textbox "••••••••"
+  - heading "Symbol list sources" [level=4]
+  - textbox "label (e.g. NSE)": BlackFeed
+  - textbox "https://…/symbols.json": https://api.blacktrader.com/feed/symbol_list
+  - button "Remove"
+  - button "+ Add symbol source"
+  - heading "Public URL (your domain)" [level=4]
+  - paragraph:
+    - text: Used to build the API catalog at
+    - code: /<slug>/v1/uri
+    - text: — e.g.
+    - code: https://terminal.blacktrader.com
+    - text: . Leave blank to use the request host.
+  - textbox "https://terminal.blacktrader.com": https://lpadmin.blackfx.com
+  - button "Save feed settings"
+  - button "Use the platform setting"
+- alert

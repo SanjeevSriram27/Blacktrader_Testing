@@ -1,0 +1,136 @@
+{
+  "results": [
+    {
+      "id": "BTPAMM-O007",
+      "status": "PARTIAL",
+      "actual": "Authorized admin adjustment credited exactly100 with the supplied audit remark; before 50003.74,after 50103.74. Corporate treasury debit and immutable ledger-note evidence are not exposed by this response.",
+      "details": {
+        "before": {
+          "balance": 50003.74,
+          "equity": 50003.74,
+          "free_margin": 50003.74,
+          "margin_call_level": 100,
+          "margin_level": null,
+          "starting_balance": 50000,
+          "stop_out_level": 50,
+          "unrealized_pnl": 0,
+          "used_margin": 0
+        },
+        "adjustment": {
+          "status": 200,
+          "j": {
+            "balance": 50103.74,
+            "delta": 100,
+            "funds": {
+              "balance": 50103.74,
+              "equity": 50103.74,
+              "free_margin": 50103.74,
+              "margin_call_level": 100,
+              "margin_level": null,
+              "starting_balance": 50103.74,
+              "stop_out_level": 50,
+              "unrealized_pnl": 0,
+              "used_margin": 0
+            },
+            "instance": "real",
+            "success": true
+          },
+          "text": "{\"balance\":50103.74,\"delta\":100,\"funds\":{\"balance\":50103.74,\"equity\":50103.74,\"free_margin\":50103.74,\"margin_call_level\":100,\"margin_level\":null,\"starting_balance\":50103.74,\"stop_out_level\":50,\"unrealized_pnl\":0,\"used_margin\":0},\"instance\":\"real\",\"success\":true}\n",
+          "ms": 43
+        },
+        "after": {
+          "balance": 50103.74,
+          "equity": 50103.74,
+          "free_margin": 50103.74,
+          "margin_call_level": 100,
+          "margin_level": null,
+          "starting_balance": 50103.74,
+          "stop_out_level": 50,
+          "unrealized_pnl": 0,
+          "used_margin": 0
+        },
+        "remark": "Isolated PAMM QA goodwill compensation test +100; simulated funds"
+      },
+      "at": "2026-11-20T03:47:30.774Z"
+    }
+  ],
+  "calls": [
+    {
+      "ep": "/v1/oms/real/funds",
+      "method": "GET",
+      "response": {
+        "status": 200,
+        "j": {
+          "funds": {
+            "balance": 50003.74,
+            "equity": 50003.74,
+            "free_margin": 50003.74,
+            "margin_call_level": 100,
+            "margin_level": null,
+            "starting_balance": 50000,
+            "stop_out_level": 50,
+            "unrealized_pnl": 0,
+            "used_margin": 0
+          },
+          "success": true
+        },
+        "text": "{\"funds\":{\"balance\":50003.74,\"equity\":50003.74,\"free_margin\":50003.74,\"margin_call_level\":100,\"margin_level\":null,\"starting_balance\":50000,\"stop_out_level\":50,\"unrealized_pnl\":0,\"used_margin\":0},\"success\":true}\n",
+        "ms": 92
+      }
+    },
+    {
+      "ep": "/admin/api/members/mem_b24631d6d2f30c7920/balance",
+      "method": "POST",
+      "body": {
+        "instance": "real",
+        "balance": 50103.74,
+        "remark": "Isolated PAMM QA goodwill compensation test +100; simulated funds"
+      },
+      "response": {
+        "status": 200,
+        "j": {
+          "balance": 50103.74,
+          "delta": 100,
+          "funds": {
+            "balance": 50103.74,
+            "equity": 50103.74,
+            "free_margin": 50103.74,
+            "margin_call_level": 100,
+            "margin_level": null,
+            "starting_balance": 50103.74,
+            "stop_out_level": 50,
+            "unrealized_pnl": 0,
+            "used_margin": 0
+          },
+          "instance": "real",
+          "success": true
+        },
+        "text": "{\"balance\":50103.74,\"delta\":100,\"funds\":{\"balance\":50103.74,\"equity\":50103.74,\"free_margin\":50103.74,\"margin_call_level\":100,\"margin_level\":null,\"starting_balance\":50103.74,\"stop_out_level\":50,\"unrealized_pnl\":0,\"used_margin\":0},\"instance\":\"real\",\"success\":true}\n",
+        "ms": 43
+      }
+    },
+    {
+      "ep": "/v1/oms/real/funds",
+      "method": "GET",
+      "response": {
+        "status": 200,
+        "j": {
+          "funds": {
+            "balance": 50103.74,
+            "equity": 50103.74,
+            "free_margin": 50103.74,
+            "margin_call_level": 100,
+            "margin_level": null,
+            "starting_balance": 50103.74,
+            "stop_out_level": 50,
+            "unrealized_pnl": 0,
+            "used_margin": 0
+          },
+          "success": true
+        },
+        "text": "{\"funds\":{\"balance\":50103.74,\"equity\":50103.74,\"free_margin\":50103.74,\"margin_call_level\":100,\"margin_level\":null,\"starting_balance\":50103.74,\"stop_out_level\":50,\"unrealized_pnl\":0,\"used_margin\":0},\"success\":true}\n",
+        "ms": 43
+      }
+    }
+  ]
+}

@@ -1,0 +1,228 @@
+- banner:
+  - button "Account menu":
+    - generic: P
+  - button "Default ▾":
+    - generic: Default
+    - generic: ▾
+  - button "Add widget":
+  - button "Floating view — free-floating, overlapping windows":
+  - button "Comfortable view — restore panel spacing":
+  - button "Toggle theme":
+- button "Watchlist":
+  - generic: Watchlist
+- 'textbox "Search eg: EURUSD, BTC"'
+- button "Filter by category and exchange":
+- button "W1":
+  - generic: W1
+- button "W2":
+  - generic: W2
+- button "W3":
+  - generic: W3
+- button "W4":
+  - generic: W4
+- button "W5":
+  - generic: W5
+- button "Rename Watchlist 1":
+  - generic: Watchlist 1
+- button "Visible watchlist columns":
+  - generic: Columns
+- button "Sort this section":
+  - generic: Original
+- button "Note":
+  - text: Note
+- generic: No symbols yet — search above to add one
+- button "Chart":
+  - generic: Chart
+- button "Drawing Tools":
+- button "Line Tools":
+- button "Patterns":
+- button "Text Tools":
+- button "Measure Tools":
+- button "Fibonacci Tools":
+- tooltip "Lock All Drawings":
+  - button "Lock All Drawings":
+- tooltip "Hide All Drawings":
+  - button "Hide All Drawings":
+- tooltip "Enable Magnet Mode":
+  - button "Enable Magnet Mode":
+- tooltip "Enable Keep Drawing":
+  - button "Enable Keep Drawing":
+- button "Delete Tools":
+- tooltip "Show Favorite Drawing Tools Toolbar":
+  - button "Show Favorite Drawing Tools Toolbar":
+- button "Scroll tools down":
+- navigation:
+  - button "SAVE":
+    - generic: SAVE
+  - button:
+  - tooltip "Undo":
+    - button "Undo" [disabled]:
+  - tooltip "Redo":
+    - button "Redo" [disabled]:
+  - tooltip "Hide All Trades":
+    - button "Hide All Trades":
+  - button "BTCUSDT.P":
+    - generic: BTCUSDT.P
+  - button "1 Min":
+    - text: 1 Min
+  - button "Select chart type":
+  - button "Indicators":
+    - generic: Indicators
+  - tooltip:
+    - button:
+  - tooltip "Fullscreen chart panel":
+    - button "Fullscreen chart panel":
+  - tooltip "Chart snapshot":
+    - button "Chart snapshot":
+  - button:
+- img "Xtreme Logo"
+- table:
+  - 'row "BINANCE:BTCUSDT.P | 1m | O: 64006.7 H: 64049.3 L: 64000.5 C: 64044.9 64044.8 64044.9 S 0.001 B"':
+    - cell
+    - 'cell "BINANCE:BTCUSDT.P | 1m | O: 64006.7 H: 64049.3 L: 64000.5 C: 64044.9 64044.8 64044.9 S 0.001 B"':
+      - button "BINANCE:BTCUSDT.P"
+      - generic: "|"
+      - generic: 1m
+      - generic: "|"
+      - generic: "O:"
+      - generic: "64006.7"
+      - generic: "H:"
+      - generic: "64049.3"
+      - generic: "L:"
+      - generic: "64000.5"
+      - generic: "C:"
+      - generic: "64044.9"
+      - button "64044.8":
+        - generic: "64044.8"
+      - button "64044.9":
+        - generic: "64044.9"
+      - button "S 0.001 B":
+        - generic: S
+        - generic: "0.001"
+        - generic: B
+      - button "Hide Trades":
+      - button "Trade Settings":
+    - cell
+  - row:
+    - cell
+    - cell
+    - cell:
+      - button "Fit Price Scale":
+      - button "Fit Time Scale":
+      - button "Reset to Initial Position":
+- button "Hide drawing toolbar":
+- button "Trades":
+  - generic: Trades
+- generic: Trades
+- generic: Paper (Hedging)
+- button "Refresh":
+- button "Broker settings":
+- button "Positions"
+- button "Pending"
+- button "Orders"
+- button "History"
+- button "Funds"
+- table:
+  - rowgroup:
+    - row "Symbol Order ID Qty. Avg. SL TSL TP LTP P&L Time":
+      - columnheader
+      - columnheader "Symbol"
+      - columnheader "Order ID"
+      - columnheader "Qty."
+      - columnheader "Avg."
+      - columnheader "SL"
+      - columnheader "TSL"
+      - columnheader "TP"
+      - columnheader "LTP"
+      - columnheader "P&L"
+      - columnheader "Time"
+  - rowgroup:
+    - row "No positions found":
+      - cell "No positions found"
+  - rowgroup:
+    - row "Paper (Hedging) account funds P&L +0.00":
+      - cell "Paper (Hedging) account funds":
+        - generic "Paper (Hedging) account funds":
+          - generic "Paper (Hedging)":
+            - generic: Paper (Hedging)
+          - term: Balance
+          - definition: 1,000,000.00
+          - term: Equity
+          - definition: 1,000,000.00
+          - term: Used margin
+          - definition: "0.00"
+          - term: Free margin
+          - definition: 1,000,000.00
+          - term: Margin level
+          - definition: N/A
+      - cell "P&L"
+      - cell "+0.00"
+      - cell
+- button "PAMM":
+  - generic: PAMM
+- generic: PAMM
+- generic "The account group your rates come from. Set by your broker.": PAMM QA Isolated Terms
+- button "Refresh":
+- button "PAMM managers"
+- button "My subscription1":
+  - text: My subscription
+  - emphasis: "1"
+- generic: My pools
+- button "Active1":
+  - text: Active
+  - emphasis: "1"
+- button "History4" [active]:
+  - text: History
+  - emphasis: "4"
+- table:
+  - rowgroup:
+    - row "Manager Deposit Returned Manager kept Joined Left":
+      - columnheader "Manager"
+      - columnheader "Deposit"
+      - columnheader "Returned"
+      - columnheader "Manager kept"
+      - columnheader "Joined"
+      - columnheader "Left"
+      - columnheader
+  - rowgroup:
+    - row "PAMM QA Manager D left 2,000.00 2,000.00 0.00 19 Nov 2026, 16:30 19 Nov 2026, 16:30 View trades":
+      - cell "PAMM QA Manager D left"
+      - cell "2,000.00"
+      - cell "2,000.00"
+      - cell "0.00"
+      - cell "19 Nov 2026, 16:30"
+      - cell "19 Nov 2026, 16:30"
+      - cell "View trades":
+        - button "View trades"
+    - row "PAMM QA Manager D left 2,000.00 2,000.00 0.00 19 Nov 2026, 16:30 19 Nov 2026, 16:30 View trades":
+      - cell "PAMM QA Manager D left"
+      - cell "2,000.00"
+      - cell "2,000.00"
+      - cell "0.00"
+      - cell "19 Nov 2026, 16:30"
+      - cell "19 Nov 2026, 16:30"
+      - cell "View trades":
+        - button "View trades"
+    - row "PAMM QA Manager B left 1,000.00 1,000.00 3.20 19 Nov 2026, 16:30 19 Nov 2026, 16:30 View trades":
+      - cell "PAMM QA Manager B left"
+      - cell "1,000.00"
+      - cell "1,000.00"
+      - cell "3.20"
+      - cell "19 Nov 2026, 16:30"
+      - cell "19 Nov 2026, 16:30"
+      - cell "View trades":
+        - button "View trades"
+    - row "PAMM QA Manager A left 1,000.00 1,004.20 0.00 19 Nov 2026, 16:29 19 Nov 2026, 16:30 View trades":
+      - cell "PAMM QA Manager A left"
+      - cell "1,000.00"
+      - cell "1,004.20"
+      - cell "0.00"
+      - cell "19 Nov 2026, 16:29"
+      - cell "19 Nov 2026, 16:30"
+      - cell "View trades":
+        - button "View trades"
+- generic: Allocations
+- generic: No trade has been allocated to you yet.
+- generic: Managing a pool
+- button "Run a pool" [disabled]
+- paragraph: Accounts that have followed a master can't become a master, even after unfollowing.

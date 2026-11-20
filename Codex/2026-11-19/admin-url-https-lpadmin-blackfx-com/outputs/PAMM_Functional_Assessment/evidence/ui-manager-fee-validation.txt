@@ -1,0 +1,49 @@
+        - cell "PAMM QA Investor TC"
+        - cell "-22.00"
+        - cell "217,150.00"
+        - cell "0.05%"
+        - cell "-0.01"
+        - cell "-0.01"
+        - cell "19 Nov 2026, 16:18"
+      - row "PAMM QA Investor TB -22.00 217,150.00 0.05% -0.01 -0.01 19 Nov 2026, 16:18":
+        - cell "PAMM QA Investor TB"
+        - cell "-22.00"
+        - cell "217,150.00"
+        - cell "0.05%"
+        - cell "-0.01"
+        - cell "-0.01"
+        - cell "19 Nov 2026, 16:18"
+      - row "PAMM QA Investor TD -22.00 217,150.00 0.05% -0.01 -0.01 19 Nov 2026, 16:18":
+        - cell "PAMM QA Investor TD"
+        - cell "-22.00"
+        - cell "217,150.00"
+        - cell "0.05%"
+        - cell "-0.01"
+        - cell "-0.01"
+        - cell "19 Nov 2026, 16:18"
+      - row "PAMM QA Investor TE -22.00 217,150.00 0.05% -0.01 -0.01 19 Nov 2026, 16:18":
+        - cell "PAMM QA Investor TE"
+        - cell "-22.00"
+        - cell "217,150.00"
+        - cell "0.05%"
+        - cell "-0.01"
+        - cell "-0.01"
+        - cell "19 Nov 2026, 16:18"
+      - row "PAMM QA Investor TF -22.00 217,150.00 0.05% -0.01 -0.01 19 Nov 2026, 16:18":
+        - cell "PAMM QA Investor TF"
+        - cell "-22.00"
+        - cell "217,150.00"
+        - cell "0.05%"
+        - cell "-0.01"
+        - cell "-0.01"
+        - cell "19 Nov 2026, 16:18"
+  - paragraph: Showing the most recent 500 allocations — there are more than that.
+  - paragraph: One row per investor per closed trade. Your own cut is not taken here — it is computed from an investor's net profit when they leave, so nothing in this table is yours yet.
+  - generic: Shown to investors as
+  - textbox "Shown to investors as":
+    - /placeholder: Alpha Pool
+    - text: PAMM QA Isolated Pool
+  - generic: My share (%)
+  - spinbutton "My share (%)": "120"
+  - button "Save"
+  - paragraph: You are paid only out of an investor's net profit, at settlement. If their running total is negative when they leave, they absorb the whole loss and you take nothing.

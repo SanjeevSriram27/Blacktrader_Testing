@@ -1,0 +1,13 @@
+READY directoryA real
+READY directoryB real
+READY directoryC real
+READY directoryD real
+READY directoryE real
+READY directoryF real
+READY directoryG real
+READY directoryH real
+READY netmaster real-net
+READY netinvestor real-net
+READY feeinvestor real
+READY riskinvestor real
+EXTRA_FIXTURES_READY 12

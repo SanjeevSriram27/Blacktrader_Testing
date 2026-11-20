@@ -1,0 +1,66 @@
+{
+  "at": "2026-11-19T11:19:49.731Z",
+  "member": {
+    "key": "directoryC",
+    "name": "PAMM QA Manager C",
+    "email": "pammqa.20261119.f452cc.directoryc@mailinator.com",
+    "member_id": "mem_550a4e91e0ce62a93f",
+    "public_id": "3e80dfe9-e7b4-491f-b475-9de0ea7c0450",
+    "instance": "real",
+    "balance": 20000,
+    "master": true,
+    "ready": true,
+    "pamm_master": {
+      "client_id": "mem_550a4e91e0ce62a93f",
+      "display_name": "PAMM QA Manager C",
+      "share_percent": 20,
+      "status": "active"
+    }
+  },
+  "entry": {
+    "status": 200,
+    "j": {
+      "order": {
+        "order_id": "ord_49a9f0529883a82f86",
+        "market_order_id": "ord_49a9f0529883a82f86",
+        "symbol": "BINANCE:BTCUSDT.P",
+        "side": "BUY",
+        "type": "MARKET",
+        "state": "FILLED",
+        "requested_qty": 1,
+        "filled_qty": 1,
+        "avg_fill_price": 63713.8,
+        "created_at": "2026-11-19T11:19:49.53361491Z",
+        "updated_at": "2026-11-19T11:19:49.53361491Z"
+      },
+      "position": {
+        "position_id": "pos_71b633481dae2d77b9",
+        "market_order_id": "ord_49a9f0529883a82f86",
+        "symbol": "BINANCE:BTCUSDT.P",
+        "side": "BUY",
+        "net_qty": 1,
+        "avg_entry_price": 63713.8,
+        "full_margin": 637.138,
+        "margin_percent": 100,
+        "margin_used": 637.138,
+        "entry_markup": 0,
+        "status": "OPEN",
+        "opened_at": "2026-11-19T11:19:49.533668Z"
+      },
+      "success": true
+    },
+    "text": "{\"order\":{\"order_id\":\"ord_49a9f0529883a82f86\",\"market_order_id\":\"ord_49a9f0529883a82f86\",\"symbol\":\"BINANCE:BTCUSDT.P\",\"side\":\"BUY\",\"type\":\"MARKET\",\"state\":\"FILLED\",\"requested_qty\":1,\"filled_qty\":1,\"avg_fill_price\":63713.8,\"created_at\":\"2026-11-19T11:19:49.53361491Z\",\"updated_at\":\"2026-11-19T11:19:49.53361491Z\"},\"position\":{\"position_id\":\"pos_71b633481dae2d77b9\",\"market_order_id\":\"ord_49a9f0529883a82f86\",\"symbol\":\"BINANCE:BTCUSDT.P\",\"side\":\"BUY\",\"net_qty\":1,\"avg_entry_price\":63713.8,\"full_margin\":637.138,\"margin_percent\":100,\"margin_used\":637.138,\"entry_markup\":0,\"status\":\"OPEN\",\"opened_at\":\"2026-11-19T11:19:49.533668Z\"},\"success\":true}\n",
+    "ms": 48
+  },
+  "called": {
+    "balance": 509.71,
+    "equity": 509.60999999999416,
+    "free_margin": -127.52800000000587,
+    "margin_call_level": 100,
+    "margin_level": 79.98424203233743,
+    "starting_balance": 509.71,
+    "stop_out_level": 50,
+    "unrealized_pnl": -0.10000000000582077,
+    "used_margin": 637.138
+  }
+}

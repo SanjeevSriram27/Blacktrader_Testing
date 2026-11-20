@@ -1,0 +1,428 @@
+[
+  {
+    "id": "BTPAMM-F001",
+    "previous": "PARTIAL",
+    "current": "PASS",
+    "actual": "Added a new PAMM widget through Add widget; both directory and subscription tabs mounted."
+  },
+  {
+    "id": "BTPAMM-F002",
+    "previous": "PARTIAL",
+    "current": "PASS",
+    "actual": "Directory \u2192 My subscription navigation succeeded and retained manager state."
+  },
+  {
+    "id": "BTPAMM-F003",
+    "previous": "BLOCKED",
+    "current": "PASS",
+    "actual": "Fresh eligible QA account created a PAMM manager through Run a pool, entered display name and 20 percent, and saved successfully."
+  },
+  {
+    "id": "BTPAMM-F005",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "The actual portal Account selector switched Alternate/Main correctly; primary and alternate balances/subscriptions remained separate. Real Hedging routing was observed. The reference PAMM-specific instance dropdown is not present in the inspected panel, which uses broker settings."
+  },
+  {
+    "id": "BTPAMM-F007",
+    "previous": "PARTIAL",
+    "current": "PASS",
+    "actual": "Active isolated master cannot join another owned manager: HTTP 400, no cash debit, no active follower relationship."
+  },
+  {
+    "id": "BTPAMM-F009",
+    "previous": "PARTIAL",
+    "current": "PASS",
+    "actual": "Through the internal browser, a fresh isolated QA investor deposited exactly 1000 and My subscription showed one active relationship with deposit 1000 and exit estimate 1000."
+  },
+  {
+    "id": "BTPAMM-F012",
+    "previous": "PARTIAL",
+    "current": "PASS",
+    "actual": "The published QA manager appeared in the nine-column directory with its 20% fee, 500 investors and pooled fund."
+  },
+  {
+    "id": "BTPAMM-F013",
+    "previous": "PARTIAL",
+    "current": "PASS",
+    "actual": "The directory displayed 27 distinct manager entries in nondecreasing rank order, including tied ranks."
+  },
+  {
+    "id": "BTPAMM-F014",
+    "previous": "PARTIAL",
+    "current": "PASS",
+    "actual": "UI fee120 is rejected by native min0/max100 validation; earlier signed input was sanitized before submission. API negative/over100 were rejected. Valid0/100 settlements independently passed; QA fee restored20."
+  },
+  {
+    "id": "BTPAMM-F015",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Maximise, restore, close/unmount and reopen passed. The reference requirement for zero detached memory nodes requires memory instrumentation, which this browser interface does not expose."
+  },
+  {
+    "id": "BTPAMM-A001",
+    "previous": "PARTIAL",
+    "current": "PASS",
+    "actual": "An isolated A-book PAMM manager with50000 pooled principal placed one BLACK:XAUUSD market order. The active Black exchange route filled it and exactly one manager position mounted; the position then closed cleanly."
+  },
+  {
+    "id": "BTPAMM-A002",
+    "previous": "PARTIAL",
+    "current": "PASS",
+    "actual": "100-follower pool totals exactly 177150; first deposit 1000 and third 575; all recorded percentages match independent deposit/total calculations."
+  },
+  {
+    "id": "BTPAMM-A003",
+    "previous": "PARTIAL",
+    "current": "PASS",
+    "actual": "Recorded weights across 100 investors sum to 100.00000000000018."
+  },
+  {
+    "id": "BTPAMM-A004",
+    "previous": "PARTIAL",
+    "current": "PASS",
+    "actual": "The winning parent trade was apportioned by actual 100-investor weights within cent rounding."
+  },
+  {
+    "id": "BTPAMM-A005",
+    "previous": "PARTIAL",
+    "current": "PASS",
+    "actual": "The losing parent trade was apportioned by actual 100-investor weights within cent rounding."
+  },
+  {
+    "id": "BTPAMM-A010",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "An isolated admin-funded10-million-dollar QA manager executed and closed one100-unit BTC block; used margin63779.8. A separate A-book PAMM manager routed BLACK:XAUUSD market orders through the active Black exchange bridge."
+  },
+  {
+    "id": "BTPAMM-E003",
+    "previous": "BLOCKED",
+    "current": "PASS",
+    "actual": "Current Real-Net pending request returned 200 with state PENDING. This tests current supported behavior; the old no-netting-pending issue claim is not re-filed."
+  },
+  {
+    "id": "BTPAMM-E005",
+    "previous": "BLOCKED",
+    "current": "PASS",
+    "actual": "Current Real-Net protection update returned 200; position protection read back for current behavior."
+  },
+  {
+    "id": "BTPAMM-E011",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "A trailing stop was placed through the TSL editor and read back in the real-account position row. The exact favorable/retrace trigger trajectory is being tested separately."
+  },
+  {
+    "id": "BTPAMM-E013",
+    "previous": "PARTIAL",
+    "current": "PASS",
+    "actual": "The isolated A-book PAMM order produced exactly one manager position record on the Black exchange route. No fractional follower/child positions appeared, and cleanup left the manager flat."
+  },
+  {
+    "id": "BTPAMM-P007",
+    "previous": "BLOCKED",
+    "current": "PASS",
+    "actual": "With50000 pooled principal, an allowed-size10-lot BLACK:XAUUSD A-book parent order reached the liquidity provider and was rejected for insufficient LP margin (HTTP400). Zero position mounted and pool capital remained unlocked."
+  },
+  {
+    "id": "BTPAMM-P009",
+    "previous": "BLOCKED",
+    "current": "PASS",
+    "actual": "Twenty concurrent0.01-lot BLACK:XAUUSD A-book PAMM market orders all filled through the active bridge; zero429/rate-limit responses occurred and20 manager positions mounted before clean closeout."
+  },
+  {
+    "id": "BTPAMM-P015",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "A-book execution responses and OMS history retained order IDs, prices and timestamps, and admin liquidity state identified Black exchange as up. No distinct LP fill ID/blotter mapping was exposed."
+  },
+  {
+    "id": "BTPAMM-M002",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "The isolated account showed an explicit Margin Call alert below 100%, real-account funds at roughly 80% margin, and a prior new-order rejection. Email dispatch is not observable in this UI."
+  },
+  {
+    "id": "BTPAMM-M003",
+    "previous": "BLOCKED",
+    "current": "PASS",
+    "actual": "Two-position stop-out closed 1 position and halted with 1 remaining at margin 147.0146254657933%. Independent position comparison confirmed the most unprofitable position closed first."
+  },
+  {
+    "id": "BTPAMM-M004",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Stop-out allocation records were collected. The reference exact 50-percent investor loss/$25000 remainder fixture was not synthesized by this account-level margin trigger."
+  },
+  {
+    "id": "BTPAMM-M006",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "With QA leverage100, an over-margin BTC order returned 400. Exact200-lot EURUSD reference order was not exercised."
+  },
+  {
+    "id": "BTPAMM-M011",
+    "previous": "BLOCKED",
+    "current": "PASS",
+    "actual": "100 concurrent0.10 BUY requests yielded100 positions; aggregate quantity 9.99999999999998, used margin 6394.329999999993, sum of position margins 6394.329999999993. Independent entry-price\u00d7quantity/100 margin calculation also matches within1e-7."
+  },
+  {
+    "id": "BTPAMM-M015",
+    "previous": "BLOCKED",
+    "current": "PASS",
+    "actual": "After a recorded stop-out,3 fresh investor relationships injected15000; free margin restored exactly15000, a new market trade filled and closed, and all prior closed history remained."
+  },
+  {
+    "id": "BTPAMM-D008",
+    "previous": "BLOCKED",
+    "current": "PASS",
+    "actual": "Admin-funded50000 pool received100000 mid-position; total150000. The pre-join trade allocated only to the original investor; subsequent trade allocated to both at33.333333%/66.666667%."
+  },
+  {
+    "id": "BTPAMM-D009",
+    "previous": "PARTIAL",
+    "current": "PASS",
+    "actual": "10 concurrent1000 deposits committed within 102ms;10 unique active investors and10000 principal. Observable concurrency/conservation passed; implementation lock primitive is not inferred."
+  },
+  {
+    "id": "BTPAMM-C001",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "All100 eligible investors had one unique allocation on each of2 closes; weights and arithmetic reconciled. HTTP close times include network time and do not establish internal ledger completion below80ms."
+  },
+  {
+    "id": "BTPAMM-C002",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "All500 eligible investor APIs and500 displayed UI allocation rows reconciled on one parent close. The500-follower data/setup and functional allocation branch ran successfully."
+  },
+  {
+    "id": "BTPAMM-C003",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "50 simultaneous investor joins raced3 rapid market orders. 50 joins committed, 3 positions; pool principal 5000. Internal transaction snapshot/isolation trace is not exposed."
+  },
+  {
+    "id": "BTPAMM-C015",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "100-investor allocation completeness and per-row arithmetic passed; both100 and500 runs retained detailed investor responses."
+  },
+  {
+    "id": "BTPAMM-O007",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Authorized admin adjustment credited exactly100 with the supplied audit remark; before 50003.74,after 50103.74. Corporate treasury debit and immutable ledger-note evidence are not exposed by this response."
+  },
+  {
+    "id": "PAMM-X07-09",
+    "previous": "BLOCKED",
+    "current": "PASS",
+    "actual": "After actual browser reload, one pending LIMIT retains the same order ID, BUY0.001,price45000 and PENDING state."
+  },
+  {
+    "id": "PAMM-X11-01",
+    "previous": "PARTIAL",
+    "current": "PASS",
+    "actual": "Contract 0%, investor running PNL 4.2, paid manager fee 0, payout 1004.2."
+  },
+  {
+    "id": "PAMM-X11-02",
+    "previous": "PARTIAL",
+    "current": "PASS",
+    "actual": "Contract 100%, investor running PNL 3.2, paid manager fee 3.2, payout 1000."
+  },
+  {
+    "id": "PAMM-X12-01",
+    "previous": "BLOCKED",
+    "current": "PASS",
+    "actual": "One UI BUY followed immediately by refresh reconciled to exactly one real-account position."
+  },
+  {
+    "id": "PAMM-X12-02",
+    "previous": "BLOCKED",
+    "current": "PASS",
+    "actual": "A single UI close followed immediately by refresh reconciled to a flat position list."
+  },
+  {
+    "id": "PAMM-X12-03",
+    "previous": "BLOCKED",
+    "current": "PASS",
+    "actual": "BUY was clicked once and the originating tab closed immediately. The remaining/reopened tab reconciled to one position."
+  },
+  {
+    "id": "PAMM-X12-04",
+    "previous": "BLOCKED",
+    "current": "PASS",
+    "actual": "Navigating to Funds and back retained the one authoritative position."
+  },
+  {
+    "id": "PAMM-X12-05",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Browser presentation was hidden while another authenticated session closed the position; the restored page reconciled flat. DOM visibility while hidden was visible."
+  },
+  {
+    "id": "PAMM-X12-06",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "The populated QA client account logged out successfully and returned to the public page; a subsequent separate QA investor sign-in succeeded. An in-flight read was not held at logout."
+  },
+  {
+    "id": "PAMM-X12-07",
+    "previous": "BLOCKED",
+    "current": "PASS",
+    "actual": "A second internal-browser tab loaded the same authorized QA account and reconciled its one open position."
+  },
+  {
+    "id": "PAMM-X12-08",
+    "previous": "BLOCKED",
+    "current": "PASS",
+    "actual": "An independently admin-issued chart session shows the same QA manager,500 active investors and217150 principal as the client session and API. Existing UI allocation reconciliation matched all500 rows."
+  },
+  {
+    "id": "PAMM-X12-09",
+    "previous": "BLOCKED",
+    "current": "PASS",
+    "actual": "After the parent closed through UI, follower reload showed one new allocation and running PNL-10.70, deposit1000 and exit estimate989.30; values reconcile to independent API."
+  },
+  {
+    "id": "PAMM-X12-10",
+    "previous": "BLOCKED",
+    "current": "PASS",
+    "actual": "Reload restored the same saved manager and widget. Unsaved draft edits did not change the saved name; the Settings toggle may retain an unsaved draft until reload."
+  },
+  {
+    "id": "PAMM-X15-01",
+    "previous": "PARTIAL",
+    "current": "PASS",
+    "actual": "Added a new PAMM widget through Add widget; both directory and subscription tabs mounted."
+  },
+  {
+    "id": "PAMM-X15-02",
+    "previous": "BLOCKED",
+    "current": "PASS",
+    "actual": "The published QA manager appeared in the nine-column directory with its 20% fee, 500 investors and pooled fund."
+  },
+  {
+    "id": "PAMM-X15-06",
+    "previous": "BLOCKED",
+    "current": "PASS",
+    "actual": "Reload restored the same saved manager and widget. Unsaved draft edits did not change the saved name; the Settings toggle may retain an unsaved draft until reload."
+  },
+  {
+    "id": "PAMM-X15-09",
+    "previous": "PARTIAL",
+    "current": "PASS",
+    "actual": "All 500 displayed allocation rows match parent PNL, investor shared PNL and running PNL from independent investor APIs. Names were matched through the admin fixture manifest."
+  },
+  {
+    "id": "PAMM-X15-10",
+    "previous": "BLOCKED",
+    "current": "PASS",
+    "actual": "Closing unmounted the PAMM controls; re-adding restored one widget and the same manager account."
+  },
+  {
+    "id": "PAMM-X16-04",
+    "previous": "BLOCKED",
+    "current": "INCONCLUSIVE",
+    "actual": "The current active subscription table shows manager,deposit,running,exit estimate and join time; the closed-history view shows manager fees and settlements. A standalone stored fee percentage was not observed in this UI."
+  },
+  {
+    "id": "PAMM-X16-07",
+    "previous": "BLOCKED",
+    "current": "PASS",
+    "actual": "Four closed settlements displayed. Manager A: deposit1000 returned1004.20 fee0; Manager B: deposit1000 returned1000 fee3.20. Both match the independent positive-fee boundary API evidence; two2000 no-trade exits preserved."
+  },
+  {
+    "id": "PAMM-X16-08",
+    "previous": "BLOCKED",
+    "current": "INCONCLUSIVE",
+    "actual": "The directory was exercised and correct QA manager rows located. Its PAMM panel exposes no dedicated search field in the observed view; the visible symbol search belongs to the watchlist."
+  },
+  {
+    "id": "PAMM-X16-09",
+    "previous": "BLOCKED",
+    "current": "PASS",
+    "actual": "After cancelling Leave and reloading, the same QA manager relationship remains active at deposit1000; no payout was submitted."
+  },
+  {
+    "id": "PAMM-X16-10",
+    "previous": "BLOCKED",
+    "current": "PASS",
+    "actual": "Used the client Account selector and Switch and reload confirmation to move from Alternate to Main. Alternate had zero real balance and no PAMM subscription; Main restored49003.74 real balance and its1000 subscription. No balance or membership mixing observed."
+  },
+  {
+    "id": "PAMM-X19-02",
+    "previous": "PARTIAL",
+    "current": "PASS",
+    "actual": "Public user ID finds the supplied master. Internal mem_ ID returned no match; this distinction is recorded as a fixture correction, not a product bug."
+  },
+  {
+    "id": "PAMM-X19-03",
+    "previous": "PARTIAL",
+    "current": "PASS",
+    "actual": "Email filter identifies the supplied follower correctly; internal mem_ IDs are not the UI public-user-ID field."
+  },
+  {
+    "id": "PAMM-X19-04",
+    "previous": "BLOCKED",
+    "current": "PASS",
+    "actual": "All9 admin trade rows match the selected QA manager OMS history on symbol, side, size, entry/exit and displayed PNL."
+  },
+  {
+    "id": "PAMM-X19-05",
+    "previous": "BLOCKED",
+    "current": "PASS",
+    "actual": "Admin Chart link opened the isolated investor workspace; its4 closed-history rows match the separate fee/rejoin API evidence, including1004.20 returned at0% and3.20 fee retained at100%."
+  },
+  {
+    "id": "PAMM-X19-06",
+    "previous": "BLOCKED",
+    "current": "PASS",
+    "actual": "An independently admin-issued chart session shows the same QA manager,500 active investors and217150 principal as the client session and API. Existing UI allocation reconciliation matched all500 rows."
+  },
+  {
+    "id": "PAMM-X19-07",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Admin-issued investor workspace exposes payout,manager fee,dates and trade drilldown, all matching API fee records. The full immutable ledger/subscription-ID audit linkage is not exposed in this UI."
+  },
+  {
+    "id": "PAMM-X19-08",
+    "previous": "BLOCKED",
+    "current": "PASS",
+    "actual": "Selecting the QA manager Primary account retained exactly its9 independently reconciled closed trades."
+  },
+  {
+    "id": "PAMM-X19-09",
+    "previous": "BLOCKED",
+    "current": "PASS",
+    "actual": "Native UTC date filter for18Nov excluded all9 QA trades; inclusive19Nov restored all9 exact rows. Initial synthetic fill did not commit native input and was corrected using accessibility."
+  },
+  {
+    "id": "PAMM-X19-10",
+    "previous": "BLOCKED",
+    "current": "PASS",
+    "actual": "Refreshed admin member data shows 5004.20 after the completed PAMM settlements, agreeing with the client trading balance."
+  },
+  {
+    "id": "PAMM-X20-09",
+    "previous": "PARTIAL",
+    "current": "PASS",
+    "actual": "An independently admin-issued chart session shows the same QA manager,500 active investors and217150 principal as the client session and API. Existing UI allocation reconciliation matched all500 rows."
+  },
+  {
+    "id": "PAMM-BND-001",
+    "previous": "FAIL",
+    "current": "PASS",
+    "actual": "Deposit0.001 accepted; no-trade payout0.00, running PNL0 and manager fee0. This matches the site developer contract requiring payout rounded to2 decimal places. The earlier proposed defect is withdrawn."
+  },
+  {
+    "id": "PAMM-BND-002",
+    "previous": "FAIL",
+    "current": "PASS",
+    "actual": "Deposit0.009 accepted; no-trade payout0.01, running PNL0 and manager fee0. This matches the site developer contract requiring payout rounded to2 decimal places. The earlier proposed defect is withdrawn."
+  }
+]

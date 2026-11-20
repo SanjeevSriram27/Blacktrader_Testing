@@ -1,0 +1,5 @@
+PAMM-X11-01 PARTIAL Nonprofitable investor settlement at 0 percent contract: PNL=-0.04, fee=0, payout=99.96.
+FEE-CASH-RECONCILIATION-0 PASS Pool cash decrease equals the paid investor amount; manager fee is retained within pool cash rather than assuming a separate credit.
+PAMM-X11-02 PARTIAL Nonprofitable investor settlement at 100 percent contract: PNL=-0.13, fee=0, payout=99.87.
+FEE-CASH-RECONCILIATION-100 PASS Pool cash decrease equals the paid investor amount; manager fee is retained within pool cash rather than assuming a separate credit.
+FEE-PROFIT-CLEANUP PASS Ten investors, 1000 pooled principal, 20 percent manager fee and no open/pending exposure restored.

@@ -1,0 +1,1 @@
+Real Hedging Set balance opens a numeric balance input, Set and Cancel. No reason field is exposed by this particular UI form. The separate documented admin API accepts a remark; treasury-ledger immutability must be separately evidenced.

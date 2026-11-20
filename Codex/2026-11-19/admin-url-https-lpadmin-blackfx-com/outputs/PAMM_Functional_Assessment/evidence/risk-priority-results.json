@@ -1,0 +1,1962 @@
+{
+  "results": [
+    {
+      "id": "BTPAMM-M003",
+      "status": "PASS",
+      "actual": "Two-position stop-out closed 1 position and halted with 1 remaining at margin 97.9997588372825%.",
+      "details": {
+        "before": {
+          "count": 2,
+          "funds": {
+            "balance": 2000,
+            "equity": 2002,
+            "free_margin": 1363.4270000000001,
+            "margin_call_level": 100,
+            "margin_level": 313.5115327456689,
+            "starting_balance": 2000,
+            "stop_out_level": 50,
+            "unrealized_pnl": 2,
+            "used_margin": 638.573
+          },
+          "positions": [
+            {
+              "algo_id": null,
+              "avg_entry_price": 63857.3,
+              "closed_at": null,
+              "comment": null,
+              "current_price": 63859.3,
+              "full_margin": 319.2865,
+              "group_id": null,
+              "margin_percent": 100,
+              "margin_used": 319.2865,
+              "market_order_id": "ord_0e87e3a6f0ad8d3cb0",
+              "net_qty": 0.5,
+              "oco_key": null,
+              "opened_at": "2026-11-19T11:29:55.279672Z",
+              "position_id": "pos_77558f610b30398471",
+              "side": "BUY",
+              "source": null,
+              "status": "OPEN",
+              "strategy_name": null,
+              "symbol": "BINANCE:BTCUSDT.P",
+              "tag": null,
+              "trailing": null,
+              "unrealized_pnl": 1
+            },
+            {
+              "algo_id": null,
+              "avg_entry_price": 63857.3,
+              "closed_at": null,
+              "comment": null,
+              "current_price": 63859.3,
+              "full_margin": 319.2865,
+              "group_id": null,
+              "margin_percent": 100,
+              "margin_used": 319.2865,
+              "market_order_id": "ord_f59cfdd00f8ddc4471",
+              "net_qty": 0.5,
+              "oco_key": null,
+              "opened_at": "2026-11-19T11:29:55.201577Z",
+              "position_id": "pos_2f4737248db66e2e72",
+              "side": "BUY",
+              "source": null,
+              "status": "OPEN",
+              "strategy_name": null,
+              "symbol": "BINANCE:BTCUSDT.P",
+              "tag": null,
+              "trailing": null,
+              "unrealized_pnl": 1
+            }
+          ],
+          "success": true,
+          "total_unrealized_pnl": 2
+        },
+        "most_unprofitable_at_last_observation": {
+          "algo_id": null,
+          "avg_entry_price": 63857.3,
+          "closed_at": null,
+          "comment": null,
+          "current_price": 63859.3,
+          "full_margin": 319.2865,
+          "group_id": null,
+          "margin_percent": 100,
+          "margin_used": 319.2865,
+          "market_order_id": "ord_f59cfdd00f8ddc4471",
+          "net_qty": 0.5,
+          "oco_key": null,
+          "opened_at": "2026-11-19T11:29:55.201577Z",
+          "position_id": "pos_2f4737248db66e2e72",
+          "side": "BUY",
+          "source": null,
+          "status": "OPEN",
+          "strategy_name": null,
+          "symbol": "BINANCE:BTCUSDT.P",
+          "tag": null,
+          "trailing": null,
+          "unrealized_pnl": 1
+        },
+        "adjustedCash": 310.9,
+        "after": {
+          "count": 1,
+          "funds": {
+            "balance": 311.9,
+            "equity": 312.9,
+            "free_margin": -6.386500000000012,
+            "margin_call_level": 100,
+            "margin_level": 97.9997588372825,
+            "starting_balance": 310.9,
+            "stop_out_level": 50,
+            "unrealized_pnl": 1,
+            "used_margin": 319.2865
+          },
+          "positions": [
+            {
+              "algo_id": null,
+              "avg_entry_price": 63857.3,
+              "closed_at": null,
+              "comment": null,
+              "current_price": 63859.3,
+              "full_margin": 319.2865,
+              "group_id": null,
+              "margin_percent": 100,
+              "margin_used": 319.2865,
+              "market_order_id": "ord_f59cfdd00f8ddc4471",
+              "net_qty": 0.5,
+              "oco_key": null,
+              "opened_at": "2026-11-19T11:29:55.201577Z",
+              "position_id": "pos_2f4737248db66e2e72",
+              "side": "BUY",
+              "source": null,
+              "status": "OPEN",
+              "strategy_name": null,
+              "symbol": "BINANCE:BTCUSDT.P",
+              "tag": null,
+              "trailing": null,
+              "unrealized_pnl": 1
+            }
+          ],
+          "success": true,
+          "total_unrealized_pnl": 1
+        },
+        "closed": [
+          {
+            "history_id": 1423595,
+            "order_id": "ord_381b855eb43553bd6c",
+            "position_id": "pos_77558f610b30398471",
+            "symbol": "BINANCE:BTCUSDT.P",
+            "side": "BUY",
+            "qty": 0.5,
+            "entry_price": 63857.3,
+            "exit_price": 63859.3,
+            "realized_pnl": 1,
+            "executed_at": "2026-11-19T11:30:11.543514Z",
+            "exit_type": "MARKET",
+            "exit_source": "stop_out",
+            "entry_type": "MARKET",
+            "opened_at": "2026-11-19T11:29:55.279672Z"
+          }
+        ],
+        "polls": [
+          {
+            "count": 1,
+            "funds": {
+              "balance": 311.9,
+              "equity": 312.9,
+              "free_margin": -6.386500000000012,
+              "margin_call_level": 100,
+              "margin_level": 97.9997588372825,
+              "starting_balance": 310.9,
+              "stop_out_level": 50,
+              "unrealized_pnl": 1,
+              "used_margin": 319.2865
+            },
+            "positions": [
+              {
+                "algo_id": null,
+                "avg_entry_price": 63857.3,
+                "closed_at": null,
+                "comment": null,
+                "current_price": 63859.3,
+                "full_margin": 319.2865,
+                "group_id": null,
+                "margin_percent": 100,
+                "margin_used": 319.2865,
+                "market_order_id": "ord_f59cfdd00f8ddc4471",
+                "net_qty": 0.5,
+                "oco_key": null,
+                "opened_at": "2026-11-19T11:29:55.201577Z",
+                "position_id": "pos_2f4737248db66e2e72",
+                "side": "BUY",
+                "source": null,
+                "status": "OPEN",
+                "strategy_name": null,
+                "symbol": "BINANCE:BTCUSDT.P",
+                "tag": null,
+                "trailing": null,
+                "unrealized_pnl": 1
+              }
+            ],
+            "success": true,
+            "total_unrealized_pnl": 1
+          }
+        ]
+      },
+      "at": "2026-11-19T11:30:11.730Z"
+    },
+    {
+      "id": "STOPOUT-LOSS-PRIORITY",
+      "status": "INCONCLUSIVE",
+      "actual": "Stop-out closed the last-observed most unprofitable position.",
+      "details": {
+        "expected": "pos_2f4737248db66e2e72",
+        "closed": [
+          "pos_77558f610b30398471"
+        ]
+      },
+      "at": "2026-11-19T11:30:11.732Z"
+    },
+    {
+      "id": "RISK-PRIORITY-CLEANUP",
+      "status": "PASS",
+      "actual": "Priority-test account is flat.",
+      "details": {
+        "positions": []
+      },
+      "at": "2026-11-19T11:30:12.138Z"
+    }
+  ],
+  "calls": [
+    {
+      "ep": "/v1/oms/real/positions",
+      "method": "GET",
+      "response": {
+        "status": 200,
+        "j": {
+          "count": 0,
+          "funds": {
+            "balance": 19000.05,
+            "equity": 19000.05,
+            "free_margin": 19000.05,
+            "margin_call_level": 100,
+            "margin_level": null,
+            "starting_balance": 19000,
+            "stop_out_level": 50,
+            "unrealized_pnl": 0,
+            "used_margin": 0
+          },
+          "positions": [],
+          "success": true,
+          "total_unrealized_pnl": 0
+        },
+        "text": "{\"count\":0,\"funds\":{\"balance\":19000.05,\"equity\":19000.05,\"free_margin\":19000.05,\"margin_call_level\":100,\"margin_level\":null,\"starting_balance\":19000,\"stop_out_level\":50,\"unrealized_pnl\":0,\"used_margin\":0},\"positions\":[],\"success\":true,\"total_unrealized_pnl\":0}\n",
+        "ms": 52
+      }
+    },
+    {
+      "ep": "/admin/api/members/mem_550a4e91e0ce62a93f/balance",
+      "method": "POST",
+      "body": {
+        "instance": "real",
+        "balance": 1000,
+        "remark": "Isolated PAMM functional risk/fee scenario"
+      },
+      "response": {
+        "status": 200,
+        "j": {
+          "balance": 1000,
+          "delta": -18000.05,
+          "funds": {
+            "balance": 1000,
+            "equity": 1000,
+            "free_margin": 1000,
+            "margin_call_level": 100,
+            "margin_level": null,
+            "starting_balance": 1000,
+            "stop_out_level": 50,
+            "unrealized_pnl": 0,
+            "used_margin": 0
+          },
+          "instance": "real",
+          "success": true
+        },
+        "text": "{\"balance\":1000,\"delta\":-18000.05,\"funds\":{\"balance\":1000,\"equity\":1000,\"free_margin\":1000,\"margin_call_level\":100,\"margin_level\":null,\"starting_balance\":1000,\"stop_out_level\":50,\"unrealized_pnl\":0,\"used_margin\":0},\"instance\":\"real\",\"success\":true}\n",
+        "ms": 53
+      }
+    },
+    {
+      "ep": "/v1/oms/real/pamm/join",
+      "method": "POST",
+      "body": {
+        "master_client_id": "mem_550a4e91e0ce62a93f",
+        "deposit": 1000,
+        "operation_key": "49b66673-210c-4b7e-9dd3-31e1cd840918"
+      },
+      "response": {
+        "status": 200,
+        "j": {
+          "subscription": {
+            "pamm_id": "pmm_a26bd3e85cc115a168",
+            "master_client_id": "mem_550a4e91e0ce62a93f",
+            "follower_client_id": "mem_593e2db012d725b4b5",
+            "instance": "real",
+            "deposit": 1000,
+            "share_percent": 20,
+            "running_pnl": 0,
+            "status": "active",
+            "joined_at": "2026-11-19T11:29:55.130186Z"
+          },
+          "success": true
+        },
+        "text": "{\"subscription\":{\"pamm_id\":\"pmm_a26bd3e85cc115a168\",\"master_client_id\":\"mem_550a4e91e0ce62a93f\",\"follower_client_id\":\"mem_593e2db012d725b4b5\",\"instance\":\"real\",\"deposit\":1000,\"share_percent\":20,\"running_pnl\":0,\"status\":\"active\",\"joined_at\":\"2026-11-19T11:29:55.130186Z\"},\"success\":true}\n",
+        "ms": 219
+      }
+    },
+    {
+      "ep": "/v1/oms/real/orders",
+      "method": "POST",
+      "body": {
+        "symbol": "BINANCE:BTCUSDT.P",
+        "qty": 0.5,
+        "side": "BUY",
+        "type": "MARKET"
+      },
+      "response": {
+        "status": 200,
+        "j": {
+          "order": {
+            "order_id": "ord_f59cfdd00f8ddc4471",
+            "market_order_id": "ord_f59cfdd00f8ddc4471",
+            "symbol": "BINANCE:BTCUSDT.P",
+            "side": "BUY",
+            "type": "MARKET",
+            "state": "FILLED",
+            "requested_qty": 0.5,
+            "filled_qty": 0.5,
+            "avg_fill_price": 63857.3,
+            "created_at": "2026-11-19T11:29:55.200345714Z",
+            "updated_at": "2026-11-19T11:29:55.200345714Z"
+          },
+          "position": {
+            "position_id": "pos_2f4737248db66e2e72",
+            "market_order_id": "ord_f59cfdd00f8ddc4471",
+            "symbol": "BINANCE:BTCUSDT.P",
+            "side": "BUY",
+            "net_qty": 0.5,
+            "avg_entry_price": 63857.3,
+            "full_margin": 319.2865,
+            "margin_percent": 100,
+            "margin_used": 319.2865,
+            "entry_markup": 0,
+            "status": "OPEN",
+            "opened_at": "2026-11-19T11:29:55.201577Z"
+          },
+          "success": true
+        },
+        "text": "{\"order\":{\"order_id\":\"ord_f59cfdd00f8ddc4471\",\"market_order_id\":\"ord_f59cfdd00f8ddc4471\",\"symbol\":\"BINANCE:BTCUSDT.P\",\"side\":\"BUY\",\"type\":\"MARKET\",\"state\":\"FILLED\",\"requested_qty\":0.5,\"filled_qty\":0.5,\"avg_fill_price\":63857.3,\"created_at\":\"2026-11-19T11:29:55.200345714Z\",\"updated_at\":\"2026-11-19T11:29:55.200345714Z\"},\"position\":{\"position_id\":\"pos_2f4737248db66e2e72\",\"market_order_id\":\"ord_f59cfdd00f8ddc4471\",\"symbol\":\"BINANCE:BTCUSDT.P\",\"side\":\"BUY\",\"net_qty\":0.5,\"avg_entry_price\":63857.3,\"full_margin\":319.2865,\"margin_percent\":100,\"margin_used\":319.2865,\"entry_markup\":0,\"status\":\"OPEN\",\"opened_at\":\"2026-11-19T11:29:55.201577Z\"},\"success\":true}\n",
+        "ms": 92
+      }
+    },
+    {
+      "ep": "/v1/oms/real/orders",
+      "method": "POST",
+      "body": {
+        "symbol": "BINANCE:BTCUSDT.P",
+        "qty": 0.5,
+        "side": "BUY",
+        "type": "MARKET"
+      },
+      "response": {
+        "status": 200,
+        "j": {
+          "order": {
+            "order_id": "ord_0e87e3a6f0ad8d3cb0",
+            "market_order_id": "ord_0e87e3a6f0ad8d3cb0",
+            "symbol": "BINANCE:BTCUSDT.P",
+            "side": "BUY",
+            "type": "MARKET",
+            "state": "FILLED",
+            "requested_qty": 0.5,
+            "filled_qty": 0.5,
+            "avg_fill_price": 63857.3,
+            "created_at": "2026-11-19T11:29:55.279578639Z",
+            "updated_at": "2026-11-19T11:29:55.279578639Z"
+          },
+          "position": {
+            "position_id": "pos_77558f610b30398471",
+            "market_order_id": "ord_0e87e3a6f0ad8d3cb0",
+            "symbol": "BINANCE:BTCUSDT.P",
+            "side": "BUY",
+            "net_qty": 0.5,
+            "avg_entry_price": 63857.3,
+            "full_margin": 319.2865,
+            "margin_percent": 100,
+            "margin_used": 319.2865,
+            "entry_markup": 0,
+            "status": "OPEN",
+            "opened_at": "2026-11-19T11:29:55.279672Z"
+          },
+          "success": true
+        },
+        "text": "{\"order\":{\"order_id\":\"ord_0e87e3a6f0ad8d3cb0\",\"market_order_id\":\"ord_0e87e3a6f0ad8d3cb0\",\"symbol\":\"BINANCE:BTCUSDT.P\",\"side\":\"BUY\",\"type\":\"MARKET\",\"state\":\"FILLED\",\"requested_qty\":0.5,\"filled_qty\":0.5,\"avg_fill_price\":63857.3,\"created_at\":\"2026-11-19T11:29:55.279578639Z\",\"updated_at\":\"2026-11-19T11:29:55.279578639Z\"},\"position\":{\"position_id\":\"pos_77558f610b30398471\",\"market_order_id\":\"ord_0e87e3a6f0ad8d3cb0\",\"symbol\":\"BINANCE:BTCUSDT.P\",\"side\":\"BUY\",\"net_qty\":0.5,\"avg_entry_price\":63857.3,\"full_margin\":319.2865,\"margin_percent\":100,\"margin_used\":319.2865,\"entry_markup\":0,\"status\":\"OPEN\",\"opened_at\":\"2026-11-19T11:29:55.279672Z\"},\"success\":true}\n",
+        "ms": 59
+      }
+    },
+    {
+      "ep": "/v1/oms/real/positions",
+      "method": "GET",
+      "response": {
+        "status": 200,
+        "j": {
+          "count": 2,
+          "funds": {
+            "balance": 2000,
+            "equity": 1999.8999999999942,
+            "free_margin": 1361.3269999999943,
+            "margin_call_level": 100,
+            "margin_level": 313.1826744945361,
+            "starting_balance": 2000,
+            "stop_out_level": 50,
+            "unrealized_pnl": -0.10000000000582077,
+            "used_margin": 638.573
+          },
+          "positions": [
+            {
+              "algo_id": null,
+              "avg_entry_price": 63857.3,
+              "closed_at": null,
+              "comment": null,
+              "current_price": 63857.2,
+              "full_margin": 319.2865,
+              "group_id": null,
+              "margin_percent": 100,
+              "margin_used": 319.2865,
+              "market_order_id": "ord_0e87e3a6f0ad8d3cb0",
+              "net_qty": 0.5,
+              "oco_key": null,
+              "opened_at": "2026-11-19T11:29:55.279672Z",
+              "position_id": "pos_77558f610b30398471",
+              "side": "BUY",
+              "source": null,
+              "status": "OPEN",
+              "strategy_name": null,
+              "symbol": "BINANCE:BTCUSDT.P",
+              "tag": null,
+              "trailing": null,
+              "unrealized_pnl": -0.05000000000291038
+            },
+            {
+              "algo_id": null,
+              "avg_entry_price": 63857.3,
+              "closed_at": null,
+              "comment": null,
+              "current_price": 63857.2,
+              "full_margin": 319.2865,
+              "group_id": null,
+              "margin_percent": 100,
+              "margin_used": 319.2865,
+              "market_order_id": "ord_f59cfdd00f8ddc4471",
+              "net_qty": 0.5,
+              "oco_key": null,
+              "opened_at": "2026-11-19T11:29:55.201577Z",
+              "position_id": "pos_2f4737248db66e2e72",
+              "side": "BUY",
+              "source": null,
+              "status": "OPEN",
+              "strategy_name": null,
+              "symbol": "BINANCE:BTCUSDT.P",
+              "tag": null,
+              "trailing": null,
+              "unrealized_pnl": -0.05000000000291038
+            }
+          ],
+          "success": true,
+          "total_unrealized_pnl": -0.10000000000582077
+        },
+        "text": "{\"count\":2,\"funds\":{\"balance\":2000,\"equity\":1999.8999999999942,\"free_margin\":1361.3269999999943,\"margin_call_level\":100,\"margin_level\":313.1826744945361,\"starting_balance\":2000,\"stop_out_level\":50,\"unrealized_pnl\":-0.10000000000582077,\"used_margin\":638.573},\"positions\":[{\"algo_id\":null,\"avg_entry_price\":63857.3,\"closed_at\":null,\"comment\":null,\"current_price\":63857.2,\"full_margin\":319.2865,\"group_id\":null,\"margin_percent\":100,\"margin_used\":319.2865,\"market_order_id\":\"ord_0e87e3a6f0ad8d3cb0\",\"net_qty\":0.5,\"oco_key\":null,\"opened_at\":\"2026-11-19T11:29:55.279672Z\",\"position_id\":\"pos_77558f610b30398471\",\"side\":\"BUY\",\"source\":null,\"status\":\"OPEN\",\"strategy_name\":null,\"symbol\":\"BINANCE:BTCUSDT.P\",\"tag\":null,\"trailing\":null,\"unrealized_pnl\":-0.05000000000291038},{\"algo_id\":null,\"avg_entry_price\":63857.3,\"closed_at\":null,\"comment\":null,\"current_price\":63857.2,\"full_margin\":319.2865,\"group_id\":null,\"margin_percent\":100,\"margin_used\":319.2865,\"market_order_id\":\"ord_f59cfdd00f8ddc4471\",\"net_qty\":0.5,\"oco_key\":null,\"opened_at\":\"2026-11-19T11:29:55.201577Z\",\"position_id\":\"pos_2f4737248db66e2e72\",\"side\":\"BUY\",\"source\":null,\"status\":\"OPEN\",\"strategy_name\":null,\"symbol\":\"BINANCE:BTCUSDT.P\",\"tag\":null,\"trailing\":null,\"unrealized_pnl\":-0.05000000000291038}],\"success\":true,\"total_unrealized_pnl\":-0.10000000000582077}\n",
+        "ms": 52
+      }
+    },
+    {
+      "ep": "/v1/oms/real/positions",
+      "method": "GET",
+      "response": {
+        "status": 200,
+        "j": {
+          "count": 2,
+          "funds": {
+            "balance": 2000,
+            "equity": 2000,
+            "free_margin": 1361.4270000000001,
+            "margin_call_level": 100,
+            "margin_level": 313.19833441125763,
+            "starting_balance": 2000,
+            "stop_out_level": 50,
+            "unrealized_pnl": 0,
+            "used_margin": 638.573
+          },
+          "positions": [
+            {
+              "algo_id": null,
+              "avg_entry_price": 63857.3,
+              "closed_at": null,
+              "comment": null,
+              "current_price": 63857.3,
+              "full_margin": 319.2865,
+              "group_id": null,
+              "margin_percent": 100,
+              "margin_used": 319.2865,
+              "market_order_id": "ord_0e87e3a6f0ad8d3cb0",
+              "net_qty": 0.5,
+              "oco_key": null,
+              "opened_at": "2026-11-19T11:29:55.279672Z",
+              "position_id": "pos_77558f610b30398471",
+              "side": "BUY",
+              "source": null,
+              "status": "OPEN",
+              "strategy_name": null,
+              "symbol": "BINANCE:BTCUSDT.P",
+              "tag": null,
+              "trailing": null,
+              "unrealized_pnl": 0
+            },
+            {
+              "algo_id": null,
+              "avg_entry_price": 63857.3,
+              "closed_at": null,
+              "comment": null,
+              "current_price": 63857.3,
+              "full_margin": 319.2865,
+              "group_id": null,
+              "margin_percent": 100,
+              "margin_used": 319.2865,
+              "market_order_id": "ord_f59cfdd00f8ddc4471",
+              "net_qty": 0.5,
+              "oco_key": null,
+              "opened_at": "2026-11-19T11:29:55.201577Z",
+              "position_id": "pos_2f4737248db66e2e72",
+              "side": "BUY",
+              "source": null,
+              "status": "OPEN",
+              "strategy_name": null,
+              "symbol": "BINANCE:BTCUSDT.P",
+              "tag": null,
+              "trailing": null,
+              "unrealized_pnl": 0
+            }
+          ],
+          "success": true,
+          "total_unrealized_pnl": 0
+        },
+        "text": "{\"count\":2,\"funds\":{\"balance\":2000,\"equity\":2000,\"free_margin\":1361.4270000000001,\"margin_call_level\":100,\"margin_level\":313.19833441125763,\"starting_balance\":2000,\"stop_out_level\":50,\"unrealized_pnl\":0,\"used_margin\":638.573},\"positions\":[{\"algo_id\":null,\"avg_entry_price\":63857.3,\"closed_at\":null,\"comment\":null,\"current_price\":63857.3,\"full_margin\":319.2865,\"group_id\":null,\"margin_percent\":100,\"margin_used\":319.2865,\"market_order_id\":\"ord_0e87e3a6f0ad8d3cb0\",\"net_qty\":0.5,\"oco_key\":null,\"opened_at\":\"2026-11-19T11:29:55.279672Z\",\"position_id\":\"pos_77558f610b30398471\",\"side\":\"BUY\",\"source\":null,\"status\":\"OPEN\",\"strategy_name\":null,\"symbol\":\"BINANCE:BTCUSDT.P\",\"tag\":null,\"trailing\":null,\"unrealized_pnl\":0},{\"algo_id\":null,\"avg_entry_price\":63857.3,\"closed_at\":null,\"comment\":null,\"current_price\":63857.3,\"full_margin\":319.2865,\"group_id\":null,\"margin_percent\":100,\"margin_used\":319.2865,\"market_order_id\":\"ord_f59cfdd00f8ddc4471\",\"net_qty\":0.5,\"oco_key\":null,\"opened_at\":\"2026-11-19T11:29:55.201577Z\",\"position_id\":\"pos_2f4737248db66e2e72\",\"side\":\"BUY\",\"source\":null,\"status\":\"OPEN\",\"strategy_name\":null,\"symbol\":\"BINANCE:BTCUSDT.P\",\"tag\":null,\"trailing\":null,\"unrealized_pnl\":0}],\"success\":true,\"total_unrealized_pnl\":0}\n",
+        "ms": 90
+      }
+    },
+    {
+      "ep": "/v1/oms/real/positions",
+      "method": "GET",
+      "response": {
+        "status": 200,
+        "j": {
+          "count": 2,
+          "funds": {
+            "balance": 2000,
+            "equity": 2000,
+            "free_margin": 1361.4270000000001,
+            "margin_call_level": 100,
+            "margin_level": 313.19833441125763,
+            "starting_balance": 2000,
+            "stop_out_level": 50,
+            "unrealized_pnl": 0,
+            "used_margin": 638.573
+          },
+          "positions": [
+            {
+              "algo_id": null,
+              "avg_entry_price": 63857.3,
+              "closed_at": null,
+              "comment": null,
+              "current_price": 63857.3,
+              "full_margin": 319.2865,
+              "group_id": null,
+              "margin_percent": 100,
+              "margin_used": 319.2865,
+              "market_order_id": "ord_0e87e3a6f0ad8d3cb0",
+              "net_qty": 0.5,
+              "oco_key": null,
+              "opened_at": "2026-11-19T11:29:55.279672Z",
+              "position_id": "pos_77558f610b30398471",
+              "side": "BUY",
+              "source": null,
+              "status": "OPEN",
+              "strategy_name": null,
+              "symbol": "BINANCE:BTCUSDT.P",
+              "tag": null,
+              "trailing": null,
+              "unrealized_pnl": 0
+            },
+            {
+              "algo_id": null,
+              "avg_entry_price": 63857.3,
+              "closed_at": null,
+              "comment": null,
+              "current_price": 63857.3,
+              "full_margin": 319.2865,
+              "group_id": null,
+              "margin_percent": 100,
+              "margin_used": 319.2865,
+              "market_order_id": "ord_f59cfdd00f8ddc4471",
+              "net_qty": 0.5,
+              "oco_key": null,
+              "opened_at": "2026-11-19T11:29:55.201577Z",
+              "position_id": "pos_2f4737248db66e2e72",
+              "side": "BUY",
+              "source": null,
+              "status": "OPEN",
+              "strategy_name": null,
+              "symbol": "BINANCE:BTCUSDT.P",
+              "tag": null,
+              "trailing": null,
+              "unrealized_pnl": 0
+            }
+          ],
+          "success": true,
+          "total_unrealized_pnl": 0
+        },
+        "text": "{\"count\":2,\"funds\":{\"balance\":2000,\"equity\":2000,\"free_margin\":1361.4270000000001,\"margin_call_level\":100,\"margin_level\":313.19833441125763,\"starting_balance\":2000,\"stop_out_level\":50,\"unrealized_pnl\":0,\"used_margin\":638.573},\"positions\":[{\"algo_id\":null,\"avg_entry_price\":63857.3,\"closed_at\":null,\"comment\":null,\"current_price\":63857.3,\"full_margin\":319.2865,\"group_id\":null,\"margin_percent\":100,\"margin_used\":319.2865,\"market_order_id\":\"ord_0e87e3a6f0ad8d3cb0\",\"net_qty\":0.5,\"oco_key\":null,\"opened_at\":\"2026-11-19T11:29:55.279672Z\",\"position_id\":\"pos_77558f610b30398471\",\"side\":\"BUY\",\"source\":null,\"status\":\"OPEN\",\"strategy_name\":null,\"symbol\":\"BINANCE:BTCUSDT.P\",\"tag\":null,\"trailing\":null,\"unrealized_pnl\":0},{\"algo_id\":null,\"avg_entry_price\":63857.3,\"closed_at\":null,\"comment\":null,\"current_price\":63857.3,\"full_margin\":319.2865,\"group_id\":null,\"margin_percent\":100,\"margin_used\":319.2865,\"market_order_id\":\"ord_f59cfdd00f8ddc4471\",\"net_qty\":0.5,\"oco_key\":null,\"opened_at\":\"2026-11-19T11:29:55.201577Z\",\"position_id\":\"pos_2f4737248db66e2e72\",\"side\":\"BUY\",\"source\":null,\"status\":\"OPEN\",\"strategy_name\":null,\"symbol\":\"BINANCE:BTCUSDT.P\",\"tag\":null,\"trailing\":null,\"unrealized_pnl\":0}],\"success\":true,\"total_unrealized_pnl\":0}\n",
+        "ms": 84
+      }
+    },
+    {
+      "ep": "/v1/oms/real/positions",
+      "method": "GET",
+      "response": {
+        "status": 200,
+        "j": {
+          "count": 2,
+          "funds": {
+            "balance": 2000,
+            "equity": 2005.2999999999956,
+            "free_margin": 1366.7269999999958,
+            "margin_call_level": 100,
+            "margin_level": 314.02830999744674,
+            "starting_balance": 2000,
+            "stop_out_level": 50,
+            "unrealized_pnl": 5.299999999995634,
+            "used_margin": 638.573
+          },
+          "positions": [
+            {
+              "algo_id": null,
+              "avg_entry_price": 63857.3,
+              "closed_at": null,
+              "comment": null,
+              "current_price": 63862.6,
+              "full_margin": 319.2865,
+              "group_id": null,
+              "margin_percent": 100,
+              "margin_used": 319.2865,
+              "market_order_id": "ord_0e87e3a6f0ad8d3cb0",
+              "net_qty": 0.5,
+              "oco_key": null,
+              "opened_at": "2026-11-19T11:29:55.279672Z",
+              "position_id": "pos_77558f610b30398471",
+              "side": "BUY",
+              "source": null,
+              "status": "OPEN",
+              "strategy_name": null,
+              "symbol": "BINANCE:BTCUSDT.P",
+              "tag": null,
+              "trailing": null,
+              "unrealized_pnl": 2.649999999997817
+            },
+            {
+              "algo_id": null,
+              "avg_entry_price": 63857.3,
+              "closed_at": null,
+              "comment": null,
+              "current_price": 63862.6,
+              "full_margin": 319.2865,
+              "group_id": null,
+              "margin_percent": 100,
+              "margin_used": 319.2865,
+              "market_order_id": "ord_f59cfdd00f8ddc4471",
+              "net_qty": 0.5,
+              "oco_key": null,
+              "opened_at": "2026-11-19T11:29:55.201577Z",
+              "position_id": "pos_2f4737248db66e2e72",
+              "side": "BUY",
+              "source": null,
+              "status": "OPEN",
+              "strategy_name": null,
+              "symbol": "BINANCE:BTCUSDT.P",
+              "tag": null,
+              "trailing": null,
+              "unrealized_pnl": 2.649999999997817
+            }
+          ],
+          "success": true,
+          "total_unrealized_pnl": 5.299999999995634
+        },
+        "text": "{\"count\":2,\"funds\":{\"balance\":2000,\"equity\":2005.2999999999956,\"free_margin\":1366.7269999999958,\"margin_call_level\":100,\"margin_level\":314.02830999744674,\"starting_balance\":2000,\"stop_out_level\":50,\"unrealized_pnl\":5.299999999995634,\"used_margin\":638.573},\"positions\":[{\"algo_id\":null,\"avg_entry_price\":63857.3,\"closed_at\":null,\"comment\":null,\"current_price\":63862.6,\"full_margin\":319.2865,\"group_id\":null,\"margin_percent\":100,\"margin_used\":319.2865,\"market_order_id\":\"ord_0e87e3a6f0ad8d3cb0\",\"net_qty\":0.5,\"oco_key\":null,\"opened_at\":\"2026-11-19T11:29:55.279672Z\",\"position_id\":\"pos_77558f610b30398471\",\"side\":\"BUY\",\"source\":null,\"status\":\"OPEN\",\"strategy_name\":null,\"symbol\":\"BINANCE:BTCUSDT.P\",\"tag\":null,\"trailing\":null,\"unrealized_pnl\":2.649999999997817},{\"algo_id\":null,\"avg_entry_price\":63857.3,\"closed_at\":null,\"comment\":null,\"current_price\":63862.6,\"full_margin\":319.2865,\"group_id\":null,\"margin_percent\":100,\"margin_used\":319.2865,\"market_order_id\":\"ord_f59cfdd00f8ddc4471\",\"net_qty\":0.5,\"oco_key\":null,\"opened_at\":\"2026-11-19T11:29:55.201577Z\",\"position_id\":\"pos_2f4737248db66e2e72\",\"side\":\"BUY\",\"source\":null,\"status\":\"OPEN\",\"strategy_name\":null,\"symbol\":\"BINANCE:BTCUSDT.P\",\"tag\":null,\"trailing\":null,\"unrealized_pnl\":2.649999999997817}],\"success\":true,\"total_unrealized_pnl\":5.299999999995634}\n",
+        "ms": 70
+      }
+    },
+    {
+      "ep": "/v1/oms/real/positions",
+      "method": "GET",
+      "response": {
+        "status": 200,
+        "j": {
+          "count": 2,
+          "funds": {
+            "balance": 2000,
+            "equity": 2005.2999999999956,
+            "free_margin": 1366.7269999999958,
+            "margin_call_level": 100,
+            "margin_level": 314.02830999744674,
+            "starting_balance": 2000,
+            "stop_out_level": 50,
+            "unrealized_pnl": 5.299999999995634,
+            "used_margin": 638.573
+          },
+          "positions": [
+            {
+              "algo_id": null,
+              "avg_entry_price": 63857.3,
+              "closed_at": null,
+              "comment": null,
+              "current_price": 63862.6,
+              "full_margin": 319.2865,
+              "group_id": null,
+              "margin_percent": 100,
+              "margin_used": 319.2865,
+              "market_order_id": "ord_0e87e3a6f0ad8d3cb0",
+              "net_qty": 0.5,
+              "oco_key": null,
+              "opened_at": "2026-11-19T11:29:55.279672Z",
+              "position_id": "pos_77558f610b30398471",
+              "side": "BUY",
+              "source": null,
+              "status": "OPEN",
+              "strategy_name": null,
+              "symbol": "BINANCE:BTCUSDT.P",
+              "tag": null,
+              "trailing": null,
+              "unrealized_pnl": 2.649999999997817
+            },
+            {
+              "algo_id": null,
+              "avg_entry_price": 63857.3,
+              "closed_at": null,
+              "comment": null,
+              "current_price": 63862.6,
+              "full_margin": 319.2865,
+              "group_id": null,
+              "margin_percent": 100,
+              "margin_used": 319.2865,
+              "market_order_id": "ord_f59cfdd00f8ddc4471",
+              "net_qty": 0.5,
+              "oco_key": null,
+              "opened_at": "2026-11-19T11:29:55.201577Z",
+              "position_id": "pos_2f4737248db66e2e72",
+              "side": "BUY",
+              "source": null,
+              "status": "OPEN",
+              "strategy_name": null,
+              "symbol": "BINANCE:BTCUSDT.P",
+              "tag": null,
+              "trailing": null,
+              "unrealized_pnl": 2.649999999997817
+            }
+          ],
+          "success": true,
+          "total_unrealized_pnl": 5.299999999995634
+        },
+        "text": "{\"count\":2,\"funds\":{\"balance\":2000,\"equity\":2005.2999999999956,\"free_margin\":1366.7269999999958,\"margin_call_level\":100,\"margin_level\":314.02830999744674,\"starting_balance\":2000,\"stop_out_level\":50,\"unrealized_pnl\":5.299999999995634,\"used_margin\":638.573},\"positions\":[{\"algo_id\":null,\"avg_entry_price\":63857.3,\"closed_at\":null,\"comment\":null,\"current_price\":63862.6,\"full_margin\":319.2865,\"group_id\":null,\"margin_percent\":100,\"margin_used\":319.2865,\"market_order_id\":\"ord_0e87e3a6f0ad8d3cb0\",\"net_qty\":0.5,\"oco_key\":null,\"opened_at\":\"2026-11-19T11:29:55.279672Z\",\"position_id\":\"pos_77558f610b30398471\",\"side\":\"BUY\",\"source\":null,\"status\":\"OPEN\",\"strategy_name\":null,\"symbol\":\"BINANCE:BTCUSDT.P\",\"tag\":null,\"trailing\":null,\"unrealized_pnl\":2.649999999997817},{\"algo_id\":null,\"avg_entry_price\":63857.3,\"closed_at\":null,\"comment\":null,\"current_price\":63862.6,\"full_margin\":319.2865,\"group_id\":null,\"margin_percent\":100,\"margin_used\":319.2865,\"market_order_id\":\"ord_f59cfdd00f8ddc4471\",\"net_qty\":0.5,\"oco_key\":null,\"opened_at\":\"2026-11-19T11:29:55.201577Z\",\"position_id\":\"pos_2f4737248db66e2e72\",\"side\":\"BUY\",\"source\":null,\"status\":\"OPEN\",\"strategy_name\":null,\"symbol\":\"BINANCE:BTCUSDT.P\",\"tag\":null,\"trailing\":null,\"unrealized_pnl\":2.649999999997817}],\"success\":true,\"total_unrealized_pnl\":5.299999999995634}\n",
+        "ms": 49
+      }
+    },
+    {
+      "ep": "/v1/oms/real/positions",
+      "method": "GET",
+      "response": {
+        "status": 200,
+        "j": {
+          "count": 2,
+          "funds": {
+            "balance": 2000,
+            "equity": 2005.2999999999956,
+            "free_margin": 1366.7269999999958,
+            "margin_call_level": 100,
+            "margin_level": 314.02830999744674,
+            "starting_balance": 2000,
+            "stop_out_level": 50,
+            "unrealized_pnl": 5.299999999995634,
+            "used_margin": 638.573
+          },
+          "positions": [
+            {
+              "algo_id": null,
+              "avg_entry_price": 63857.3,
+              "closed_at": null,
+              "comment": null,
+              "current_price": 63862.6,
+              "full_margin": 319.2865,
+              "group_id": null,
+              "margin_percent": 100,
+              "margin_used": 319.2865,
+              "market_order_id": "ord_0e87e3a6f0ad8d3cb0",
+              "net_qty": 0.5,
+              "oco_key": null,
+              "opened_at": "2026-11-19T11:29:55.279672Z",
+              "position_id": "pos_77558f610b30398471",
+              "side": "BUY",
+              "source": null,
+              "status": "OPEN",
+              "strategy_name": null,
+              "symbol": "BINANCE:BTCUSDT.P",
+              "tag": null,
+              "trailing": null,
+              "unrealized_pnl": 2.649999999997817
+            },
+            {
+              "algo_id": null,
+              "avg_entry_price": 63857.3,
+              "closed_at": null,
+              "comment": null,
+              "current_price": 63862.6,
+              "full_margin": 319.2865,
+              "group_id": null,
+              "margin_percent": 100,
+              "margin_used": 319.2865,
+              "market_order_id": "ord_f59cfdd00f8ddc4471",
+              "net_qty": 0.5,
+              "oco_key": null,
+              "opened_at": "2026-11-19T11:29:55.201577Z",
+              "position_id": "pos_2f4737248db66e2e72",
+              "side": "BUY",
+              "source": null,
+              "status": "OPEN",
+              "strategy_name": null,
+              "symbol": "BINANCE:BTCUSDT.P",
+              "tag": null,
+              "trailing": null,
+              "unrealized_pnl": 2.649999999997817
+            }
+          ],
+          "success": true,
+          "total_unrealized_pnl": 5.299999999995634
+        },
+        "text": "{\"count\":2,\"funds\":{\"balance\":2000,\"equity\":2005.2999999999956,\"free_margin\":1366.7269999999958,\"margin_call_level\":100,\"margin_level\":314.02830999744674,\"starting_balance\":2000,\"stop_out_level\":50,\"unrealized_pnl\":5.299999999995634,\"used_margin\":638.573},\"positions\":[{\"algo_id\":null,\"avg_entry_price\":63857.3,\"closed_at\":null,\"comment\":null,\"current_price\":63862.6,\"full_margin\":319.2865,\"group_id\":null,\"margin_percent\":100,\"margin_used\":319.2865,\"market_order_id\":\"ord_0e87e3a6f0ad8d3cb0\",\"net_qty\":0.5,\"oco_key\":null,\"opened_at\":\"2026-11-19T11:29:55.279672Z\",\"position_id\":\"pos_77558f610b30398471\",\"side\":\"BUY\",\"source\":null,\"status\":\"OPEN\",\"strategy_name\":null,\"symbol\":\"BINANCE:BTCUSDT.P\",\"tag\":null,\"trailing\":null,\"unrealized_pnl\":2.649999999997817},{\"algo_id\":null,\"avg_entry_price\":63857.3,\"closed_at\":null,\"comment\":null,\"current_price\":63862.6,\"full_margin\":319.2865,\"group_id\":null,\"margin_percent\":100,\"margin_used\":319.2865,\"market_order_id\":\"ord_f59cfdd00f8ddc4471\",\"net_qty\":0.5,\"oco_key\":null,\"opened_at\":\"2026-11-19T11:29:55.201577Z\",\"position_id\":\"pos_2f4737248db66e2e72\",\"side\":\"BUY\",\"source\":null,\"status\":\"OPEN\",\"strategy_name\":null,\"symbol\":\"BINANCE:BTCUSDT.P\",\"tag\":null,\"trailing\":null,\"unrealized_pnl\":2.649999999997817}],\"success\":true,\"total_unrealized_pnl\":5.299999999995634}\n",
+        "ms": 66
+      }
+    },
+    {
+      "ep": "/v1/oms/real/positions",
+      "method": "GET",
+      "response": {
+        "status": 200,
+        "j": {
+          "count": 2,
+          "funds": {
+            "balance": 2000,
+            "equity": 2021,
+            "free_margin": 1382.4270000000001,
+            "margin_call_level": 100,
+            "margin_level": 316.4869169225758,
+            "starting_balance": 2000,
+            "stop_out_level": 50,
+            "unrealized_pnl": 21,
+            "used_margin": 638.573
+          },
+          "positions": [
+            {
+              "algo_id": null,
+              "avg_entry_price": 63857.3,
+              "closed_at": null,
+              "comment": null,
+              "current_price": 63878.3,
+              "full_margin": 319.2865,
+              "group_id": null,
+              "margin_percent": 100,
+              "margin_used": 319.2865,
+              "market_order_id": "ord_0e87e3a6f0ad8d3cb0",
+              "net_qty": 0.5,
+              "oco_key": null,
+              "opened_at": "2026-11-19T11:29:55.279672Z",
+              "position_id": "pos_77558f610b30398471",
+              "side": "BUY",
+              "source": null,
+              "status": "OPEN",
+              "strategy_name": null,
+              "symbol": "BINANCE:BTCUSDT.P",
+              "tag": null,
+              "trailing": null,
+              "unrealized_pnl": 10.5
+            },
+            {
+              "algo_id": null,
+              "avg_entry_price": 63857.3,
+              "closed_at": null,
+              "comment": null,
+              "current_price": 63878.3,
+              "full_margin": 319.2865,
+              "group_id": null,
+              "margin_percent": 100,
+              "margin_used": 319.2865,
+              "market_order_id": "ord_f59cfdd00f8ddc4471",
+              "net_qty": 0.5,
+              "oco_key": null,
+              "opened_at": "2026-11-19T11:29:55.201577Z",
+              "position_id": "pos_2f4737248db66e2e72",
+              "side": "BUY",
+              "source": null,
+              "status": "OPEN",
+              "strategy_name": null,
+              "symbol": "BINANCE:BTCUSDT.P",
+              "tag": null,
+              "trailing": null,
+              "unrealized_pnl": 10.5
+            }
+          ],
+          "success": true,
+          "total_unrealized_pnl": 21
+        },
+        "text": "{\"count\":2,\"funds\":{\"balance\":2000,\"equity\":2021,\"free_margin\":1382.4270000000001,\"margin_call_level\":100,\"margin_level\":316.4869169225758,\"starting_balance\":2000,\"stop_out_level\":50,\"unrealized_pnl\":21,\"used_margin\":638.573},\"positions\":[{\"algo_id\":null,\"avg_entry_price\":63857.3,\"closed_at\":null,\"comment\":null,\"current_price\":63878.3,\"full_margin\":319.2865,\"group_id\":null,\"margin_percent\":100,\"margin_used\":319.2865,\"market_order_id\":\"ord_0e87e3a6f0ad8d3cb0\",\"net_qty\":0.5,\"oco_key\":null,\"opened_at\":\"2026-11-19T11:29:55.279672Z\",\"position_id\":\"pos_77558f610b30398471\",\"side\":\"BUY\",\"source\":null,\"status\":\"OPEN\",\"strategy_name\":null,\"symbol\":\"BINANCE:BTCUSDT.P\",\"tag\":null,\"trailing\":null,\"unrealized_pnl\":10.5},{\"algo_id\":null,\"avg_entry_price\":63857.3,\"closed_at\":null,\"comment\":null,\"current_price\":63878.3,\"full_margin\":319.2865,\"group_id\":null,\"margin_percent\":100,\"margin_used\":319.2865,\"market_order_id\":\"ord_f59cfdd00f8ddc4471\",\"net_qty\":0.5,\"oco_key\":null,\"opened_at\":\"2026-11-19T11:29:55.201577Z\",\"position_id\":\"pos_2f4737248db66e2e72\",\"side\":\"BUY\",\"source\":null,\"status\":\"OPEN\",\"strategy_name\":null,\"symbol\":\"BINANCE:BTCUSDT.P\",\"tag\":null,\"trailing\":null,\"unrealized_pnl\":10.5}],\"success\":true,\"total_unrealized_pnl\":21}\n",
+        "ms": 68
+      }
+    },
+    {
+      "ep": "/v1/oms/real/positions",
+      "method": "GET",
+      "response": {
+        "status": 200,
+        "j": {
+          "count": 2,
+          "funds": {
+            "balance": 2000,
+            "equity": 2021.0999999999985,
+            "free_margin": 1382.5269999999987,
+            "margin_call_level": 100,
+            "margin_level": 316.5025768392962,
+            "starting_balance": 2000,
+            "stop_out_level": 50,
+            "unrealized_pnl": 21.099999999998545,
+            "used_margin": 638.573
+          },
+          "positions": [
+            {
+              "algo_id": null,
+              "avg_entry_price": 63857.3,
+              "closed_at": null,
+              "comment": null,
+              "current_price": 63878.4,
+              "full_margin": 319.2865,
+              "group_id": null,
+              "margin_percent": 100,
+              "margin_used": 319.2865,
+              "market_order_id": "ord_0e87e3a6f0ad8d3cb0",
+              "net_qty": 0.5,
+              "oco_key": null,
+              "opened_at": "2026-11-19T11:29:55.279672Z",
+              "position_id": "pos_77558f610b30398471",
+              "side": "BUY",
+              "source": null,
+              "status": "OPEN",
+              "strategy_name": null,
+              "symbol": "BINANCE:BTCUSDT.P",
+              "tag": null,
+              "trailing": null,
+              "unrealized_pnl": 10.549999999999272
+            },
+            {
+              "algo_id": null,
+              "avg_entry_price": 63857.3,
+              "closed_at": null,
+              "comment": null,
+              "current_price": 63878.4,
+              "full_margin": 319.2865,
+              "group_id": null,
+              "margin_percent": 100,
+              "margin_used": 319.2865,
+              "market_order_id": "ord_f59cfdd00f8ddc4471",
+              "net_qty": 0.5,
+              "oco_key": null,
+              "opened_at": "2026-11-19T11:29:55.201577Z",
+              "position_id": "pos_2f4737248db66e2e72",
+              "side": "BUY",
+              "source": null,
+              "status": "OPEN",
+              "strategy_name": null,
+              "symbol": "BINANCE:BTCUSDT.P",
+              "tag": null,
+              "trailing": null,
+              "unrealized_pnl": 10.549999999999272
+            }
+          ],
+          "success": true,
+          "total_unrealized_pnl": 21.099999999998545
+        },
+        "text": "{\"count\":2,\"funds\":{\"balance\":2000,\"equity\":2021.0999999999985,\"free_margin\":1382.5269999999987,\"margin_call_level\":100,\"margin_level\":316.5025768392962,\"starting_balance\":2000,\"stop_out_level\":50,\"unrealized_pnl\":21.099999999998545,\"used_margin\":638.573},\"positions\":[{\"algo_id\":null,\"avg_entry_price\":63857.3,\"closed_at\":null,\"comment\":null,\"current_price\":63878.4,\"full_margin\":319.2865,\"group_id\":null,\"margin_percent\":100,\"margin_used\":319.2865,\"market_order_id\":\"ord_0e87e3a6f0ad8d3cb0\",\"net_qty\":0.5,\"oco_key\":null,\"opened_at\":\"2026-11-19T11:29:55.279672Z\",\"position_id\":\"pos_77558f610b30398471\",\"side\":\"BUY\",\"source\":null,\"status\":\"OPEN\",\"strategy_name\":null,\"symbol\":\"BINANCE:BTCUSDT.P\",\"tag\":null,\"trailing\":null,\"unrealized_pnl\":10.549999999999272},{\"algo_id\":null,\"avg_entry_price\":63857.3,\"closed_at\":null,\"comment\":null,\"current_price\":63878.4,\"full_margin\":319.2865,\"group_id\":null,\"margin_percent\":100,\"margin_used\":319.2865,\"market_order_id\":\"ord_f59cfdd00f8ddc4471\",\"net_qty\":0.5,\"oco_key\":null,\"opened_at\":\"2026-11-19T11:29:55.201577Z\",\"position_id\":\"pos_2f4737248db66e2e72\",\"side\":\"BUY\",\"source\":null,\"status\":\"OPEN\",\"strategy_name\":null,\"symbol\":\"BINANCE:BTCUSDT.P\",\"tag\":null,\"trailing\":null,\"unrealized_pnl\":10.549999999999272}],\"success\":true,\"total_unrealized_pnl\":21.099999999998545}\n",
+        "ms": 61
+      }
+    },
+    {
+      "ep": "/v1/oms/real/positions",
+      "method": "GET",
+      "response": {
+        "status": 200,
+        "j": {
+          "count": 2,
+          "funds": {
+            "balance": 2000,
+            "equity": 2021,
+            "free_margin": 1382.4270000000001,
+            "margin_call_level": 100,
+            "margin_level": 316.4869169225758,
+            "starting_balance": 2000,
+            "stop_out_level": 50,
+            "unrealized_pnl": 21,
+            "used_margin": 638.573
+          },
+          "positions": [
+            {
+              "algo_id": null,
+              "avg_entry_price": 63857.3,
+              "closed_at": null,
+              "comment": null,
+              "current_price": 63878.3,
+              "full_margin": 319.2865,
+              "group_id": null,
+              "margin_percent": 100,
+              "margin_used": 319.2865,
+              "market_order_id": "ord_0e87e3a6f0ad8d3cb0",
+              "net_qty": 0.5,
+              "oco_key": null,
+              "opened_at": "2026-11-19T11:29:55.279672Z",
+              "position_id": "pos_77558f610b30398471",
+              "side": "BUY",
+              "source": null,
+              "status": "OPEN",
+              "strategy_name": null,
+              "symbol": "BINANCE:BTCUSDT.P",
+              "tag": null,
+              "trailing": null,
+              "unrealized_pnl": 10.5
+            },
+            {
+              "algo_id": null,
+              "avg_entry_price": 63857.3,
+              "closed_at": null,
+              "comment": null,
+              "current_price": 63878.3,
+              "full_margin": 319.2865,
+              "group_id": null,
+              "margin_percent": 100,
+              "margin_used": 319.2865,
+              "market_order_id": "ord_f59cfdd00f8ddc4471",
+              "net_qty": 0.5,
+              "oco_key": null,
+              "opened_at": "2026-11-19T11:29:55.201577Z",
+              "position_id": "pos_2f4737248db66e2e72",
+              "side": "BUY",
+              "source": null,
+              "status": "OPEN",
+              "strategy_name": null,
+              "symbol": "BINANCE:BTCUSDT.P",
+              "tag": null,
+              "trailing": null,
+              "unrealized_pnl": 10.5
+            }
+          ],
+          "success": true,
+          "total_unrealized_pnl": 21
+        },
+        "text": "{\"count\":2,\"funds\":{\"balance\":2000,\"equity\":2021,\"free_margin\":1382.4270000000001,\"margin_call_level\":100,\"margin_level\":316.4869169225758,\"starting_balance\":2000,\"stop_out_level\":50,\"unrealized_pnl\":21,\"used_margin\":638.573},\"positions\":[{\"algo_id\":null,\"avg_entry_price\":63857.3,\"closed_at\":null,\"comment\":null,\"current_price\":63878.3,\"full_margin\":319.2865,\"group_id\":null,\"margin_percent\":100,\"margin_used\":319.2865,\"market_order_id\":\"ord_0e87e3a6f0ad8d3cb0\",\"net_qty\":0.5,\"oco_key\":null,\"opened_at\":\"2026-11-19T11:29:55.279672Z\",\"position_id\":\"pos_77558f610b30398471\",\"side\":\"BUY\",\"source\":null,\"status\":\"OPEN\",\"strategy_name\":null,\"symbol\":\"BINANCE:BTCUSDT.P\",\"tag\":null,\"trailing\":null,\"unrealized_pnl\":10.5},{\"algo_id\":null,\"avg_entry_price\":63857.3,\"closed_at\":null,\"comment\":null,\"current_price\":63878.3,\"full_margin\":319.2865,\"group_id\":null,\"margin_percent\":100,\"margin_used\":319.2865,\"market_order_id\":\"ord_f59cfdd00f8ddc4471\",\"net_qty\":0.5,\"oco_key\":null,\"opened_at\":\"2026-11-19T11:29:55.201577Z\",\"position_id\":\"pos_2f4737248db66e2e72\",\"side\":\"BUY\",\"source\":null,\"status\":\"OPEN\",\"strategy_name\":null,\"symbol\":\"BINANCE:BTCUSDT.P\",\"tag\":null,\"trailing\":null,\"unrealized_pnl\":10.5}],\"success\":true,\"total_unrealized_pnl\":21}\n",
+        "ms": 51
+      }
+    },
+    {
+      "ep": "/v1/oms/real/positions",
+      "method": "GET",
+      "response": {
+        "status": 200,
+        "j": {
+          "count": 2,
+          "funds": {
+            "balance": 2000,
+            "equity": 2008.2999999999956,
+            "free_margin": 1369.7269999999958,
+            "margin_call_level": 100,
+            "margin_level": 314.4981074990636,
+            "starting_balance": 2000,
+            "stop_out_level": 50,
+            "unrealized_pnl": 8.299999999995634,
+            "used_margin": 638.573
+          },
+          "positions": [
+            {
+              "algo_id": null,
+              "avg_entry_price": 63857.3,
+              "closed_at": null,
+              "comment": null,
+              "current_price": 63865.6,
+              "full_margin": 319.2865,
+              "group_id": null,
+              "margin_percent": 100,
+              "margin_used": 319.2865,
+              "market_order_id": "ord_0e87e3a6f0ad8d3cb0",
+              "net_qty": 0.5,
+              "oco_key": null,
+              "opened_at": "2026-11-19T11:29:55.279672Z",
+              "position_id": "pos_77558f610b30398471",
+              "side": "BUY",
+              "source": null,
+              "status": "OPEN",
+              "strategy_name": null,
+              "symbol": "BINANCE:BTCUSDT.P",
+              "tag": null,
+              "trailing": null,
+              "unrealized_pnl": 4.149999999997817
+            },
+            {
+              "algo_id": null,
+              "avg_entry_price": 63857.3,
+              "closed_at": null,
+              "comment": null,
+              "current_price": 63865.6,
+              "full_margin": 319.2865,
+              "group_id": null,
+              "margin_percent": 100,
+              "margin_used": 319.2865,
+              "market_order_id": "ord_f59cfdd00f8ddc4471",
+              "net_qty": 0.5,
+              "oco_key": null,
+              "opened_at": "2026-11-19T11:29:55.201577Z",
+              "position_id": "pos_2f4737248db66e2e72",
+              "side": "BUY",
+              "source": null,
+              "status": "OPEN",
+              "strategy_name": null,
+              "symbol": "BINANCE:BTCUSDT.P",
+              "tag": null,
+              "trailing": null,
+              "unrealized_pnl": 4.149999999997817
+            }
+          ],
+          "success": true,
+          "total_unrealized_pnl": 8.299999999995634
+        },
+        "text": "{\"count\":2,\"funds\":{\"balance\":2000,\"equity\":2008.2999999999956,\"free_margin\":1369.7269999999958,\"margin_call_level\":100,\"margin_level\":314.4981074990636,\"starting_balance\":2000,\"stop_out_level\":50,\"unrealized_pnl\":8.299999999995634,\"used_margin\":638.573},\"positions\":[{\"algo_id\":null,\"avg_entry_price\":63857.3,\"closed_at\":null,\"comment\":null,\"current_price\":63865.6,\"full_margin\":319.2865,\"group_id\":null,\"margin_percent\":100,\"margin_used\":319.2865,\"market_order_id\":\"ord_0e87e3a6f0ad8d3cb0\",\"net_qty\":0.5,\"oco_key\":null,\"opened_at\":\"2026-11-19T11:29:55.279672Z\",\"position_id\":\"pos_77558f610b30398471\",\"side\":\"BUY\",\"source\":null,\"status\":\"OPEN\",\"strategy_name\":null,\"symbol\":\"BINANCE:BTCUSDT.P\",\"tag\":null,\"trailing\":null,\"unrealized_pnl\":4.149999999997817},{\"algo_id\":null,\"avg_entry_price\":63857.3,\"closed_at\":null,\"comment\":null,\"current_price\":63865.6,\"full_margin\":319.2865,\"group_id\":null,\"margin_percent\":100,\"margin_used\":319.2865,\"market_order_id\":\"ord_f59cfdd00f8ddc4471\",\"net_qty\":0.5,\"oco_key\":null,\"opened_at\":\"2026-11-19T11:29:55.201577Z\",\"position_id\":\"pos_2f4737248db66e2e72\",\"side\":\"BUY\",\"source\":null,\"status\":\"OPEN\",\"strategy_name\":null,\"symbol\":\"BINANCE:BTCUSDT.P\",\"tag\":null,\"trailing\":null,\"unrealized_pnl\":4.149999999997817}],\"success\":true,\"total_unrealized_pnl\":8.299999999995634}\n",
+        "ms": 48
+      }
+    },
+    {
+      "ep": "/v1/oms/real/positions",
+      "method": "GET",
+      "response": {
+        "status": 200,
+        "j": {
+          "count": 2,
+          "funds": {
+            "balance": 2000,
+            "equity": 2002,
+            "free_margin": 1363.4270000000001,
+            "margin_call_level": 100,
+            "margin_level": 313.5115327456689,
+            "starting_balance": 2000,
+            "stop_out_level": 50,
+            "unrealized_pnl": 2,
+            "used_margin": 638.573
+          },
+          "positions": [
+            {
+              "algo_id": null,
+              "avg_entry_price": 63857.3,
+              "closed_at": null,
+              "comment": null,
+              "current_price": 63859.3,
+              "full_margin": 319.2865,
+              "group_id": null,
+              "margin_percent": 100,
+              "margin_used": 319.2865,
+              "market_order_id": "ord_0e87e3a6f0ad8d3cb0",
+              "net_qty": 0.5,
+              "oco_key": null,
+              "opened_at": "2026-11-19T11:29:55.279672Z",
+              "position_id": "pos_77558f610b30398471",
+              "side": "BUY",
+              "source": null,
+              "status": "OPEN",
+              "strategy_name": null,
+              "symbol": "BINANCE:BTCUSDT.P",
+              "tag": null,
+              "trailing": null,
+              "unrealized_pnl": 1
+            },
+            {
+              "algo_id": null,
+              "avg_entry_price": 63857.3,
+              "closed_at": null,
+              "comment": null,
+              "current_price": 63859.3,
+              "full_margin": 319.2865,
+              "group_id": null,
+              "margin_percent": 100,
+              "margin_used": 319.2865,
+              "market_order_id": "ord_f59cfdd00f8ddc4471",
+              "net_qty": 0.5,
+              "oco_key": null,
+              "opened_at": "2026-11-19T11:29:55.201577Z",
+              "position_id": "pos_2f4737248db66e2e72",
+              "side": "BUY",
+              "source": null,
+              "status": "OPEN",
+              "strategy_name": null,
+              "symbol": "BINANCE:BTCUSDT.P",
+              "tag": null,
+              "trailing": null,
+              "unrealized_pnl": 1
+            }
+          ],
+          "success": true,
+          "total_unrealized_pnl": 2
+        },
+        "text": "{\"count\":2,\"funds\":{\"balance\":2000,\"equity\":2002,\"free_margin\":1363.4270000000001,\"margin_call_level\":100,\"margin_level\":313.5115327456689,\"starting_balance\":2000,\"stop_out_level\":50,\"unrealized_pnl\":2,\"used_margin\":638.573},\"positions\":[{\"algo_id\":null,\"avg_entry_price\":63857.3,\"closed_at\":null,\"comment\":null,\"current_price\":63859.3,\"full_margin\":319.2865,\"group_id\":null,\"margin_percent\":100,\"margin_used\":319.2865,\"market_order_id\":\"ord_0e87e3a6f0ad8d3cb0\",\"net_qty\":0.5,\"oco_key\":null,\"opened_at\":\"2026-11-19T11:29:55.279672Z\",\"position_id\":\"pos_77558f610b30398471\",\"side\":\"BUY\",\"source\":null,\"status\":\"OPEN\",\"strategy_name\":null,\"symbol\":\"BINANCE:BTCUSDT.P\",\"tag\":null,\"trailing\":null,\"unrealized_pnl\":1},{\"algo_id\":null,\"avg_entry_price\":63857.3,\"closed_at\":null,\"comment\":null,\"current_price\":63859.3,\"full_margin\":319.2865,\"group_id\":null,\"margin_percent\":100,\"margin_used\":319.2865,\"market_order_id\":\"ord_f59cfdd00f8ddc4471\",\"net_qty\":0.5,\"oco_key\":null,\"opened_at\":\"2026-11-19T11:29:55.201577Z\",\"position_id\":\"pos_2f4737248db66e2e72\",\"side\":\"BUY\",\"source\":null,\"status\":\"OPEN\",\"strategy_name\":null,\"symbol\":\"BINANCE:BTCUSDT.P\",\"tag\":null,\"trailing\":null,\"unrealized_pnl\":1}],\"success\":true,\"total_unrealized_pnl\":2}\n",
+        "ms": 69
+      }
+    },
+    {
+      "ep": "/v1/oms/real/positions",
+      "method": "GET",
+      "response": {
+        "status": 200,
+        "j": {
+          "count": 2,
+          "funds": {
+            "balance": 2000,
+            "equity": 2002,
+            "free_margin": 1363.4270000000001,
+            "margin_call_level": 100,
+            "margin_level": 313.5115327456689,
+            "starting_balance": 2000,
+            "stop_out_level": 50,
+            "unrealized_pnl": 2,
+            "used_margin": 638.573
+          },
+          "positions": [
+            {
+              "algo_id": null,
+              "avg_entry_price": 63857.3,
+              "closed_at": null,
+              "comment": null,
+              "current_price": 63859.3,
+              "full_margin": 319.2865,
+              "group_id": null,
+              "margin_percent": 100,
+              "margin_used": 319.2865,
+              "market_order_id": "ord_0e87e3a6f0ad8d3cb0",
+              "net_qty": 0.5,
+              "oco_key": null,
+              "opened_at": "2026-11-19T11:29:55.279672Z",
+              "position_id": "pos_77558f610b30398471",
+              "side": "BUY",
+              "source": null,
+              "status": "OPEN",
+              "strategy_name": null,
+              "symbol": "BINANCE:BTCUSDT.P",
+              "tag": null,
+              "trailing": null,
+              "unrealized_pnl": 1
+            },
+            {
+              "algo_id": null,
+              "avg_entry_price": 63857.3,
+              "closed_at": null,
+              "comment": null,
+              "current_price": 63859.3,
+              "full_margin": 319.2865,
+              "group_id": null,
+              "margin_percent": 100,
+              "margin_used": 319.2865,
+              "market_order_id": "ord_f59cfdd00f8ddc4471",
+              "net_qty": 0.5,
+              "oco_key": null,
+              "opened_at": "2026-11-19T11:29:55.201577Z",
+              "position_id": "pos_2f4737248db66e2e72",
+              "side": "BUY",
+              "source": null,
+              "status": "OPEN",
+              "strategy_name": null,
+              "symbol": "BINANCE:BTCUSDT.P",
+              "tag": null,
+              "trailing": null,
+              "unrealized_pnl": 1
+            }
+          ],
+          "success": true,
+          "total_unrealized_pnl": 2
+        },
+        "text": "{\"count\":2,\"funds\":{\"balance\":2000,\"equity\":2002,\"free_margin\":1363.4270000000001,\"margin_call_level\":100,\"margin_level\":313.5115327456689,\"starting_balance\":2000,\"stop_out_level\":50,\"unrealized_pnl\":2,\"used_margin\":638.573},\"positions\":[{\"algo_id\":null,\"avg_entry_price\":63857.3,\"closed_at\":null,\"comment\":null,\"current_price\":63859.3,\"full_margin\":319.2865,\"group_id\":null,\"margin_percent\":100,\"margin_used\":319.2865,\"market_order_id\":\"ord_0e87e3a6f0ad8d3cb0\",\"net_qty\":0.5,\"oco_key\":null,\"opened_at\":\"2026-11-19T11:29:55.279672Z\",\"position_id\":\"pos_77558f610b30398471\",\"side\":\"BUY\",\"source\":null,\"status\":\"OPEN\",\"strategy_name\":null,\"symbol\":\"BINANCE:BTCUSDT.P\",\"tag\":null,\"trailing\":null,\"unrealized_pnl\":1},{\"algo_id\":null,\"avg_entry_price\":63857.3,\"closed_at\":null,\"comment\":null,\"current_price\":63859.3,\"full_margin\":319.2865,\"group_id\":null,\"margin_percent\":100,\"margin_used\":319.2865,\"market_order_id\":\"ord_f59cfdd00f8ddc4471\",\"net_qty\":0.5,\"oco_key\":null,\"opened_at\":\"2026-11-19T11:29:55.201577Z\",\"position_id\":\"pos_2f4737248db66e2e72\",\"side\":\"BUY\",\"source\":null,\"status\":\"OPEN\",\"strategy_name\":null,\"symbol\":\"BINANCE:BTCUSDT.P\",\"tag\":null,\"trailing\":null,\"unrealized_pnl\":1}],\"success\":true,\"total_unrealized_pnl\":2}\n",
+        "ms": 69
+      }
+    },
+    {
+      "ep": "/v1/oms/real/positions",
+      "method": "GET",
+      "response": {
+        "status": 200,
+        "j": {
+          "count": 2,
+          "funds": {
+            "balance": 2000,
+            "equity": 2001.8999999999942,
+            "free_margin": 1363.3269999999943,
+            "margin_call_level": 100,
+            "margin_level": 313.49587282894737,
+            "starting_balance": 2000,
+            "stop_out_level": 50,
+            "unrealized_pnl": 1.8999999999941792,
+            "used_margin": 638.573
+          },
+          "positions": [
+            {
+              "algo_id": null,
+              "avg_entry_price": 63857.3,
+              "closed_at": null,
+              "comment": null,
+              "current_price": 63859.2,
+              "full_margin": 319.2865,
+              "group_id": null,
+              "margin_percent": 100,
+              "margin_used": 319.2865,
+              "market_order_id": "ord_0e87e3a6f0ad8d3cb0",
+              "net_qty": 0.5,
+              "oco_key": null,
+              "opened_at": "2026-11-19T11:29:55.279672Z",
+              "position_id": "pos_77558f610b30398471",
+              "side": "BUY",
+              "source": null,
+              "status": "OPEN",
+              "strategy_name": null,
+              "symbol": "BINANCE:BTCUSDT.P",
+              "tag": null,
+              "trailing": null,
+              "unrealized_pnl": 0.9499999999970896
+            },
+            {
+              "algo_id": null,
+              "avg_entry_price": 63857.3,
+              "closed_at": null,
+              "comment": null,
+              "current_price": 63859.2,
+              "full_margin": 319.2865,
+              "group_id": null,
+              "margin_percent": 100,
+              "margin_used": 319.2865,
+              "market_order_id": "ord_f59cfdd00f8ddc4471",
+              "net_qty": 0.5,
+              "oco_key": null,
+              "opened_at": "2026-11-19T11:29:55.201577Z",
+              "position_id": "pos_2f4737248db66e2e72",
+              "side": "BUY",
+              "source": null,
+              "status": "OPEN",
+              "strategy_name": null,
+              "symbol": "BINANCE:BTCUSDT.P",
+              "tag": null,
+              "trailing": null,
+              "unrealized_pnl": 0.9499999999970896
+            }
+          ],
+          "success": true,
+          "total_unrealized_pnl": 1.8999999999941792
+        },
+        "text": "{\"count\":2,\"funds\":{\"balance\":2000,\"equity\":2001.8999999999942,\"free_margin\":1363.3269999999943,\"margin_call_level\":100,\"margin_level\":313.49587282894737,\"starting_balance\":2000,\"stop_out_level\":50,\"unrealized_pnl\":1.8999999999941792,\"used_margin\":638.573},\"positions\":[{\"algo_id\":null,\"avg_entry_price\":63857.3,\"closed_at\":null,\"comment\":null,\"current_price\":63859.2,\"full_margin\":319.2865,\"group_id\":null,\"margin_percent\":100,\"margin_used\":319.2865,\"market_order_id\":\"ord_0e87e3a6f0ad8d3cb0\",\"net_qty\":0.5,\"oco_key\":null,\"opened_at\":\"2026-11-19T11:29:55.279672Z\",\"position_id\":\"pos_77558f610b30398471\",\"side\":\"BUY\",\"source\":null,\"status\":\"OPEN\",\"strategy_name\":null,\"symbol\":\"BINANCE:BTCUSDT.P\",\"tag\":null,\"trailing\":null,\"unrealized_pnl\":0.9499999999970896},{\"algo_id\":null,\"avg_entry_price\":63857.3,\"closed_at\":null,\"comment\":null,\"current_price\":63859.2,\"full_margin\":319.2865,\"group_id\":null,\"margin_percent\":100,\"margin_used\":319.2865,\"market_order_id\":\"ord_f59cfdd00f8ddc4471\",\"net_qty\":0.5,\"oco_key\":null,\"opened_at\":\"2026-11-19T11:29:55.201577Z\",\"position_id\":\"pos_2f4737248db66e2e72\",\"side\":\"BUY\",\"source\":null,\"status\":\"OPEN\",\"strategy_name\":null,\"symbol\":\"BINANCE:BTCUSDT.P\",\"tag\":null,\"trailing\":null,\"unrealized_pnl\":0.9499999999970896}],\"success\":true,\"total_unrealized_pnl\":1.8999999999941792}\n",
+        "ms": 53
+      }
+    },
+    {
+      "ep": "/v1/oms/real/positions",
+      "method": "GET",
+      "response": {
+        "status": 200,
+        "j": {
+          "count": 2,
+          "funds": {
+            "balance": 2000,
+            "equity": 2001.8999999999942,
+            "free_margin": 1363.3269999999943,
+            "margin_call_level": 100,
+            "margin_level": 313.49587282894737,
+            "starting_balance": 2000,
+            "stop_out_level": 50,
+            "unrealized_pnl": 1.8999999999941792,
+            "used_margin": 638.573
+          },
+          "positions": [
+            {
+              "algo_id": null,
+              "avg_entry_price": 63857.3,
+              "closed_at": null,
+              "comment": null,
+              "current_price": 63859.2,
+              "full_margin": 319.2865,
+              "group_id": null,
+              "margin_percent": 100,
+              "margin_used": 319.2865,
+              "market_order_id": "ord_0e87e3a6f0ad8d3cb0",
+              "net_qty": 0.5,
+              "oco_key": null,
+              "opened_at": "2026-11-19T11:29:55.279672Z",
+              "position_id": "pos_77558f610b30398471",
+              "side": "BUY",
+              "source": null,
+              "status": "OPEN",
+              "strategy_name": null,
+              "symbol": "BINANCE:BTCUSDT.P",
+              "tag": null,
+              "trailing": null,
+              "unrealized_pnl": 0.9499999999970896
+            },
+            {
+              "algo_id": null,
+              "avg_entry_price": 63857.3,
+              "closed_at": null,
+              "comment": null,
+              "current_price": 63859.2,
+              "full_margin": 319.2865,
+              "group_id": null,
+              "margin_percent": 100,
+              "margin_used": 319.2865,
+              "market_order_id": "ord_f59cfdd00f8ddc4471",
+              "net_qty": 0.5,
+              "oco_key": null,
+              "opened_at": "2026-11-19T11:29:55.201577Z",
+              "position_id": "pos_2f4737248db66e2e72",
+              "side": "BUY",
+              "source": null,
+              "status": "OPEN",
+              "strategy_name": null,
+              "symbol": "BINANCE:BTCUSDT.P",
+              "tag": null,
+              "trailing": null,
+              "unrealized_pnl": 0.9499999999970896
+            }
+          ],
+          "success": true,
+          "total_unrealized_pnl": 1.8999999999941792
+        },
+        "text": "{\"count\":2,\"funds\":{\"balance\":2000,\"equity\":2001.8999999999942,\"free_margin\":1363.3269999999943,\"margin_call_level\":100,\"margin_level\":313.49587282894737,\"starting_balance\":2000,\"stop_out_level\":50,\"unrealized_pnl\":1.8999999999941792,\"used_margin\":638.573},\"positions\":[{\"algo_id\":null,\"avg_entry_price\":63857.3,\"closed_at\":null,\"comment\":null,\"current_price\":63859.2,\"full_margin\":319.2865,\"group_id\":null,\"margin_percent\":100,\"margin_used\":319.2865,\"market_order_id\":\"ord_0e87e3a6f0ad8d3cb0\",\"net_qty\":0.5,\"oco_key\":null,\"opened_at\":\"2026-11-19T11:29:55.279672Z\",\"position_id\":\"pos_77558f610b30398471\",\"side\":\"BUY\",\"source\":null,\"status\":\"OPEN\",\"strategy_name\":null,\"symbol\":\"BINANCE:BTCUSDT.P\",\"tag\":null,\"trailing\":null,\"unrealized_pnl\":0.9499999999970896},{\"algo_id\":null,\"avg_entry_price\":63857.3,\"closed_at\":null,\"comment\":null,\"current_price\":63859.2,\"full_margin\":319.2865,\"group_id\":null,\"margin_percent\":100,\"margin_used\":319.2865,\"market_order_id\":\"ord_f59cfdd00f8ddc4471\",\"net_qty\":0.5,\"oco_key\":null,\"opened_at\":\"2026-11-19T11:29:55.201577Z\",\"position_id\":\"pos_2f4737248db66e2e72\",\"side\":\"BUY\",\"source\":null,\"status\":\"OPEN\",\"strategy_name\":null,\"symbol\":\"BINANCE:BTCUSDT.P\",\"tag\":null,\"trailing\":null,\"unrealized_pnl\":0.9499999999970896}],\"success\":true,\"total_unrealized_pnl\":1.8999999999941792}\n",
+        "ms": 55
+      }
+    },
+    {
+      "ep": "/v1/oms/real/positions",
+      "method": "GET",
+      "response": {
+        "status": 200,
+        "j": {
+          "count": 2,
+          "funds": {
+            "balance": 2000,
+            "equity": 2002,
+            "free_margin": 1363.4270000000001,
+            "margin_call_level": 100,
+            "margin_level": 313.5115327456689,
+            "starting_balance": 2000,
+            "stop_out_level": 50,
+            "unrealized_pnl": 2,
+            "used_margin": 638.573
+          },
+          "positions": [
+            {
+              "algo_id": null,
+              "avg_entry_price": 63857.3,
+              "closed_at": null,
+              "comment": null,
+              "current_price": 63859.3,
+              "full_margin": 319.2865,
+              "group_id": null,
+              "margin_percent": 100,
+              "margin_used": 319.2865,
+              "market_order_id": "ord_0e87e3a6f0ad8d3cb0",
+              "net_qty": 0.5,
+              "oco_key": null,
+              "opened_at": "2026-11-19T11:29:55.279672Z",
+              "position_id": "pos_77558f610b30398471",
+              "side": "BUY",
+              "source": null,
+              "status": "OPEN",
+              "strategy_name": null,
+              "symbol": "BINANCE:BTCUSDT.P",
+              "tag": null,
+              "trailing": null,
+              "unrealized_pnl": 1
+            },
+            {
+              "algo_id": null,
+              "avg_entry_price": 63857.3,
+              "closed_at": null,
+              "comment": null,
+              "current_price": 63859.3,
+              "full_margin": 319.2865,
+              "group_id": null,
+              "margin_percent": 100,
+              "margin_used": 319.2865,
+              "market_order_id": "ord_f59cfdd00f8ddc4471",
+              "net_qty": 0.5,
+              "oco_key": null,
+              "opened_at": "2026-11-19T11:29:55.201577Z",
+              "position_id": "pos_2f4737248db66e2e72",
+              "side": "BUY",
+              "source": null,
+              "status": "OPEN",
+              "strategy_name": null,
+              "symbol": "BINANCE:BTCUSDT.P",
+              "tag": null,
+              "trailing": null,
+              "unrealized_pnl": 1
+            }
+          ],
+          "success": true,
+          "total_unrealized_pnl": 2
+        },
+        "text": "{\"count\":2,\"funds\":{\"balance\":2000,\"equity\":2002,\"free_margin\":1363.4270000000001,\"margin_call_level\":100,\"margin_level\":313.5115327456689,\"starting_balance\":2000,\"stop_out_level\":50,\"unrealized_pnl\":2,\"used_margin\":638.573},\"positions\":[{\"algo_id\":null,\"avg_entry_price\":63857.3,\"closed_at\":null,\"comment\":null,\"current_price\":63859.3,\"full_margin\":319.2865,\"group_id\":null,\"margin_percent\":100,\"margin_used\":319.2865,\"market_order_id\":\"ord_0e87e3a6f0ad8d3cb0\",\"net_qty\":0.5,\"oco_key\":null,\"opened_at\":\"2026-11-19T11:29:55.279672Z\",\"position_id\":\"pos_77558f610b30398471\",\"side\":\"BUY\",\"source\":null,\"status\":\"OPEN\",\"strategy_name\":null,\"symbol\":\"BINANCE:BTCUSDT.P\",\"tag\":null,\"trailing\":null,\"unrealized_pnl\":1},{\"algo_id\":null,\"avg_entry_price\":63857.3,\"closed_at\":null,\"comment\":null,\"current_price\":63859.3,\"full_margin\":319.2865,\"group_id\":null,\"margin_percent\":100,\"margin_used\":319.2865,\"market_order_id\":\"ord_f59cfdd00f8ddc4471\",\"net_qty\":0.5,\"oco_key\":null,\"opened_at\":\"2026-11-19T11:29:55.201577Z\",\"position_id\":\"pos_2f4737248db66e2e72\",\"side\":\"BUY\",\"source\":null,\"status\":\"OPEN\",\"strategy_name\":null,\"symbol\":\"BINANCE:BTCUSDT.P\",\"tag\":null,\"trailing\":null,\"unrealized_pnl\":1}],\"success\":true,\"total_unrealized_pnl\":2}\n",
+        "ms": 169
+      }
+    },
+    {
+      "ep": "/v1/oms/real/funds",
+      "method": "GET",
+      "response": {
+        "status": 200,
+        "j": {
+          "funds": {
+            "balance": 2000,
+            "equity": 2002,
+            "free_margin": 1363.4270000000001,
+            "margin_call_level": 100,
+            "margin_level": 313.5115327456689,
+            "starting_balance": 2000,
+            "stop_out_level": 50,
+            "unrealized_pnl": 2,
+            "used_margin": 638.573
+          },
+          "success": true
+        },
+        "text": "{\"funds\":{\"balance\":2000,\"equity\":2002,\"free_margin\":1363.4270000000001,\"margin_call_level\":100,\"margin_level\":313.5115327456689,\"starting_balance\":2000,\"stop_out_level\":50,\"unrealized_pnl\":2,\"used_margin\":638.573},\"success\":true}\n",
+        "ms": 66
+      }
+    },
+    {
+      "ep": "/admin/api/members/mem_550a4e91e0ce62a93f/balance",
+      "method": "POST",
+      "body": {
+        "instance": "real",
+        "balance": 310.9,
+        "remark": "Isolated PAMM functional risk/fee scenario",
+        "force": true
+      },
+      "response": {
+        "status": 200,
+        "j": {
+          "balance": 310.9,
+          "delta": -1689.1,
+          "funds": {
+            "balance": 310.9,
+            "equity": 312.9,
+            "free_margin": -325.673,
+            "margin_call_level": 100,
+            "margin_level": 48.99987941864125,
+            "starting_balance": 310.9,
+            "stop_out_level": 50,
+            "unrealized_pnl": 2,
+            "used_margin": 638.573
+          },
+          "instance": "real",
+          "success": true
+        },
+        "text": "{\"balance\":310.9,\"delta\":-1689.1,\"funds\":{\"balance\":310.9,\"equity\":312.9,\"free_margin\":-325.673,\"margin_call_level\":100,\"margin_level\":48.99987941864125,\"starting_balance\":310.9,\"stop_out_level\":50,\"unrealized_pnl\":2,\"used_margin\":638.573},\"instance\":\"real\",\"success\":true}\n",
+        "ms": 89
+      }
+    },
+    {
+      "ep": "/v1/oms/real/positions",
+      "method": "GET",
+      "response": {
+        "status": 200,
+        "j": {
+          "count": 1,
+          "funds": {
+            "balance": 311.9,
+            "equity": 312.9,
+            "free_margin": -6.386500000000012,
+            "margin_call_level": 100,
+            "margin_level": 97.9997588372825,
+            "starting_balance": 310.9,
+            "stop_out_level": 50,
+            "unrealized_pnl": 1,
+            "used_margin": 319.2865
+          },
+          "positions": [
+            {
+              "algo_id": null,
+              "avg_entry_price": 63857.3,
+              "closed_at": null,
+              "comment": null,
+              "current_price": 63859.3,
+              "full_margin": 319.2865,
+              "group_id": null,
+              "margin_percent": 100,
+              "margin_used": 319.2865,
+              "market_order_id": "ord_f59cfdd00f8ddc4471",
+              "net_qty": 0.5,
+              "oco_key": null,
+              "opened_at": "2026-11-19T11:29:55.201577Z",
+              "position_id": "pos_2f4737248db66e2e72",
+              "side": "BUY",
+              "source": null,
+              "status": "OPEN",
+              "strategy_name": null,
+              "symbol": "BINANCE:BTCUSDT.P",
+              "tag": null,
+              "trailing": null,
+              "unrealized_pnl": 1
+            }
+          ],
+          "success": true,
+          "total_unrealized_pnl": 1
+        },
+        "text": "{\"count\":1,\"funds\":{\"balance\":311.9,\"equity\":312.9,\"free_margin\":-6.386500000000012,\"margin_call_level\":100,\"margin_level\":97.9997588372825,\"starting_balance\":310.9,\"stop_out_level\":50,\"unrealized_pnl\":1,\"used_margin\":319.2865},\"positions\":[{\"algo_id\":null,\"avg_entry_price\":63857.3,\"closed_at\":null,\"comment\":null,\"current_price\":63859.3,\"full_margin\":319.2865,\"group_id\":null,\"margin_percent\":100,\"margin_used\":319.2865,\"market_order_id\":\"ord_f59cfdd00f8ddc4471\",\"net_qty\":0.5,\"oco_key\":null,\"opened_at\":\"2026-11-19T11:29:55.201577Z\",\"position_id\":\"pos_2f4737248db66e2e72\",\"side\":\"BUY\",\"source\":null,\"status\":\"OPEN\",\"strategy_name\":null,\"symbol\":\"BINANCE:BTCUSDT.P\",\"tag\":null,\"trailing\":null,\"unrealized_pnl\":1}],\"success\":true,\"total_unrealized_pnl\":1}\n",
+        "ms": 69
+      }
+    },
+    {
+      "ep": "/v1/oms/real/positions",
+      "method": "GET",
+      "response": {
+        "status": 200,
+        "j": {
+          "count": 1,
+          "funds": {
+            "balance": 311.9,
+            "equity": 312.9,
+            "free_margin": -6.386500000000012,
+            "margin_call_level": 100,
+            "margin_level": 97.9997588372825,
+            "starting_balance": 310.9,
+            "stop_out_level": 50,
+            "unrealized_pnl": 1,
+            "used_margin": 319.2865
+          },
+          "positions": [
+            {
+              "algo_id": null,
+              "avg_entry_price": 63857.3,
+              "closed_at": null,
+              "comment": null,
+              "current_price": 63859.3,
+              "full_margin": 319.2865,
+              "group_id": null,
+              "margin_percent": 100,
+              "margin_used": 319.2865,
+              "market_order_id": "ord_f59cfdd00f8ddc4471",
+              "net_qty": 0.5,
+              "oco_key": null,
+              "opened_at": "2026-11-19T11:29:55.201577Z",
+              "position_id": "pos_2f4737248db66e2e72",
+              "side": "BUY",
+              "source": null,
+              "status": "OPEN",
+              "strategy_name": null,
+              "symbol": "BINANCE:BTCUSDT.P",
+              "tag": null,
+              "trailing": null,
+              "unrealized_pnl": 1
+            }
+          ],
+          "success": true,
+          "total_unrealized_pnl": 1
+        },
+        "text": "{\"count\":1,\"funds\":{\"balance\":311.9,\"equity\":312.9,\"free_margin\":-6.386500000000012,\"margin_call_level\":100,\"margin_level\":97.9997588372825,\"starting_balance\":310.9,\"stop_out_level\":50,\"unrealized_pnl\":1,\"used_margin\":319.2865},\"positions\":[{\"algo_id\":null,\"avg_entry_price\":63857.3,\"closed_at\":null,\"comment\":null,\"current_price\":63859.3,\"full_margin\":319.2865,\"group_id\":null,\"margin_percent\":100,\"margin_used\":319.2865,\"market_order_id\":\"ord_f59cfdd00f8ddc4471\",\"net_qty\":0.5,\"oco_key\":null,\"opened_at\":\"2026-11-19T11:29:55.201577Z\",\"position_id\":\"pos_2f4737248db66e2e72\",\"side\":\"BUY\",\"source\":null,\"status\":\"OPEN\",\"strategy_name\":null,\"symbol\":\"BINANCE:BTCUSDT.P\",\"tag\":null,\"trailing\":null,\"unrealized_pnl\":1}],\"success\":true,\"total_unrealized_pnl\":1}\n",
+        "ms": 50
+      }
+    },
+    {
+      "ep": "/v1/oms/real/history?limit=100",
+      "method": "GET",
+      "response": {
+        "status": 200,
+        "j": {
+          "attribution": "initial_entry",
+          "count": 8,
+          "history": [
+            {
+              "history_id": 1423595,
+              "order_id": "ord_381b855eb43553bd6c",
+              "position_id": "pos_77558f610b30398471",
+              "symbol": "BINANCE:BTCUSDT.P",
+              "side": "BUY",
+              "qty": 0.5,
+              "entry_price": 63857.3,
+              "exit_price": 63859.3,
+              "realized_pnl": 1,
+              "executed_at": "2026-11-19T11:30:11.543514Z",
+              "exit_type": "MARKET",
+              "exit_source": "stop_out",
+              "entry_type": "MARKET",
+              "opened_at": "2026-11-19T11:29:55.279672Z"
+            },
+            {
+              "history_id": 1423594,
+              "order_id": "ord_17ffcd8ce26835656d",
+              "position_id": "pos_b1e6bbf8e1fdc6f5bf",
+              "symbol": "BINANCE:BTCUSDT.P",
+              "side": "BUY",
+              "qty": 0.5,
+              "entry_price": 63865.1,
+              "exit_price": 63868.5,
+              "realized_pnl": 1.7000000000007276,
+              "executed_at": "2026-11-19T11:29:33.342498Z",
+              "exit_type": "MARKET",
+              "exit_source": "stop_out",
+              "entry_type": "MARKET",
+              "opened_at": "2026-11-19T11:29:10.489508Z"
+            },
+            {
+              "history_id": 1423593,
+              "order_id": "ord_29853afc841e60cbdb",
+              "position_id": "pos_dfbc894ebe996333a3",
+              "symbol": "BINANCE:BTCUSDT.P",
+              "side": "SELL",
+              "qty": 0.5,
+              "entry_price": 63865,
+              "exit_price": 63868.5,
+              "realized_pnl": -1.75,
+              "executed_at": "2026-11-19T11:29:33.266792Z",
+              "exit_type": "MARKET",
+              "exit_source": "squareoff",
+              "entry_type": "MARKET",
+              "opened_at": "2026-11-19T11:29:10.567131Z"
+            },
+            {
+              "history_id": 1423592,
+              "order_id": "ord_f87b60d91d7b735c75",
+              "position_id": "pos_73f135fd5e8d448433",
+              "group_id": "group_1795087505512_001",
+              "symbol": "BINANCE:BTCUSDT.P",
+              "side": "BUY",
+              "qty": 0.001,
+              "entry_price": 63779.4,
+              "exit_price": 63783.1,
+              "realized_pnl": 0.0036999999999970897,
+              "executed_at": "2026-11-19T11:25:41.37479Z",
+              "exit_type": "MARKET",
+              "exit_source": "squareoff",
+              "entry_source": "1click",
+              "entry_type": "MARKET",
+              "opened_at": "2026-11-19T11:25:05.569618Z"
+            },
+            {
+              "history_id": 1423579,
+              "order_id": "ord_1a011498a02382bf54",
+              "position_id": "pos_687f038d472a5f8d00",
+              "group_id": "group_1795087405925_001",
+              "symbol": "BINANCE:BTCUSDT.P",
+              "side": "BUY",
+              "qty": 0.001,
+              "entry_price": 63763.8,
+              "exit_price": 63774.1,
+              "realized_pnl": 0.010299999999995634,
+              "executed_at": "2026-11-19T11:24:44.040872Z",
+              "exit_type": "MARKET",
+              "exit_source": "squareoff",
+              "entry_source": "1click",
+              "entry_type": "MARKET",
+              "opened_at": "2026-11-19T11:23:25.959051Z"
+            },
+            {
+              "history_id": 1423578,
+              "order_id": "ord_11d0a09947edc0f907",
+              "position_id": "pos_f702bf22bc7d6fa22a",
+              "group_id": "group_1795087264046_001",
+              "symbol": "BINANCE:BTCUSDT.P",
+              "side": "BUY",
+              "qty": 0.001,
+              "entry_price": 63711.8,
+              "exit_price": 63749.6,
+              "realized_pnl": 0.037799999999995636,
+              "executed_at": "2026-11-19T11:22:15.316404Z",
+              "exit_type": "MARKET",
+              "exit_source": "squareoff",
+              "entry_source": "1click",
+              "entry_type": "MARKET",
+              "opened_at": "2026-11-19T11:21:04.121659Z",
+              "sl_price": 62716.8
+            },
+            {
+              "history_id": 1423577,
+              "order_id": "ord_72bdbcfaa7f97611fc",
+              "position_id": "pos_71b633481dae2d77b9",
+              "symbol": "BINANCE:BTCUSDT.P",
+              "side": "BUY",
+              "qty": 1,
+              "entry_price": 63713.8,
+              "exit_price": 63736.6,
+              "realized_pnl": 22.799999999995634,
+              "executed_at": "2026-11-19T11:20:24.943179Z",
+              "exit_type": "MARKET",
+              "exit_source": "stop_out",
+              "entry_type": "MARKET",
+              "opened_at": "2026-11-19T11:19:49.533668Z"
+            },
+            {
+              "history_id": 1423567,
+              "order_id": "ord_56f6b5ee2d473d8e32",
+              "position_id": "pos_1c2041a5d793f55d9a",
+              "symbol": "BINANCE:BTCUSDT.P",
+              "side": "BUY",
+              "qty": 1,
+              "entry_price": 63779.8,
+              "exit_price": 63748.4,
+              "realized_pnl": -31.400000000001455,
+              "executed_at": "2026-11-19T11:01:43.44265Z",
+              "exit_type": "MARKET",
+              "exit_source": "stop_out",
+              "entry_type": "MARKET",
+              "opened_at": "2026-11-19T11:00:12.820195Z"
+            }
+          ],
+          "next_cursor": "",
+          "success": true,
+          "total": 8,
+          "total_realized_pnl": -7.598200000005104
+        },
+        "text": "{\"attribution\":\"initial_entry\",\"count\":8,\"history\":[{\"history_id\":1423595,\"order_id\":\"ord_381b855eb43553bd6c\",\"position_id\":\"pos_77558f610b30398471\",\"symbol\":\"BINANCE:BTCUSDT.P\",\"side\":\"BUY\",\"qty\":0.5,\"entry_price\":63857.3,\"exit_price\":63859.3,\"realized_pnl\":1,\"executed_at\":\"2026-11-19T11:30:11.543514Z\",\"exit_type\":\"MARKET\",\"exit_source\":\"stop_out\",\"entry_type\":\"MARKET\",\"opened_at\":\"2026-11-19T11:29:55.279672Z\"},{\"history_id\":1423594,\"order_id\":\"ord_17ffcd8ce26835656d\",\"position_id\":\"pos_b1e6bbf8e1fdc6f5bf\",\"symbol\":\"BINANCE:BTCUSDT.P\",\"side\":\"BUY\",\"qty\":0.5,\"entry_price\":63865.1,\"exit_price\":63868.5,\"realized_pnl\":1.7000000000007276,\"executed_at\":\"2026-11-19T11:29:33.342498Z\",\"exit_type\":\"MARKET\",\"exit_source\":\"stop_out\",\"entry_type\":\"MARKET\",\"opened_at\":\"2026-11-19T11:29:10.489508Z\"},{\"history_id\":1423593,\"order_id\":\"ord_29853afc841e60cbdb\",\"position_id\":\"pos_dfbc894ebe996333a3\",\"symbol\":\"BINANCE:BTCUSDT.P\",\"side\":\"SELL\",\"qty\":0.5,\"entry_price\":63865,\"exit_price\":63868.5,\"realized_pnl\":-1.75,\"executed_at\":\"2026-11-19T11:29:33.266792Z\",\"exit_type\":\"MARKET\",\"exit_source\":\"squareoff\",\"entry_type\":\"MARKET\",\"opened_at\":\"2026-11-19T11:29:10.567131Z\"},{\"history_id\":1423592,\"order_id\":\"ord_f87b60d91d7b735c75\",\"position_id\":\"pos_73f135fd5e8d448433\",\"group_id\":\"group_1795087505512_001\",\"symbol\":\"BINANCE:BTCUSDT.P\",\"side\":\"BUY\",\"qty\":0.001,\"entry_price\":63779.4,\"exit_price\":63783.1,\"realized_pnl\":0.0036999999999970897,\"executed_at\":\"2026-11-19T11:25:41.37479Z\",\"exit_type\":\"MARKET\",\"exit_source\":\"squareoff\",\"entry_source\":\"1click\",\"entry_type\":\"MARKET\",\"opened_at\":\"2026-11-19T11:25:05.569618Z\"},{\"history_id\":1423579,\"order_id\":\"ord_1a011498a02382bf54\",\"position_id\":\"pos_687f038d472a5f8d00\",\"group_id\":\"group_1795087405925_001\",\"symbol\":\"BINANCE:BTCUSDT.P\",\"side\":\"BUY\",\"qty\":0.001,\"entry_price\":63763.8,\"exit_price\":63774.1,\"realized_pnl\":0.010299999999995634,\"executed_at\":\"2026-11-19T11:24:44.040872Z\",\"exit_type\":\"MARKET\",\"exit_source\":\"squareoff\",\"entry_source\":\"1click\",\"entry_type\":\"MARKET\",\"opened_at\":\"2026-11-19T11:23:25.959051Z\"},{\"history_id\":1423578,\"order_id\":\"ord_11d0a09947edc0f907\",\"position_id\":\"pos_f702bf22bc7d6fa22a\",\"group_id\":\"group_1795087264046_001\",\"symbol\":\"BINANCE:BTCUSDT.P\",\"side\":\"BUY\",\"qty\":0.001,\"entry_price\":63711.8,\"exit_price\":63749.6,\"realized_pnl\":0.037799999999995636,\"executed_at\":\"2026-11-19T11:22:15.316404Z\",\"exit_type\":\"MARKET\",\"exit_source\":\"squareoff\",\"entry_source\":\"1click\",\"entry_type\":\"MARKET\",\"opened_at\":\"2026-11-19T11:21:04.121659Z\",\"sl_price\":62716.8},{\"history_id\":1423577,\"order_id\":\"ord_72bdbcfaa7f97611fc\",\"position_id\":\"pos_71b633481dae2d77b9\",\"symbol\":\"BINANCE:BTCUSDT.P\",\"side\":\"BUY\",\"qty\":1,\"entry_price\":63713.8,\"exit_price\":63736.6,\"realized_pnl\":22.799999999995634,\"executed_at\":\"2026-11-19T11:20:24.943179Z\",\"exit_type\":\"MARKET\",\"exit_source\":\"stop_out\",\"entry_type\":\"MARKET\",\"opened_at\":\"2026-11-19T11:19:49.533668Z\"},{\"history_id\":1423567,\"order_id\":\"ord_56f6b5ee2d473d8e32\",\"position_id\":\"pos_1c2041a5d793f55d9a\",\"symbol\":\"BINANCE:BTCUSDT.P\",\"side\":\"BUY\",\"qty\":1,\"entry_price\":63779.8,\"exit_price\":63748.4,\"realized_pnl\":-31.400000000001455,\"executed_at\":\"2026-11-19T11:01:43.44265Z\",\"exit_type\":\"MARKET\",\"exit_source\":\"stop_out\",\"entry_type\":\"MARKET\",\"opened_at\":\"2026-11-19T11:00:12.820195Z\"}],\"next_cursor\":\"\",\"success\":true,\"total\":8,\"total_realized_pnl\":-7.598200000005104}\n",
+        "ms": 57
+      }
+    },
+    {
+      "ep": "/v1/oms/real/positions/ord_f59cfdd00f8ddc4471/squareoff",
+      "method": "POST",
+      "body": {},
+      "response": {
+        "status": 200,
+        "j": {
+          "exit_price": 63859.3,
+          "market_order_id": "ord_f59cfdd00f8ddc4471",
+          "price_source": "live",
+          "realized_pnl": 1,
+          "success": true,
+          "symbol": "BINANCE:BTCUSDT.P"
+        },
+        "text": "{\"exit_price\":63859.3,\"market_order_id\":\"ord_f59cfdd00f8ddc4471\",\"price_source\":\"live\",\"realized_pnl\":1,\"success\":true,\"symbol\":\"BINANCE:BTCUSDT.P\"}\n",
+        "ms": 57
+      }
+    },
+    {
+      "ep": "/v1/oms/real/positions",
+      "method": "GET",
+      "response": {
+        "status": 200,
+        "j": {
+          "count": 0,
+          "funds": {
+            "balance": 312.9,
+            "equity": 312.9,
+            "free_margin": 312.9,
+            "margin_call_level": 100,
+            "margin_level": null,
+            "starting_balance": 310.9,
+            "stop_out_level": 50,
+            "unrealized_pnl": 0,
+            "used_margin": 0
+          },
+          "positions": [],
+          "success": true,
+          "total_unrealized_pnl": 0
+        },
+        "text": "{\"count\":0,\"funds\":{\"balance\":312.9,\"equity\":312.9,\"free_margin\":312.9,\"margin_call_level\":100,\"margin_level\":null,\"starting_balance\":310.9,\"stop_out_level\":50,\"unrealized_pnl\":0,\"used_margin\":0},\"positions\":[],\"success\":true,\"total_unrealized_pnl\":0}\n",
+        "ms": 52
+      }
+    },
+    {
+      "ep": "/admin/api/members/mem_550a4e91e0ce62a93f/balance",
+      "method": "POST",
+      "body": {
+        "instance": "real",
+        "balance": 20000,
+        "remark": "Isolated PAMM functional risk/fee scenario"
+      },
+      "response": {
+        "status": 200,
+        "j": {
+          "balance": 20000,
+          "delta": 19687.1,
+          "funds": {
+            "balance": 20000,
+            "equity": 20000,
+            "free_margin": 20000,
+            "margin_call_level": 100,
+            "margin_level": null,
+            "starting_balance": 20000,
+            "stop_out_level": 50,
+            "unrealized_pnl": 0,
+            "used_margin": 0
+          },
+          "instance": "real",
+          "success": true
+        },
+        "text": "{\"balance\":20000,\"delta\":19687.1,\"funds\":{\"balance\":20000,\"equity\":20000,\"free_margin\":20000,\"margin_call_level\":100,\"margin_level\":null,\"starting_balance\":20000,\"stop_out_level\":50,\"unrealized_pnl\":0,\"used_margin\":0},\"instance\":\"real\",\"success\":true}\n",
+        "ms": 68
+      }
+    },
+    {
+      "ep": "/v1/oms/real/pamm/unfollow",
+      "method": "POST",
+      "body": {
+        "master_client_id": "mem_550a4e91e0ce62a93f"
+      },
+      "response": {
+        "status": 200,
+        "j": {
+          "deposit": 1000,
+          "master_share": 0.4,
+          "pamm_id": "pmm_a26bd3e85cc115a168",
+          "payout": 1001.6,
+          "running_pnl": 2,
+          "success": true
+        },
+        "text": "{\"deposit\":1000,\"master_share\":0.4,\"pamm_id\":\"pmm_a26bd3e85cc115a168\",\"payout\":1001.6,\"running_pnl\":2,\"success\":true}\n",
+        "ms": 146
+      }
+    },
+    {
+      "ep": "/v1/oms/real/positions",
+      "method": "GET",
+      "response": {
+        "status": 200,
+        "j": {
+          "count": 0,
+          "funds": {
+            "balance": 18998.4,
+            "equity": 18998.4,
+            "free_margin": 18998.4,
+            "margin_call_level": 100,
+            "margin_level": null,
+            "starting_balance": 19000,
+            "stop_out_level": 50,
+            "unrealized_pnl": 0,
+            "used_margin": 0
+          },
+          "positions": [],
+          "success": true,
+          "total_unrealized_pnl": 0
+        },
+        "text": "{\"count\":0,\"funds\":{\"balance\":18998.4,\"equity\":18998.4,\"free_margin\":18998.4,\"margin_call_level\":100,\"margin_level\":null,\"starting_balance\":19000,\"stop_out_level\":50,\"unrealized_pnl\":0,\"used_margin\":0},\"positions\":[],\"success\":true,\"total_unrealized_pnl\":0}\n",
+        "ms": 77
+      }
+    }
+  ]
+}

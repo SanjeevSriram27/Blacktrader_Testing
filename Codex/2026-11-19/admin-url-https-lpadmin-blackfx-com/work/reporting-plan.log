@@ -1,0 +1,6 @@
+ADMIN-OWN-MEMBERS PASS Admin member list contains the supplied master and followers.
+BTPAMM-F010 BLOCKED This deployment rejected assigning free plan (HTTP 400); required free-plan precondition cannot be established through the supplied admin API.
+PLAN-RESTORE PASS Restored original plan using frontend-advertised plan endpoint; HTTP 200.
+BTPAMM-E015 PARTIAL Own history endpoint returned HTTP 200; full required field schema requires row review.
+BTPAMM-H010 BLOCKED Reference manager payout route returned HTTP 404; required 100-follower fee fixture and itemized payout contract are unverified. Existing missing-route report is not filed again.
+REPORT-POOL-READ PASS Final pool read successful.

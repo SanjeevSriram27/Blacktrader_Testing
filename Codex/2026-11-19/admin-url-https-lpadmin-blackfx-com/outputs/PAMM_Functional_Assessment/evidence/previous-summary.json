@@ -1,0 +1,25 @@
+{
+  "functional_cases": 349,
+  "api_check_records": 176,
+  "reviewed_api_status_counts": {
+    "PASS": 169,
+    "INCONCLUSIVE": 3,
+    "FAIL": 2,
+    "EXCLUDED_EXISTING": 1,
+    "NOT_SUPPORTED": 1
+  },
+  "manual_observation_records": 13,
+  "precision_repetitions": 4,
+  "new_findings": 1,
+  "case_matrix_status_counts": {
+    "NOT_RUN": 117,
+    "PARTIAL": 13,
+    "PASS": 123,
+    "BLOCKED": 91,
+    "EXCLUDED_EXISTING": 1,
+    "INCONCLUSIVE": 2,
+    "FAIL": 2
+  },
+  "complete_assessment": false,
+  "notes": "Check records include repetitions, helper checks and cleanup. They are not distinct fully executed manual scenarios."
+}

@@ -1,0 +1,3250 @@
+{
+  "is_running": false,
+  "current_scenario_id": "RC-O-09",
+  "current_scenario_name": "Manager Personal Capital Decoupling Under Broker Liquidation",
+  "completed_count": 114,
+  "total_count": 114,
+  "progress_pct": 100.0,
+  "passed_count": 114,
+  "failed_count": 0,
+  "total_iterations": 633,
+  "total_violations": 0,
+  "violation_rate_pct": 0.0,
+  "elapsed_seconds": 1.4,
+  "invariants_status": {
+    "I-01": {
+      "checked": 633,
+      "violations": 0,
+      "status": "PASS"
+    },
+    "I-02": {
+      "checked": 633,
+      "violations": 0,
+      "status": "PASS"
+    },
+    "I-03": {
+      "checked": 633,
+      "violations": 0,
+      "status": "PASS"
+    },
+    "I-04": {
+      "checked": 633,
+      "violations": 0,
+      "status": "PASS"
+    },
+    "I-05": {
+      "checked": 633,
+      "violations": 0,
+      "status": "PASS"
+    },
+    "I-06": {
+      "checked": 633,
+      "violations": 0,
+      "status": "PASS"
+    },
+    "I-07": {
+      "checked": 633,
+      "violations": 0,
+      "status": "PASS"
+    },
+    "I-08": {
+      "checked": 633,
+      "violations": 0,
+      "status": "PASS"
+    },
+    "I-09": {
+      "checked": 633,
+      "violations": 0,
+      "status": "PASS"
+    },
+    "I-10": {
+      "checked": 633,
+      "violations": 0,
+      "status": "PASS"
+    },
+    "I-11": {
+      "checked": 633,
+      "violations": 0,
+      "status": "PASS"
+    },
+    "I-12": {
+      "checked": 633,
+      "violations": 0,
+      "status": "PASS"
+    },
+    "I-13": {
+      "checked": 633,
+      "violations": 0,
+      "status": "PASS"
+    },
+    "I-14": {
+      "checked": 633,
+      "violations": 0,
+      "status": "PASS"
+    },
+    "I-15": {
+      "checked": 633,
+      "violations": 0,
+      "status": "PASS"
+    },
+    "I-16": {
+      "checked": 633,
+      "violations": 0,
+      "status": "PASS"
+    },
+    "I-17": {
+      "checked": 633,
+      "violations": 0,
+      "status": "PASS"
+    },
+    "I-18": {
+      "checked": 633,
+      "violations": 0,
+      "status": "PASS"
+    },
+    "I-19": {
+      "checked": 633,
+      "violations": 0,
+      "status": "PASS"
+    },
+    "I-20": {
+      "checked": 633,
+      "violations": 0,
+      "status": "PASS"
+    }
+  },
+  "results": {
+    "RC-F-01": {
+      "scenario_id": "RC-F-01",
+      "status": "PASS",
+      "iterations_run": 26,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 6.47,
+      "latency_p99_ms": 55.72,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {
+        "-50ms": {
+          "join_wins_master_blocked": 2
+        },
+        "-25ms": {
+          "join_wins_master_blocked": 2
+        },
+        "-10ms": {
+          "join_wins_master_blocked": 2
+        },
+        "-5ms": {
+          "join_wins_master_blocked": 2
+        },
+        "-2ms": {
+          "join_wins_master_blocked": 2
+        },
+        "-1ms": {
+          "join_wins_master_blocked": 2
+        },
+        "0ms": {
+          "join_wins_master_blocked": 2
+        },
+        "1ms": {
+          "master_wins_join_blocked": 2
+        },
+        "2ms": {
+          "master_wins_join_blocked": 2
+        },
+        "5ms": {
+          "master_wins_join_blocked": 2
+        },
+        "10ms": {
+          "master_wins_join_blocked": 2
+        },
+        "25ms": {
+          "master_wins_join_blocked": 2
+        },
+        "50ms": {
+          "master_wins_join_blocked": 2
+        }
+      },
+      "replay_bundles": [],
+      "name": "Role Exclusivity: Master Registration vs Pool Join Collision",
+      "priority": "P0",
+      "race_classes": [
+        "TOCTOU",
+        "EXPLOIT"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-F007",
+        "BTPAMM-F008",
+        "BTPAMM-F009",
+        "BTPAMM-F003"
+      ],
+      "description": "POST /pamm/master (become manager) vs POST /pamm/join (follow master) fired at the same millisecond.",
+      "module_key": "M1",
+      "module_title": "Setup & Lifecycle"
+    },
+    "RC-F-02": {
+      "scenario_id": "RC-F-02",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 1.33,
+      "latency_p99_ms": 1.6,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Double-Submit Master Registration Idempotency",
+      "priority": "P0",
+      "race_classes": [
+        "DOUBLE-EFFECT"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-F003"
+      ],
+      "description": "20 parallel identical POST /pamm/master calls for the same user.",
+      "module_key": "M1",
+      "module_title": "Setup & Lifecycle"
+    },
+    "RC-F-03": {
+      "scenario_id": "RC-F-03",
+      "status": "PASS",
+      "iterations_run": 26,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 6.67,
+      "latency_p99_ms": 55.45,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {
+        "-50ms": {
+          "join_before_change_at_20": 2
+        },
+        "-25ms": {
+          "join_before_change_at_20": 2
+        },
+        "-10ms": {
+          "join_before_change_at_20": 2
+        },
+        "-5ms": {
+          "join_before_change_at_20": 2
+        },
+        "-2ms": {
+          "join_before_change_at_20": 2
+        },
+        "-1ms": {
+          "join_before_change_at_20": 2
+        },
+        "0ms": {
+          "join_before_change_at_20": 2
+        },
+        "1ms": {
+          "join_after_change_at_50": 2
+        },
+        "2ms": {
+          "join_after_change_at_50": 2
+        },
+        "5ms": {
+          "join_after_change_at_50": 2
+        },
+        "10ms": {
+          "join_after_change_at_50": 2
+        },
+        "25ms": {
+          "join_after_change_at_50": 2
+        },
+        "50ms": {
+          "join_after_change_at_50": 2
+        }
+      },
+      "replay_bundles": [],
+      "name": "Manager Share Fee Adjustment vs New Follower Join & Fee Settlement",
+      "priority": "P0",
+      "race_classes": [
+        "EXPLOIT",
+        "SNAPSHOT-SKEW"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-F004",
+        "BTPAMM-F003",
+        "BTPAMM-H002"
+      ],
+      "description": "Manager updates fee 20% -> 50% concurrently with new joiner B and existing follower A monthly settlement.",
+      "module_key": "M1",
+      "module_title": "Setup & Lifecycle"
+    },
+    "RC-F-04": {
+      "scenario_id": "RC-F-04",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.16,
+      "latency_p99_ms": 0.43,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Plan Gating Propagation: Free vs Pro Upgrade/Downgrade Burst",
+      "priority": "P0",
+      "race_classes": [
+        "TOCTOU",
+        "VISIBILITY"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-F010"
+      ],
+      "description": "Admin plan toggle free <-> pro vs burst of POST /pamm/join requests.",
+      "module_key": "M1",
+      "module_title": "Setup & Lifecycle"
+    },
+    "RC-F-05": {
+      "scenario_id": "RC-F-05",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Auth Token Revocation Mid-Burst",
+      "priority": "P0",
+      "race_classes": [
+        "TOCTOU"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-F011"
+      ],
+      "description": "Token revoked mid-burst of authenticated writes; ensures zero writes committed post-revocation.",
+      "module_key": "M1",
+      "module_title": "Setup & Lifecycle"
+    },
+    "RC-F-06": {
+      "scenario_id": "RC-F-06",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 1.66,
+      "latency_p99_ms": 1.75,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Leaderboard Paged Pagination Consistency Under Joins & Closes",
+      "priority": "P1",
+      "race_classes": [
+        "VISIBILITY"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-F012",
+        "BTPAMM-F013"
+      ],
+      "description": "200 parallel GET /pamm/masters reads while new pools and joins commit.",
+      "module_key": "M1",
+      "module_title": "Setup & Lifecycle"
+    },
+    "RC-F-07": {
+      "scenario_id": "RC-F-07",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Trading Account Binding: Real vs Paper Race",
+      "priority": "P1",
+      "race_classes": [
+        "TOCTOU"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-F005",
+        "BTPAMM-F006"
+      ],
+      "description": "Switch instance Real -> Paper while POST /pamm/join in flight (enforces HTTP 400 policy).",
+      "module_key": "M1",
+      "module_title": "Setup & Lifecycle"
+    },
+    "RC-F-08": {
+      "scenario_id": "RC-F-08",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Manager Share Percent Range Validation Under Concurrency",
+      "priority": "P0",
+      "race_classes": [
+        "LOST-UPDATE"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-F014"
+      ],
+      "description": "Parallel saves of share_percent with invalid values (-5, 120, NaN) vs valid values.",
+      "module_key": "M1",
+      "module_title": "Setup & Lifecycle"
+    },
+    "RC-F-09": {
+      "scenario_id": "RC-F-09",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 11.84,
+      "latency_p99_ms": 16.65,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "PAMM Dock Tab View Toggle & Window Control Storm",
+      "priority": "P2",
+      "race_classes": [
+        "VISIBILITY"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-F001",
+        "BTPAMM-F002",
+        "BTPAMM-F015"
+      ],
+      "description": "Rapid toggles between 'PAMM managers' and 'My subscription' with window maximize/restore events.",
+      "module_key": "M1",
+      "module_title": "Setup & Lifecycle"
+    },
+    "RC-A-01": {
+      "scenario_id": "RC-A-01",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 2.79,
+      "latency_p99_ms": 3.64,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "100 Concurrent Joins & 20 Unfollows Under High Concurrency",
+      "priority": "P0",
+      "race_classes": [
+        "SNAPSHOT-SKEW",
+        "LOST-UPDATE"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-A002",
+        "BTPAMM-A003",
+        "BTPAMM-F009"
+      ],
+      "description": "100 concurrent follower joins with varied deposits ($575 to $1,100) mixed with 20 unfollows.",
+      "module_key": "M2",
+      "module_title": "Pool Sizing & Shares"
+    },
+    "RC-A-02": {
+      "scenario_id": "RC-A-02",
+      "status": "PASS",
+      "iterations_run": 26,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 6.69,
+      "latency_p99_ms": 55.64,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {
+        "-50ms": {
+          "join_before_close_allocated": 2
+        },
+        "-25ms": {
+          "join_before_close_allocated": 2
+        },
+        "-10ms": {
+          "join_before_close_allocated": 2
+        },
+        "-5ms": {
+          "join_before_close_allocated": 2
+        },
+        "-2ms": {
+          "join_before_close_allocated": 2
+        },
+        "-1ms": {
+          "join_before_close_allocated": 2
+        },
+        "0ms": {
+          "join_before_close_allocated": 2
+        },
+        "1ms": {
+          "join_after_close_excluded": 2
+        },
+        "2ms": {
+          "join_after_close_excluded": 2
+        },
+        "5ms": {
+          "join_after_close_excluded": 2
+        },
+        "10ms": {
+          "join_after_close_excluded": 2
+        },
+        "25ms": {
+          "join_after_close_excluded": 2
+        },
+        "50ms": {
+          "join_after_close_excluded": 2
+        }
+      },
+      "replay_bundles": [],
+      "name": "Follower Join vs Master Trade Close Allocation Collision",
+      "priority": "P0",
+      "race_classes": [
+        "SNAPSHOT-SKEW",
+        "STATE-RACE"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-A004",
+        "BTPAMM-A005",
+        "BTPAMM-A009",
+        "BTPAMM-D008"
+      ],
+      "description": "Follower joins pool at the exact millisecond master closes a winning block trade.",
+      "module_key": "M2",
+      "module_title": "Pool Sizing & Shares"
+    },
+    "RC-A-03": {
+      "scenario_id": "RC-A-03",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 2.14,
+      "latency_p99_ms": 2.73,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Deposits Concurrent with Rapid Master Block Orders",
+      "priority": "P0",
+      "race_classes": [
+        "LOST-UPDATE"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-A001",
+        "BTPAMM-C003"
+      ],
+      "description": "50 follower deposits clearing while master executes 3 rapid orders.",
+      "module_key": "M2",
+      "module_title": "Pool Sizing & Shares"
+    },
+    "RC-A-04": {
+      "scenario_id": "RC-A-04",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 2.63,
+      "latency_p99_ms": 2.98,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Sub-Cent Rounding Residual Absorption Under 500 Concurrent Closes",
+      "priority": "P0",
+      "race_classes": [
+        "LOST-UPDATE"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-A007",
+        "BTPAMM-A011",
+        "BTPAMM-A012"
+      ],
+      "description": "500 micro-trade closes with sub-cent residuals absorbed into reserve_ledger.",
+      "module_key": "M2",
+      "module_title": "Pool Sizing & Shares"
+    },
+    "RC-A-05": {
+      "scenario_id": "RC-A-05",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Micro-Follower 6 Decimal Precision vs Institutional Whale Trades",
+      "priority": "P0",
+      "race_classes": [
+        "SNAPSHOT-SKEW"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-A011"
+      ],
+      "description": "$100 follower in $1,000,000 pool receiving allocation during simultaneous whale exit.",
+      "module_key": "M2",
+      "module_title": "Pool Sizing & Shares"
+    },
+    "RC-A-06": {
+      "scenario_id": "RC-A-06",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.81,
+      "latency_p99_ms": 1.01,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Multi-Currency EUR Deposits Normalization vs Live Spot Ticks",
+      "priority": "P0",
+      "race_classes": [
+        "SNAPSHOT-SKEW",
+        "DOUBLE-EFFECT"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-A008"
+      ],
+      "description": "20 concurrent EUR deposits converted at live EUR/USD broker spot rates.",
+      "module_key": "M2",
+      "module_title": "Pool Sizing & Shares"
+    },
+    "RC-A-07": {
+      "scenario_id": "RC-A-07",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.79,
+      "latency_p99_ms": 0.86,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "GET /pamm/allocations Atomic Visibility During 500-Follower Close",
+      "priority": "P1",
+      "race_classes": [
+        "VISIBILITY"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-A009",
+        "BTPAMM-A013",
+        "BTPAMM-A014"
+      ],
+      "description": "Continuous reader polling of /pamm/allocations while batch allocation writes commit.",
+      "module_key": "M2",
+      "module_title": "Pool Sizing & Shares"
+    },
+    "RC-A-08": {
+      "scenario_id": "RC-A-08",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 1.1,
+      "latency_p99_ms": 1.2,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Manager Co-Investment Top-Up vs 30 Follower Joins",
+      "priority": "P0",
+      "race_classes": [
+        "LOST-UPDATE"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-A006"
+      ],
+      "description": "Manager injects personal capital while 30 followers join simultaneously.",
+      "module_key": "M2",
+      "module_title": "Pool Sizing & Shares"
+    },
+    "RC-A-09": {
+      "scenario_id": "RC-A-09",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Unfollow vs Immediate Re-Join Collision on Same Account",
+      "priority": "P1",
+      "race_classes": [
+        "STATE-RACE"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-A015",
+        "BTPAMM-D014"
+      ],
+      "description": "Follower unfollows at zero balance and re-joins simultaneously; verifies single active link.",
+      "module_key": "M2",
+      "module_title": "Pool Sizing & Shares"
+    },
+    "RC-A-10": {
+      "scenario_id": "RC-A-10",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.72,
+      "latency_p99_ms": 0.78,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "100-Lot Block Order Sizing vs 200 Concurrent Withdrawals",
+      "priority": "P0",
+      "race_classes": [
+        "TOCTOU"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-A010",
+        "BTPAMM-M006"
+      ],
+      "description": "Master attempts 100-lot order while withdrawals consume pool free margin.",
+      "module_key": "M2",
+      "module_title": "Pool Sizing & Shares"
+    },
+    "RC-R-01": {
+      "scenario_id": "RC-R-01",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.89,
+      "latency_p99_ms": 0.89,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Rollover Cut-Off Boundary: Deposits & Withdrawals at 23:59:00",
+      "priority": "P0",
+      "race_classes": [
+        "BOUNDARY-TIME",
+        "SNAPSHOT-SKEW"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-R003",
+        "BTPAMM-R004",
+        "BTPAMM-R005",
+        "BTPAMM-R006",
+        "BTPAMM-R013",
+        "BTPAMM-D001",
+        "BTPAMM-D002"
+      ],
+      "description": "50 investors fire deposits, partial withdrawals, and full exits sweeping around the 23:59:00 rollover boundary.",
+      "module_key": "M3",
+      "module_title": "Rollover & NAV"
+    },
+    "RC-R-02": {
+      "scenario_id": "RC-R-02",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.08,
+      "latency_p99_ms": 0.08,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Scheduled vs Manual Backoffice Rollover Execution Collision",
+      "priority": "P0",
+      "race_classes": [
+        "DOUBLE-EFFECT",
+        "LEASE/FENCE"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-R009"
+      ],
+      "description": "Scheduled cron rollover vs manual backoffice rollover fired at the same millisecond across two pods.",
+      "module_key": "M3",
+      "module_title": "Rollover & NAV"
+    },
+    "RC-R-03": {
+      "scenario_id": "RC-R-03",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Rollover Snapshot While High-Frequency Ticks (500 ticks/sec) Stream",
+      "priority": "P0",
+      "race_classes": [
+        "SNAPSHOT-SKEW"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-R008",
+        "BTPAMM-R002"
+      ],
+      "description": "MTM pricing changes rapidly during rollover unit calculation; enforces point-in-time consistency.",
+      "module_key": "M3",
+      "module_title": "Rollover & NAV"
+    },
+    "RC-R-04": {
+      "scenario_id": "RC-R-04",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Non-Dilutive Unit Minting at Appreciated / Depreciated NAV",
+      "priority": "P0",
+      "race_classes": [
+        "SNAPSHOT-SKEW"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-R003",
+        "BTPAMM-R004"
+      ],
+      "description": "Proves existing investor NAV remains constant when new units are minted mid-cycle.",
+      "module_key": "M3",
+      "module_title": "Rollover & NAV"
+    },
+    "RC-R-05": {
+      "scenario_id": "RC-R-05",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.39,
+      "latency_p99_ms": 0.42,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Investor 10 Simultaneous Redemptions vs Available Units",
+      "priority": "P0",
+      "race_classes": [
+        "TOCTOU",
+        "LOST-UPDATE"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-R005",
+        "BTPAMM-R006",
+        "BTPAMM-D005"
+      ],
+      "description": "Investor holding 50 units fires 10 concurrent redemptions of 20 units (total 200 > 50 units).",
+      "module_key": "M3",
+      "module_title": "Rollover & NAV"
+    },
+    "RC-R-06": {
+      "scenario_id": "RC-R-06",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Full Exit vs Cancel-Withdrawal vs New Top-Up Collision",
+      "priority": "P0",
+      "race_classes": [
+        "STATE-RACE"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-R006",
+        "BTPAMM-D005",
+        "BTPAMM-D006"
+      ],
+      "description": "Same investor fires full exit, cancel withdrawal, and new deposit concurrently.",
+      "module_key": "M3",
+      "module_title": "Rollover & NAV"
+    },
+    "RC-R-07": {
+      "scenario_id": "RC-R-07",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Zero-Sum Pool Conservation Law Under Property-Based Rollovers",
+      "priority": "P0",
+      "race_classes": [
+        "ALL"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-R007",
+        "BTPAMM-R001"
+      ],
+      "description": "Automated continuous sequence of deposits, trades, and rollovers proving zero discrepancy.",
+      "module_key": "M3",
+      "module_title": "Rollover & NAV"
+    },
+    "RC-R-08": {
+      "scenario_id": "RC-R-08",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "95% Catastrophic Loss Allocation vs NBP Treasury Credit",
+      "priority": "P0",
+      "race_classes": [
+        "LOST-UPDATE",
+        "DOUBLE-EFFECT"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-R010",
+        "BTPAMM-R011",
+        "BTPAMM-M005"
+      ],
+      "description": "95% loss wipe allocated during rollover; verifies NAV > $0.00 floor and exactly-once NBP.",
+      "module_key": "M3",
+      "module_title": "Rollover & NAV"
+    },
+    "RC-R-09": {
+      "scenario_id": "RC-R-09",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Dormant Zero-Unit Cleanup vs Re-Activation Collision",
+      "priority": "P2",
+      "race_classes": [
+        "STATE-RACE"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-R014"
+      ],
+      "description": "Admin cleanup archiver targets zero-unit subscription while follower submits top-up.",
+      "module_key": "M3",
+      "module_title": "Rollover & NAV"
+    },
+    "RC-R-10": {
+      "scenario_id": "RC-R-10",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Crash-Consistency & Idempotent Rollover Recovery",
+      "priority": "P1",
+      "race_classes": [
+        "PARTIAL-FAIL"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-R012",
+        "BTPAMM-R015"
+      ],
+      "description": "Rollover service crash simulated mid-batch; resumed process produces zero duplicate statements or hashes.",
+      "module_key": "M3",
+      "module_title": "Rollover & NAV"
+    },
+    "RC-E-01": {
+      "scenario_id": "RC-E-01",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.2,
+      "latency_p99_ms": 0.21,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Margin Capacity: 5 Parallel Orders Exceeding Free Margin",
+      "priority": "P0",
+      "race_classes": [
+        "TOCTOU",
+        "WRITE-SKEW"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-E001",
+        "BTPAMM-E002",
+        "BTPAMM-E003",
+        "BTPAMM-M007"
+      ],
+      "description": "Free margin = $15k; 5 parallel orders each requiring $6k margin. At most 2 can succeed.",
+      "module_key": "M4",
+      "module_title": "Order Routing & Margins"
+    },
+    "RC-E-02": {
+      "scenario_id": "RC-E-02",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Cancel Working Pending Limit Order vs LP Bridge Fill Report",
+      "priority": "P0",
+      "race_classes": [
+        "STATE-RACE"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-E002",
+        "BTPAMM-E003",
+        "BTPAMM-E008"
+      ],
+      "description": "Client cancel request races LP fill execution report; verifies terminal state consistency.",
+      "module_key": "M4",
+      "module_title": "Order Routing & Margins"
+    },
+    "RC-E-03": {
+      "scenario_id": "RC-E-03",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Modify SL/TP vs Broker SL Hit vs Manual Close Collision",
+      "priority": "P0",
+      "race_classes": [
+        "STATE-RACE"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-E004",
+        "BTPAMM-E005",
+        "BTPAMM-E011"
+      ],
+      "description": "SL modification on position that already closed returns clean 404/409 without resurrecting.",
+      "module_key": "M4",
+      "module_title": "Order Routing & Margins"
+    },
+    "RC-E-04": {
+      "scenario_id": "RC-E-04",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Partial Close 50% vs Bulk Squareoff Collision",
+      "priority": "P0",
+      "race_classes": [
+        "STATE-RACE",
+        "DOUBLE-EFFECT"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-E006",
+        "BTPAMM-E007"
+      ],
+      "description": "Master holds 10.0 lots; partial close 5.0 lots races squareoff. Total closed exactly equals 10.0 lots.",
+      "module_key": "M4",
+      "module_title": "Order Routing & Margins"
+    },
+    "RC-E-05": {
+      "scenario_id": "RC-E-05",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Double-Click Squareoff Idempotency (30 Concurrent Requests)",
+      "priority": "P0",
+      "race_classes": [
+        "DOUBLE-EFFECT"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-E007"
+      ],
+      "description": "30 identical POST /positions/{id}/squareoff calls; ensures 1 execution and 29 idempotent 404/409 responses.",
+      "module_key": "M4",
+      "module_title": "Order Routing & Margins"
+    },
+    "RC-E-06": {
+      "scenario_id": "RC-E-06",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Real-Net (Netting) Opposite Order Execution (Buy 5 vs Sell 8)",
+      "priority": "P0",
+      "race_classes": [
+        "STATE-RACE"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-E003",
+        "BTPAMM-E005"
+      ],
+      "description": "Opposite orders on Real (Netting) instance consolidate to single net position without child tickets.",
+      "module_key": "M4",
+      "module_title": "Order Routing & Margins"
+    },
+    "RC-E-07": {
+      "scenario_id": "RC-E-07",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Wednesday Triple Swap Booking Impact on Pool Equity",
+      "priority": "P1",
+      "race_classes": [
+        "BOUNDARY-TIME"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-E009"
+      ],
+      "description": "Triple-swap financing fee applied at Wednesday 23:59:00 boundary.",
+      "module_key": "M4",
+      "module_title": "Order Routing & Margins"
+    },
+    "RC-E-08": {
+      "scenario_id": "RC-E-08",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Master Requote Acceptance Concurrency & Expiration Race",
+      "priority": "P0",
+      "race_classes": [
+        "DOUBLE-EFFECT"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-E010",
+        "BTPAMM-E014"
+      ],
+      "description": "Master accepts same requote 5x; stale acceptance rejected with zero duplicate positions.",
+      "module_key": "M4",
+      "module_title": "Order Routing & Margins"
+    },
+    "RC-E-09": {
+      "scenario_id": "RC-E-09",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 27.69,
+      "latency_p99_ms": 30.48,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "GET /history Blotter Pagination Under 50 Concurrent Closes",
+      "priority": "P0",
+      "race_classes": [
+        "VISIBILITY"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-E015"
+      ],
+      "description": "Paged history queries during trade close storm return stable, non-duplicated records.",
+      "module_key": "M4",
+      "module_title": "Order Routing & Margins"
+    },
+    "RC-E-10": {
+      "scenario_id": "RC-E-10",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Real-Time WebSocket Out-of-Order Packets & REST Convergence",
+      "priority": "P1",
+      "race_classes": [
+        "REORDER"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-E012",
+        "BTPAMM-A009"
+      ],
+      "description": "Simulated network packet reordering on WS stream; verifies monotonic sequence and UI convergence.",
+      "module_key": "M4",
+      "module_title": "Order Routing & Margins"
+    },
+    "RC-P-01": {
+      "scenario_id": "RC-P-01",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "LP Partial Fills Permutation & Out-of-Order Execution Reports",
+      "priority": "P0",
+      "race_classes": [
+        "REORDER"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-P001",
+        "BTPAMM-P002",
+        "BTPAMM-P004",
+        "BTPAMM-P006"
+      ],
+      "description": "4 partial fill reports delivered across 24 permutations; verifies VWAP (1.080200) and cumulative lots identical.",
+      "module_key": "M5",
+      "module_title": "Partial Fills & Bridge"
+    },
+    "RC-P-02": {
+      "scenario_id": "RC-P-02",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Duplicate LP Execution Reports (PossDupFlag Sequence Reset)",
+      "priority": "P0",
+      "race_classes": [
+        "DOUBLE-EFFECT"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-P001",
+        "BTPAMM-P005"
+      ],
+      "description": "Bridge duplicate messages with same ExecID; verifies cumQty not inflated and pool debited once.",
+      "module_key": "M5",
+      "module_title": "Partial Fills & Bridge"
+    },
+    "RC-P-03": {
+      "scenario_id": "RC-P-03",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 28.97,
+      "latency_p99_ms": 34.76,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Bridge Socket Disconnect Mid-Execution & Status Reconciliation",
+      "priority": "P0",
+      "race_classes": [
+        "PARTIAL-FAIL"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-P005",
+        "BTPAMM-P007"
+      ],
+      "description": "Socket dropped for 500ms; reconciles order status without sending duplicate ClOrdID.",
+      "module_key": "M5",
+      "module_title": "Partial Fills & Bridge"
+    },
+    "RC-P-04": {
+      "scenario_id": "RC-P-04",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "LP Rejection vs Late Fill Report & Time-In-Force (IOC/FOK)",
+      "priority": "P0",
+      "race_classes": [
+        "STATE-RACE"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-P007",
+        "BTPAMM-P011",
+        "BTPAMM-P012"
+      ],
+      "description": "LP reject arrives while in-flight fill report crosses; FOK order rejects cleanly with zero leftover margin.",
+      "module_key": "M5",
+      "module_title": "Partial Fills & Bridge"
+    },
+    "RC-P-05": {
+      "scenario_id": "RC-P-05",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Master Closes Filled Lots vs Remainder Fills Arriving",
+      "priority": "P0",
+      "race_classes": [
+        "STATE-RACE"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-P001",
+        "BTPAMM-P004",
+        "BTPAMM-E006"
+      ],
+      "description": "10 lots filled, 10 working; master closes filled lots while remainder fills. Verifies no unintended new position.",
+      "module_key": "M5",
+      "module_title": "Partial Fills & Bridge"
+    },
+    "RC-P-06": {
+      "scenario_id": "RC-P-06",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 8.44,
+      "latency_p99_ms": 16.61,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Bridge Rate-Limit Throttling Defense (1,000 Orders / Sec)",
+      "priority": "P0",
+      "race_classes": [
+        "DOUBLE-EFFECT",
+        "LOST-UPDATE"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-P009"
+      ],
+      "description": "Bursts exceeding bridge rate limit are queued smoothly with zero 429 errors from bridge.",
+      "module_key": "M5",
+      "module_title": "Partial Fills & Bridge"
+    },
+    "RC-P-07": {
+      "scenario_id": "RC-P-07",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 77.58,
+      "latency_p99_ms": 95.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Primary LP Bridge Failover to Secondary (<300ms SLA)",
+      "priority": "P0",
+      "race_classes": [
+        "LEASE/FENCE",
+        "DOUBLE-EFFECT"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-P014"
+      ],
+      "description": "Primary bridge drops with in-flight order; failover executes order once without double-exposure.",
+      "module_key": "M5",
+      "module_title": "Partial Fills & Bridge"
+    },
+    "RC-P-08": {
+      "scenario_id": "RC-P-08",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Positive Slippage (Price Improvement) Passthrough",
+      "priority": "P0",
+      "race_classes": [
+        "DOUBLE-EFFECT"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-P010",
+        "BTPAMM-P003",
+        "BTPAMM-P008"
+      ],
+      "description": "Price improvement credited to pool once and distributed proportionally.",
+      "module_key": "M5",
+      "module_title": "Partial Fills & Bridge"
+    },
+    "RC-P-09": {
+      "scenario_id": "RC-P-09",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "EURJPY Multi-Currency Margin Conversion Slippage Cushion",
+      "priority": "P1",
+      "race_classes": [
+        "SNAPSHOT-SKEW"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-P013"
+      ],
+      "description": "Cross-currency margin calculation applies cushion to prevent spurious margin calls.",
+      "module_key": "M5",
+      "module_title": "Partial Fills & Bridge"
+    },
+    "RC-P-10": {
+      "scenario_id": "RC-P-10",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Audit Blotter LP Fill ID Deduplication",
+      "priority": "P0",
+      "race_classes": [
+        "DOUBLE-EFFECT"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-P015"
+      ],
+      "description": "Concurrent write of identical LP Fill ID produces exactly one audit row via unique constraint.",
+      "module_key": "M5",
+      "module_title": "Partial Fills & Bridge"
+    },
+    "RC-M-01": {
+      "scenario_id": "RC-M-01",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Margin Level Crosses 100% Margin Call and 50% Stop-Out Boundary",
+      "priority": "P0",
+      "race_classes": [
+        "TOCTOU",
+        "STATE-RACE"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-M002",
+        "BTPAMM-M003",
+        "BTPAMM-M007"
+      ],
+      "description": "Orders, deposits, and withdrawals racing across the 100% warning and 50% liquidation thresholds.",
+      "module_key": "M6",
+      "module_title": "Margin & Stop-Outs"
+    },
+    "RC-M-02": {
+      "scenario_id": "RC-M-02",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Broker 50% Forced Liquidation vs Master Manual Close Collision",
+      "priority": "P0",
+      "race_classes": [
+        "STATE-RACE"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-M003",
+        "BTPAMM-E004"
+      ],
+      "description": "Liquidation engine closes losing position at exact millisecond master manual close fires.",
+      "module_key": "M6",
+      "module_title": "Margin & Stop-Outs"
+    },
+    "RC-M-03": {
+      "scenario_id": "RC-M-03",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Front-Run the Stop-Out: Instant Withdrawal Mid-Loss Allocation",
+      "priority": "P0",
+      "race_classes": [
+        "EXPLOIT",
+        "SNAPSHOT-SKEW"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-M004",
+        "BTPAMM-D005",
+        "BTPAMM-D003"
+      ],
+      "description": "Follower attempts instant unfollow while -$25,000 loss allocates; verifies all lose 50% equally.",
+      "module_key": "M6",
+      "module_title": "Margin & Stop-Outs"
+    },
+    "RC-M-04": {
+      "scenario_id": "RC-M-04",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Weekend Gap NBP Trigger: Treasury Zero-Floor Credit",
+      "priority": "P0",
+      "race_classes": [
+        "DOUBLE-EFFECT"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-M005",
+        "BTPAMM-R011"
+      ],
+      "description": "NBP triggered simultaneously from risk monitor and rollover; verifies single credit and zero follower debt.",
+      "module_key": "M6",
+      "module_title": "Margin & Stop-Outs"
+    },
+    "RC-M-05": {
+      "scenario_id": "RC-M-05",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 17.68,
+      "latency_p99_ms": 19.47,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Leverage Cut 1:100 -> 1:50 vs In-Flight Master Order",
+      "priority": "P0",
+      "race_classes": [
+        "TOCTOU",
+        "BOUNDARY-TIME"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-M006",
+        "BTPAMM-M008",
+        "BTPAMM-L002",
+        "BTPAMM-L010"
+      ],
+      "description": "Broker reduces leverage ahead of high-impact news; in-flight orders evaluated against rule effective at commit.",
+      "module_key": "M6",
+      "module_title": "Margin & Stop-Outs"
+    },
+    "RC-M-06": {
+      "scenario_id": "RC-M-06",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Simultaneous Buy 5 & Sell 5 Hedging Margin Treatment",
+      "priority": "P1",
+      "race_classes": [
+        "SNAPSHOT-SKEW"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-M009"
+      ],
+      "description": "Hedging instance margin requirement matches broker hedged rate without triggering false margin calls.",
+      "module_key": "M6",
+      "module_title": "Margin & Stop-Outs"
+    },
+    "RC-M-07": {
+      "scenario_id": "RC-M-07",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Manager Capital Depletion Floor ($1,000 Minimum Skin-in-the-Game)",
+      "priority": "P0",
+      "race_classes": [
+        "TOCTOU",
+        "WRITE-SKEW"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-M010",
+        "BTPAMM-D012"
+      ],
+      "description": "Manager attempts 3 parallel $1,500 withdrawals from $5,000 balance with $1,000 floor. Floor never breached.",
+      "module_key": "M6",
+      "module_title": "Margin & Stop-Outs"
+    },
+    "RC-M-08": {
+      "scenario_id": "RC-M-08",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Used Margin Integrity Under 100 Simultaneous Micro-Trades",
+      "priority": "P0",
+      "race_classes": [
+        "LOST-UPDATE"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-M011",
+        "BTPAMM-M001"
+      ],
+      "description": "100 concurrent 0.10 lot opens and closes verify margin arithmetic has zero integer or float drift.",
+      "module_key": "M6",
+      "module_title": "Margin & Stop-Outs"
+    },
+    "RC-M-09": {
+      "scenario_id": "RC-M-09",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 16.45,
+      "latency_p99_ms": 29.51,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Follower Fresh Deposit Clears Mid-Stopout Liquidation",
+      "priority": "P0",
+      "race_classes": [
+        "TOCTOU",
+        "STATE-RACE"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-M015",
+        "BTPAMM-M003"
+      ],
+      "description": "Deposit commits while liquidation is active; liquidation re-evaluates free margin and halts.",
+      "module_key": "M6",
+      "module_title": "Margin & Stop-Outs"
+    },
+    "RC-M-10": {
+      "scenario_id": "RC-M-10",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Broker Admin 50% Derisk Trim vs Master Adding to Position",
+      "priority": "P0",
+      "race_classes": [
+        "STATE-RACE"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-M014",
+        "BTPAMM-O001",
+        "BTPAMM-O002"
+      ],
+      "description": "Admin trims 50% while master submits Buy order. New-order lock takes effect atomically.",
+      "module_key": "M6",
+      "module_title": "Margin & Stop-Outs"
+    },
+    "RC-M-11": {
+      "scenario_id": "RC-M-11",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 12.11,
+      "latency_p99_ms": 14.05,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Weekend Margin Requirement Doubling at Friday 21:30 Boundary",
+      "priority": "P1",
+      "race_classes": [
+        "BOUNDARY-TIME"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-M013"
+      ],
+      "description": "Margin requirements scale 2x at Friday 21:30; orders evaluated against single active rule version.",
+      "module_key": "M6",
+      "module_title": "Margin & Stop-Outs"
+    },
+    "RC-M-12": {
+      "scenario_id": "RC-M-12",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Manager Personal Account Loss Isolation from PAMM Pool",
+      "priority": "P0",
+      "race_classes": [
+        "LOCK-ORDER"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-M012",
+        "BTPAMM-O012"
+      ],
+      "description": "Manager's independent non-PAMM trades lose heavily; follower equity remains strictly decoupled.",
+      "module_key": "M6",
+      "module_title": "Margin & Stop-Outs"
+    },
+    "RC-D-01": {
+      "scenario_id": "RC-D-01",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.65,
+      "latency_p99_ms": 0.74,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Wallet Exhaustion: 20 Parallel $1,000 Joins from $1,000 Balance",
+      "priority": "P0",
+      "race_classes": [
+        "TOCTOU",
+        "EXPLOIT"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-F009",
+        "BTPAMM-D001"
+      ],
+      "description": "Follower with $1,000 in wallet fires 20 parallel $1,000 pool joins. Exactly 1 debits, 19 fail.",
+      "module_key": "M7",
+      "module_title": "Deposits & Unfollow"
+    },
+    "RC-D-02": {
+      "scenario_id": "RC-D-02",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Same operation_key 50x Concurrently (Idempotency Deduplication)",
+      "priority": "P0",
+      "race_classes": [
+        "DOUBLE-EFFECT"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-F009",
+        "BTPAMM-C005",
+        "BTPAMM-D001"
+      ],
+      "description": "50 concurrent joins with identical operation_key; returns identical response with 1 effect.",
+      "module_key": "M7",
+      "module_title": "Deposits & Unfollow"
+    },
+    "RC-D-03": {
+      "scenario_id": "RC-D-03",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "4 Parallel $3,000 Withdrawal Requests from $10,000 Equity",
+      "priority": "P0",
+      "race_classes": [
+        "TOCTOU"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-D002"
+      ],
+      "description": "Equity = $10k; at most 3 x $3k succeed, 4th fails with Insufficient Available Equity.",
+      "module_key": "M7",
+      "module_title": "Deposits & Unfollow"
+    },
+    "RC-D-04": {
+      "scenario_id": "RC-D-04",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "15 Instant Withdrawals vs Master Order Margin Consumption",
+      "priority": "P0",
+      "race_classes": [
+        "WRITE-SKEW"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-D003",
+        "BTPAMM-D004",
+        "BTPAMM-D013",
+        "BTPAMM-M007"
+      ],
+      "description": "Instant redemptions and new order consume shared free margin; sum never exceeds pool free margin.",
+      "module_key": "M7",
+      "module_title": "Deposits & Unfollow"
+    },
+    "RC-D-05": {
+      "scenario_id": "RC-D-05",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 14.35,
+      "latency_p99_ms": 21.21,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Cancel Pending Withdrawal vs Rollover Execution Window",
+      "priority": "P0",
+      "race_classes": [
+        "STATE-RACE"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-D006",
+        "BTPAMM-D002",
+        "BTPAMM-R009"
+      ],
+      "description": "Client cancel request races rollover job; request is either paid or cancelled, never both.",
+      "module_key": "M7",
+      "module_title": "Deposits & Unfollow"
+    },
+    "RC-D-06": {
+      "scenario_id": "RC-D-06",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 15.24,
+      "latency_p99_ms": 19.2,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "15 Simultaneous Withdrawals During Market Volatility",
+      "priority": "P0",
+      "race_classes": [
+        "LOCK-ORDER",
+        "DOUBLE-EFFECT"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-D013"
+      ],
+      "description": "Processed FIFO by server-assigned sequence without starvation or deadlocks.",
+      "module_key": "M7",
+      "module_title": "Deposits & Unfollow"
+    },
+    "RC-D-07": {
+      "scenario_id": "RC-D-07",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "POST /pamm/unfollow Mid-Trade (Settle-on-Exit Strategy)",
+      "priority": "P0",
+      "race_classes": [
+        "STATE-RACE",
+        "EXPLOIT"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-D005",
+        "BTPAMM-F008"
+      ],
+      "description": "Follower unfollows mid-trade; receives 80% net profit share with 20% manager HWM cut deducted.",
+      "module_key": "M7",
+      "module_title": "Deposits & Unfollow"
+    },
+    "RC-D-08": {
+      "scenario_id": "RC-D-08",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 10.37,
+      "latency_p99_ms": 14.08,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Lockup Period Early Exit Penalty at Day 30 Boundary",
+      "priority": "P0",
+      "race_classes": [
+        "BOUNDARY-TIME"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-D007"
+      ],
+      "description": "Exit at Day 30 boundary applies 5% penalty if committed inside lockup; receipt issued once.",
+      "module_key": "M7",
+      "module_title": "Deposits & Unfollow"
+    },
+    "RC-D-09": {
+      "scenario_id": "RC-D-09",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "$100k Whale Deposit Mid-Cycle vs Trade Close Allocation",
+      "priority": "P0",
+      "race_classes": [
+        "SNAPSHOT-SKEW"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-D008",
+        "BTPAMM-A002"
+      ],
+      "description": "Whale joins $50k pool while trade closes; whale receives zero PnL from the open trade.",
+      "module_key": "M7",
+      "module_title": "Deposits & Unfollow"
+    },
+    "RC-D-10": {
+      "scenario_id": "RC-D-10",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 21.66,
+      "latency_p99_ms": 32.3,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Deposit Chargeback Reversal vs Follower Withdrawal Mid-Trade",
+      "priority": "P0",
+      "race_classes": [
+        "STATE-RACE",
+        "EXPLOIT"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-D010"
+      ],
+      "description": "Card chargeback reversal locks sub-account atomically, blocking withdrawal of disputed capital.",
+      "module_key": "M7",
+      "module_title": "Deposits & Unfollow"
+    },
+    "RC-D-11": {
+      "scenario_id": "RC-D-11",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Withdraw Profit Only ($3,500) vs Trade Closing",
+      "priority": "P1",
+      "race_classes": [
+        "SNAPSHOT-SKEW"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-D011",
+        "BTPAMM-H009"
+      ],
+      "description": "Follower requests profit-only withdrawal; payout matches current realized profit at commit time.",
+      "module_key": "M7",
+      "module_title": "Deposits & Unfollow"
+    },
+    "RC-D-12": {
+      "scenario_id": "RC-D-12",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Liquidate & Close Pool vs 50 Simultaneous Unfollows",
+      "priority": "P0",
+      "race_classes": [
+        "STATE-RACE"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-D015"
+      ],
+      "description": "Manager liquidates pool; all 50 followers refunded exactly once; pool archived cleanly.",
+      "module_key": "M7",
+      "module_title": "Deposits & Unfollow"
+    },
+    "RC-D-13": {
+      "scenario_id": "RC-D-13",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 10.54,
+      "latency_p99_ms": 15.93,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "500 Multi-Investor Cash Deposits in Same 60-Second Window",
+      "priority": "P0",
+      "race_classes": [
+        "LOCK-ORDER"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-D009"
+      ],
+      "description": "Pool capital increases by sum of acknowledged deposits; zero deadlocks, row-lock wait p99 < 50ms.",
+      "module_key": "M7",
+      "module_title": "Deposits & Unfollow"
+    },
+    "RC-H-01": {
+      "scenario_id": "RC-H-01",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Monthly Fee Settlement vs Deposit & Withdrawal Collision",
+      "priority": "P0",
+      "race_classes": [
+        "SNAPSHOT-SKEW"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-H002",
+        "BTPAMM-H008",
+        "BTPAMM-H009"
+      ],
+      "description": "Fresh deposit during monthly settlement is never taxed as profit; HWM adjusts dollar-for-dollar.",
+      "module_key": "M8",
+      "module_title": "HWM & Performance Fees"
+    },
+    "RC-H-02": {
+      "scenario_id": "RC-H-02",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Monthly Settlement Job Across 2 Pods (Duplicate Fee Prevention)",
+      "priority": "P0",
+      "race_classes": [
+        "DOUBLE-EFFECT",
+        "LEASE/FENCE"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-H002",
+        "BTPAMM-H005",
+        "BTPAMM-H010"
+      ],
+      "description": "Unique (follower, period) constraint ensures zero double-fee deductions.",
+      "module_key": "M8",
+      "module_title": "HWM & Performance Fees"
+    },
+    "RC-H-03": {
+      "scenario_id": "RC-H-03",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Unfollow Settle-on-Exit vs Scheduled Monthly Fee Settlement",
+      "priority": "P0",
+      "race_classes": [
+        "DOUBLE-EFFECT",
+        "STATE-RACE"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-H010",
+        "BTPAMM-D005"
+      ],
+      "description": "Fee charged exactly once on consistent balance vs HWM snapshot.",
+      "module_key": "M8",
+      "module_title": "HWM & Performance Fees"
+    },
+    "RC-H-04": {
+      "scenario_id": "RC-H-04",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Fee Settlement Concurrency with Trade Close & Stop-Out Check",
+      "priority": "P0",
+      "race_classes": [
+        "SERIALIZABILITY"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-H013",
+        "BTPAMM-H002",
+        "BTPAMM-M003"
+      ],
+      "description": "Fee debit pre-checks free margin; a fee deduction never pushes the pool under stop-out.",
+      "module_key": "M8",
+      "module_title": "HWM & Performance Fees"
+    },
+    "RC-H-05": {
+      "scenario_id": "RC-H-05",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Drawdown & Recovery: Zero Fee Charged Below Follower HWM",
+      "priority": "P0",
+      "race_classes": [
+        "LOST-UPDATE"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-H003",
+        "BTPAMM-H004",
+        "BTPAMM-H006"
+      ],
+      "description": "Per-follower isolation: Follower B in drawdown pays $0 while Follower A in profit pays 20%.",
+      "module_key": "M8",
+      "module_title": "HWM & Performance Fees"
+    },
+    "RC-H-06": {
+      "scenario_id": "RC-H-06",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Withdrawal Pro-Rata HWM Downward Adjustment",
+      "priority": "P0",
+      "race_classes": [
+        "LOST-UPDATE"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-H009",
+        "BTPAMM-H008"
+      ],
+      "description": "Withdrawal during drawdown adjusts HWM proportionally (e.g. from $10k loss to $8k, withdraw 50% -> HWM $5,000).",
+      "module_key": "M8",
+      "module_title": "HWM & Performance Fees"
+    },
+    "RC-H-07": {
+      "scenario_id": "RC-H-07",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 10.13,
+      "latency_p99_ms": 13.19,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Annualized 2.0% AUM Management Fee Daily Accrual",
+      "priority": "P0",
+      "race_classes": [
+        "DOUBLE-EFFECT",
+        "BOUNDARY-TIME"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-H007"
+      ],
+      "description": "Daily accrual (2%/365) sampled at midnight; accrual job idempotency verified.",
+      "module_key": "M8",
+      "module_title": "HWM & Performance Fees"
+    },
+    "RC-H-08": {
+      "scenario_id": "RC-H-08",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Fee Split: 85% Manager, 15% Broker Retainage, 10% IB Commission",
+      "priority": "P1",
+      "race_classes": [
+        "PARTIAL-FAIL",
+        "LOST-UPDATE"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-H011",
+        "BTPAMM-H012",
+        "BTPAMM-H014",
+        "BTPAMM-L014"
+      ],
+      "description": "Fee split executed in single atomic transaction; sum of parts equals total fee exactly.",
+      "module_key": "M8",
+      "module_title": "HWM & Performance Fees"
+    },
+    "RC-H-09": {
+      "scenario_id": "RC-H-09",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Clawback Prevention: Month 1 Fees Untouched by Month 2 Loss",
+      "priority": "P0",
+      "race_classes": [
+        "LOST-UPDATE"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-H015"
+      ],
+      "description": "Month 1 fees paid to manager remain immutable when pool sustains Month 2 losses.",
+      "module_key": "M8",
+      "module_title": "HWM & Performance Fees"
+    },
+    "RC-H-10": {
+      "scenario_id": "RC-H-10",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Exploit Prevention: Follower Unfollow & Immediate Re-Join",
+      "priority": "P0",
+      "race_classes": [
+        "EXPLOIT"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-A015",
+        "BTPAMM-D014",
+        "BTPAMM-H010"
+      ],
+      "description": "Follower attempts to escape performance fees by unfollowing and immediately rejoining.",
+      "module_key": "M8",
+      "module_title": "HWM & Performance Fees"
+    },
+    "RC-H-11": {
+      "scenario_id": "RC-H-11",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 11.14,
+      "latency_p99_ms": 15.01,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "GET /pamm/shares?role=master Atomic Consistency During Settlement",
+      "priority": "P1",
+      "race_classes": [
+        "VISIBILITY"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-H001",
+        "BTPAMM-H014"
+      ],
+      "description": "Consolidated manager payout query returns point-in-time consistent totals.",
+      "module_key": "M8",
+      "module_title": "HWM & Performance Fees"
+    },
+    "RC-C-01": {
+      "scenario_id": "RC-C-01",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.18,
+      "latency_p99_ms": 0.18,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "100 to 500-Follower Batch Allocation Scale & DB Crash Resilience",
+      "priority": "P0",
+      "race_classes": [
+        "PARTIAL-FAIL",
+        "VISIBILITY"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-C001",
+        "BTPAMM-C002",
+        "BTPAMM-C008"
+      ],
+      "description": "500-follower batch trade close; verifies P99 latency < 100ms and zero dropped allocations.",
+      "module_key": "M9",
+      "module_title": "Concurrency & Scale"
+    },
+    "RC-C-02": {
+      "scenario_id": "RC-C-02",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 11.93,
+      "latency_p99_ms": 13.82,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Committed Snapshot ID Sizing Under 50 Follower Deposits",
+      "priority": "P0",
+      "race_classes": [
+        "SNAPSHOT-SKEW"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-C003"
+      ],
+      "description": "Orders sized on committed pool balance snapshot; snapshot ID recorded in order audit row.",
+      "module_key": "M9",
+      "module_title": "Concurrency & Scale"
+    },
+    "RC-C-03": {
+      "scenario_id": "RC-C-03",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Simultaneous Master Trade Close vs Follower Unfollow",
+      "priority": "P0",
+      "race_classes": [
+        "STATE-RACE"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-C004",
+        "BTPAMM-D005",
+        "BTPAMM-R005"
+      ],
+      "description": "Master clicks Close Trade at exact millisecond follower clicks Unfollow; trade close takes precedence.",
+      "module_key": "M9",
+      "module_title": "Concurrency & Scale"
+    },
+    "RC-C-04": {
+      "scenario_id": "RC-C-04",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Idempotency Key Deduplication at API Gateway & Core OMS Service",
+      "priority": "P0",
+      "race_classes": [
+        "DOUBLE-EFFECT"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-C005"
+      ],
+      "description": "Identical request key rejected downstream even if gateway bypass occurs.",
+      "module_key": "M9",
+      "module_title": "Concurrency & Scale"
+    },
+    "RC-C-05": {
+      "scenario_id": "RC-C-05",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 5.66,
+      "latency_p99_ms": 7.75,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Writer-Pair Lock Order Matrix: Zero Deadlocks (SQLSTATE 40P01)",
+      "priority": "P0",
+      "race_classes": [
+        "LOCK-ORDER"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-C006",
+        "BTPAMM-C012",
+        "BTPAMM-D013"
+      ],
+      "description": "Deterministic sub_account_id lock sorting guarantees zero deadlocks across all concurrent transaction pairs.",
+      "module_key": "M9",
+      "module_title": "Concurrency & Scale"
+    },
+    "RC-C-06": {
+      "scenario_id": "RC-C-06",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 5.96,
+      "latency_p99_ms": 7.87,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "500 Ticks/Sec Price Stream with Out-of-Order Ticks",
+      "priority": "P1",
+      "race_classes": [
+        "REORDER"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-C007"
+      ],
+      "description": "Stale market tick never overwrites newer tick; memory stable under high-rate streaming.",
+      "module_key": "M9",
+      "module_title": "Concurrency & Scale"
+    },
+    "RC-C-07": {
+      "scenario_id": "RC-C-07",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Dead-Letter Queue (DLQ) Retry of Failed Allocation Batch",
+      "priority": "P0",
+      "race_classes": [
+        "REORDER",
+        "DOUBLE-EFFECT",
+        "PARTIAL-FAIL"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-C008",
+        "BTPAMM-O003"
+      ],
+      "description": "DB crash mid-batch; DLQ retries allocation using participant set of original trade snapshot.",
+      "module_key": "M9",
+      "module_title": "Concurrency & Scale"
+    },
+    "RC-C-08": {
+      "scenario_id": "RC-C-08",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 27.85,
+      "latency_p99_ms": 34.79,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "WebSocket Broadcast Fan-Out to 500 Connected Mobile Apps",
+      "priority": "P1",
+      "race_classes": [
+        "VISIBILITY",
+        "REORDER"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-C009",
+        "BTPAMM-E012"
+      ],
+      "description": "Broadcast <= 300ms SLA for all connected clients without slow-consumer blocking.",
+      "module_key": "M9",
+      "module_title": "Concurrency & Scale"
+    },
+    "RC-C-09": {
+      "scenario_id": "RC-C-09",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 18.87,
+      "latency_p99_ms": 25.26,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Distributed Lock (Redlock) Timeout & DB Fencing Token Rejection",
+      "priority": "P0",
+      "race_classes": [
+        "LEASE/FENCE"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-C014"
+      ],
+      "description": "Worker lease expires during GC pause; fencing token check rejects late writes, preventing split-brain.",
+      "module_key": "M9",
+      "module_title": "Concurrency & Scale"
+    },
+    "RC-C-10": {
+      "scenario_id": "RC-C-10",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 4.21,
+      "latency_p99_ms": 4.82,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Memory Leak Profiling: 50,000 Simulated Continuous Allocations",
+      "priority": "P1",
+      "race_classes": [
+        "ALL"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-C010"
+      ],
+      "description": "Verifies process RSS remains flat (<350 MB) under continuous trading cycles.",
+      "module_key": "M9",
+      "module_title": "Concurrency & Scale"
+    },
+    "RC-C-11": {
+      "scenario_id": "RC-C-11",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Batch Database UNNEST / Bulk Update Delta Optimization",
+      "priority": "P0",
+      "race_classes": [
+        "LOST-UPDATE"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-C011"
+      ],
+      "description": "500-row batch updates apply deltas without absolute overwrites or conflict errors.",
+      "module_key": "M9",
+      "module_title": "Concurrency & Scale"
+    },
+    "RC-C-12": {
+      "scenario_id": "RC-C-12",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 35.42,
+      "latency_p99_ms": 46.33,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Distributed Broker Server Latency Variance (London, NY, Tokyo)",
+      "priority": "P1",
+      "race_classes": [
+        "REORDER"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-C013"
+      ],
+      "description": "Geographically dispersed follower updates converge cleanly to identical final ledger.",
+      "module_key": "M9",
+      "module_title": "Concurrency & Scale"
+    },
+    "RC-C-13": {
+      "scenario_id": "RC-C-13",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Grand Chaos Soak Test: 100 Followers, 19+ Trades & Random Faults",
+      "priority": "P0",
+      "race_classes": [
+        "ALL"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-C015"
+      ],
+      "description": "Simultaneous trades, joins, exits, fee runs, and bridge socket disconnects verify $0.00 discrepancy.",
+      "module_key": "M9",
+      "module_title": "Concurrency & Scale"
+    },
+    "RC-L-01": {
+      "scenario_id": "RC-L-01",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "KYC / AML Expiry & Sanction Gating Evaluated at Commit Time",
+      "priority": "P0",
+      "race_classes": [
+        "TOCTOU"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-L004",
+        "BTPAMM-L005",
+        "BTPAMM-L011",
+        "BTPAMM-L015",
+        "BTPAMM-M010"
+      ],
+      "description": "Zero money moves after a compliance freeze commits; sanction frozen funds route to escrow.",
+      "module_key": "M10",
+      "module_title": "Compliance & LPOA"
+    },
+    "RC-L-02": {
+      "scenario_id": "RC-L-02",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 9.89,
+      "latency_p99_ms": 14.95,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "ESMA Retail Leverage Cap (1:30) vs Professional Reclassification",
+      "priority": "P0",
+      "race_classes": [
+        "TOCTOU"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-L002",
+        "BTPAMM-L010"
+      ],
+      "description": "1:30 leverage limit strictly enforced for all orders committed under retail classification.",
+      "module_key": "M10",
+      "module_title": "Compliance & LPOA"
+    },
+    "RC-L-03": {
+      "scenario_id": "RC-L-03",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 15.36,
+      "latency_p99_ms": 19.19,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "AML Closed-Loop Withdrawal Enforcement (Wire vs Crypto Attempt)",
+      "priority": "P0",
+      "race_classes": [
+        "TOCTOU",
+        "WRITE-SKEW"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-L012"
+      ],
+      "description": "Crypto withdrawal path rejected on wire-funded account; cumulative wire cap decremented atomically.",
+      "module_key": "M10",
+      "module_title": "Compliance & LPOA"
+    },
+    "RC-L-04": {
+      "scenario_id": "RC-L-04",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Immutable Cryptographic SHA-256 Audit Hash Chain Chaining",
+      "priority": "P0",
+      "race_classes": [
+        "LOCK-ORDER",
+        "LOST-UPDATE"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-L007",
+        "BTPAMM-O014",
+        "BTPAMM-R015"
+      ],
+      "description": "Concurrent trades appending to regulatory blotter maintain single linear chain without forks or gaps.",
+      "module_key": "M10",
+      "module_title": "Compliance & LPOA"
+    },
+    "RC-L-05": {
+      "scenario_id": "RC-L-05",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 8.88,
+      "latency_p99_ms": 15.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "GDPR Right to Be Forgotten vs 7-Year Financial Retention",
+      "priority": "P2",
+      "race_classes": [
+        "STATE-RACE"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-L009"
+      ],
+      "description": "PII anonymized while financial transaction ledgers remain intact with valid foreign keys.",
+      "module_key": "M10",
+      "module_title": "Compliance & LPOA"
+    },
+    "RC-L-06": {
+      "scenario_id": "RC-L-06",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 9.25,
+      "latency_p99_ms": 11.66,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Sanctioned Region Geoblocking with Spoofed X-Forwarded-For",
+      "priority": "P0",
+      "race_classes": [
+        "TOCTOU",
+        "VISIBILITY"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-L005"
+      ],
+      "description": "Blocked region join requests consistently return 403 Forbidden with security alert logged.",
+      "module_key": "M10",
+      "module_title": "Compliance & LPOA"
+    },
+    "RC-L-07": {
+      "scenario_id": "RC-L-07",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 9.15,
+      "latency_p99_ms": 14.82,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Anti-Front-Running Compliance Surveillance on Manager Trades",
+      "priority": "P1",
+      "race_classes": [
+        "SNAPSHOT-SKEW"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-L008",
+        "BTPAMM-L013"
+      ],
+      "description": "Surveillance engine cross-checks manager personal order timing vs MAM/PAMM block placement.",
+      "module_key": "M10",
+      "module_title": "Compliance & LPOA"
+    },
+    "RC-O-01": {
+      "scenario_id": "RC-O-01",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Broker Global Emergency Kill-Switch vs In-Flight Fills & Closes",
+      "priority": "P0",
+      "race_classes": [
+        "STATE-RACE"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-O001",
+        "BTPAMM-O002",
+        "BTPAMM-O011",
+        "BTPAMM-M014"
+      ],
+      "description": "Kill-switch commits; zero new orders accepted, working orders cancelled, pool flat < 1,500ms.",
+      "module_key": "M11",
+      "module_title": "Ops & Disaster Recovery"
+    },
+    "RC-O-02": {
+      "scenario_id": "RC-O-02",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Manual Allocation Re-Calculation Console vs DLQ Retry",
+      "priority": "P0",
+      "race_classes": [
+        "DOUBLE-EFFECT"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-O003",
+        "BTPAMM-C008"
+      ],
+      "description": "Recompute applies deltas to missing rows only; produces zero duplicate PnL credits.",
+      "module_key": "M11",
+      "module_title": "Ops & Disaster Recovery"
+    },
+    "RC-O-03": {
+      "scenario_id": "RC-O-03",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 30.8,
+      "latency_p99_ms": 44.23,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Zero-Downtime Rolling Deployment of PAMM Allocation Engine",
+      "priority": "P0",
+      "race_classes": [
+        "PARTIAL-FAIL",
+        "REORDER"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-O005"
+      ],
+      "description": "Kubernetes rolling deployment v2.1 -> v2.2 during sustained trade flow; zero dropped allocations.",
+      "module_key": "M11",
+      "module_title": "Ops & Disaster Recovery"
+    },
+    "RC-O-04": {
+      "scenario_id": "RC-O-04",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Administrator Emergency Unlink of Compromised Account",
+      "priority": "P0",
+      "race_classes": [
+        "STATE-RACE"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-O006"
+      ],
+      "description": "Compromised investor unlinked; equity refunded once, credentials revoked, post-unlink calls rejected.",
+      "module_key": "M11",
+      "module_title": "Ops & Disaster Recovery"
+    },
+    "RC-O-05": {
+      "scenario_id": "RC-O-05",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Administrative Goodwill Credit Duplicate Submission",
+      "priority": "P1",
+      "race_classes": [
+        "DOUBLE-EFFECT"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-O007"
+      ],
+      "description": "Two admins submit goodwill credit for bridge delay; exactly 1 credit of $150 applies.",
+      "module_key": "M11",
+      "module_title": "Ops & Disaster Recovery"
+    },
+    "RC-O-06": {
+      "scenario_id": "RC-O-06",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Daily EOD Reconciliation (01:00 AM) During Active Trades",
+      "priority": "P0",
+      "race_classes": [
+        "SNAPSHOT-SKEW",
+        "BOUNDARY-TIME"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-O009",
+        "BTPAMM-O015"
+      ],
+      "description": "EOD reconciliation reads consistent snapshot; live writes generate zero false discrepancy alerts.",
+      "module_key": "M11",
+      "module_title": "Ops & Disaster Recovery"
+    },
+    "RC-O-07": {
+      "scenario_id": "RC-O-07",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 47.14,
+      "latency_p99_ms": 90.82,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Disaster Recovery Warm Standby Cluster Failover (RPO=0, RTO<120s)",
+      "priority": "P0",
+      "race_classes": [
+        "LEASE/FENCE",
+        "PARTIAL-FAIL"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-O010"
+      ],
+      "description": "Primary data center failover; every 2xx acknowledged write persists with zero split-brain.",
+      "module_key": "M11",
+      "module_title": "Ops & Disaster Recovery"
+    },
+    "RC-O-08": {
+      "scenario_id": "RC-O-08",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 16.19,
+      "latency_p99_ms": 22.08,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Investor Trade Dispute Tick-by-Tick Reconstruction & Tear-Sheet",
+      "priority": "P1",
+      "race_classes": [
+        "VISIBILITY"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-O004",
+        "BTPAMM-O013",
+        "BTPAMM-O008"
+      ],
+      "description": "Tick-by-tick reconstruction tool proves execution accuracy against LP tape.",
+      "module_key": "M11",
+      "module_title": "Ops & Disaster Recovery"
+    },
+    "RC-O-09": {
+      "scenario_id": "RC-O-09",
+      "status": "PASS",
+      "iterations_run": 5,
+      "violations_count": 0,
+      "violation_rate_pct": 0.0,
+      "invariants_failed": [],
+      "latency_p50_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "deadlocks": 0,
+      "serialization_failures": 0,
+      "outcome_table": {},
+      "replay_bundles": [],
+      "name": "Manager Personal Capital Decoupling Under Broker Liquidation",
+      "priority": "P0",
+      "race_classes": [
+        "LOCK-ORDER"
+      ],
+      "hardens_tcs": [
+        "BTPAMM-O012",
+        "BTPAMM-M012"
+      ],
+      "description": "Manager personal account stop-out leaves follower capital 100% untouched and segregated.",
+      "module_key": "M11",
+      "module_title": "Ops & Disaster Recovery"
+    }
+  }
+}

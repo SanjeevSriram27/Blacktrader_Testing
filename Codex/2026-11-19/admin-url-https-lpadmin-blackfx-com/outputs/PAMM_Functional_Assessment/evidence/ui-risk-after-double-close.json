@@ -1,0 +1,321 @@
+{
+  "at": "2026-11-19T11:24:45.000Z",
+  "member_id": "mem_550a4e91e0ce62a93f",
+  "positions": {
+    "status": 200,
+    "body": {
+      "count": 0,
+      "funds": {
+        "balance": 18981.8081,
+        "equity": 18981.8081,
+        "free_margin": 18981.8081,
+        "margin_call_level": 100,
+        "margin_level": null,
+        "starting_balance": 19000,
+        "stop_out_level": 50,
+        "unrealized_pnl": 0,
+        "used_margin": 0
+      },
+      "positions": [],
+      "success": true,
+      "total_unrealized_pnl": 0
+    }
+  },
+  "orders": {
+    "status": 200,
+    "body": {
+      "count": 10,
+      "orders": [
+        {
+          "order_id": "ord_1a011498a02382bf54",
+          "market_order_id": "ord_48ba35dc3ace30ba9e",
+          "group_id": "group_1795087405925_001",
+          "symbol": "BINANCE:BTCUSDT.P",
+          "side": "SELL",
+          "type": "MARKET",
+          "state": "FILLED",
+          "requested_qty": 0.001,
+          "filled_qty": 0.001,
+          "avg_fill_price": 63774.1,
+          "source": "squareoff",
+          "created_at": "2026-11-19T11:24:44.039947Z",
+          "updated_at": "2026-11-19T11:24:44.039947Z",
+          "fee": 0
+        },
+        {
+          "order_id": "ord_48ba35dc3ace30ba9e",
+          "market_order_id": "ord_48ba35dc3ace30ba9e",
+          "group_id": "group_1795087405925_001",
+          "symbol": "BINANCE:BTCUSDT.P",
+          "side": "BUY",
+          "type": "MARKET",
+          "state": "FILLED",
+          "requested_qty": 0.001,
+          "filled_qty": 0.001,
+          "avg_fill_price": 63763.8,
+          "source": "1click",
+          "created_at": "2026-11-19T11:23:25.959051Z",
+          "updated_at": "2026-11-19T11:23:25.959051Z",
+          "fee": 0
+        },
+        {
+          "order_id": "ord_11d0a09947edc0f907",
+          "market_order_id": "ord_b2b2177b7a15f9825e",
+          "group_id": "group_1795087264046_001",
+          "symbol": "BINANCE:BTCUSDT.P",
+          "side": "SELL",
+          "type": "MARKET",
+          "state": "FILLED",
+          "requested_qty": 0.001,
+          "filled_qty": 0.001,
+          "avg_fill_price": 63749.6,
+          "source": "squareoff",
+          "created_at": "2026-11-19T11:22:15.315968Z",
+          "updated_at": "2026-11-19T11:22:15.315968Z",
+          "fee": 0
+        },
+        {
+          "order_id": "ord_935d40ff89506945a4",
+          "parent_order_id": "ord_b2b2177b7a15f9825e",
+          "market_order_id": "ord_b2b2177b7a15f9825e",
+          "group_id": "group_1795087264046_001",
+          "symbol": "BINANCE:BTCUSDT.P",
+          "side": "SELL",
+          "type": "TSL",
+          "state": "CANCELLED",
+          "requested_qty": 0.001,
+          "filled_qty": 0,
+          "trigger_price": 62716.8,
+          "source": "algo_trailing",
+          "created_at": "2026-11-19T11:21:33.608051Z",
+          "updated_at": "2026-11-19T11:22:15.318775Z"
+        },
+        {
+          "trailing": {
+            "activation": 0,
+            "distance": 1000,
+            "step": 1000,
+            "level": 62716.8,
+            "anchor": 63716.8,
+            "armed": true,
+            "armed_at": "2026-11-19T11:21:33.607966945Z",
+            "history": [
+              {
+                "at": "2026-11-19T11:21:33.609548462Z",
+                "price": 63716.8,
+                "sl": 62716.8
+              }
+            ]
+          },
+          "order_id": "ord_b2b2177b7a15f9825e",
+          "market_order_id": "ord_b2b2177b7a15f9825e",
+          "group_id": "group_1795087264046_001",
+          "symbol": "BINANCE:BTCUSDT.P",
+          "side": "BUY",
+          "type": "MARKET",
+          "state": "FILLED",
+          "requested_qty": 0.001,
+          "filled_qty": 0.001,
+          "avg_fill_price": 63711.8,
+          "source": "1click",
+          "created_at": "2026-11-19T11:21:04.121659Z",
+          "updated_at": "2026-11-19T11:21:33.608051Z",
+          "fee": 0
+        },
+        {
+          "order_id": "ord_72bdbcfaa7f97611fc",
+          "market_order_id": "ord_49a9f0529883a82f86",
+          "symbol": "BINANCE:BTCUSDT.P",
+          "side": "SELL",
+          "type": "MARKET",
+          "state": "FILLED",
+          "requested_qty": 1,
+          "filled_qty": 1,
+          "avg_fill_price": 63736.6,
+          "source": "stop_out",
+          "created_at": "2026-11-19T11:20:24.942777Z",
+          "updated_at": "2026-11-19T11:20:24.942777Z",
+          "fee": 0
+        },
+        {
+          "order_id": "ord_49a9f0529883a82f86",
+          "market_order_id": "ord_49a9f0529883a82f86",
+          "symbol": "BINANCE:BTCUSDT.P",
+          "side": "BUY",
+          "type": "MARKET",
+          "state": "FILLED",
+          "requested_qty": 1,
+          "filled_qty": 1,
+          "avg_fill_price": 63713.8,
+          "created_at": "2026-11-19T11:19:49.533668Z",
+          "updated_at": "2026-11-19T11:19:49.533668Z",
+          "fee": 0
+        },
+        {
+          "order_id": "ord_56f6b5ee2d473d8e32",
+          "market_order_id": "ord_6fc2e8cbc1cbdf09f1",
+          "symbol": "BINANCE:BTCUSDT.P",
+          "side": "SELL",
+          "type": "MARKET",
+          "state": "FILLED",
+          "requested_qty": 1,
+          "filled_qty": 1,
+          "avg_fill_price": 63748.4,
+          "source": "stop_out",
+          "created_at": "2026-11-19T11:01:43.442312Z",
+          "updated_at": "2026-11-19T11:01:43.442312Z",
+          "fee": 0
+        },
+        {
+          "order_id": "ord_789aad084381770660",
+          "market_order_id": "ord_789aad084381770660",
+          "symbol": "BINANCE:BTCUSDT.P",
+          "side": "BUY",
+          "type": "MARKET",
+          "state": "REJECTED",
+          "reject_reason": "insufficient free margin: required 0.64, free -63.78",
+          "requested_qty": 0.001,
+          "filled_qty": 0,
+          "created_at": "2026-11-19T11:00:13.04044Z",
+          "updated_at": "2026-11-19T11:00:13.04044Z"
+        },
+        {
+          "order_id": "ord_6fc2e8cbc1cbdf09f1",
+          "market_order_id": "ord_6fc2e8cbc1cbdf09f1",
+          "symbol": "BINANCE:BTCUSDT.P",
+          "side": "BUY",
+          "type": "MARKET",
+          "state": "FILLED",
+          "requested_qty": 1,
+          "filled_qty": 1,
+          "avg_fill_price": 63779.8,
+          "created_at": "2026-11-19T11:00:12.820195Z",
+          "updated_at": "2026-11-19T11:00:12.820195Z",
+          "fee": 0
+        }
+      ],
+      "success": true
+    }
+  },
+  "history": {
+    "status": 200,
+    "body": {
+      "attribution": "initial_entry",
+      "count": 4,
+      "history": [
+        {
+          "history_id": 1423579,
+          "order_id": "ord_1a011498a02382bf54",
+          "position_id": "pos_687f038d472a5f8d00",
+          "group_id": "group_1795087405925_001",
+          "symbol": "BINANCE:BTCUSDT.P",
+          "side": "BUY",
+          "qty": 0.001,
+          "entry_price": 63763.8,
+          "exit_price": 63774.1,
+          "realized_pnl": 0.010299999999995634,
+          "executed_at": "2026-11-19T11:24:44.040872Z",
+          "exit_type": "MARKET",
+          "exit_source": "squareoff",
+          "entry_source": "1click",
+          "entry_type": "MARKET",
+          "opened_at": "2026-11-19T11:23:25.959051Z"
+        },
+        {
+          "history_id": 1423578,
+          "order_id": "ord_11d0a09947edc0f907",
+          "position_id": "pos_f702bf22bc7d6fa22a",
+          "group_id": "group_1795087264046_001",
+          "symbol": "BINANCE:BTCUSDT.P",
+          "side": "BUY",
+          "qty": 0.001,
+          "entry_price": 63711.8,
+          "exit_price": 63749.6,
+          "realized_pnl": 0.037799999999995636,
+          "executed_at": "2026-11-19T11:22:15.316404Z",
+          "exit_type": "MARKET",
+          "exit_source": "squareoff",
+          "entry_source": "1click",
+          "entry_type": "MARKET",
+          "opened_at": "2026-11-19T11:21:04.121659Z",
+          "sl_price": 62716.8
+        },
+        {
+          "history_id": 1423577,
+          "order_id": "ord_72bdbcfaa7f97611fc",
+          "position_id": "pos_71b633481dae2d77b9",
+          "symbol": "BINANCE:BTCUSDT.P",
+          "side": "BUY",
+          "qty": 1,
+          "entry_price": 63713.8,
+          "exit_price": 63736.6,
+          "realized_pnl": 22.799999999995634,
+          "executed_at": "2026-11-19T11:20:24.943179Z",
+          "exit_type": "MARKET",
+          "exit_source": "stop_out",
+          "entry_type": "MARKET",
+          "opened_at": "2026-11-19T11:19:49.533668Z"
+        },
+        {
+          "history_id": 1423567,
+          "order_id": "ord_56f6b5ee2d473d8e32",
+          "position_id": "pos_1c2041a5d793f55d9a",
+          "symbol": "BINANCE:BTCUSDT.P",
+          "side": "BUY",
+          "qty": 1,
+          "entry_price": 63779.8,
+          "exit_price": 63748.4,
+          "realized_pnl": -31.400000000001455,
+          "executed_at": "2026-11-19T11:01:43.44265Z",
+          "exit_type": "MARKET",
+          "exit_source": "stop_out",
+          "entry_type": "MARKET",
+          "opened_at": "2026-11-19T11:00:12.820195Z"
+        }
+      ],
+      "next_cursor": "",
+      "success": true,
+      "total": 4,
+      "total_realized_pnl": -8.55190000000583
+    }
+  },
+  "allocations": {
+    "status": 200,
+    "body": {
+      "allocations": [
+        {
+          "alloc_id": 13640,
+          "at": "2026-11-19T11:20:24.946248Z",
+          "deposit": 1000,
+          "follower": "mem_593e2db012d725b4b5",
+          "follower_name": "PAMM QA Risk Investor",
+          "master": "mem_550a4e91e0ce62a93f",
+          "order_pnl": 22.799999999995634,
+          "pamm_id": "pmm_80ae9d5c23e13c8e2f",
+          "percentage": 100,
+          "pool_total": 1000,
+          "running_pnl": 22.8,
+          "shared_pnl": 22.8,
+          "trade_id": 1423577
+        },
+        {
+          "alloc_id": 13639,
+          "at": "2026-11-19T11:01:43.445334Z",
+          "deposit": 1000,
+          "follower": "mem_593e2db012d725b4b5",
+          "follower_name": "PAMM QA Risk Investor",
+          "master": "mem_550a4e91e0ce62a93f",
+          "order_pnl": -31.400000000001455,
+          "pamm_id": "pmm_7c56de0906628cc38a",
+          "percentage": 100,
+          "pool_total": 1000,
+          "running_pnl": -31.4,
+          "shared_pnl": -31.4,
+          "trade_id": 1423567
+        }
+      ],
+      "count": 2,
+      "success": true
+    }
+  }
+}

@@ -1,0 +1,796 @@
+- complementary:
+  - generic: blacktrader
+  - generic: Client Admin
+  - button "Collapse sidebar":
+  - navigation:
+    - button "Overview":
+      - generic: Overview
+    - button "Client Home":
+      - generic: Client Home
+    - button "Chart":
+      - generic: Chart
+    - button "OMS":
+      - generic: OMS
+    - button "Money":
+      - generic: Money
+    - button "People" [expanded]:
+      - generic: People
+    - button "Members":
+      - generic: Members
+    - button "Staff":
+      - generic: Staff
+    - button "Trades":
+      - generic: Trades
+    - button "Account requests":
+      - generic: Account requests
+    - button "Install":
+      - generic: Install
+  - generic: LP
+  - generic "lpadmin@blacktrader.com"
+  - text: Client admin
+  - button "Sign out":
+    - text: Sign out
+- banner:
+  - heading "Members" [level=1]
+  - generic: active
+  - button "v1.1.18 · Versions"
+  - button "Toggle theme":
+- main:
+  - button "All members":
+    - text: All members
+  - heading "pmmaster@mailinator.com" [level=2]
+  - paragraph:
+    - text: PM Master · user id
+    - code: 59f9ffdf-cd80-4e1e-900c-ec27cbf2a1fa
+  - generic: active
+  - term: Source
+  - definition: admin
+  - term: Joined
+  - definition: 18/11/2026, 14:56:00
+  - term: Account group
+  - definition: Default
+  - term: Plan
+  - definition: Default (Premium)
+  - term: Account type
+  - definition: live
+  - term: Engines
+  - definition: Paper Hedging · Real Hedging — chosen at sign-up, cannot be changed
+  - term: Book
+  - definition: B-book — real orders are booked here
+  - term: Trading balance
+  - definition: 999,883.24
+  - heading "Trading accounts" [level=2]
+  - paragraph: "The member's primary account trades every instance, as before. Extra accounts are each bound to one instance and carry their own balance, positions and history. This member chose Paper Hedging · Real Hedging at sign-up: their accounts open only on that engine, and the choice cannot be changed."
+  - button "Add account":
+    - text: Add account
+  - table:
+    - rowgroup:
+      - row "Account Instance Status Opened by Group Leverage Created Actions":
+        - columnheader "Account"
+        - columnheader "Instance"
+        - columnheader "Status"
+        - columnheader "Opened by"
+        - columnheader "Group"
+        - columnheader "Leverage"
+        - columnheader "Created"
+        - columnheader "Actions"
+    - rowgroup:
+      - row "Primary 59f9ffdf-cd80-4e1e-900c-ec27cbf2a1fa every account on Paper Hedging · Real Hedging active — Default group table 18/11/2026, 14:56:00 primary":
+        - cell "Primary 59f9ffdf-cd80-4e1e-900c-ec27cbf2a1fa":
+          - text: Primary
+          - code: 59f9ffdf-cd80-4e1e-900c-ec27cbf2a1fa
+        - cell "every account on Paper Hedging · Real Hedging"
+        - cell "active":
+          - generic: active
+        - cell "—"
+        - cell "Default"
+        - cell "group table"
+        - cell "18/11/2026, 14:56:00"
+        - cell "primary"
+  - paragraph: No extra accounts.
+  - heading "Money" [level=2]
+  - paragraph: Trading balance, and the deposit and payout requests this member has raised.
+  - generic: Trading balance · Paper (Hedging)
+  - generic: 999,883.24
+  - button "Set balance"
+  - generic: Trading balance · Real (Hedging)
+  - generic: real money
+  - generic: 1,897.06
+  - button "Set balance"
+  - heading "Deposits" [level=3]
+  - generic: No deposit requests.
+  - heading "Withdrawals" [level=3]
+  - generic: No payout requests.
+  - heading "Stop-out level" [level=2]
+  - paragraph: The margin level at which this member's positions are closed, largest loss first, until the level is back above it. Leave it empty to use the install's level. Applies to the install's own accounts (Paper, Hedging, Netting), never an exchange account.
+  - term: In force
+  - definition: 50% — the install's level
+  - term: Install
+  - definition: stop-out 50% · margin call 100%
+  - spinbutton "Stop-out level percent"
+  - generic: "%"
+  - button "Save" [disabled]
+  - heading "Bonus" [level=2]
+  - paragraph: Trading collateral for one account. It cannot be withdrawn or transferred.
+  - generic: Trading account
+  - combobox:
+    - option "Primary · Paper (Hedging)" [selected]
+    - option "Primary · Real (Hedging)"
+  - paragraph: Bonus is disabled for this instance.
+  - generic: Amount
+  - spinbutton [disabled]
+  - generic: Last day (UTC, inclusive)
+  - textbox [disabled]
+  - generic: Note (optional)
+  - textbox [disabled]
+  - button "Grant bonus" [disabled]
+  - table:
+    - rowgroup:
+      - row "Amount Last day (UTC) Status Note Granted by Actions":
+        - columnheader "Amount"
+        - columnheader "Last day (UTC)"
+        - columnheader "Status"
+        - columnheader "Note"
+        - columnheader "Granted by"
+        - columnheader "Actions"
+    - rowgroup
+  - paragraph: No bonus grants.
+  - heading "Verification" [level=2]
+  - paragraph: Identity documents this member uploaded from their Wallet. 0 of 6 slots filled.
+  - generic: unverified
+  - table:
+    - rowgroup:
+      - row "Document Status Remark Uploaded Reviewed File Actions":
+        - columnheader "Document"
+        - columnheader "Status"
+        - columnheader "Remark"
+        - columnheader "Uploaded"
+        - columnheader "Reviewed"
+        - columnheader "File"
+        - columnheader "Actions"
+    - rowgroup:
+      - row "Address proof not uploaded — — — —":
+        - cell "Address proof"
+        - cell "not uploaded":
+          - generic: not uploaded
+        - cell "—"
+        - cell "—"
+        - cell "—"
+        - cell "—"
+        - cell
+      - row "Address proof — back not uploaded — — — —":
+        - cell "Address proof — back"
+        - cell "not uploaded":
+          - generic: not uploaded
+        - cell "—"
+        - cell "—"
+        - cell "—"
+        - cell "—"
+        - cell
+      - row "ID proof not uploaded — — — —":
+        - cell "ID proof"
+        - cell "not uploaded":
+          - generic: not uploaded
+        - cell "—"
+        - cell "—"
+        - cell "—"
+        - cell "—"
+        - cell
+      - row "ID proof — back not uploaded — — — —":
+        - cell "ID proof — back"
+        - cell "not uploaded":
+          - generic: not uploaded
+        - cell "—"
+        - cell "—"
+        - cell "—"
+        - cell "—"
+        - cell
+      - row "Bank statement not uploaded — — — —":
+        - cell "Bank statement"
+        - cell "not uploaded":
+          - generic: not uploaded
+        - cell "—"
+        - cell "—"
+        - cell "—"
+        - cell "—"
+        - cell
+      - row "Other not uploaded — — — —":
+        - cell "Other"
+        - cell "not uploaded":
+          - generic: not uploaded
+        - cell "—"
+        - cell "—"
+        - cell "—"
+        - cell "—"
+        - cell
+  - button "Verify account" [disabled]
+  - generic: Verifying is what opens withdrawals. The member is notified either way.
+  - heading "API keys" [level=2]
+  - paragraph: Programs this member lets trade on their account, created from their own account page. Revoking one stops it at once; the member sees it gone.
+  - generic: No API keys.
+  - heading "Trades" [level=2]
+  - paragraph: Closed trades on this member’s accounts, newest first.
+  - generic: Account
+  - combobox:
+    - option "Every account" [selected]
+    - option "Primary"
+  - generic: From
+  - textbox
+  - generic: To (inclusive)
+  - textbox
+  - generic: Per page
+  - combobox:
+    - option "50" [selected]
+    - option "100"
+    - option "200"
+  - button "Refresh"
+  - paragraph: Dates are UTC days.
+  - table:
+    - rowgroup:
+      - row "Closed Account Instance Symbol Side Qty Entry Exit P&L Exit":
+        - columnheader "Closed"
+        - columnheader "Account"
+        - columnheader "Instance"
+        - columnheader "Symbol"
+        - columnheader "Side"
+        - columnheader "Qty"
+        - columnheader "Entry"
+        - columnheader "Exit"
+        - columnheader "P&L"
+        - columnheader "Exit"
+    - rowgroup:
+      - row "19/11/2026, 15:50:01 Primary Real (Hedging) BINANCE:BTCUSDT.P BUY 0.1 63854.3 63861.1 0.68 closed":
+        - cell "19/11/2026, 15:50:01"
+        - cell "Primary"
+        - cell "Real (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "BUY"
+        - cell "0.1"
+        - cell "63854.3"
+        - cell "63861.1"
+        - cell "0.68"
+        - cell "closed"
+      - row "19/11/2026, 15:49:30 Primary Real (Hedging) BINANCE:BTCUSDT.P BUY 0.1 63857 63844.3 -1.27 closed":
+        - cell "19/11/2026, 15:49:30"
+        - cell "Primary"
+        - cell "Real (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "BUY"
+        - cell "0.1"
+        - cell "63857"
+        - cell "63844.3"
+        - cell "-1.27"
+        - cell "closed"
+      - row "19/11/2026, 15:49:07 Primary Real (Hedging) BINANCE:BTCUSDT.P BUY 0.1 63861.2 63856.9 -0.43 closed":
+        - cell "19/11/2026, 15:49:07"
+        - cell "Primary"
+        - cell "Real (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "BUY"
+        - cell "0.1"
+        - cell "63861.2"
+        - cell "63856.9"
+        - cell "-0.43"
+        - cell "closed"
+      - row "19/11/2026, 15:45:17 Primary Real (Hedging) BINANCE:BTCUSDT.P BUY 0.001 63784.2 63784.2 0.00 closed":
+        - cell "19/11/2026, 15:45:17"
+        - cell "Primary"
+        - cell "Real (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "BUY"
+        - cell "0.001"
+        - cell "63784.2"
+        - cell "63784.2"
+        - cell "0.00"
+        - cell "closed"
+      - row "19/11/2026, 15:45:17 Primary Real (Hedging) BINANCE:BTCUSDT.P BUY 0.001 63784.2 63784.2 0.00 closed":
+        - cell "19/11/2026, 15:45:17"
+        - cell "Primary"
+        - cell "Real (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "BUY"
+        - cell "0.001"
+        - cell "63784.2"
+        - cell "63784.2"
+        - cell "0.00"
+        - cell "closed"
+      - row "19/11/2026, 15:45:17 Primary Real (Hedging) BINANCE:BTCUSDT.P BUY 0.001 63784.2 63784.2 0.00 closed":
+        - cell "19/11/2026, 15:45:17"
+        - cell "Primary"
+        - cell "Real (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "BUY"
+        - cell "0.001"
+        - cell "63784.2"
+        - cell "63784.2"
+        - cell "0.00"
+        - cell "closed"
+      - row "19/11/2026, 15:45:16 Primary Real (Hedging) BINANCE:BTCUSDT.P BUY 0.001 63784.2 63784.1 -0.00 closed":
+        - cell "19/11/2026, 15:45:16"
+        - cell "Primary"
+        - cell "Real (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "BUY"
+        - cell "0.001"
+        - cell "63784.2"
+        - cell "63784.1"
+        - cell "-0.00"
+        - cell "closed"
+      - row "19/11/2026, 15:45:16 Primary Real (Hedging) BINANCE:BTCUSDT.P BUY 0.001 63784.2 63784.1 -0.00 closed":
+        - cell "19/11/2026, 15:45:16"
+        - cell "Primary"
+        - cell "Real (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "BUY"
+        - cell "0.001"
+        - cell "63784.2"
+        - cell "63784.1"
+        - cell "-0.00"
+        - cell "closed"
+      - row "19/11/2026, 15:45:14 Primary Real (Hedging) BINANCE:BTCUSDT.P BUY 0.1 63779.2 63784.2 0.50 closed":
+        - cell "19/11/2026, 15:45:14"
+        - cell "Primary"
+        - cell "Real (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "BUY"
+        - cell "0.1"
+        - cell "63779.2"
+        - cell "63784.2"
+        - cell "0.50"
+        - cell "closed"
+      - row "19/11/2026, 15:45:10 Primary Real (Hedging) BINANCE:BTCUSDT.P BUY 0.002 63771.9 63771.8 -0.00 closed":
+        - cell "19/11/2026, 15:45:10"
+        - cell "Primary"
+        - cell "Real (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "BUY"
+        - cell "0.002"
+        - cell "63771.9"
+        - cell "63771.8"
+        - cell "-0.00"
+        - cell "closed"
+      - row "19/11/2026, 15:45:10 Primary Real (Hedging) BINANCE:BTCUSDT.P BUY 0.001 63771.9 63771.8 -0.00 closed":
+        - cell "19/11/2026, 15:45:10"
+        - cell "Primary"
+        - cell "Real (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "BUY"
+        - cell "0.001"
+        - cell "63771.9"
+        - cell "63771.8"
+        - cell "-0.00"
+        - cell "closed"
+      - row "19/11/2026, 13:33:21 Primary Paper (Hedging) BINANCE:BTCUSDT.P BUY 0.01 63630.7 63630.6 -0.00 closed":
+        - cell "19/11/2026, 13:33:21"
+        - cell "Primary"
+        - cell "Paper (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "BUY"
+        - cell "0.01"
+        - cell "63630.7"
+        - cell "63630.6"
+        - cell "-0.00"
+        - cell "closed"
+      - row "19/11/2026, 13:33:18 Primary Paper (Hedging) BINANCE:BTCUSDT.P BUY 0.01 63629 63629 0.00 closed":
+        - cell "19/11/2026, 13:33:18"
+        - cell "Primary"
+        - cell "Paper (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "BUY"
+        - cell "0.01"
+        - cell "63629"
+        - cell "63629"
+        - cell "0.00"
+        - cell "closed"
+      - row "19/11/2026, 13:24:31 Primary Real (Hedging) BINANCE:BTCUSDT.P BUY 0.1 63679.1 63684.1 0.50 closed":
+        - cell "19/11/2026, 13:24:31"
+        - cell "Primary"
+        - cell "Real (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "BUY"
+        - cell "0.1"
+        - cell "63679.1"
+        - cell "63684.1"
+        - cell "0.50"
+        - cell "closed"
+      - row "19/11/2026, 13:21:08 Primary Real (Hedging) BINANCE:BTCUSDT.P BUY 0.0005 63627.5 63627.4 -0.00 reduce":
+        - cell "19/11/2026, 13:21:08"
+        - cell "Primary"
+        - cell "Real (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "BUY"
+        - cell "0.0005"
+        - cell "63627.5"
+        - cell "63627.4"
+        - cell "-0.00"
+        - cell "reduce"
+      - row "19/11/2026, 13:21:08 Primary Real (Hedging) BINANCE:BTCUSDT.P BUY 0.0005 63627.5 63627.4 -0.00 reduce":
+        - cell "19/11/2026, 13:21:08"
+        - cell "Primary"
+        - cell "Real (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "BUY"
+        - cell "0.0005"
+        - cell "63627.5"
+        - cell "63627.4"
+        - cell "-0.00"
+        - cell "reduce"
+      - row "19/11/2026, 13:21:08 Primary Real (Hedging) BINANCE:BTCUSDT.P BUY 0.001 63627.5 63627.4 -0.00 closed":
+        - cell "19/11/2026, 13:21:08"
+        - cell "Primary"
+        - cell "Real (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "BUY"
+        - cell "0.001"
+        - cell "63627.5"
+        - cell "63627.4"
+        - cell "-0.00"
+        - cell "closed"
+      - row "19/11/2026, 13:21:08 Primary Real (Hedging) BINANCE:BTCUSDT.P BUY 0.001 63627.5 63627.5 0.00 closed":
+        - cell "19/11/2026, 13:21:08"
+        - cell "Primary"
+        - cell "Real (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "BUY"
+        - cell "0.001"
+        - cell "63627.5"
+        - cell "63627.5"
+        - cell "0.00"
+        - cell "closed"
+      - row "19/11/2026, 13:21:07 Primary Real (Hedging) BINANCE:BTCUSDT.P BUY 0.001 63627.5 63627.5 0.00 closed":
+        - cell "19/11/2026, 13:21:07"
+        - cell "Primary"
+        - cell "Real (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "BUY"
+        - cell "0.001"
+        - cell "63627.5"
+        - cell "63627.5"
+        - cell "0.00"
+        - cell "closed"
+      - row "19/11/2026, 13:21:06 Primary Real (Hedging) BINANCE:BTCUSDT.P BUY 0.001 63627.5 63627.4 -0.00 closed":
+        - cell "19/11/2026, 13:21:06"
+        - cell "Primary"
+        - cell "Real (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "BUY"
+        - cell "0.001"
+        - cell "63627.5"
+        - cell "63627.4"
+        - cell "-0.00"
+        - cell "closed"
+      - row "19/11/2026, 13:21:06 Primary Real (Hedging) BINANCE:BTCUSDT.P BUY 0.001 63627.5 63627.5 0.00 closed":
+        - cell "19/11/2026, 13:21:06"
+        - cell "Primary"
+        - cell "Real (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "BUY"
+        - cell "0.001"
+        - cell "63627.5"
+        - cell "63627.5"
+        - cell "0.00"
+        - cell "closed"
+      - row "19/11/2026, 13:21:06 Primary Real (Hedging) BINANCE:BTCUSDT.P BUY 0.001 63627.5 63627.5 0.00 closed":
+        - cell "19/11/2026, 13:21:06"
+        - cell "Primary"
+        - cell "Real (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "BUY"
+        - cell "0.001"
+        - cell "63627.5"
+        - cell "63627.5"
+        - cell "0.00"
+        - cell "closed"
+      - row "19/11/2026, 13:18:34 Primary Real (Hedging) BINANCE:BTCUSDT.P BUY 0.01 63621.4 63621.3 -0.00 closed":
+        - cell "19/11/2026, 13:18:34"
+        - cell "Primary"
+        - cell "Real (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "BUY"
+        - cell "0.01"
+        - cell "63621.4"
+        - cell "63621.3"
+        - cell "-0.00"
+        - cell "closed"
+      - row "19/11/2026, 13:16:51 Primary Real (Hedging) BINANCE:BTCUSDT.P BUY 0.001 63619.9 63619.9 0.00 closed":
+        - cell "19/11/2026, 13:16:51"
+        - cell "Primary"
+        - cell "Real (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "BUY"
+        - cell "0.001"
+        - cell "63619.9"
+        - cell "63619.9"
+        - cell "0.00"
+        - cell "closed"
+      - row "19/11/2026, 13:16:50 Primary Real (Hedging) BINANCE:BTCUSDT.P BUY 0.001 63619.9 63619.9 0.00 closed":
+        - cell "19/11/2026, 13:16:50"
+        - cell "Primary"
+        - cell "Real (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "BUY"
+        - cell "0.001"
+        - cell "63619.9"
+        - cell "63619.9"
+        - cell "0.00"
+        - cell "closed"
+      - row "19/11/2026, 13:16:49 Primary Real (Hedging) BINANCE:BTCUSDT.P BUY 0.001 63616.2 63617.5 0.00 closed":
+        - cell "19/11/2026, 13:16:49"
+        - cell "Primary"
+        - cell "Real (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "BUY"
+        - cell "0.001"
+        - cell "63616.2"
+        - cell "63617.5"
+        - cell "0.00"
+        - cell "closed"
+      - row "19/11/2026, 13:16:48 Primary Real (Hedging) BINANCE:BTCUSDT.P BUY 0.001 63616.2 63616.2 0.00 closed":
+        - cell "19/11/2026, 13:16:48"
+        - cell "Primary"
+        - cell "Real (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "BUY"
+        - cell "0.001"
+        - cell "63616.2"
+        - cell "63616.2"
+        - cell "0.00"
+        - cell "closed"
+      - row "19/11/2026, 13:16:48 Primary Real (Hedging) BINANCE:BTCUSDT.P BUY 0.001 63616.2 63616.2 0.00 closed":
+        - cell "19/11/2026, 13:16:48"
+        - cell "Primary"
+        - cell "Real (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "BUY"
+        - cell "0.001"
+        - cell "63616.2"
+        - cell "63616.2"
+        - cell "0.00"
+        - cell "closed"
+      - row "19/11/2026, 13:15:03 Primary Real (Hedging) BINANCE:BTCUSDT.P BUY 0.001 63594.9 63594.8 -0.00 closed":
+        - cell "19/11/2026, 13:15:03"
+        - cell "Primary"
+        - cell "Real (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "BUY"
+        - cell "0.001"
+        - cell "63594.9"
+        - cell "63594.8"
+        - cell "-0.00"
+        - cell "closed"
+      - row "19/11/2026, 13:15:02 Primary Real (Hedging) BINANCE:BTCUSDT.P BUY 0.001 63594.9 63594.9 0.00 closed":
+        - cell "19/11/2026, 13:15:02"
+        - cell "Primary"
+        - cell "Real (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "BUY"
+        - cell "0.001"
+        - cell "63594.9"
+        - cell "63594.9"
+        - cell "0.00"
+        - cell "closed"
+      - row "19/11/2026, 13:15:02 Primary Real (Hedging) BINANCE:BTCUSDT.P BUY 0.001 63594.9 63594.9 0.00 closed":
+        - cell "19/11/2026, 13:15:02"
+        - cell "Primary"
+        - cell "Real (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "BUY"
+        - cell "0.001"
+        - cell "63594.9"
+        - cell "63594.9"
+        - cell "0.00"
+        - cell "closed"
+      - row "19/11/2026, 13:15:01 Primary Real (Hedging) BINANCE:BTCUSDT.P BUY 0.001 63594.9 63594.8 -0.00 closed":
+        - cell "19/11/2026, 13:15:01"
+        - cell "Primary"
+        - cell "Real (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "BUY"
+        - cell "0.001"
+        - cell "63594.9"
+        - cell "63594.8"
+        - cell "-0.00"
+        - cell "closed"
+      - row "19/11/2026, 13:15:01 Primary Real (Hedging) BINANCE:BTCUSDT.P BUY 0.001 63594.9 63594.9 0.00 closed":
+        - cell "19/11/2026, 13:15:01"
+        - cell "Primary"
+        - cell "Real (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "BUY"
+        - cell "0.001"
+        - cell "63594.9"
+        - cell "63594.9"
+        - cell "0.00"
+        - cell "closed"
+      - row "19/11/2026, 13:15:01 Primary Real (Hedging) BINANCE:BTCUSDT.P BUY 0.001 63594.9 63594.8 -0.00 closed":
+        - cell "19/11/2026, 13:15:01"
+        - cell "Primary"
+        - cell "Real (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "BUY"
+        - cell "0.001"
+        - cell "63594.9"
+        - cell "63594.8"
+        - cell "-0.00"
+        - cell "closed"
+      - row "19/11/2026, 13:15:00 Primary Real (Hedging) BINANCE:BTCUSDT.P BUY 0.001 63594.9 63594.8 -0.00 closed":
+        - cell "19/11/2026, 13:15:00"
+        - cell "Primary"
+        - cell "Real (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "BUY"
+        - cell "0.001"
+        - cell "63594.9"
+        - cell "63594.8"
+        - cell "-0.00"
+        - cell "closed"
+      - row "19/11/2026, 13:15:00 Primary Real (Hedging) BINANCE:BTCUSDT.P SELL 0.001 63594.8 63594.8 -0.00 closed":
+        - cell "19/11/2026, 13:15:00"
+        - cell "Primary"
+        - cell "Real (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "SELL"
+        - cell "0.001"
+        - cell "63594.8"
+        - cell "63594.8"
+        - cell "-0.00"
+        - cell "closed"
+      - row "19/11/2026, 13:15:00 Primary Real (Hedging) BINANCE:BTCUSDT.P SELL 0.001 63594.8 63594.9 -0.00 closed":
+        - cell "19/11/2026, 13:15:00"
+        - cell "Primary"
+        - cell "Real (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "SELL"
+        - cell "0.001"
+        - cell "63594.8"
+        - cell "63594.9"
+        - cell "-0.00"
+        - cell "closed"
+      - row "19/11/2026, 13:14:59 Primary Real (Hedging) BINANCE:BTCUSDT.P BUY 0.001 63594.9 63594.9 0.00 closed":
+        - cell "19/11/2026, 13:14:59"
+        - cell "Primary"
+        - cell "Real (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "BUY"
+        - cell "0.001"
+        - cell "63594.9"
+        - cell "63594.9"
+        - cell "0.00"
+        - cell "closed"
+      - row "19/11/2026, 13:11:45 Primary Paper (Hedging) BINANCE:BTCUSDT.P BUY 0.001 63556.7 63552.5 -0.00 closed":
+        - cell "19/11/2026, 13:11:45"
+        - cell "Primary"
+        - cell "Paper (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "BUY"
+        - cell "0.001"
+        - cell "63556.7"
+        - cell "63552.5"
+        - cell "-0.00"
+        - cell "closed"
+      - row "19/11/2026, 13:10:46 Primary Paper (Hedging) BINANCE:BTCUSDT.P BUY 0.001 63575.9 63565 -0.01 closed":
+        - cell "19/11/2026, 13:10:46"
+        - cell "Primary"
+        - cell "Paper (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "BUY"
+        - cell "0.001"
+        - cell "63575.9"
+        - cell "63565"
+        - cell "-0.01"
+        - cell "closed"
+      - row "19/11/2026, 13:09:39 Primary Paper (Hedging) BINANCE:BTCUSDT.P BUY 0.001 63563.1 63556.6 -0.01 closed":
+        - cell "19/11/2026, 13:09:39"
+        - cell "Primary"
+        - cell "Paper (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "BUY"
+        - cell "0.001"
+        - cell "63563.1"
+        - cell "63556.6"
+        - cell "-0.01"
+        - cell "closed"
+      - row "19/11/2026, 13:06:15 Primary Real (Hedging) BINANCE:BTCUSDT.P BUY 0.01 63594 63575.6 -0.18 closed":
+        - cell "19/11/2026, 13:06:15"
+        - cell "Primary"
+        - cell "Real (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "BUY"
+        - cell "0.01"
+        - cell "63594"
+        - cell "63575.6"
+        - cell "-0.18"
+        - cell "closed"
+      - row "19/11/2026, 13:06:11 Primary Real (Hedging) BINANCE:BTCUSDT.P BUY 0.01 63590.4 63594 0.04 closed":
+        - cell "19/11/2026, 13:06:11"
+        - cell "Primary"
+        - cell "Real (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "BUY"
+        - cell "0.01"
+        - cell "63590.4"
+        - cell "63594"
+        - cell "0.04"
+        - cell "closed"
+      - row "19/11/2026, 13:06:06 Primary Real (Hedging) BINANCE:BTCUSDT.P BUY 0.01 63589.1 63589 -0.00 closed":
+        - cell "19/11/2026, 13:06:06"
+        - cell "Primary"
+        - cell "Real (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "BUY"
+        - cell "0.01"
+        - cell "63589.1"
+        - cell "63589"
+        - cell "-0.00"
+        - cell "closed"
+      - row "19/11/2026, 13:03:54 Primary Paper (Hedging) BINANCE:BTCUSDT.P BUY 0.001 63559 63516 -0.04 closed":
+        - cell "19/11/2026, 13:03:54"
+        - cell "Primary"
+        - cell "Paper (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "BUY"
+        - cell "0.001"
+        - cell "63559"
+        - cell "63516"
+        - cell "-0.04"
+        - cell "closed"
+      - row "19/11/2026, 13:03:03 Primary Paper (Hedging) BINANCE:BTCUSDT.P BUY 0.001 63551.6 63532.5 -0.02 closed":
+        - cell "19/11/2026, 13:03:03"
+        - cell "Primary"
+        - cell "Paper (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "BUY"
+        - cell "0.001"
+        - cell "63551.6"
+        - cell "63532.5"
+        - cell "-0.02"
+        - cell "closed"
+      - row "19/11/2026, 13:03:03 Primary Paper (Hedging) BINANCE:BTCUSDT.P BUY 0.001 63533.6 63532.5 -0.00 closed":
+        - cell "19/11/2026, 13:03:03"
+        - cell "Primary"
+        - cell "Paper (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "BUY"
+        - cell "0.001"
+        - cell "63533.6"
+        - cell "63532.5"
+        - cell "-0.00"
+        - cell "closed"
+      - row "19/11/2026, 13:01:47 Primary Paper (Hedging) BINANCE:BTCUSDT.P BUY 0.001 63584.2 63584.1 -0.00 closed":
+        - cell "19/11/2026, 13:01:47"
+        - cell "Primary"
+        - cell "Paper (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "BUY"
+        - cell "0.001"
+        - cell "63584.2"
+        - cell "63584.1"
+        - cell "-0.00"
+        - cell "closed"
+      - row "19/11/2026, 13:01:26 Primary Paper (Hedging) BINANCE:BTCUSDT.P BUY 0.001 63582.1 63582.1 0.00 closed":
+        - cell "19/11/2026, 13:01:26"
+        - cell "Primary"
+        - cell "Paper (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "BUY"
+        - cell "0.001"
+        - cell "63582.1"
+        - cell "63582.1"
+        - cell "0.00"
+        - cell "closed"
+      - row "19/11/2026, 13:01:26 Primary Paper (Hedging) BINANCE:BTCUSDT.P BUY 0.001 63582.1 63582.1 0.00 closed":
+        - cell "19/11/2026, 13:01:26"
+        - cell "Primary"
+        - cell "Paper (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "BUY"
+        - cell "0.001"
+        - cell "63582.1"
+        - cell "63582.1"
+        - cell "0.00"
+        - cell "closed"
+  - generic: 1–50 of 88
+  - button "Prev" [disabled]
+  - generic: Page 1 / 2
+  - button "Next"
+- alert

@@ -1,0 +1,9 @@
+{
+  "name": "lpadmin-blacktrader-pamm",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright automation and PAMM verification for BlackTrader / BlackFX",
+  "scripts": {
+    "auth:admin": "node auth_admin.js"
+  }
+}

@@ -1,0 +1,518 @@
+{
+  "created_at": "2026-11-18T09:26:40.998Z",
+  "instance": "real (Real Hedging)",
+  "password_stored_in_env": "CLIENT_PASSWORD",
+  "master": {
+    "email": "pmmaster@mailinator.com",
+    "member": {
+      "member_id": "mem_4669b36f00cc55347e",
+      "public_id": "59f9ffdf-cd80-4e1e-900c-ec27cbf2a1fa",
+      "status": "active",
+      "plan": "default(premium)",
+      "real_engine": "hedging",
+      "balances": {
+        "real": 2000
+      }
+    },
+    "master_client_id": "mem_4669b36f00cc55347e",
+    "directory_entry": {
+      "client_id": "mem_4669b36f00cc55347e",
+      "name": "PM Master",
+      "share_percent": 20,
+      "stats": {
+        "growth": 0,
+        "curve": [],
+        "weeks": 0,
+        "followers": 10,
+        "drawdown": 0,
+        "fund": 1000,
+        "risk_level": 1,
+        "rank": 5,
+        "trades": 0
+      }
+    },
+    "pamm_follows_response": {
+      "follow_blocked_reason": "Master accounts can't follow another master.",
+      "is_master": true,
+      "master": {
+        "client_id": "mem_4669b36f00cc55347e",
+        "display_name": "PM Master",
+        "share_percent": 20,
+        "status": "active"
+      },
+      "master_blocked_reason": "",
+      "pool": [
+        {
+          "pamm_id": "pmm_e2c856e42324fbb8a3",
+          "master_client_id": "mem_4669b36f00cc55347e",
+          "follower_client_id": "mem_822cf51b32a092c7ac",
+          "instance": "real",
+          "deposit": 100,
+          "share_percent": 20,
+          "running_pnl": 0,
+          "status": "active",
+          "joined_at": "2026-11-18T09:26:40.689722Z",
+          "follower_name": "PM Follower Ten"
+        },
+        {
+          "pamm_id": "pmm_1eb3590078a1244b56",
+          "master_client_id": "mem_4669b36f00cc55347e",
+          "follower_client_id": "mem_d4696d922fdee6d886",
+          "instance": "real",
+          "deposit": 100,
+          "share_percent": 20,
+          "running_pnl": 0,
+          "status": "active",
+          "joined_at": "2026-11-18T09:26:40.492343Z",
+          "follower_name": "PM Follower Nine"
+        },
+        {
+          "pamm_id": "pmm_698ca5e9fb7e2d3205",
+          "master_client_id": "mem_4669b36f00cc55347e",
+          "follower_client_id": "mem_5452eb488b8622756f",
+          "instance": "real",
+          "deposit": 100,
+          "share_percent": 20,
+          "running_pnl": 0,
+          "status": "active",
+          "joined_at": "2026-11-18T09:26:40.289343Z",
+          "follower_name": "PM Follower Eight"
+        },
+        {
+          "pamm_id": "pmm_9b2ef011487b6e2fc1",
+          "master_client_id": "mem_4669b36f00cc55347e",
+          "follower_client_id": "mem_ecc6ae933d48a7c380",
+          "instance": "real",
+          "deposit": 100,
+          "share_percent": 20,
+          "running_pnl": 0,
+          "status": "active",
+          "joined_at": "2026-11-18T09:26:40.082737Z",
+          "follower_name": "PM Follower Seven"
+        },
+        {
+          "pamm_id": "pmm_f695e2dbe19c031f73",
+          "master_client_id": "mem_4669b36f00cc55347e",
+          "follower_client_id": "mem_8080a5bca2119a3fe9",
+          "instance": "real",
+          "deposit": 100,
+          "share_percent": 20,
+          "running_pnl": 0,
+          "status": "active",
+          "joined_at": "2026-11-18T09:26:39.839459Z",
+          "follower_name": "PM Follower Six"
+        },
+        {
+          "pamm_id": "pmm_b4b6b2fdc206f3b97b",
+          "master_client_id": "mem_4669b36f00cc55347e",
+          "follower_client_id": "mem_1c6beb7764028720cc",
+          "instance": "real",
+          "deposit": 100,
+          "share_percent": 20,
+          "running_pnl": 0,
+          "status": "active",
+          "joined_at": "2026-11-18T09:26:39.655862Z",
+          "follower_name": "PM Follower Five"
+        },
+        {
+          "pamm_id": "pmm_dee21db280ff786bf1",
+          "master_client_id": "mem_4669b36f00cc55347e",
+          "follower_client_id": "mem_7d5a18611d1a51731e",
+          "instance": "real",
+          "deposit": 100,
+          "share_percent": 20,
+          "running_pnl": 0,
+          "status": "active",
+          "joined_at": "2026-11-18T09:26:39.46Z",
+          "follower_name": "PM Follower Four"
+        },
+        {
+          "pamm_id": "pmm_20e4b47143a7524da7",
+          "master_client_id": "mem_4669b36f00cc55347e",
+          "follower_client_id": "mem_2b4b6755ae8ed059a9",
+          "instance": "real",
+          "deposit": 100,
+          "share_percent": 20,
+          "running_pnl": 0,
+          "status": "active",
+          "joined_at": "2026-11-18T09:26:39.28036Z",
+          "follower_name": "PM Follower Three"
+        },
+        {
+          "pamm_id": "pmm_29ee697c1401a4de18",
+          "master_client_id": "mem_4669b36f00cc55347e",
+          "follower_client_id": "mem_d418c85a28182db953",
+          "instance": "real",
+          "deposit": 100,
+          "share_percent": 20,
+          "running_pnl": 0,
+          "status": "active",
+          "joined_at": "2026-11-18T09:26:39.06463Z",
+          "follower_name": "PM Follower Two"
+        },
+        {
+          "pamm_id": "pmm_cbb6cf0570fe937afb",
+          "master_client_id": "mem_4669b36f00cc55347e",
+          "follower_client_id": "mem_e26aa534f801d04237",
+          "instance": "real",
+          "deposit": 100,
+          "share_percent": 20,
+          "running_pnl": 0,
+          "status": "active",
+          "joined_at": "2026-11-18T09:26:38.845833Z",
+          "follower_name": "PM Follower One"
+        }
+      ],
+      "pool_history": [],
+      "pool_total": 1000,
+      "subscriptions": [],
+      "success": true
+    },
+    "oms_funds": {
+      "funds": {
+        "balance": 2000,
+        "equity": 2000,
+        "free_margin": 2000,
+        "margin_call_level": 100,
+        "margin_level": null,
+        "starting_balance": 2000,
+        "stop_out_level": 50,
+        "unrealized_pnl": 0,
+        "used_margin": 0
+      },
+      "success": true
+    }
+  },
+  "followers": [
+    {
+      "email": "pmf1@mailinator.com",
+      "member": {
+        "member_id": "mem_e26aa534f801d04237",
+        "public_id": "3c05f2d6-e8e3-45b1-ae21-ac282fd89bdd",
+        "status": "active",
+        "plan": "default(premium)",
+        "real_engine": "hedging",
+        "balances": {
+          "real": 900
+        }
+      },
+      "join_result": {
+        "email": "pmf1@mailinator.com",
+        "member_id": "mem_e26aa534f801d04237",
+        "ok": true,
+        "status": 200,
+        "data": {
+          "subscription": {
+            "pamm_id": "pmm_cbb6cf0570fe937afb",
+            "master_client_id": "mem_4669b36f00cc55347e",
+            "follower_client_id": "mem_e26aa534f801d04237",
+            "instance": "real",
+            "deposit": 100,
+            "share_percent": 20,
+            "running_pnl": 0,
+            "status": "active",
+            "joined_at": "2026-11-18T09:26:38.845833Z"
+          },
+          "success": true
+        }
+      }
+    },
+    {
+      "email": "pmf2@mailinator.com",
+      "member": {
+        "member_id": "mem_d418c85a28182db953",
+        "public_id": "3a4c155f-65e8-46a6-9ad4-63f067d3c98a",
+        "status": "active",
+        "plan": "default(premium)",
+        "real_engine": "hedging",
+        "balances": {
+          "real": 900
+        }
+      },
+      "join_result": {
+        "email": "pmf2@mailinator.com",
+        "member_id": "mem_d418c85a28182db953",
+        "ok": true,
+        "status": 200,
+        "data": {
+          "subscription": {
+            "pamm_id": "pmm_29ee697c1401a4de18",
+            "master_client_id": "mem_4669b36f00cc55347e",
+            "follower_client_id": "mem_d418c85a28182db953",
+            "instance": "real",
+            "deposit": 100,
+            "share_percent": 20,
+            "running_pnl": 0,
+            "status": "active",
+            "joined_at": "2026-11-18T09:26:39.06463Z"
+          },
+          "success": true
+        }
+      }
+    },
+    {
+      "email": "pmf3@mailinator.com",
+      "member": {
+        "member_id": "mem_2b4b6755ae8ed059a9",
+        "public_id": "c3857995-2ca0-4971-874e-c6d711c19303",
+        "status": "active",
+        "plan": "default(premium)",
+        "real_engine": "hedging",
+        "balances": {
+          "real": 900
+        }
+      },
+      "join_result": {
+        "email": "pmf3@mailinator.com",
+        "member_id": "mem_2b4b6755ae8ed059a9",
+        "ok": true,
+        "status": 200,
+        "data": {
+          "subscription": {
+            "pamm_id": "pmm_20e4b47143a7524da7",
+            "master_client_id": "mem_4669b36f00cc55347e",
+            "follower_client_id": "mem_2b4b6755ae8ed059a9",
+            "instance": "real",
+            "deposit": 100,
+            "share_percent": 20,
+            "running_pnl": 0,
+            "status": "active",
+            "joined_at": "2026-11-18T09:26:39.28036Z"
+          },
+          "success": true
+        }
+      }
+    },
+    {
+      "email": "pmf4@mailinator.com",
+      "member": {
+        "member_id": "mem_7d5a18611d1a51731e",
+        "public_id": "0c7569fc-3a31-418c-a10b-ba81fc41b5f4",
+        "status": "active",
+        "plan": "default(premium)",
+        "real_engine": "hedging",
+        "balances": {
+          "real": 900
+        }
+      },
+      "join_result": {
+        "email": "pmf4@mailinator.com",
+        "member_id": "mem_7d5a18611d1a51731e",
+        "ok": true,
+        "status": 200,
+        "data": {
+          "subscription": {
+            "pamm_id": "pmm_dee21db280ff786bf1",
+            "master_client_id": "mem_4669b36f00cc55347e",
+            "follower_client_id": "mem_7d5a18611d1a51731e",
+            "instance": "real",
+            "deposit": 100,
+            "share_percent": 20,
+            "running_pnl": 0,
+            "status": "active",
+            "joined_at": "2026-11-18T09:26:39.46Z"
+          },
+          "success": true
+        }
+      }
+    },
+    {
+      "email": "pmf5@mailinator.com",
+      "member": {
+        "member_id": "mem_1c6beb7764028720cc",
+        "public_id": "c7fd1310-437b-4e17-831f-ff1a584ccf88",
+        "status": "active",
+        "plan": "default(premium)",
+        "real_engine": "hedging",
+        "balances": {
+          "real": 900
+        }
+      },
+      "join_result": {
+        "email": "pmf5@mailinator.com",
+        "member_id": "mem_1c6beb7764028720cc",
+        "ok": true,
+        "status": 200,
+        "data": {
+          "subscription": {
+            "pamm_id": "pmm_b4b6b2fdc206f3b97b",
+            "master_client_id": "mem_4669b36f00cc55347e",
+            "follower_client_id": "mem_1c6beb7764028720cc",
+            "instance": "real",
+            "deposit": 100,
+            "share_percent": 20,
+            "running_pnl": 0,
+            "status": "active",
+            "joined_at": "2026-11-18T09:26:39.655862Z"
+          },
+          "success": true
+        }
+      }
+    },
+    {
+      "email": "pmf6@mailinator.com",
+      "member": {
+        "member_id": "mem_8080a5bca2119a3fe9",
+        "public_id": "223a727f-f7ad-41e4-a789-790f8a048b53",
+        "status": "active",
+        "plan": "default(premium)",
+        "real_engine": "hedging",
+        "balances": {
+          "real": 900
+        }
+      },
+      "join_result": {
+        "email": "pmf6@mailinator.com",
+        "member_id": "mem_8080a5bca2119a3fe9",
+        "ok": true,
+        "status": 200,
+        "data": {
+          "subscription": {
+            "pamm_id": "pmm_f695e2dbe19c031f73",
+            "master_client_id": "mem_4669b36f00cc55347e",
+            "follower_client_id": "mem_8080a5bca2119a3fe9",
+            "instance": "real",
+            "deposit": 100,
+            "share_percent": 20,
+            "running_pnl": 0,
+            "status": "active",
+            "joined_at": "2026-11-18T09:26:39.839459Z"
+          },
+          "success": true
+        }
+      }
+    },
+    {
+      "email": "pmf7@mailinator.com",
+      "member": {
+        "member_id": "mem_ecc6ae933d48a7c380",
+        "public_id": "c2bb437f-7b9d-4e38-b90c-96faa98d45ed",
+        "status": "active",
+        "plan": "default(premium)",
+        "real_engine": "hedging",
+        "balances": {
+          "real": 900
+        }
+      },
+      "join_result": {
+        "email": "pmf7@mailinator.com",
+        "member_id": "mem_ecc6ae933d48a7c380",
+        "ok": true,
+        "status": 200,
+        "data": {
+          "subscription": {
+            "pamm_id": "pmm_9b2ef011487b6e2fc1",
+            "master_client_id": "mem_4669b36f00cc55347e",
+            "follower_client_id": "mem_ecc6ae933d48a7c380",
+            "instance": "real",
+            "deposit": 100,
+            "share_percent": 20,
+            "running_pnl": 0,
+            "status": "active",
+            "joined_at": "2026-11-18T09:26:40.082737Z"
+          },
+          "success": true
+        }
+      }
+    },
+    {
+      "email": "pmf8@mailinator.com",
+      "member": {
+        "member_id": "mem_5452eb488b8622756f",
+        "public_id": "e8b81721-26a2-432c-8be7-a04dcdb3e467",
+        "status": "active",
+        "plan": "default(premium)",
+        "real_engine": "hedging",
+        "balances": {
+          "real": 900
+        }
+      },
+      "join_result": {
+        "email": "pmf8@mailinator.com",
+        "member_id": "mem_5452eb488b8622756f",
+        "ok": true,
+        "status": 200,
+        "data": {
+          "subscription": {
+            "pamm_id": "pmm_698ca5e9fb7e2d3205",
+            "master_client_id": "mem_4669b36f00cc55347e",
+            "follower_client_id": "mem_5452eb488b8622756f",
+            "instance": "real",
+            "deposit": 100,
+            "share_percent": 20,
+            "running_pnl": 0,
+            "status": "active",
+            "joined_at": "2026-11-18T09:26:40.289343Z"
+          },
+          "success": true
+        }
+      }
+    },
+    {
+      "email": "pmf9@mailinator.com",
+      "member": {
+        "member_id": "mem_d4696d922fdee6d886",
+        "public_id": "92bfe9c2-5c8c-4a2e-93e9-08b89f3bf8ae",
+        "status": "active",
+        "plan": "default(premium)",
+        "real_engine": "hedging",
+        "balances": {
+          "real": 900
+        }
+      },
+      "join_result": {
+        "email": "pmf9@mailinator.com",
+        "member_id": "mem_d4696d922fdee6d886",
+        "ok": true,
+        "status": 200,
+        "data": {
+          "subscription": {
+            "pamm_id": "pmm_1eb3590078a1244b56",
+            "master_client_id": "mem_4669b36f00cc55347e",
+            "follower_client_id": "mem_d4696d922fdee6d886",
+            "instance": "real",
+            "deposit": 100,
+            "share_percent": 20,
+            "running_pnl": 0,
+            "status": "active",
+            "joined_at": "2026-11-18T09:26:40.492343Z"
+          },
+          "success": true
+        }
+      }
+    },
+    {
+      "email": "pmf10@mailinator.com",
+      "member": {
+        "member_id": "mem_822cf51b32a092c7ac",
+        "public_id": "cb34ecf7-3770-4b57-8c03-b4ebaae7d921",
+        "status": "active",
+        "plan": "default(premium)",
+        "real_engine": "hedging",
+        "balances": {
+          "real": 900
+        }
+      },
+      "join_result": {
+        "email": "pmf10@mailinator.com",
+        "member_id": "mem_822cf51b32a092c7ac",
+        "ok": true,
+        "status": 200,
+        "data": {
+          "subscription": {
+            "pamm_id": "pmm_e2c856e42324fbb8a3",
+            "master_client_id": "mem_4669b36f00cc55347e",
+            "follower_client_id": "mem_822cf51b32a092c7ac",
+            "instance": "real",
+            "deposit": 100,
+            "share_percent": 20,
+            "running_pnl": 0,
+            "status": "active",
+            "joined_at": "2026-11-18T09:26:40.689722Z"
+          },
+          "success": true
+        }
+      }
+    }
+  ]
+}

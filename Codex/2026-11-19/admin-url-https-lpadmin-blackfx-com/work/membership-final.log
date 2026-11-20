@@ -1,0 +1,6 @@
+PAMM-X20-04 PASS Master reads during exit converged to nine investors and 900 principal, with the exited relationship absent.
+PAMM-X10-09 PASS Join versus close: 9 allocation rows; late investor received no retrospective allocation.
+PAMM-X14-06 PASS Trade opened after the old relationship exited; its closed ID received no allocation.
+PAMM-X20-03 PASS Reads during join converged to ten investors and 1000 pooled principal.
+PARALLEL-SESSION-API-STATE PASS Independent session API reads agree after settlement; this does not certify browser refresh behavior.
+MEMBERSHIP-RACE-CLEANUP PASS Restored all supplied investor relationships, pool principal and original fee; no test exposure remains.

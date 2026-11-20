@@ -1,0 +1,198 @@
+- banner:
+  - button "Account menu":
+    - generic: P
+  - button "Default ▾":
+    - generic: Default
+    - generic: ▾
+  - button "Add widget":
+  - button "Floating view — free-floating, overlapping windows":
+  - button "Comfortable view — restore panel spacing":
+  - button "Toggle theme":
+- button "Watchlist":
+  - generic: Watchlist
+- 'textbox "Search eg: EURUSD, BTC"'
+- button "Filter by category and exchange":
+- button "W1":
+  - generic: W1
+- button "W2":
+  - generic: W2
+- button "W3":
+  - generic: W3
+- button "W4":
+  - generic: W4
+- button "W5":
+  - generic: W5
+- button "Rename Watchlist 1":
+  - generic: Watchlist 1
+- button "Visible watchlist columns":
+  - generic: Columns
+- button "Sort this section":
+  - generic: Original
+- button "Note":
+  - text: Note
+- generic: No symbols yet — search above to add one
+- button "Chart":
+  - generic: Chart
+- button "Drawing Tools":
+- button "Line Tools":
+- button "Patterns":
+- button "Text Tools":
+- button "Measure Tools":
+- button "Fibonacci Tools":
+- tooltip "Lock All Drawings":
+  - button "Lock All Drawings":
+- tooltip "Hide All Drawings":
+  - button "Hide All Drawings":
+- tooltip "Enable Magnet Mode":
+  - button "Enable Magnet Mode":
+- tooltip "Enable Keep Drawing":
+  - button "Enable Keep Drawing":
+- button "Delete Tools":
+- tooltip "Show Favorite Drawing Tools Toolbar":
+  - button "Show Favorite Drawing Tools Toolbar":
+- button "Scroll tools down":
+- navigation:
+  - button "SAVE":
+    - generic: SAVE
+  - button:
+  - tooltip "Undo":
+    - button "Undo" [disabled]:
+  - tooltip "Redo":
+    - button "Redo" [disabled]:
+  - tooltip "Hide All Trades":
+    - button "Hide All Trades":
+  - button "BTCUSDT.P":
+    - generic: BTCUSDT.P
+  - button "1 Min":
+    - text: 1 Min
+  - button "Select chart type":
+  - button "Indicators":
+    - generic: Indicators
+  - tooltip:
+    - button:
+  - tooltip "Fullscreen chart panel":
+    - button "Fullscreen chart panel":
+  - tooltip "Chart snapshot":
+    - button "Chart snapshot":
+  - button:
+- img "Xtreme Logo"
+- table:
+  - 'row "BINANCE:BTCUSDT.P | 1m | O: 63700.6 H: 63717.2 L: 63700.5 C: 63711.2 63736.6 63736.7 S 0.001 B"':
+    - cell
+    - 'cell "BINANCE:BTCUSDT.P | 1m | O: 63700.6 H: 63717.2 L: 63700.5 C: 63711.2 63736.6 63736.7 S 0.001 B"':
+      - button "BINANCE:BTCUSDT.P"
+      - generic: "|"
+      - generic: 1m
+      - generic: "|"
+      - generic: "O:"
+      - generic: "63700.6"
+      - generic: "H:"
+      - generic: "63717.2"
+      - generic: "L:"
+      - generic: "63700.5"
+      - generic: "C:"
+      - generic: "63711.2"
+      - button "63736.6":
+        - generic: "63736.6"
+      - button "63736.7":
+        - generic: "63736.7"
+      - button "S 0.001 B":
+        - generic: S
+        - generic: "0.001"
+        - generic: B
+      - button "Hide Trades":
+      - button "Trade Settings":
+    - cell
+  - row:
+    - cell
+    - cell
+    - cell:
+      - button "Fit Price Scale":
+      - button "Fit Time Scale":
+      - button "Reset to Initial Position":
+- button "Hide drawing toolbar":
+- button "Trades":
+  - generic: Trades
+- generic: Trades
+- generic: "1"
+- generic: Real (Hedging)
+- button "Refresh":
+- button "Broker settings":
+- button "Positions 1":
+  - text: Positions
+  - generic: "1"
+- button "Pending"
+- button "Orders 4":
+  - text: Orders
+  - generic: "4"
+- button "History 1":
+  - text: History
+  - generic: "1"
+- button "Funds"
+- table:
+  - rowgroup:
+    - row "Symbol Order ID Qty. Avg. SL TSL TP LTP P&L Time Info Close":
+      - columnheader
+      - columnheader "Symbol"
+      - columnheader "Order ID"
+      - columnheader "Qty."
+      - columnheader "Avg."
+      - columnheader "SL"
+      - columnheader "TSL"
+      - columnheader "TP"
+      - columnheader "LTP"
+      - columnheader "P&L"
+      - columnheader "Time"
+      - columnheader "Info"
+      - columnheader "Close"
+  - rowgroup:
+    - row "Binance BTCUSDT.P 49a9f0529883a82f86 1 Details for average price 63713.8 - - - 63736.6 +22.80 2026-11-19 16:49:49 Order information for 49a9f0529883a82f86":
+      - cell:
+        - button "More Options":
+      - cell "Binance BTCUSDT.P":
+        - button "Binance BTCUSDT.P":
+          - img "Binance":
+          - text: BTCUSDT.P
+      - cell "49a9f0529883a82f86"
+      - cell "1"
+      - cell "Details for average price 63713.8":
+        - button "Details for average price 63713.8": "63713.8"
+      - cell "-":
+        - button "-":
+          - generic: "-"
+      - cell "-":
+        - button "-":
+          - generic: "-"
+      - cell "-":
+        - button "-":
+          - generic: "-"
+      - cell "63736.6"
+      - cell "+22.80"
+      - cell "2026-11-19 16:49:49"
+      - cell "Order information for 49a9f0529883a82f86":
+        - button "Order information for 49a9f0529883a82f86": ⓘ
+      - cell:
+        - button "Close Position":
+  - rowgroup:
+    - row "Real (Hedging) account funds P&L +22.80 Bulk close and cancel":
+      - cell "Real (Hedging) account funds":
+        - generic "Real (Hedging) account funds":
+          - generic "Real (Hedging)":
+            - generic: Real (Hedging)
+          - term: Balance
+          - definition: "509.71"
+          - term: Equity
+          - definition: "532.51"
+          - term: Used margin
+          - definition: "637.14"
+          - term: Free margin
+          - definition: "-104.63"
+          - term: Margin level
+          - definition: 83.58%
+      - cell "P&L"
+      - cell "+22.80"
+      - cell
+      - cell
+      - cell "Bulk close and cancel":
+        - button "Square Off All Positions":
+        - button "Bulk close and cancel":

@@ -1,0 +1,99 @@
+- complementary:
+  - generic: blacktrader
+  - generic: Client Admin
+  - button "Collapse sidebar":
+  - navigation:
+    - button "Overview":
+      - generic: Overview
+    - button "Client Home":
+      - generic: Client Home
+    - button "Chart":
+      - generic: Chart
+    - button "OMS":
+      - generic: OMS
+    - button "Money":
+      - generic: Money
+    - button "People" [expanded]:
+      - generic: People
+    - button "Members":
+      - generic: Members
+    - button "Staff":
+      - generic: Staff
+    - button "Trades":
+      - generic: Trades
+    - button "Account requests":
+      - generic: Account requests
+    - button "Install":
+      - generic: Install
+  - generic: LP
+  - generic "lpadmin@blacktrader.com"
+  - text: Client admin
+  - button "Sign out":
+    - text: Sign out
+- banner:
+  - heading "Members" [level=1]
+  - generic: 1 of 842
+  - generic: active
+  - button "Add member":
+    - text: Add member
+  - button "v1.1.18 · Versions"
+  - button "Toggle theme":
+- main:
+  - heading "Members (traders)" [level=2]
+  - paragraph: "Members log in to the OMS to trade and get a verified session token (no shared/guessable ids). They arrive either from here or by registering on your Client Home — those land as pending and trade only once you approve them. Showing the members of lpadmin@blacktrader.com (client #19) — the client this install serves; another client’s members are never listed here."
+  - paragraph: "AI assistant credits: 100 handed out of 5,000 · 4,900 left to give · 4.931 spent by members"
+  - textbox "email, name or user id…" [active]: <redacted>
+  - button "All842"
+  - button "Active841"
+  - button "Pending0"
+  - button "Disabled1"
+  - table:
+    - rowgroup:
+      - row "Member Status Terms Account Book Plan Balance AI credits Modules Actions":
+        - columnheader "Member"
+        - columnheader "Status"
+        - columnheader "Terms"
+        - columnheader "Account"
+        - columnheader "Book"
+        - columnheader "Plan"
+        - columnheader "Balance"
+        - columnheader "AI credits"
+        - columnheader "Modules"
+        - columnheader "Actions":
+          - generic: Actions
+    - rowgroup:
+      - row "pmmaster@mailinator.com PM Master · Added here active Default Live B-book Default (Premium) 999,883.24 paper 0 0 used 20":
+        - cell "pmmaster@mailinator.com PM Master · Added here":
+          - generic "pmmaster@mailinator.com"
+          - generic "PM Master": PM Master · Added here
+        - cell "active":
+          - generic: active
+        - cell "Default":
+          - combobox:
+            - option "Default" [selected]
+            - option "Standard"
+        - cell "Live":
+          - combobox:
+            - option "Live" [selected]
+            - option "Demo"
+        - cell "B-book":
+          - combobox "Real orders are booked on your own engine":
+            - option "B-book" [selected]
+            - option "A-book"
+        - cell "Default (Premium)":
+          - combobox:
+            - option "Default (Premium)" [selected]
+            - option "Premium"
+            - option "Pro"
+        - cell "999,883.24 paper":
+          - button "999,883.24 paper":
+            - text: 999,883.24
+            - generic: paper
+        - cell "0 0 used":
+          - button "0 0 used":
+            - text: "0"
+            - generic: 0 used
+        - cell "20"
+        - cell:
+          - button "Actions for pmmaster@mailinator.com":
+- alert

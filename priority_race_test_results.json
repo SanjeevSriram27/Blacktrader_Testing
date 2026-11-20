@@ -1,0 +1,189 @@
+{
+  "executed_at": "2026-11-18T12:29:08.360Z",
+  "accounts_used": [
+    "pmmaster@mailinator.com",
+    "pmf10@mailinator.com"
+  ],
+  "results": [
+    {
+      "id": "NET03",
+      "title": "Slow 3G -> Click BUY -> Immediate Offline -> Reconnect (5 timings)",
+      "status": "PASS",
+      "details": {
+        "duplicatesFound": false,
+        "uiReconciliationMismatch": false,
+        "runs": [
+          {
+            "disconnectDelayMs": 30,
+            "clickedUiBuy": true,
+            "clientPostCount": 0,
+            "serverNewOrders": 0,
+            "serverOpenPositions": 0,
+            "uiShowsNoPositions": true,
+            "reconciled": true
+          },
+          {
+            "disconnectDelayMs": 80,
+            "clickedUiBuy": true,
+            "clientPostCount": 0,
+            "serverNewOrders": 0,
+            "serverOpenPositions": 0,
+            "uiShowsNoPositions": true,
+            "reconciled": true
+          },
+          {
+            "disconnectDelayMs": 150,
+            "clickedUiBuy": true,
+            "clientPostCount": 0,
+            "serverNewOrders": 0,
+            "serverOpenPositions": 0,
+            "uiShowsNoPositions": true,
+            "reconciled": true
+          },
+          {
+            "disconnectDelayMs": 300,
+            "clickedUiBuy": true,
+            "clientPostCount": 0,
+            "serverNewOrders": 0,
+            "serverOpenPositions": 0,
+            "uiShowsNoPositions": true,
+            "reconciled": true
+          },
+          {
+            "disconnectDelayMs": 500,
+            "clickedUiBuy": true,
+            "clientPostCount": 0,
+            "serverNewOrders": 0,
+            "serverOpenPositions": 0,
+            "uiShowsNoPositions": true,
+            "reconciled": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "NET07",
+      "title": "Click Close Position Repeatedly (5x Concurrent Squareoff Burst)",
+      "status": "PASS",
+      "details": {
+        "posId": "ord_d8b9286dcd853e9110",
+        "statuses": [
+          404,
+          200,
+          404,
+          404,
+          404
+        ],
+        "okClosesCount": 1,
+        "remainingOpenPositions": 0,
+        "newHistoryRecords": 1,
+        "sampleReject": "{\"error\":\"No open position for ord_d8b9286dcd853e9110\"}\n"
+      }
+    },
+    {
+      "id": "BR07",
+      "title": "Two Independent Browser Sessions Close Same Position Simultaneously",
+      "status": "PASS",
+      "details": {
+        "posId": "ord_4229155d52fe0a90c1",
+        "sessionAStatus": 404,
+        "sessionBStatus": 200,
+        "okClosesCount": 1,
+        "remainingOpenPositions": 0,
+        "newHistoryRecords": 1
+      }
+    },
+    {
+      "id": "BR08",
+      "title": "Browser A Switches Instance (Paper->Real) While Browser B Submits Paper Order",
+      "status": "PASS",
+      "details": {
+        "realOrdersDelta": 0,
+        "paperOrdersDelta": 0,
+        "routedToWrongRealAccount": false
+      }
+    },
+    {
+      "id": "CP04",
+      "title": "Follower Unfollow (pmf10) vs Master BUY (pmmaster) Simultaneous Race",
+      "status": "PASS",
+      "details": {
+        "winner": "UNFOLLOW_BEFORE_BUY (clean cutoff)",
+        "unfollowStatus": 200,
+        "unfollowResp": "{\"deposit\":100,\"master_share\":0,\"pamm_id\":\"pmm_2637bb55c2d229f5a3\",\"payout\":100,\"running_pnl\":0,\"success\":true}\n",
+        "buyStatus": 200,
+        "f10StillInPoolDuringTrade": false,
+        "f10BalanceDelta": 100,
+        "masterClosePnl": 0
+      }
+    },
+    {
+      "id": "AL07",
+      "title": "Stop Algo -> Immediately Restart (Discovery & Readiness Check)",
+      "status": "INFO",
+      "details": {
+        "algoWidgetOpened": true,
+        "algoApiProbes": [
+          {
+            "ep": "/v1/oms/paper/algos",
+            "status": 404,
+            "preview": "404 page not found\n"
+          },
+          {
+            "ep": "/v1/oms/paper/algo/instances",
+            "status": 404,
+            "preview": "404 page not found\n"
+          },
+          {
+            "ep": "/v1/oms/paper/strategies",
+            "status": 404,
+            "preview": "404 page not found\n"
+          },
+          {
+            "ep": "/v1/chart/algo/list",
+            "status": 404,
+            "preview": "404 page not found\n"
+          },
+          {
+            "ep": "/v1/chart/algos",
+            "status": 404,
+            "preview": "404 page not found\n"
+          }
+        ],
+        "algoUiNetworkCalls": [
+          {
+            "method": "GET",
+            "status": 200,
+            "url": "https://chartv2.blacktrader.com/assets/algoApp-aSs58GUn.css",
+            "prev": ".broker-select.svelte-1byo21z{min-width:0;max-width:100%}summary.svelte-1byo21z{overflow-wrap:anywhere}input.svelte-1byo21z{accent-color:var(--tw-primary,#8052ed)}.cpm.svelte-23989"
+          },
+          {
+            "method": "GET",
+            "status": 200,
+            "url": "https://chartv2.blacktrader.com/assets/algoApp-DXtKv45p.js",
+            "prev": "const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=[\"assets/strategyPopup-CM-dLldD.js\",\"assets/rolldown-runtime-B_MQnBba.js\",\"assets/index-client-DXSma3Fg.js\",\"assets/disclose"
+          },
+          {
+            "method": "GET",
+            "status": 200,
+            "url": "https://chartv2.blacktrader.com/assets/strategyManager.svelte-cnej3GWw.js",
+            "prev": "import\"./rolldown-runtime-B_MQnBba.js\";import{Ot as e,i as t}from\"./index-client-DXSma3Fg.js\";import{a as n,n as r,r as i,s as a}from\"./fetchFunc-D5j6BpbR.js\";import{r as o}from\"./"
+          },
+          {
+            "method": "POST",
+            "status": 200,
+            "url": "https://terminal.blacktrader.com/api/cloud-algos/list",
+            "prev": "{\"cloud_accounts\":[\"paper\",\"paper-net\",\"real\",\"real-net\"],\"runs\":[],\"success\":true}\n"
+          },
+          {
+            "method": "POST",
+            "status": 200,
+            "url": "https://lpadmin.blackfx.com/v1/chart/algo/listAlgo",
+            "prev": "{\"data\":[],\"message\":\"Algos retrieved successfully\",\"success\":true}\n"
+          }
+        ],
+        "algoUiExcerpt": "Algo\n1-click\nChart\nWatchlist\nCopy trading\nMAM\nIframe / API\nOther\nNot recorded\nAll order types\nMarket\nLimit\nStop\nUpdated 17:59\nRealized P&L\n-0.00\nBefore brokerage · account currency\nClosed executions\n2\n18 Nov – 18 Nov\nWin rate\n0.0%\n0 wins · 1 losses · 1 flat\nProfit factor\n0.00\nGross profit / gross loss\nCumulative P&L\nClosed trades only\n0.00\n-0.00\n-0.00\n18 Nov\n18 Nov\nMax P&L drawdown 0.00\nAverage / "
+      }
+    }
+  ]
+}

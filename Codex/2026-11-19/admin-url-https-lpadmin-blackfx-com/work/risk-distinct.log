@@ -1,0 +1,3 @@
+BTPAMM-M003 PASS Two-position stop-out closed 1 position and halted with 1 remaining at margin 98.00080118174444%.
+STOPOUT-LOSS-PRIORITY INCONCLUSIVE Stop-out closed the last-observed most unprofitable position.
+RISK-PRIORITY-CLEANUP PASS Priority-test account is flat.

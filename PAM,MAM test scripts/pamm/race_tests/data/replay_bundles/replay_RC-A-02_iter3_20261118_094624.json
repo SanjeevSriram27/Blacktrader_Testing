@@ -1,0 +1,190 @@
+{
+  "bundle_id": "replay_RC-A-02_iter3_20261118_094624",
+  "scenario_id": "RC-A-02",
+  "iteration": 3,
+  "offset_ms": -25,
+  "seed": 461704,
+  "timestamp": 1794975384.294365,
+  "invariants_failed": [
+    {
+      "id": "I-02",
+      "message": "Money Conservation failed: current 31999.99 != expected 31000.00 (diff 999.99)",
+      "details": {
+        "current": "31999.99",
+        "expected": "31000.00",
+        "diff": "999.99"
+      }
+    },
+    {
+      "id": "I-04",
+      "message": "Unit/NAV Identity failed: Total_Equity 15933.34 != Total_Units * NAV 15933.340050 (diff 0.000050)",
+      "details": {
+        "total_equity": "15933.34",
+        "total_units": "150",
+        "nav": "106.222267",
+        "diff": "0.000050"
+      }
+    },
+    {
+      "id": "I-08",
+      "message": "Position Conservation failed: position TKT_EURUSD_01 lots 2.00 != fills 2.00 - closes 2.00",
+      "details": {
+        "ticket_id": "TKT_EURUSD_01",
+        "open_lots": "2.00",
+        "expected": "0.00"
+      }
+    }
+  ],
+  "operation_log": [
+    {
+      "op_index": 1,
+      "t_send_ns": 1794975384264081000,
+      "t_done_ns": 1794975384264105000,
+      "duration_ms": 0.024,
+      "response": {
+        "status": 200,
+        "joined": true
+      }
+    },
+    {
+      "op_index": 0,
+      "t_send_ns": 1794975384294137000,
+      "t_done_ns": 1794975384294171000,
+      "duration_ms": 0.034,
+      "response": {
+        "status": 200,
+        "trade_closed": true,
+        "active_count": 4
+      }
+    }
+  ],
+  "snapshot_before_s0": {
+    "total_equity": "13000.00",
+    "total_units": "130",
+    "nav": "100.000000",
+    "used_margin": "0",
+    "free_margin": "13000.00",
+    "reserve_ledger": "0.00",
+    "followers": [
+      {
+        "id": "mem_follower_01",
+        "equity": "1000.00",
+        "balance": "1000.00",
+        "units": "10",
+        "share_pct": "7.692308",
+        "hwm": "1000.00",
+        "fee_deducted": "0.00",
+        "wallet": "5000.00",
+        "is_master": false,
+        "following": true
+      },
+      {
+        "id": "mem_follower_02",
+        "equity": "1000.00",
+        "balance": "1000.00",
+        "units": "10",
+        "share_pct": "7.692308",
+        "hwm": "1000.00",
+        "fee_deducted": "0.00",
+        "wallet": "5000.00",
+        "is_master": false,
+        "following": true
+      },
+      {
+        "id": "mem_follower_03",
+        "equity": "1000.00",
+        "balance": "1000.00",
+        "units": "10",
+        "share_pct": "7.692307",
+        "hwm": "1000.00",
+        "fee_deducted": "0.00",
+        "wallet": "5000.00",
+        "is_master": false,
+        "following": true
+      }
+    ],
+    "manager": {
+      "id": "mem_manager_01",
+      "equity": "10000.00",
+      "balance": "10000.00",
+      "units": "100",
+      "share_pct": "76.923077",
+      "fee_wallet": "0.00",
+      "is_master": true,
+      "following": false
+    },
+    "positions_count": 1,
+    "system_money": "28000.00"
+  },
+  "snapshot_after_s1": {
+    "total_equity": "15933.34",
+    "total_units": "150",
+    "nav": "106.222267",
+    "used_margin": "0",
+    "free_margin": "15933.34",
+    "reserve_ledger": "-0.01",
+    "followers": [
+      {
+        "id": "mem_follower_01",
+        "equity": "1053.34",
+        "balance": "1053.34",
+        "units": "10",
+        "share_pct": "6.610918",
+        "hwm": "1000.00",
+        "fee_deducted": "13.33",
+        "wallet": "5000.00",
+        "is_master": false,
+        "following": true
+      },
+      {
+        "id": "mem_follower_02",
+        "equity": "1053.34",
+        "balance": "1053.34",
+        "units": "10",
+        "share_pct": "6.610918",
+        "hwm": "1000.00",
+        "fee_deducted": "13.33",
+        "wallet": "5000.00",
+        "is_master": false,
+        "following": true
+      },
+      {
+        "id": "mem_follower_03",
+        "equity": "1053.34",
+        "balance": "1053.34",
+        "units": "10",
+        "share_pct": "6.610918",
+        "hwm": "1000.00",
+        "fee_deducted": "13.33",
+        "wallet": "5000.00",
+        "is_master": false,
+        "following": true
+      },
+      {
+        "id": "mem_joiner_midtrade",
+        "equity": "2106.66",
+        "balance": "2106.66",
+        "units": "2E+1",
+        "share_pct": "13.221646",
+        "hwm": "2000.00",
+        "fee_deducted": "26.67",
+        "wallet": "1000.00",
+        "is_master": false,
+        "following": true
+      }
+    ],
+    "manager": {
+      "id": "mem_manager_01",
+      "equity": "10666.67",
+      "balance": "10666.67",
+      "units": "100",
+      "share_pct": "66.945600",
+      "fee_wallet": "66.66",
+      "is_master": true,
+      "following": false
+    },
+    "positions_count": 1,
+    "system_money": "32000.00"
+  },
+  "extra_diagnostics": {}
+}

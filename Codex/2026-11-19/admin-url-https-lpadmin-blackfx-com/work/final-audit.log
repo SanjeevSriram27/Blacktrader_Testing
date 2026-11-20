@@ -1,0 +1,7 @@
+PAMM-X14-10 PASS Sum of returned allocations matches current running PNL for each of ten active subscriptions.
+BTPAMM-A012 PARTIAL Historical allocation sums reconciled; the exact reference sequence of three specified profitable/losing trades was not reproduced.
+PAMM-X14-09 PARTIAL Per-trade distributed PNL and rounding deltas calculated; reserve-ledger absorption cannot be verified from public allocation data.
+PAMM-X11-04 PASS Profitable closed settlements charge the stored fee on positive running profit and return principal plus net profit.
+PAMM-X11-05 PASS Losing closed settlements charge no performance fee.
+PAMM-X11-06 PASS Zero-PNL settlements charge no manager fee; principal precision is assessed separately.
+FINAL-CASE-AUDIT-CLEANUP PASS Final read-only audit confirms baseline pool configuration and no open or pending exposure.

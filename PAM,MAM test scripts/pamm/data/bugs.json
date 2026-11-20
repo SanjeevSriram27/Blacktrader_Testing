@@ -1,0 +1,77 @@
+[
+  {
+    "bug_id": "BUG-DEP-004",
+    "scenario_id": "BTPAMM-D001",
+    "title": "Zero Published Deposit Payment Gateways on Client Portal",
+    "category": "Financial Blocker",
+    "severity": "P0 (Blocker)",
+    "bug_type": "FUNCTIONALITY",
+    "status": "RESOLVED",
+    "resolution_notes": "Broker administrator published active deposit payment method pm_750cb53613f78d0b1c ('Test', Bank Transfer, Min $100). Live deposit submission via POST /v1/oms/real/portal/deposits ($100 with proof receipt) and backoffice admin review/approval via POST /admin/api/deposits/{id}/review verified end-to-end; funds credited directly to investor wallet.",
+    "endpoint": "GET /v1/oms/real/portal/methods",
+    "request_payload": {},
+    "response_status": 200,
+    "response_body": {
+      "methods": [
+        {
+          "currency": null,
+          "details": {},
+          "kind": "bank",
+          "method_id": "pm_750cb53613f78d0b1c",
+          "min_deposit": 100,
+          "name": "Test",
+          "network": null
+        }
+      ],
+      "success": true
+    },
+    "observed_behavior": "Prior to fix, client portal returned empty methods list ('Your broker has not published any deposit methods yet'). After admin published payment method pm_750cb53613f78d0b1c, portal methods endpoint returns 200 OK with active Bank Transfer gateway.",
+    "expected_behavior": "Active deposit methods (Bank Wire, Card, Crypto) must be configured in backoffice and returned by payment gateway.",
+    "root_cause": "Broker backoffice gateway integrations were unmapped for default member tier. Admin has now published active deposit method.",
+    "screenshot": "screenshots/bug_02_wallet_deposit_blocked.png",
+    "reproduction_curl": "curl -X GET 'https://lpadmin.blackfx.com/v1/oms/real/portal/methods' -H 'Authorization: Bearer <TOKEN>'",
+    "created_at": "2026-11-18 11:14:46"
+  },
+  {
+    "bug_id": "BUG-AUTH-002",
+    "scenario_id": "BTPAMM-F011",
+    "title": "Premature Unauthenticated API Probing on PAMM Dock Tab Initialization",
+    "category": "Auth & Session",
+    "severity": "P1 (High)",
+    "bug_type": "CONSOLE",
+    "status": "RESOLVED",
+    "resolution_notes": "Verified clean on terminal.blacktrader.com deployment. The WebTrader architecture resolves chart-token (HTTP 200 OK) prior to dispatching workspace data requests. DevTools network traces confirm 0 premature 401 unauthorized errors across all workspace operations.",
+    "endpoint": "GET /v1/oms/real/pamm/masters",
+    "request_payload": {},
+    "response_status": 200,
+    "response_body": {
+      "success": true
+    },
+    "observed_behavior": "Prior to verification on terminal.blacktrader.com, legacy environment logged premature 401. On terminal.blacktrader.com, session token resolves cleanly before data calls; zero 401 errors logged.",
+    "expected_behavior": "The PAMM widget lifecycle hook should await parent auth token resolution before dispatching network requests.",
+    "root_cause": "Widget componentDidMount fires before JWT session token synchronization is resolved from localStorage/cookie.",
+    "screenshot": "screenshots/console_csp_and_401_errors.png",
+    "reproduction_curl": "curl -X GET 'https://terminal.blacktrader.com/test/v1/oms/real/pamm/masters' -H 'Authorization: Bearer <TOKEN>'",
+    "created_at": "2026-11-18 11:14:46"
+  },
+  {
+    "bug_id": "BUG-SEC-003",
+    "scenario_id": "BTPAMM-F001",
+    "title": "CSP Header 'script-src self' Blocks Cloudflare Analytics Beacon",
+    "category": "Security & Network",
+    "severity": "P2 (Medium)",
+    "bug_type": "CONSOLE",
+    "status": "RESOLVED",
+    "resolution_notes": "Verified clean on terminal.blacktrader.com deployment. DevTools network traces confirm the Cloudflare analytics beacon (vce70182...) executes and transmits RUM telemetry with HTTP 204 No Content without being blocked by Content Security Policy directives.",
+    "endpoint": "https://static.cloudflareinsights.com/beacon.min.js",
+    "request_payload": {},
+    "response_status": 204,
+    "response_body": "HTTP 204 No Content - RUM telemetry beacon transmitted successfully.",
+    "observed_behavior": "On legacy domain, CSP blocked beacon script. On terminal.blacktrader.com, Cloudflare RUM beacon executes cleanly with status 204.",
+    "expected_behavior": "Either remove the third-party Cloudflare analytics script from index.html or whitelist static.cloudflareinsights.com in the HTTP CSP response header.",
+    "root_cause": "Nginx/Cloudflare proxy injects CSP 'script-src self' while the SPA template still references Cloudflare beacon.",
+    "screenshot": "screenshots/console_csp_and_401_errors.png",
+    "reproduction_curl": "# Inspect DevTools network on https://terminal.blacktrader.com/test/home/dashboard",
+    "created_at": "2026-11-18 11:14:46"
+  }
+]

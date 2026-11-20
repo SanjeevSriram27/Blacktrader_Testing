@@ -1,0 +1,21 @@
+{
+  "case_count": 349,
+  "case_ids_unique": true,
+  "csv_rows": 349,
+  "counts": {
+    "PASS": 214,
+    "FAIL": 0,
+    "PARTIAL": 25,
+    "BLOCKED": 104,
+    "INCONCLUSIVE": 6
+  },
+  "evidence_targets_exist": true,
+  "known_credentials_or_JWTs_in_deliverables": false,
+  "ui_report_filters": {
+    "PASS": "214 of349",
+    "PARTIAL": "25 of349",
+    "full_text_search_PAMM_X16_10": "2 rows, direct case plus reference inF005"
+  },
+  "final_account_audit": "25 checked accounts flat/no pending; original10 investors/1000 principal and QA500 investors/217150 principal retained",
+  "report_preview": "evidence/report-final-preview.jpg"
+}

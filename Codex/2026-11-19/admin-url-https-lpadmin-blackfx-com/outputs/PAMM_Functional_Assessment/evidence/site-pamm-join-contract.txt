@@ -1,0 +1,89 @@
+API REFERENCE / PAMM
+Deposit into a PAMM pool
+POST
+/v1/oms/{instance}/pamm/join
+Bearer token
+Write
+
+Moves deposit from this account's trading balance to the manager's on this instance (as capital: both Net P&L baselines move with it), writes a 'PAMM Transfer' history row on each side, pushes funds events, and opens the subscription.
+
+The deposit must not exceed FREE margin.
+
+One active subscription per (follower, master).
+
+Behavior & account differences
+Choose an available account
+
+Examples use paper. First call GET /oms/_instances and replace the instance with a slug available to your account. Features vary by broker and account type.
+
+Path parameters
+instance
+string
+required
+
+The trading account (instance) slug.
+
+Engine accounts: paper, paper-net, real, real-net.
+
+External venue accounts: binance, zerodha (see the venue notes on each operation).
+
+Only the instances this install is licensed for exist; GET /oms/_instances lists them.
+
+An unknown slug answers 404 no such OMS instance: <slug>.
+
+Request body
+
+application/json
+
+master_client_id
+string
+required
+deposit
+number
+required
+operation_key
+string
+Responses
+200
+202
+400
+401
+404
+501
+503
+
+OK
+
+200 · Example response
+Copy
+{
+  "success": true,
+  "subscription": {
+    "pamm_id": "pmm_5e6f",
+    "master_client_id": "mem_9f3a21c0",
+    "follower_client_id": "mem_77c1",
+    "instance": "paper",
+    "deposit": 10000,
+    "share_percent": 20,
+    "running_pnl": 0,
+    "status": "active",
+    "joined_at": "2026-10-01T09:30:00Z"
+  }
+}
+Response fields
+cURL
+fetch
+Python
+cURL request
+Copy
+curl --request POST 'https://lpadmin.blackfx.com/v1/oms/paper/pamm/join' \
+  --header "Authorization: Bearer $ACCESS_TOKEN" \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "master_client_id": "mem_9f3a21c0",
+  "deposit": 10000
+}'
+
+Replace YOUR_* placeholders. Set API_KEY / ACCESS_TOKEN in your environment. Examples are never run on this page.
+
+Next: Settle and leave a PAMM pool →

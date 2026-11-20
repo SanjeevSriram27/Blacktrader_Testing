@@ -1,0 +1,186 @@
+- iframe [active] [id="frame"]:
+  - banner:
+    - button "Account menu":
+      - generic: P
+    - button "Default ▾":
+      - generic: Default
+      - generic: ▾
+    - button "Add widget":
+    - button "Floating view — free-floating, overlapping windows":
+    - button "Seamless view — merge widgets edge to edge":
+    - button "Toggle theme":
+  - button "Watchlist ✕":
+    - generic: Watchlist
+    - button "✕"
+  - button "Add widget to this panel":
+  - button "Maximise panel":
+  - button "✕"
+  - 'textbox "Search eg: EURUSD, BTC"'
+  - button "Filter by category and exchange":
+  - button "W1":
+    - generic: W1
+  - button "W2":
+    - generic: W2
+  - button "W3":
+    - generic: W3
+  - button "W4":
+    - generic: W4
+  - button "W5":
+    - generic: W5
+  - button "Rename Watchlist 1":
+    - generic: Watchlist 1
+  - button "Visible watchlist columns":
+    - generic: Columns
+  - button "Sort this section":
+    - generic: Original
+  - button "Note":
+    - text: Note
+  - generic: No symbols yet — search above to add one
+  - button "Chart ✕":
+    - generic: Chart
+    - button "✕"
+  - button "Add widget to this panel":
+  - button "Maximise panel":
+  - button "✕"
+  - button "Drawing Tools":
+  - button "Line Tools":
+  - button "Patterns":
+  - button "Text Tools":
+  - button "Measure Tools":
+  - button "Fibonacci Tools":
+  - tooltip "Lock All Drawings":
+    - button "Lock All Drawings":
+  - tooltip "Hide All Drawings":
+    - button "Hide All Drawings":
+  - tooltip "Enable Magnet Mode":
+    - button "Enable Magnet Mode":
+  - tooltip "Enable Keep Drawing":
+    - button "Enable Keep Drawing":
+  - button "Delete Tools":
+  - tooltip "Show Favorite Drawing Tools Toolbar":
+    - button "Show Favorite Drawing Tools Toolbar":
+  - button "Scroll tools down":
+  - navigation:
+    - button "SAVE":
+      - generic: SAVE
+    - button:
+    - tooltip "Undo":
+      - button "Undo" [disabled]:
+    - tooltip "Redo":
+      - button "Redo" [disabled]:
+    - tooltip "Hide All Trades":
+      - button "Hide All Trades":
+    - button "BTCUSDT.P":
+      - generic: BTCUSDT.P
+    - button "1 Min":
+      - text: 1 Min
+    - button "Select chart type":
+    - button "Indicators":
+      - generic: Indicators
+    - tooltip:
+      - button:
+    - tooltip "Fullscreen chart panel":
+      - button "Fullscreen chart panel":
+    - tooltip "Chart snapshot":
+      - button "Chart snapshot":
+    - button:
+  - img "Xtreme Logo"
+  - table:
+    - 'row "BINANCE:BTCUSDT.P | 1m | O: 63864.2 H: 63875 L: 63854.1 C: 63854.1 63826.6 63826.7 S 0.001 B"':
+      - cell
+      - 'cell "BINANCE:BTCUSDT.P | 1m | O: 63864.2 H: 63875 L: 63854.1 C: 63854.1 63826.6 63826.7 S 0.001 B"':
+        - button "BINANCE:BTCUSDT.P"
+        - generic: "|"
+        - generic: 1m
+        - generic: "|"
+        - generic: "O:"
+        - generic: "63864.2"
+        - generic: "H:"
+        - generic: "63875"
+        - generic: "L:"
+        - generic: "63854.1"
+        - generic: "C:"
+        - generic: "63854.1"
+        - button "63826.6":
+          - generic: "63826.6"
+        - button "63826.7":
+          - generic: "63826.7"
+        - button "S 0.001 B":
+          - generic: S
+          - generic: "0.001"
+          - generic: B
+        - button "Hide Trades":
+        - button "Trade Settings":
+      - cell
+    - row:
+      - cell
+      - cell
+      - cell:
+        - button "Fit Price Scale":
+        - button "Fit Time Scale":
+        - button "Reset to Initial Position":
+  - button "Hide drawing toolbar":
+  - button "Trades ✕":
+    - generic: Trades
+    - button "✕"
+  - button "Add widget to this panel":
+  - button "Maximise panel":
+  - button "✕"
+  - generic: Trades
+  - generic: Paper (Hedging)
+  - button "Refresh":
+  - button "Broker settings":
+  - button "Positions"
+  - button "Pending"
+  - button "Orders"
+  - button "History"
+  - button "Funds"
+  - table:
+    - rowgroup:
+      - row "Symbol Order ID Qty. Avg. SL TSL TP LTP P&L Time":
+        - columnheader
+        - columnheader "Symbol"
+        - columnheader "Order ID"
+        - columnheader "Qty."
+        - columnheader "Avg."
+        - columnheader "SL"
+        - columnheader "TSL"
+        - columnheader "TP"
+        - columnheader "LTP"
+        - columnheader "P&L"
+        - columnheader "Time"
+    - rowgroup:
+      - row "No positions found":
+        - cell "No positions found"
+    - rowgroup:
+      - row "Paper (Hedging) account funds P&L +0.00":
+        - cell "Paper (Hedging) account funds":
+          - generic "Paper (Hedging) account funds":
+            - generic "Paper (Hedging)":
+              - generic: Paper (Hedging)
+            - term: Balance
+            - definition: 1,000,000.00
+            - term: Equity
+            - definition: 1,000,000.00
+            - term: Used margin
+            - definition: "0.00"
+            - term: Free margin
+            - definition: 1,000,000.00
+            - term: Margin level
+            - definition: N/A
+        - cell "P&L"
+        - cell "+0.00"
+        - cell
+  - button "PAMM ✕":
+    - generic: PAMM
+    - button "✕"
+  - button "Add widget to this panel":
+  - button "Maximise panel":
+  - button "✕"
+  - generic: PAMM
+  - generic "The account group your rates come from. Set by your broker.": Standard
+  - button "Refresh":
+  - button "PAMM managers"
+  - button "My subscription"
+  - status:
+    - generic: Loading…

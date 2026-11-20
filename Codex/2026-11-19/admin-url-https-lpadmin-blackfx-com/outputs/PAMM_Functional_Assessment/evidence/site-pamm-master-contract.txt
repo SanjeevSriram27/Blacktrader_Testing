@@ -1,0 +1,91 @@
+API REFERENCE / PAMM
+Become or update a PAMM master
+POST
+/v1/oms/{instance}/pamm/master
+Bearer token
+Write
+
+Upserts THIS member's PAMM master row (the client id is taken from the token, never the body).
+
+display_name is required and trimmed.
+
+A new name that another master in this product already uses (compared trimmed and case-insensitively, any status) is refused with 400 `A master named "<name>" already exists.
+
+Behavior & account differences
+Choose an available account
+
+Examples use paper. First call GET /oms/_instances and replace the instance with a slug available to your account. Features vary by broker and account type.
+
+Path parameters
+instance
+string
+required
+
+The trading account (instance) slug.
+
+Engine accounts: paper, paper-net, real, real-net.
+
+External venue accounts: binance, zerodha (see the venue notes on each operation).
+
+Only the instances this install is licensed for exist; GET /oms/_instances lists them.
+
+An unknown slug answers 404 no such OMS instance: <slug>.
+
+Request body
+
+application/json
+
+client_id
+string
+display_name
+string
+share_percent
+number
+
+Minimum: 0 · Maximum: 100
+
+status
+string
+
+Set by the install, never by the member: active when the listing is created.
+
+Allowed: "active", "paused"
+
+Responses
+200
+400
+401
+404
+501
+503
+
+OK
+
+200 · Example response
+Copy
+{
+  "success": true,
+  "master": {
+    "client_id": "mem_9f3a21c0",
+    "display_name": "Alpha Pool",
+    "share_percent": 20,
+    "status": ""
+  }
+}
+Response fields
+cURL
+fetch
+Python
+cURL request
+Copy
+curl --request POST 'https://lpadmin.blackfx.com/v1/oms/paper/pamm/master' \
+  --header "Authorization: Bearer $ACCESS_TOKEN" \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "display_name": "Alpha Pool",
+  "share_percent": 20
+}'
+
+Replace YOUR_* placeholders. Set API_KEY / ACCESS_TOKEN in your environment. Examples are never run on this page.
+
+Next: PAMM subscriptions and pool →

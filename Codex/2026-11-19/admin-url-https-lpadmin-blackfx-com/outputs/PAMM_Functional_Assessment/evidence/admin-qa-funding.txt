@@ -1,0 +1,229 @@
+- complementary:
+  - generic: blacktrader
+  - generic: Client Admin
+  - button "Collapse sidebar":
+  - navigation:
+    - button "Overview":
+      - generic: Overview
+    - button "Client Home":
+      - generic: Client Home
+    - button "Chart":
+      - generic: Chart
+    - button "OMS":
+      - generic: OMS
+    - button "Money":
+      - generic: Money
+    - button "People" [expanded]:
+      - generic: People
+    - button "Members":
+      - generic: Members
+    - button "Staff":
+      - generic: Staff
+    - button "Trades":
+      - generic: Trades
+    - button "Account requests":
+      - generic: Account requests
+    - button "Install":
+      - generic: Install
+  - generic: LP
+  - generic "lpadmin@blacktrader.com"
+  - text: Client admin
+  - button "Sign out":
+    - text: Sign out
+- banner:
+  - heading "Members" [level=1]
+  - generic: active
+  - button "v1.1.18 · Versions"
+  - button "Toggle theme":
+- main:
+  - button "All members":
+    - text: All members
+  - heading "pammqa.20261119.f452cc.master@mailinator.com" [level=2]
+  - paragraph:
+    - text: PAMM QA Isolated Master · user id
+    - code: 3f75a647-2aba-4e61-96f6-cf844bc0ee47
+  - generic: active
+  - term: Source
+  - definition: admin
+  - term: Joined
+  - definition: 19/11/2026, 16:08:33
+  - term: Account group
+  - definition: Default
+  - term: Plan
+  - definition: Default (Premium)
+  - term: Account type
+  - definition: live
+  - term: Engines
+  - definition: Paper Hedging · Real Hedging — chosen at sign-up, cannot be changed
+  - term: Book
+  - definition: B-book — real orders are booked here
+  - term: Trading balance
+  - definition: —
+  - heading "Trading accounts" [level=2]
+  - paragraph: "The member's primary account trades every instance, as before. Extra accounts are each bound to one instance and carry their own balance, positions and history. This member chose Paper Hedging · Real Hedging at sign-up: their accounts open only on that engine, and the choice cannot be changed."
+  - button "Add account":
+    - text: Add account
+  - table:
+    - rowgroup:
+      - row "Account Instance Status Opened by Group Leverage Created Actions":
+        - columnheader "Account"
+        - columnheader "Instance"
+        - columnheader "Status"
+        - columnheader "Opened by"
+        - columnheader "Group"
+        - columnheader "Leverage"
+        - columnheader "Created"
+        - columnheader "Actions"
+    - rowgroup:
+      - row "Primary 3f75a647-2aba-4e61-96f6-cf844bc0ee47 every account on Paper Hedging · Real Hedging active — Default group table 19/11/2026, 16:08:33 primary":
+        - cell "Primary 3f75a647-2aba-4e61-96f6-cf844bc0ee47":
+          - text: Primary
+          - code: 3f75a647-2aba-4e61-96f6-cf844bc0ee47
+        - cell "every account on Paper Hedging · Real Hedging"
+        - cell "active":
+          - generic: active
+        - cell "—"
+        - cell "Default"
+        - cell "group table"
+        - cell "19/11/2026, 16:08:33"
+        - cell "primary"
+  - paragraph: No extra accounts.
+  - heading "Money" [level=2]
+  - paragraph: Trading balance, and the deposit and payout requests this member has raised.
+  - generic: Trading balance · Paper (Hedging)
+  - generic: —
+  - button "Set balance"
+  - generic: Trading balance · Real (Hedging)
+  - generic: real money
+  - generic: 20,000.00
+  - button "Set balance"
+  - heading "Deposits" [level=3]
+  - generic: No deposit requests.
+  - heading "Withdrawals" [level=3]
+  - generic: No payout requests.
+  - heading "Stop-out level" [level=2]
+  - paragraph: The margin level at which this member's positions are closed, largest loss first, until the level is back above it. Leave it empty to use the install's level. Applies to the install's own accounts (Paper, Hedging, Netting), never an exchange account.
+  - term: In force
+  - definition: 50% — the install's level
+  - term: Install
+  - definition: stop-out 50% · margin call 100%
+  - spinbutton "Stop-out level percent"
+  - generic: "%"
+  - button "Save" [disabled]
+  - heading "Bonus" [level=2]
+  - paragraph: Trading collateral for one account. It cannot be withdrawn or transferred.
+  - generic: Trading account
+  - combobox:
+    - option "Primary · Paper (Hedging)" [selected]
+    - option "Primary · Real (Hedging)"
+  - paragraph: Bonus is disabled for this instance.
+  - generic: Amount
+  - spinbutton [disabled]
+  - generic: Last day (UTC, inclusive)
+  - textbox [disabled]
+  - generic: Note (optional)
+  - textbox [disabled]
+  - button "Grant bonus" [disabled]
+  - table:
+    - rowgroup:
+      - row "Amount Last day (UTC) Status Note Granted by Actions":
+        - columnheader "Amount"
+        - columnheader "Last day (UTC)"
+        - columnheader "Status"
+        - columnheader "Note"
+        - columnheader "Granted by"
+        - columnheader "Actions"
+    - rowgroup
+  - paragraph: No bonus grants.
+  - heading "Verification" [level=2]
+  - paragraph: Identity documents this member uploaded from their Wallet. 0 of 6 slots filled.
+  - generic: unverified
+  - table:
+    - rowgroup:
+      - row "Document Status Remark Uploaded Reviewed File Actions":
+        - columnheader "Document"
+        - columnheader "Status"
+        - columnheader "Remark"
+        - columnheader "Uploaded"
+        - columnheader "Reviewed"
+        - columnheader "File"
+        - columnheader "Actions"
+    - rowgroup:
+      - row "Address proof not uploaded — — — —":
+        - cell "Address proof"
+        - cell "not uploaded":
+          - generic: not uploaded
+        - cell "—"
+        - cell "—"
+        - cell "—"
+        - cell "—"
+        - cell
+      - row "Address proof — back not uploaded — — — —":
+        - cell "Address proof — back"
+        - cell "not uploaded":
+          - generic: not uploaded
+        - cell "—"
+        - cell "—"
+        - cell "—"
+        - cell "—"
+        - cell
+      - row "ID proof not uploaded — — — —":
+        - cell "ID proof"
+        - cell "not uploaded":
+          - generic: not uploaded
+        - cell "—"
+        - cell "—"
+        - cell "—"
+        - cell "—"
+        - cell
+      - row "ID proof — back not uploaded — — — —":
+        - cell "ID proof — back"
+        - cell "not uploaded":
+          - generic: not uploaded
+        - cell "—"
+        - cell "—"
+        - cell "—"
+        - cell "—"
+        - cell
+      - row "Bank statement not uploaded — — — —":
+        - cell "Bank statement"
+        - cell "not uploaded":
+          - generic: not uploaded
+        - cell "—"
+        - cell "—"
+        - cell "—"
+        - cell "—"
+        - cell
+      - row "Other not uploaded — — — —":
+        - cell "Other"
+        - cell "not uploaded":
+          - generic: not uploaded
+        - cell "—"
+        - cell "—"
+        - cell "—"
+        - cell "—"
+        - cell
+  - button "Verify account" [disabled]
+  - generic: Verifying is what opens withdrawals. The member is notified either way.
+  - heading "API keys" [level=2]
+  - paragraph: Programs this member lets trade on their account, created from their own account page. Revoking one stops it at once; the member sees it gone.
+  - generic: No API keys.
+  - heading "Trades" [level=2]
+  - paragraph: Closed trades on this member’s accounts, newest first.
+  - generic: Account
+  - combobox:
+    - option "Every account" [selected]
+    - option "Primary"
+  - generic: From
+  - textbox
+  - generic: To (inclusive)
+  - textbox
+  - generic: Per page
+  - combobox:
+    - option "50" [selected]
+    - option "100"
+    - option "200"
+  - button "Refresh"
+  - paragraph: Dates are UTC days.
+  - generic: No trades in this range.
+- alert

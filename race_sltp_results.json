@@ -1,0 +1,17 @@
+[
+  {
+    "id": "NET05",
+    "title": "Modify SL -> Immediately modify SL again",
+    "status": "PASS",
+    "activePendingCount": 0,
+    "orders": []
+  },
+  {
+    "id": "NET06",
+    "title": "Modify TP -> Immediately close position (Orphan order check)",
+    "status": "PASS",
+    "tpOrderId": "ord_20e0e08d83b761b7f2",
+    "orphanOrdersCount": 0,
+    "isOrphanActive": false
+  }
+]

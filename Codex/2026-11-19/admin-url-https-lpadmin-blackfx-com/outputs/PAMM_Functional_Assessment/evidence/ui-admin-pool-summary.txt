@@ -1,0 +1,349 @@
+- banner:
+  - button "Account menu":
+    - generic: P
+  - button "Default ▾":
+    - generic: Default
+    - generic: ▾
+  - button "Add widget":
+  - button "Floating view — free-floating, overlapping windows":
+  - button "Comfortable view — restore panel spacing":
+  - button "Toggle theme":
+- button "Watchlist":
+  - generic: Watchlist
+- 'textbox "Search eg: EURUSD, BTC"'
+- button "Filter by category and exchange":
+- button "W1":
+  - generic: W1
+- button "W2":
+  - generic: W2
+- button "W3":
+  - generic: W3
+- button "W4":
+  - generic: W4
+- button "W5":
+  - generic: W5
+- button "Rename Watchlist 1":
+  - generic: Watchlist 1
+- button "Visible watchlist columns":
+  - generic: Columns
+- button "Sort this section":
+  - generic: Original
+- button "Note":
+  - text: Note
+- generic: No symbols yet — search above to add one
+- button "Chart":
+  - generic: Chart
+- button "Drawing Tools":
+- button "Line Tools":
+- button "Patterns":
+- button "Text Tools":
+- button "Measure Tools":
+- button "Fibonacci Tools":
+- tooltip "Lock All Drawings":
+  - button "Lock All Drawings":
+- tooltip "Hide All Drawings":
+  - button "Hide All Drawings":
+- tooltip "Enable Magnet Mode":
+  - button "Enable Magnet Mode":
+- tooltip "Enable Keep Drawing":
+  - button "Enable Keep Drawing":
+- button "Delete Tools":
+- tooltip "Show Favorite Drawing Tools Toolbar":
+  - button "Show Favorite Drawing Tools Toolbar":
+- button "Scroll tools down":
+- navigation:
+  - button "SAVE":
+    - generic: SAVE
+  - button:
+  - tooltip "Undo":
+    - button "Undo" [disabled]:
+  - tooltip "Redo":
+    - button "Redo" [disabled]:
+  - tooltip "Hide All Trades":
+    - button "Hide All Trades":
+  - button "BTCUSDT.P":
+    - generic: BTCUSDT.P
+  - button "1 Min":
+    - text: 1 Min
+  - button "Select chart type":
+  - button "Indicators":
+    - generic: Indicators
+  - tooltip:
+    - button:
+  - tooltip "Fullscreen chart panel":
+    - button "Fullscreen chart panel":
+  - tooltip "Chart snapshot":
+    - button "Chart snapshot":
+  - button:
+- img "Xtreme Logo"
+- table:
+  - 'row "BINANCE:BTCUSDT.P | 1m | O: 63939 H: 63939 L: 63929.9 C: 63929.9 63929.9 63930.0 S 0.001 B"':
+    - cell
+    - 'cell "BINANCE:BTCUSDT.P | 1m | O: 63939 H: 63939 L: 63929.9 C: 63929.9 63929.9 63930.0 S 0.001 B"':
+      - button "BINANCE:BTCUSDT.P"
+      - generic: "|"
+      - generic: 1m
+      - generic: "|"
+      - generic: "O:"
+      - generic: "63939"
+      - generic: "H:"
+      - generic: "63939"
+      - generic: "L:"
+      - generic: "63929.9"
+      - generic: "C:"
+      - generic: "63929.9"
+      - button "63929.9":
+        - generic: "63929.9"
+      - button "63930.0":
+        - generic: "63930.0"
+      - button "S 0.001 B":
+        - generic: S
+        - generic: "0.001"
+        - generic: B
+      - button "Hide Trades":
+      - button "Trade Settings":
+    - cell
+  - row:
+    - cell
+    - cell
+    - cell:
+      - button "Fit Price Scale":
+      - button "Fit Time Scale":
+      - button "Reset to Initial Position":
+      - button "Fit Price Scale":
+      - button "Fit Time Scale":
+      - button "Reset to Initial Position":
+- button "Hide drawing toolbar":
+- button "Trades":
+  - generic: Trades
+- generic: Trades
+- generic: Paper (Hedging)
+- button "Refresh":
+- button "Broker settings":
+- button "Positions"
+- button "Pending"
+- button "Orders"
+- button "History"
+- button "Funds"
+- table:
+  - rowgroup:
+    - row "Symbol Order ID Qty. Avg. SL TSL TP LTP P&L Time":
+      - columnheader
+      - columnheader "Symbol"
+      - columnheader "Order ID"
+      - columnheader "Qty."
+      - columnheader "Avg."
+      - columnheader "SL"
+      - columnheader "TSL"
+      - columnheader "TP"
+      - columnheader "LTP"
+      - columnheader "P&L"
+      - columnheader "Time"
+  - rowgroup:
+    - row "No positions found":
+      - cell "No positions found"
+  - rowgroup:
+    - row "Paper (Hedging) account funds P&L +0.00":
+      - cell "Paper (Hedging) account funds":
+        - generic "Paper (Hedging) account funds":
+          - generic "Paper (Hedging)":
+            - generic: Paper (Hedging)
+          - term: Balance
+          - definition: 1,000,000.00
+          - term: Equity
+          - definition: 1,000,000.00
+          - term: Used margin
+          - definition: "0.00"
+          - term: Free margin
+          - definition: 1,000,000.00
+          - term: Margin level
+          - definition: N/A
+      - cell "P&L"
+      - cell "+0.00"
+      - cell
+- button "PAMM":
+  - generic: PAMM
+- generic: PAMM
+- generic "The account group your rates come from. Set by your broker.": Standard
+- button "Refresh":
+- button "PAMM managers"
+- button "My subscription500" [active]:
+  - text: My subscription
+  - emphasis: "500"
+- generic: Managing a pool
+- generic "PAMM QA Isolated Pool"
+- button "Settings"
+- generic: 217,150.00
+- generic: Pool under management
+- generic: "500"
+- generic: Investors
+- generic: 20%
+- generic: My share of net profit
+- generic: Investors
+- button "Active500":
+  - text: Active
+  - emphasis: "500"
+- button "History"
+- table:
+  - rowgroup:
+    - row "Investor Deposit Share of pool Their running Joined":
+      - columnheader "Investor"
+      - columnheader "Deposit"
+      - columnheader "Share of pool"
+      - columnheader "Their running"
+      - columnheader "Joined"
+  - rowgroup:
+    - row "PAMM QA Investor TF 100.00 0.05% -0.01 19 Nov 2026, 16:17":
+      - cell "PAMM QA Investor TF"
+      - cell "100.00"
+      - cell "0.05%"
+      - cell "-0.01"
+      - cell "19 Nov 2026, 16:17"
+    - row "PAMM QA Investor TE 100.00 0.05% -0.01 19 Nov 2026, 16:17":
+      - cell "PAMM QA Investor TE"
+      - cell "100.00"
+      - cell "0.05%"
+      - cell "-0.01"
+      - cell "19 Nov 2026, 16:17"
+    - row "PAMM QA Investor TD 100.00 0.05% -0.01 19 Nov 2026, 16:17":
+      - cell "PAMM QA Investor TD"
+      - cell "100.00"
+      - cell "0.05%"
+      - cell "-0.01"
+      - cell "19 Nov 2026, 16:17"
+    - row "PAMM QA Investor TB 100.00 0.05% -0.01 19 Nov 2026, 16:17":
+      - cell "PAMM QA Investor TB"
+      - cell "100.00"
+      - cell "0.05%"
+      - cell "-0.01"
+      - cell "19 Nov 2026, 16:17"
+    - row "PAMM QA Investor TC 100.00 0.05% -0.01 19 Nov 2026, 16:17":
+      - cell "PAMM QA Investor TC"
+      - cell "100.00"
+      - cell "0.05%"
+      - cell "-0.01"
+      - cell "19 Nov 2026, 16:17"
+    - row "PAMM QA Investor SZ 100.00 0.05% -0.01 19 Nov 2026, 16:17":
+      - cell "PAMM QA Investor SZ"
+      - cell "100.00"
+      - cell "0.05%"
+      - cell "-0.01"
+      - cell "19 Nov 2026, 16:17"
+    - row "PAMM QA Investor TA 100.00 0.05% -0.01 19 Nov 2026, 16:17":
+      - cell "PAMM QA Investor TA"
+      - cell "100.00"
+      - cell "0.05%"
+      - cell "-0.01"
+      - cell "19 Nov 2026, 16:17"
+    - row "PAMM QA Investor SY 100.00 0.05% -0.01 19 Nov 2026, 16:17":
+      - cell "PAMM QA Investor SY"
+      - cell "100.00"
+      - cell "0.05%"
+      - cell "-0.01"
+      - cell "19 Nov 2026, 16:17"
+    - row "PAMM QA Investor SX 100.00 0.05% -0.01 19 Nov 2026, 16:17":
+      - cell "PAMM QA Investor SX"
+      - cell "100.00"
+      - cell "0.05%"
+      - cell "-0.01"
+      - cell "19 Nov 2026, 16:17"
+    - row "PAMM QA Investor SW 100.00 0.05% -0.01 19 Nov 2026, 16:17":
+      - cell "PAMM QA Investor SW"
+      - cell "100.00"
+      - cell "0.05%"
+      - cell "-0.01"
+      - cell "19 Nov 2026, 16:17"
+    - row "PAMM QA Investor SV 100.00 0.05% -0.01 19 Nov 2026, 16:17":
+      - cell "PAMM QA Investor SV"
+      - cell "100.00"
+      - cell "0.05%"
+      - cell "-0.01"
+      - cell "19 Nov 2026, 16:17"
+    - row "PAMM QA Investor SU 100.00 0.05% -0.01 19 Nov 2026, 16:17":
+      - cell "PAMM QA Investor SU"
+      - cell "100.00"
+      - cell "0.05%"
+      - cell "-0.01"
+      - cell "19 Nov 2026, 16:17"
+    - row "PAMM QA Investor ST 100.00 0.05% -0.01 19 Nov 2026, 16:17":
+      - cell "PAMM QA Investor ST"
+      - cell "100.00"
+      - cell "0.05%"
+      - cell "-0.01"
+      - cell "19 Nov 2026, 16:17"
+    - row "PAMM QA Investor SS 100.00 0.05% -0.01 19 Nov 2026, 16:17":
+      - cell "PAMM QA Investor SS"
+      - cell "100.00"
+      - cell "0.05%"
+      - cell "-0.01"
+      - cell "19 Nov 2026, 16:17"
+    - row "PAMM QA Investor SQ 100.00 0.05% -0.01 19 Nov 2026, 16:17":
+      - cell "PAMM QA Investor SQ"
+      - cell "100.00"
+      - cell "0.05%"
+      - cell "-0.01"
+      - cell "19 Nov 2026, 16:17"
+    - row "PAMM QA Investor SR 100.00 0.05% -0.01 19 Nov 2026, 16:17":
+      - cell "PAMM QA Investor SR"
+      - cell "100.00"
+      - cell "0.05%"
+      - cell "-0.01"
+      - cell "19 Nov 2026, 16:17"
+    - row "PAMM QA Investor SP 100.00 0.05% -0.01 19 Nov 2026, 16:17":
+      - cell "PAMM QA Investor SP"
+      - cell "100.00"
+      - cell "0.05%"
+      - cell "-0.01"
+      - cell "19 Nov 2026, 16:17"
+    - row "PAMM QA Investor SO 100.00 0.05% -0.01 19 Nov 2026, 16:17":
+      - cell "PAMM QA Investor SO"
+      - cell "100.00"
+      - cell "0.05%"
+      - cell "-0.01"
+      - cell "19 Nov 2026, 16:17"
+    - row "PAMM QA Investor SN 100.00 0.05% -0.01 19 Nov 2026, 16:17":
+      - cell "PAMM QA Investor SN"
+      - cell "100.00"
+      - cell "0.05%"
+      - cell "-0.01"
+      - cell "19 Nov 2026, 16:17"
+    - row "PAMM QA Investor SL 100.00 0.05% -0.01 19 Nov 2026, 16:17":
+      - cell "PAMM QA Investor SL"
+      - cell "100.00"
+      - cell "0.05%"
+      - cell "-0.01"
+      - cell "19 Nov 2026, 16:17"
+    - row "PAMM QA Investor SM 100.00 0.05% -0.01 19 Nov 2026, 16:17":
+      - cell "PAMM QA Investor SM"
+      - cell "100.00"
+      - cell "0.05%"
+      - cell "-0.01"
+      - cell "19 Nov 2026, 16:17"
+    - row "PAMM QA Investor SK 100.00 0.05% -0.01 19 Nov 2026, 16:17":
+      - cell "PAMM QA Investor SK"
+      - cell "100.00"
+      - cell "0.05%"
+      - cell "-0.01"
+      - cell "19 Nov 2026, 16:17"
+    - row "PAMM QA Investor SJ 100.00 0.05% -0.01 19 Nov 2026, 16:17":
+      - cell "PAMM QA Investor SJ"
+      - cell "100.00"
+      - cell "0.05%"
+      - cell "-0.01"
+      - cell "19 Nov 2026, 16:17"
+    - row "PAMM QA Investor SI 100.00 0.05% -0.01 19 Nov 2026, 16:17":
+      - cell "PAMM QA Investor SI"
+      - cell "100.00"
+      - cell "0.05%"
+      - cell "-0.01"
+      - cell "19 Nov 2026, 16:17"
+    - row "PAMM QA Investor SH 100.00 0.05% -0.01 19 Nov 2026, 16:17":
+      - cell "PAMM QA Investor SH"
+      - cell "100.00"
+      - cell "0.05%"
+      - cell "-0.01"
+      - cell "19 Nov 2026, 16:17"
+    - row "PAMM QA Investor SD 100.00 0.05% -0.01 19 Nov 2026, 16:17":
+      - cell "PAMM QA Investor SD"
+      - cell "100.00"
+   

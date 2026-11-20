@@ -1,0 +1,204 @@
+- banner:
+  - button "Account menu":
+    - generic: P
+  - button "Default ▾":
+    - generic: Default
+    - generic: ▾
+  - button "Add widget":
+  - button "Floating view — free-floating, overlapping windows":
+  - button "Comfortable view — restore panel spacing":
+  - button "Toggle theme":
+- button "Watchlist":
+  - generic: Watchlist
+- 'textbox "Search eg: EURUSD, BTC"'
+- button "Filter by category and exchange":
+- button "W1":
+  - generic: W1
+- button "W2":
+  - generic: W2
+- button "W3":
+  - generic: W3
+- button "W4":
+  - generic: W4
+- button "W5":
+  - generic: W5
+- button "Rename Watchlist 1":
+  - generic: Watchlist 1
+- button "Visible watchlist columns":
+  - generic: Columns
+- button "Sort this section":
+  - generic: Original
+- button "Note":
+  - text: Note
+- generic: No symbols yet — search above to add one
+- button "Chart":
+  - generic: Chart
+- button "Drawing Tools":
+- button "Line Tools":
+- button "Patterns":
+- button "Text Tools":
+- button "Measure Tools":
+- button "Fibonacci Tools":
+- tooltip "Lock All Drawings":
+  - button "Lock All Drawings":
+- tooltip "Hide All Drawings":
+  - button "Hide All Drawings":
+- tooltip "Enable Magnet Mode":
+  - button "Enable Magnet Mode":
+- tooltip "Enable Keep Drawing":
+  - button "Enable Keep Drawing":
+- button "Delete Tools":
+- tooltip "Show Favorite Drawing Tools Toolbar":
+  - button "Show Favorite Drawing Tools Toolbar":
+- button "Scroll tools down":
+- navigation:
+  - button "SAVE":
+    - generic: SAVE
+  - button:
+  - tooltip "Undo":
+    - button "Undo" [disabled]:
+  - tooltip "Redo":
+    - button "Redo" [disabled]:
+  - tooltip "Hide All Trades":
+    - button "Hide All Trades":
+  - button "BTCUSDT.P":
+    - generic: BTCUSDT.P
+  - button "1 Min":
+    - text: 1 Min
+  - button "Select chart type":
+  - button "Indicators":
+    - generic: Indicators
+  - tooltip:
+    - button:
+  - tooltip "Fullscreen chart panel":
+    - button "Fullscreen chart panel":
+  - tooltip "Chart snapshot":
+    - button "Chart snapshot":
+  - button:
+- img "Xtreme Logo"
+- table:
+  - 'row "BINANCE:BTCUSDT.P | 1m | O: 64006.7 H: 64034.5 L: 64000.5 C: 64025 64024.9 64025.0 S 0.001 B"':
+    - cell
+    - 'cell "BINANCE:BTCUSDT.P | 1m | O: 64006.7 H: 64034.5 L: 64000.5 C: 64025 64024.9 64025.0 S 0.001 B"':
+      - button "BINANCE:BTCUSDT.P"
+      - generic: "|"
+      - generic: 1m
+      - generic: "|"
+      - generic: "O:"
+      - generic: "64006.7"
+      - generic: "H:"
+      - generic: "64034.5"
+      - generic: "L:"
+      - generic: "64000.5"
+      - generic: "C:"
+      - generic: "64025"
+      - button "64024.9":
+        - generic: "64024.9"
+      - button "64025.0":
+        - generic: "64025.0"
+      - button "S 0.001 B":
+        - generic: S
+        - generic: "0.001"
+        - generic: B
+      - button "Hide Trades":
+      - button "Trade Settings":
+    - cell
+  - row:
+    - cell
+    - cell
+    - cell:
+      - button "Fit Price Scale":
+      - button "Fit Time Scale":
+      - button "Reset to Initial Position":
+- button "Hide drawing toolbar":
+- button "Trades":
+  - generic: Trades
+- generic: Trades
+- generic: Paper (Hedging)
+- button "Refresh":
+- button "Broker settings":
+- button "Positions"
+- button "Pending"
+- button "Orders"
+- button "History"
+- button "Funds"
+- table:
+  - rowgroup:
+    - row "Symbol Order ID Qty. Avg. SL TSL TP LTP P&L Time":
+      - columnheader
+      - columnheader "Symbol"
+      - columnheader "Order ID"
+      - columnheader "Qty."
+      - columnheader "Avg."
+      - columnheader "SL"
+      - columnheader "TSL"
+      - columnheader "TP"
+      - columnheader "LTP"
+      - columnheader "P&L"
+      - columnheader "Time"
+  - rowgroup:
+    - row "No positions found":
+      - cell "No positions found"
+  - rowgroup:
+    - row "Paper (Hedging) account funds P&L +0.00":
+      - cell "Paper (Hedging) account funds":
+        - generic "Paper (Hedging) account funds":
+          - generic "Paper (Hedging)":
+            - generic: Paper (Hedging)
+          - term: Balance
+          - definition: 1,000,000.00
+          - term: Equity
+          - definition: 1,000,000.00
+          - term: Used margin
+          - definition: "0.00"
+          - term: Free margin
+          - definition: 1,000,000.00
+          - term: Margin level
+          - definition: N/A
+      - cell "P&L"
+      - cell "+0.00"
+      - cell
+- button "PAMM":
+  - generic: PAMM
+- generic: PAMM
+- generic "The account group your rates come from. Set by your broker.": PAMM QA Isolated Terms
+- button "Refresh":
+- button "PAMM managers"
+- button "My subscription1" [active]:
+  - text: My subscription
+  - emphasis: "1"
+- generic: My pools
+- button "Active1":
+  - text: Active
+  - emphasis: "1"
+- button "History4":
+  - text: History
+  - emphasis: "4"
+- generic: 1,000.00
+- generic: Deposited into pools
+- generic: "0.00"
+- generic: Running share (not yet paid)
+- table:
+  - rowgroup:
+    - row "Manager Deposit Running If I leave now Joined":
+      - columnheader "Manager"
+      - columnheader "Deposit"
+      - columnheader "Running"
+      - columnheader "If I leave now"
+      - columnheader "Joined"
+      - columnheader
+  - rowgroup:
+    - row "PAMM QA Manager C 1,000.00 0.00 1,000.00 19 Nov 2026, 17:01 Leave":
+      - cell "PAMM QA Manager C"
+      - cell "1,000.00"
+      - cell "0.00"
+      - cell "1,000.00"
+      - cell "19 Nov 2026, 17:01"
+      - cell "Leave":
+        - button "Leave"
+- paragraph: Your share of each closed trade is not paid into your balance as it happens — it builds up in “Running” and settles when you leave. Only trades the manager opened after you joined count towards it.
+- generic: Allocations
+- generic: No trade has been allocated to you yet.
+- generic: Managing a pool
+- button "Run a pool" [disabled]
+- paragraph: Accounts that have followed a master can't become a master, even after unfollowing.

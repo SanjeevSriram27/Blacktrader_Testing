@@ -1,0 +1,80 @@
+[
+  {
+    "id": "NET01",
+    "status": "DEFECT",
+    "clicksSent": 5,
+    "clientHttpPostsFired": 5,
+    "serverOrdersCreated": 5,
+    "serverOpenPositions": 5
+  },
+  {
+    "id": "NET03",
+    "status": "PASS",
+    "duplicatesFound": false,
+    "uiReconciliationDesync": false,
+    "runs": [
+      {
+        "disconnectDelayMs": 30,
+        "clientPosts": 1,
+        "serverNewOrders": 1,
+        "serverOpenPositions": 1,
+        "uiShowsNoPositions": false,
+        "uiHasBtcPos": true,
+        "reconciled": true
+      },
+      {
+        "disconnectDelayMs": 120,
+        "clientPosts": 1,
+        "serverNewOrders": 1,
+        "serverOpenPositions": 1,
+        "uiShowsNoPositions": false,
+        "uiHasBtcPos": true,
+        "reconciled": true
+      },
+      {
+        "disconnectDelayMs": 300,
+        "clientPosts": 1,
+        "serverNewOrders": 1,
+        "serverOpenPositions": 1,
+        "uiShowsNoPositions": false,
+        "uiHasBtcPos": true,
+        "reconciled": true
+      },
+      {
+        "disconnectDelayMs": 700,
+        "clientPosts": 1,
+        "serverNewOrders": 1,
+        "serverOpenPositions": 1,
+        "uiShowsNoPositions": false,
+        "uiHasBtcPos": true,
+        "reconciled": true
+      },
+      {
+        "disconnectDelayMs": 1400,
+        "clientPosts": 1,
+        "serverNewOrders": 1,
+        "serverOpenPositions": 1,
+        "uiShowsNoPositions": false,
+        "uiHasBtcPos": true,
+        "reconciled": true
+      }
+    ]
+  },
+  {
+    "id": "NET09",
+    "status": "PASS",
+    "clientPosts": 1,
+    "serverNewOrders": 1,
+    "serverOpenPositions": 1
+  },
+  {
+    "id": "BR08",
+    "status": "PASS",
+    "br08Click": {
+      "found": true,
+      "selector": "button.buy-btn"
+    },
+    "realOrdersDelta": 0,
+    "paperOrdersDelta": 1
+  }
+]

@@ -1,0 +1,21 @@
+# PAMM functional assessment
+
+Open [report.html](report.html) for a searchable result for every one of349 cases. Download [CSV](all-case-results.csv), read [Markdown](ALL_CASE_RESULTS.md), or inspect [JSON](all-case-results.json). Each row includes expected behavior,actual result,evidence and the exact unresolved requirement where relevant.
+
+Current result:218 PASS,24 PARTIAL,101 BLOCKED,6 INCONCLUSIVE,0 FAIL.71 status changes follow the recovered internal-browser/admin-fixture and A-book LP runs. No new confirmed defect remains after settlement-contract review and existing-issue deduplication. Unverified rows are not passes; the assessment is not a complete product certification.
+
+The A-book follow-up temporarily routed isolated Manager I to Black exchange. One parent order mounted once,20 concurrent orders filled without rate-limit responses, and an LP-margin rejection created no orphan position. The fixture was flat and restored to B-book afterward. Exact partial-fill,requote,message-reordering and provider-outage cases remain blocked because those deterministic LP events are not exposed as isolated controls.
+
+Read [FOLLOWUP.md](FOLLOWUP.md) for completed tests,remaining limits,fixture changes and cleanup; [NEW_BUGS.md](NEW_BUGS.md) for the withdrawn precision finding and excluded issue topics; [summary.json](summary.json) for machine-readable counts.
+
+## Rebuilding reports
+
+Run `python3 scripts/update-phase3-report.py` from any directory. It uses the immutable phase2 snapshot plus reviewed phase3 evidence and explicit full-scenario scope overrides; it does not run trades. The original builder now invokes this final review step too. Report generation validates349 unique IDs,nonempty outcomes,concrete incomplete reasons and local evidence targets.
+
+## Rerunning live QA
+
+Scripts under `scripts/` include live mutating QA actions; inspect them before running. They use supplied credentials privately from the original project,not this output package. New fixture credentials are stored outside deliverables in the session's private work directory. Browser observations are recorded separately and cannot be recreated by rebuilding a report.
+
+`phase3-final-audit.cjs` performs read-only account checks plus an intentionally rejected master-follow attempt. `scale-assessment.cjs`,admin fixture scripts,risk scripts and fee scripts create or change simulated QA balances,trades and relationships. Use only the already identified simulated accounts and fixtures. Final JSON audit contains no passwords or session tokens. Original11 supplied users remain separate from new scale/risk accounts.
+
+Historical raw harness attempts are retained for traceability. Their failures must not be counted as confirmed product defects or distinct fully executed scenarios. Current case outcomes are authoritative in the all-case result files, with scope reviews in the report-generation script.

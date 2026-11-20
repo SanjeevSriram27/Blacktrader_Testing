@@ -1,0 +1,497 @@
+{
+  "executed_at": "2026-11-18T10:36:03.531Z",
+  "target": "https://lpadmin.blackfx.com",
+  "accounts_used": [
+    "pmmaster@mailinator.com",
+    "pmf1@mailinator.com",
+    "pmf2@mailinator.com",
+    "pmf3@mailinator.com",
+    "pmf4@mailinator.com",
+    "pmf5@mailinator.com",
+    "pmf6@mailinator.com",
+    "pmf7@mailinator.com",
+    "pmf8@mailinator.com",
+    "pmf9@mailinator.com",
+    "pmf10@mailinator.com"
+  ],
+  "counts": {
+    "total": 28,
+    "PASS": 17,
+    "DEFECT": 6,
+    "FAIL": 2,
+    "INFO": 3
+  },
+  "results": [
+    {
+      "tc_id": "BTPAMM-F011",
+      "module_num": 1,
+      "priority": "P0",
+      "title": "Anonymous Request Rejection on All PAMM & Order Routes",
+      "status": "PASS",
+      "details": [
+        {
+          "method": "GET",
+          "path": "/v1/oms/real/pamm/masters",
+          "status": 401
+        },
+        {
+          "method": "GET",
+          "path": "/v1/oms/real/pamm/follows",
+          "status": 401
+        },
+        {
+          "method": "GET",
+          "path": "/v1/oms/real/pamm/allocations",
+          "status": 401
+        },
+        {
+          "method": "POST",
+          "path": "/v1/oms/real/pamm/master",
+          "status": 401
+        },
+        {
+          "method": "POST",
+          "path": "/v1/oms/real/pamm/join",
+          "status": 401
+        },
+        {
+          "method": "POST",
+          "path": "/v1/oms/real/orders",
+          "status": 401
+        }
+      ]
+    },
+    {
+      "tc_id": "BTPAMM-F006",
+      "module_num": 1,
+      "priority": "P0",
+      "title": "Paper Instance PAMM Creation/Join Restriction (HTTP 400)",
+      "status": "PASS",
+      "details": {
+        "paperMaster": {
+          "status": 400,
+          "msg": "{\"error\":\"Accounts that follow a master can't become a master.\"}\n"
+        },
+        "paperJoin": {
+          "status": 400,
+          "msg": "{\"error\":\"Copy trading, MAM and PAMM run on real-money accounts. A paper relationship that already exists can still be ended here.\"}\n"
+        }
+      }
+    },
+    {
+      "tc_id": "BTPAMM-F007",
+      "module_num": 1,
+      "priority": "P0",
+      "title": "Role Exclusivity: Active Master Cannot Follow Another Pool",
+      "status": "PASS",
+      "details": {
+        "follow_blocked_reason": "Master accounts can't follow another master.",
+        "joinStatus": 400,
+        "joinMsg": "{\"error\":\"Master accounts can't follow another master.\"}\n"
+      }
+    },
+    {
+      "tc_id": "BTPAMM-F008",
+      "module_num": 1,
+      "priority": "P0",
+      "title": "Role Exclusivity: Active Follower Cannot Become a Master",
+      "status": "PASS",
+      "details": {
+        "master_blocked_reason": "Accounts that follow a master can't become a master.",
+        "masterAttemptStatus": 400,
+        "msg": "{\"error\":\"Accounts that follow a master can't become a master.\"}\n"
+      }
+    },
+    {
+      "tc_id": "BTPAMM-F012",
+      "module_num": 1,
+      "priority": "P0",
+      "title": "Public Leaderboard Publication of PM Master",
+      "status": "PASS",
+      "details": {
+        "client_id": "mem_4669b36f00cc55347e",
+        "name": "PM Master",
+        "share_percent": 20,
+        "stats": {
+          "growth": 0,
+          "curve": [],
+          "weeks": 0,
+          "followers": 10,
+          "drawdown": 0,
+          "fund": 1000,
+          "risk_level": 1,
+          "rank": 5,
+          "trades": 0
+        }
+      }
+    },
+    {
+      "tc_id": "BTPAMM-F013",
+      "module_num": 1,
+      "priority": "P1",
+      "title": "PAMM Directory Sorting, Uniqueness & Non-Negative Metrics",
+      "status": "PASS",
+      "details": {
+        "count": 15,
+        "noDupes": true,
+        "ranksSorted": true,
+        "noNegatives": true
+      }
+    },
+    {
+      "tc_id": "BTPAMM-F014",
+      "module_num": 1,
+      "priority": "P0",
+      "title": "Manager Share Percent Range Validation (0% to 100%)",
+      "status": "PASS",
+      "details": {
+        "negStatus": 400,
+        "negBody": "{\"error\":\"share_percent must be between 0 and 100\"}\n",
+        "overStatus": 400,
+        "overBody": "{\"error\":\"share_percent must be between 0 and 100\"}\n"
+      }
+    },
+    {
+      "tc_id": "BTPAMM-F010",
+      "module_num": 1,
+      "priority": "P0",
+      "title": "Plan Gating: Free Plan Blocked vs Default/Premium Enabled (pmf9)",
+      "status": "INFO",
+      "details": {
+        "note": "Admin PATCH /members/{id} returned non-200",
+        "status": 404,
+        "body": "404 page not found\n"
+      }
+    },
+    {
+      "tc_id": "BTPAMM-A001",
+      "module_num": 2,
+      "priority": "P0",
+      "title": "Unified Block Trade Execution & Zero Child Orders (BINANCE:BTCUSDT.P)",
+      "status": "PASS",
+      "details": {
+        "symbol": "BINANCE:BTCUSDT.P",
+        "qty": 0.001,
+        "masterPositions": 1,
+        "totalFollowerChildPositions": 0
+      }
+    },
+    {
+      "tc_id": "BTPAMM-E001",
+      "module_num": 4,
+      "priority": "P0",
+      "title": "Market Order Execution on Real (Hedging) (BINANCE:BTCUSDT.P)",
+      "status": "PASS",
+      "details": {
+        "openPosition": {
+          "algo_id": null,
+          "avg_entry_price": 64160.1,
+          "closed_at": null,
+          "comment": null,
+          "current_price": 64160,
+          "full_margin": 6.41601,
+          "group_id": null,
+          "margin_percent": 100,
+          "margin_used": 6.41601,
+          "market_order_id": "ord_d6f072393130eeded4",
+          "net_qty": 0.001,
+          "oco_key": null,
+          "opened_at": "2026-11-18T10:35:48.762257Z",
+          "position_id": "pos_e731750955db307a26",
+          "side": "BUY",
+          "source": null,
+          "status": "OPEN",
+          "strategy_name": null,
+          "symbol": "BINANCE:BTCUSDT.P",
+          "tag": null,
+          "trailing": null,
+          "unrealized_pnl": -0.00009999999999854482
+        },
+        "used_margin": 6.41601,
+        "free_margin": 1993.58389
+      }
+    },
+    {
+      "tc_id": "BTPAMM-E013",
+      "module_num": 4,
+      "priority": "P0",
+      "title": "Sub-Lot Execution Protection (Zero Child Tickets Across 10 Followers)",
+      "status": "PASS",
+      "details": {
+        "masterTickets": 1,
+        "followerTickets": 0
+      }
+    },
+    {
+      "tc_id": "BTPAMM-M001",
+      "module_num": 6,
+      "priority": "P0",
+      "title": "Collective Pooled Margin Consumption Calculation",
+      "status": "PASS",
+      "details": {
+        "equity": 1999.9999,
+        "used_margin": 6.41601,
+        "free_margin": 1993.58389,
+        "margin_level": 31172.019682014212,
+        "margin_call_level": 100,
+        "stop_out_level": 50
+      }
+    },
+    {
+      "tc_id": "BTPAMM-M006",
+      "module_num": 6,
+      "priority": "P0",
+      "title": "Pre-Trade Margin Check Rejects Over-Leveraged Block Order (500 lots)",
+      "status": "PASS",
+      "details": {
+        "status": 400,
+        "response": "{\"error\":\"insufficient free margin: required 3208005.00, free 1993.58\",\"order\":{\"order_id\":\"ord_2498af4a0e95cf3a14\",\"market_order_id\":\"ord_2498af4a0e95cf3a14\",\"symbol\":\"BINANCE:BTC"
+      }
+    },
+    {
+      "tc_id": "BTPAMM-E004",
+      "module_num": 4,
+      "priority": "P0",
+      "title": "Stop-Loss and Take-Profit Placement on Real (Hedging)",
+      "status": "INFO",
+      "details": {
+        "slOrderStatus": 200,
+        "requestedSl": 0.95,
+        "requestedTp": 1.05,
+        "matchedPos": null,
+        "rawOrderResp": "{\"order\":{\"order_id\":\"ord_5c594e5a9237f11917\",\"market_order_id\":\"ord_5c594e5a9237f11917\",\"symbol\":\"BINANCE:BTCUSDT.P\",\"side\":\"BUY\",\"type\":\"MARKET\",\"state\":\"FILLED\",\"requested_qty\":0.001,\"filled_qty\":0"
+      }
+    },
+    {
+      "tc_id": "BTPAMM-E002",
+      "module_num": 4,
+      "priority": "P0",
+      "title": "Pending Limit Order Placement on Real (Hedging)",
+      "status": "FAIL",
+      "details": {
+        "status": 400,
+        "limitPrice": 0.85,
+        "workingLimit": null,
+        "raw": "{\"error\":\"this endpoint fills at MARKET; for a LIMIT order POST to /orders/pending\"}\n"
+      }
+    },
+    {
+      "tc_id": "BTPAMM-D001",
+      "module_num": 7,
+      "priority": "P0",
+      "title": "Mid-Cycle Follower Unfollow & Re-Join While Master Holds Open Position (pmf10)",
+      "status": "INFO",
+      "details": {
+        "unfollowStatus": 400,
+        "unfollowBody": "{\"error\":\"master_client_id is required\"}\n",
+        "rejoinStatus": 400,
+        "rejoinBody": "{\"error\":\"you already have an active subscription with this pool — leave it to settle before joining again\"}\n"
+      }
+    },
+    {
+      "tc_id": "BTPAMM-E007",
+      "module_num": 4,
+      "priority": "P0",
+      "title": "Bulk Squareoff (Close All Open Master Block Positions)",
+      "status": "PASS",
+      "details": {
+        "closedCount": 2,
+        "remainingOpen": 0,
+        "closeLatencyMs": 127,
+        "results": [
+          {
+            "id": "ord_5c594e5a9237f11917",
+            "status": 200,
+            "body": "{\"exit_price\":64152.1,\"market_order_id\":\"ord_5c594e5a9237f11917\",\"price_source\":\"live\",\"realized_pnl\":-0.008,\"success\":true,\"symbol\":\"BINANCE:BTCUSDT.P\"}\n"
+          },
+          {
+            "id": "ord_d6f072393130eeded4",
+            "status": 200,
+            "body": "{\"exit_price\":64152.1,\"market_order_id\":\"ord_d6f072393130eeded4\",\"price_source\":\"live\",\"realized_pnl\":-0.008,\"success\":true,\"symbol\":\"BINANCE:BTCUSDT.P\"}\n"
+          }
+        ]
+      }
+    },
+    {
+      "tc_id": "BTPAMM-E015",
+      "module_num": 4,
+      "priority": "P0",
+      "title": "Trade History Blotter Synchronization (/history)",
+      "status": "PASS",
+      "details": {
+        "totalHistory": 2,
+        "totalRealizedPnl": -0.016,
+        "latestTrade": {
+          "history_id": 1391802,
+          "order_id": "ord_c600fa7c76ef36ef9d",
+          "position_id": "pos_e731750955db307a26",
+          "symbol": "BINANCE:BTCUSDT.P",
+          "side": "BUY",
+          "qty": 0.001,
+          "entry_price": 64160.1,
+          "exit_price": 64152.1,
+          "realized_pnl": -0.008,
+          "executed_at": "2026-11-18T10:35:56.400286Z",
+          "exit_type": "MARKET",
+          "exit_source": "squareoff",
+          "entry_type": "MARKET",
+          "opened_at": "2026-11-18T10:35:48.762257Z"
+        }
+      }
+    },
+    {
+      "tc_id": "BTPAMM-A014",
+      "module_num": 2,
+      "priority": "P0",
+      "title": "Master PAMM Allocations Query (/pamm/allocations?role=master)",
+      "status": "DEFECT",
+      "details": {
+        "status": 200,
+        "count": 0,
+        "sample": []
+      }
+    },
+    {
+      "tc_id": "BTPAMM-A013",
+      "module_num": 2,
+      "priority": "P0",
+      "title": "Follower PAMM Allocations Query (/pamm/allocations) Across All 10 Followers",
+      "status": "DEFECT",
+      "details": {
+        "followersWithAllocs": 0,
+        "totalFollowers": 10,
+        "sampleF1": {
+          "email": "pmf1@mailinator.com",
+          "allocCount": 0,
+          "latestAlloc": null,
+          "running_pnl": 0,
+          "deposit": 100,
+          "cash_balance": 900
+        }
+      }
+    },
+    {
+      "tc_id": "BTPAMM-A004",
+      "module_num": 2,
+      "priority": "P0",
+      "title": "Live Proportional P&L Distribution Verification Across 10 Followers",
+      "status": "DEFECT",
+      "details": {
+        "masterBalanceBefore": 2000,
+        "masterBalanceAfter": 1993.984,
+        "masterDelta": -6.016,
+        "totalRealizedPnl": -0.016,
+        "sumFollowerRunningPnl": 0,
+        "expectedFollowerShareOf50PctPool": -0.008,
+        "f1RunningPnl": 0,
+        "f10RunningPnl": 0
+      }
+    },
+    {
+      "tc_id": "BTPAMM-C001",
+      "module_num": 9,
+      "priority": "P0",
+      "title": "10-Follower Allocation Completeness & Latency After Live Close",
+      "status": "DEFECT",
+      "details": {
+        "allocRowsRecorded": 0,
+        "closeLatencyMs": 127
+      }
+    },
+    {
+      "tc_id": "BTPAMM-H010",
+      "module_num": 8,
+      "priority": "P0",
+      "title": "Consolidated Manager Payout Endpoint (GET /pamm/shares?role=master)",
+      "status": "DEFECT",
+      "details": {
+        "masterSharesStatus": 404,
+        "masterBody": "404 page not found\n",
+        "followerSharesStatus": 404
+      }
+    },
+    {
+      "tc_id": "BTPAMM-D005",
+      "module_num": 7,
+      "priority": "P0",
+      "title": "Full Redemption & Pool Unfollow Settlement (pmf10)",
+      "status": "FAIL",
+      "details": {
+        "unfollowStatus": 400,
+        "unfollowResp": "{\"error\":\"master_client_id is required\"}\n",
+        "f10BalanceBefore": 900,
+        "f10BalanceAfter": 900,
+        "f10Delta": 0,
+        "masterDelta": 0,
+        "priorDeposit": 100,
+        "priorRunningPnl": 0
+      }
+    },
+    {
+      "tc_id": "RC-F-01-LIVE",
+      "module_num": 9,
+      "priority": "P0",
+      "title": "Live Race: Concurrent POST /pamm/master vs POST /pamm/join (pmf10)",
+      "status": "PASS",
+      "details": {
+        "raceMasterStatus": 400,
+        "raceJoinStatus": 400,
+        "is_master": false,
+        "activeSubs": 1,
+        "bothActiveIllegal": false
+      }
+    },
+    {
+      "tc_id": "BTPAMM-C005",
+      "module_num": 9,
+      "priority": "P0",
+      "title": "Idempotency Key Deduplication on Parallel Duplicate POST /pamm/join (pmf10)",
+      "status": "DEFECT",
+      "details": {
+        "req1Status": 400,
+        "req2Status": 400,
+        "balanceBefore": 900,
+        "balanceAfter": 900,
+        "totalDebited": 0,
+        "activeSubscriptions": 1
+      }
+    },
+    {
+      "tc_id": "BTPAMM-PORTAL-METHODS",
+      "module_num": 7,
+      "priority": "P0",
+      "title": "Broker Deposit Payment Methods Published (Verify BUG-DEP-004)",
+      "status": "PASS",
+      "details": {
+        "status": 200,
+        "methodsCount": 1,
+        "methods": [
+          {
+            "currency": null,
+            "details": {},
+            "kind": "bank",
+            "method_id": "pm_750cb53613f78d0b1c",
+            "min_deposit": 100,
+            "name": "Test",
+            "network": null
+          }
+        ]
+      }
+    },
+    {
+      "tc_id": "BTPAMM-O009",
+      "module_num": 11,
+      "priority": "P0",
+      "title": "Admin Backoffice Member & Trade Reconciliation (All 11 Accounts)",
+      "status": "PASS",
+      "details": {
+        "trackedMembersInAdmin": 11,
+        "adminTradesStatus": 400,
+        "masterAdminBalance": {
+          "paper": 1000000,
+          "real": 1993.984
+        }
+      }
+    }
+  ]
+}

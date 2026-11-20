@@ -1,0 +1,164 @@
+{
+  "tool": "Playwright APIRequestContext",
+  "initial": 900.1700000000001,
+  "final": 900.1700000000001,
+  "results": [
+    {
+      "iteration": 1,
+      "deposit": 0.009,
+      "before": 1000.1700000000001,
+      "afterJoin": 1000.1610000000001,
+      "afterExit": 1000.171,
+      "delta": 0.0009999999999763531,
+      "joined": {
+        "status": 200,
+        "body": {
+          "subscription": {
+            "pamm_id": "pmm_b0ee252d85029a4fed",
+            "master_client_id": "mem_4669b36f00cc55347e",
+            "follower_client_id": "mem_822cf51b32a092c7ac",
+            "instance": "real",
+            "deposit": 0.009,
+            "share_percent": 20,
+            "running_pnl": 0,
+            "status": "active",
+            "joined_at": "2026-11-19T07:49:38.157929Z"
+          },
+          "success": true
+        }
+      },
+      "left": {
+        "status": 200,
+        "body": {
+          "deposit": 0.009,
+          "master_share": 0,
+          "pamm_id": "pmm_b0ee252d85029a4fed",
+          "payout": 0.01,
+          "running_pnl": 0,
+          "success": true
+        }
+      }
+    },
+    {
+      "iteration": 1,
+      "deposit": 0.001,
+      "before": 1000.171,
+      "afterJoin": 1000.1700000000001,
+      "afterExit": 1000.1700000000001,
+      "delta": -0.0009999999999763531,
+      "joined": {
+        "status": 200,
+        "body": {
+          "subscription": {
+            "pamm_id": "pmm_1e383443cdaf522aa7",
+            "master_client_id": "mem_4669b36f00cc55347e",
+            "follower_client_id": "mem_822cf51b32a092c7ac",
+            "instance": "real",
+            "deposit": 0.001,
+            "share_percent": 20,
+            "running_pnl": 0,
+            "status": "active",
+            "joined_at": "2026-11-19T07:49:38.519819Z"
+          },
+          "success": true
+        }
+      },
+      "left": {
+        "status": 200,
+        "body": {
+          "deposit": 0.001,
+          "master_share": 0,
+          "pamm_id": "pmm_1e383443cdaf522aa7",
+          "payout": 0,
+          "running_pnl": 0,
+          "success": true
+        }
+      }
+    },
+    {
+      "iteration": 2,
+      "deposit": 0.009,
+      "before": 1000.1700000000001,
+      "afterJoin": 1000.1610000000001,
+      "afterExit": 1000.171,
+      "delta": 0.0009999999999763531,
+      "joined": {
+        "status": 200,
+        "body": {
+          "subscription": {
+            "pamm_id": "pmm_5dc1f8500ab215edac",
+            "master_client_id": "mem_4669b36f00cc55347e",
+            "follower_client_id": "mem_822cf51b32a092c7ac",
+            "instance": "real",
+            "deposit": 0.009,
+            "share_percent": 20,
+            "running_pnl": 0,
+            "status": "active",
+            "joined_at": "2026-11-19T07:49:39.229841Z"
+          },
+          "success": true
+        }
+      },
+      "left": {
+        "status": 200,
+        "body": {
+          "deposit": 0.009,
+          "master_share": 0,
+          "pamm_id": "pmm_5dc1f8500ab215edac",
+          "payout": 0.01,
+          "running_pnl": 0,
+          "success": true
+        }
+      }
+    },
+    {
+      "iteration": 2,
+      "deposit": 0.001,
+      "before": 1000.171,
+      "afterJoin": 1000.1700000000001,
+      "afterExit": 1000.1700000000001,
+      "delta": -0.0009999999999763531,
+      "joined": {
+        "status": 200,
+        "body": {
+          "subscription": {
+            "pamm_id": "pmm_82ff3c4deeb581f584",
+            "master_client_id": "mem_4669b36f00cc55347e",
+            "follower_client_id": "mem_822cf51b32a092c7ac",
+            "instance": "real",
+            "deposit": 0.001,
+            "share_percent": 20,
+            "running_pnl": 0,
+            "status": "active",
+            "joined_at": "2026-11-19T07:49:39.573917Z"
+          },
+          "success": true
+        }
+      },
+      "left": {
+        "status": 200,
+        "body": {
+          "deposit": 0.001,
+          "master_share": 0,
+          "pamm_id": "pmm_82ff3c4deeb581f584",
+          "payout": 0,
+          "running_pnl": 0,
+          "success": true
+        }
+      }
+    }
+  ],
+  "active": [
+    {
+      "pamm_id": "pmm_c9d4cef3559f6240c5",
+      "master_client_id": "mem_4669b36f00cc55347e",
+      "follower_client_id": "mem_822cf51b32a092c7ac",
+      "instance": "real",
+      "deposit": 100,
+      "share_percent": 20,
+      "running_pnl": 0,
+      "status": "active",
+      "joined_at": "2026-11-19T07:49:39.848995Z"
+    }
+  ]
+}

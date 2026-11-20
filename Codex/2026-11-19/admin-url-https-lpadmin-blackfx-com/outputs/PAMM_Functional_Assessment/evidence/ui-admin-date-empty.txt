@@ -1,0 +1,70 @@
+- complementary:
+  - generic: blacktrader
+  - generic: Client Admin
+  - button "Collapse sidebar":
+  - navigation:
+    - button "Overview":
+      - generic: Overview
+    - button "Client Home":
+      - generic: Client Home
+    - button "Chart":
+      - generic: Chart
+    - button "OMS" [expanded]:
+      - generic: OMS
+    - button "Accounts & feed":
+      - generic: Accounts & feed
+    - button "Trading terms":
+      - generic: Trading terms
+    - button "Trading rules":
+      - generic: Trading rules
+    - button "Liquidity":
+      - generic: Liquidity
+    - button "Order book":
+      - generic: Order book
+    - button "Money" [expanded]:
+      - generic: Money
+    - button "Payments":
+      - generic: Payments
+    - button "Requests":
+      - generic: Requests
+    - button "People" [expanded]:
+      - generic: People
+    - button "Members":
+      - generic: Members
+    - button "Staff":
+      - generic: Staff
+    - button "Trades":
+      - generic: Trades
+    - button "Account requests":
+      - generic: Account requests
+    - button "Install" [expanded]:
+      - generic: Install
+    - button "Data settings":
+      - generic: Data settings
+  - generic: LP
+  - generic "lpadmin@blacktrader.com"
+  - text: Client admin
+  - button "Sign out":
+    - text: Sign out
+- banner:
+  - heading "Trades" [level=1]
+  - generic: active
+  - button "v1.1.18 · Versions"
+  - button "Toggle theme":
+- main:
+  - heading "Trades" [level=2]
+  - paragraph: Closed trades for one member, newest first. Pick a member — the list is per member or per account, never install-wide.
+  - generic: Member
+  - combobox:
+  - generic: Account
+  - combobox:
+  - generic: From
+  - textbox: 2026-11-18
+  - generic: To (inclusive)
+  - textbox: 2026-11-18
+  - generic: Per page
+  - combobox:
+  - button "Refresh"
+  - paragraph: Dates are UTC days.
+  - generic: No trades in this range.
+- alert

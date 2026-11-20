@@ -1,0 +1,61 @@
+{
+  "functional_cases": 349,
+  "every_case_has_actual_result": true,
+  "case_matrix_status_counts": {
+    "PASS": 218,
+    "FAIL": 0,
+    "PARTIAL": 24,
+    "BLOCKED": 101,
+    "INCONCLUSIVE": 6
+  },
+  "new_findings": 0,
+  "complete_assessment": false,
+  "scope_confirmation": "Latest user states all capabilities exist and authorizes admin fixture changes. Unverified internal or scheduled requirements remain unverified until supported by executed observations.",
+  "note": "349 explicit outcomes. PASS means the disclosed scoped assertion passed; exact reference deviations are retained. Unverified portions are not certified. Prior precision finding withdrawn under the documented two-decimal payout contract.",
+  "updated_at": "2026-11-20T05:23:53.749182+00:00",
+  "internal_browser_available": true,
+  "phase3_evidence_files": [
+    "scale-100-results.json",
+    "scale-500-results.json",
+    "advanced-admin-results.json",
+    "risk-ui-results.json",
+    "risk-priority-results.json",
+    "risk-distinct-results.json",
+    "risk-unequal-results.json",
+    "phase3-final-results.json",
+    "whale-margin-results.json",
+    "storm-recovery-results.json",
+    "goodwill-results.json",
+    "internal-browser-results.json",
+    "abook-lp-results.json"
+  ],
+  "phase3_status_changes": 71,
+  "phase2_api_check_records": 229,
+  "phase2_reviewed_api_status_counts": {
+    "PASS": 215,
+    "INCONCLUSIVE": 3,
+    "FAIL": 2,
+    "EXCLUDED_EXISTING": 1,
+    "NOT_SUPPORTED": 1,
+    "BLOCKED": 2,
+    "PARTIAL": 5
+  },
+  "phase2_manual_observation_records": 13,
+  "phase2_precision_repetitions": 4,
+  "phase3_evidence_record_counts": {
+    "scale-100-results.json": 14,
+    "scale-500-results.json": 3,
+    "advanced-admin-results.json": 11,
+    "risk-ui-results.json": 2,
+    "risk-priority-results.json": 3,
+    "risk-distinct-results.json": 3,
+    "risk-unequal-results.json": 3,
+    "phase3-final-results.json": 3,
+    "whale-margin-results.json": 4,
+    "storm-recovery-results.json": 4,
+    "goodwill-results.json": 1,
+    "internal-browser-results.json": 46,
+    "abook-lp-results.json": 8
+  },
+  "phase3_record_count_note": "Includes repeats, setup, cleanup and narrower helper assertions; these are not counts of distinct complete scenarios."
+}

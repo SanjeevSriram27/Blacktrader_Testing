@@ -1,0 +1,80 @@
+[
+  {
+    "id": "PAMM-X15-01",
+    "status": "PARTIAL",
+    "details": "PAMM widget already mounted, with directory and subscription tabs. Add-widget creation path not exercised.",
+    "evidence": "Manual in-app browser observation; no screenshot saved for this check"
+  },
+  {
+    "id": "PAMM-X15-03",
+    "status": "PASS",
+    "details": "Master directory Invest buttons disabled with role explanation.",
+    "evidence": "Manual in-app browser observation; no screenshot saved for this check"
+  },
+  {
+    "id": "PAMM-X15-04",
+    "status": "PASS",
+    "details": "Settings opened with PM Master and 20 percent fee. Saved/restored 20 percent.",
+    "evidence": "Manual in-app browser observation; no screenshot saved for this check"
+  },
+  {
+    "id": "PAMM-X15-07",
+    "status": "PASS",
+    "details": "Master active table showed ten investors, 100 deposits and 10 percent weights.",
+    "evidence": "Manual in-app browser observation; no screenshot saved for this check"
+  },
+  {
+    "id": "PAMM-X15-08",
+    "status": "PASS",
+    "details": "Master History showed separated closed relationships and payout/fee columns.",
+    "evidence": "Manual in-app browser observation; no screenshot saved for this check"
+  },
+  {
+    "id": "PAMM-X16-01",
+    "status": "PASS",
+    "details": "Follower one subscription displayed PM Master.",
+    "evidence": "evidence/follower-subscription.jpg; evidence/follower-exit-preview.jpg"
+  },
+  {
+    "id": "PAMM-X16-02",
+    "status": "PASS",
+    "details": "Follower one displayed 100 invested.",
+    "evidence": "evidence/follower-subscription.jpg; evidence/follower-exit-preview.jpg"
+  },
+  {
+    "id": "PAMM-X16-03",
+    "status": "PASS",
+    "details": "Follower one displayed 0.22 running PNL matching the API baseline at observation time.",
+    "evidence": "evidence/follower-subscription.jpg; evidence/follower-exit-preview.jpg"
+  },
+  {
+    "id": "PAMM-X16-05",
+    "status": "PASS",
+    "details": "Leave preview showed 100 deposit, 0.22 running, 0.04 manager cut and 100.18 payout; Cancel dismissed it without settling.",
+    "evidence": "evidence/follower-subscription.jpg; evidence/follower-exit-preview.jpg"
+  },
+  {
+    "id": "PAMM-X16-06",
+    "status": "PASS",
+    "details": "Run a pool disabled with explanation that prior followers cannot become managers.",
+    "evidence": "evidence/follower-subscription.jpg; evidence/follower-exit-preview.jpg"
+  },
+  {
+    "id": "PAMM-X19-01",
+    "status": "PASS",
+    "details": "Supplied admin login succeeded and People/Members page loaded.",
+    "evidence": "Manual in-app browser observation; no screenshot saved for this check"
+  },
+  {
+    "id": "PAMM-X19-02",
+    "status": "PARTIAL",
+    "details": "Supplied master visible in admin member table; member-ID search was not separately exercised.",
+    "evidence": "Manual in-app browser observation; no screenshot saved for this check"
+  },
+  {
+    "id": "PAMM-X19-03",
+    "status": "PARTIAL",
+    "details": "Supplied follower one visible in admin member table; member-ID search was not separately exercised.",
+    "evidence": "Manual in-app browser observation; no screenshot saved for this check"
+  }
+]

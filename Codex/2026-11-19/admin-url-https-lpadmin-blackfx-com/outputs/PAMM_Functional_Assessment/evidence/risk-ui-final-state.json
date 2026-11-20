@@ -1,0 +1,30 @@
+{
+  "positions": {
+    "count": 0,
+    "funds": {
+      "balance": 18981.76,
+      "equity": 18981.76,
+      "free_margin": 18981.76,
+      "margin_call_level": 100,
+      "margin_level": null,
+      "starting_balance": 19000,
+      "stop_out_level": 50,
+      "unrealized_pnl": 0,
+      "used_margin": 0
+    },
+    "positions": [],
+    "success": true,
+    "total_unrealized_pnl": 0
+  },
+  "funds": {
+    "balance": 18981.76,
+    "equity": 18981.76,
+    "free_margin": 18981.76,
+    "margin_call_level": 100,
+    "margin_level": null,
+    "starting_balance": 19000,
+    "stop_out_level": 50,
+    "unrealized_pnl": 0,
+    "used_margin": 0
+  }
+}

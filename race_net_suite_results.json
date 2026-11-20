@@ -1,0 +1,72 @@
+[
+  {
+    "id": "NET02",
+    "title": "Slow internet -> Place BUY -> Immediately click SELL",
+    "status": "PASS",
+    "openPositionsCount": 2,
+    "hasBuy": true,
+    "hasSell": true,
+    "positions": [
+      {
+        "id": "ord_b76916441ad185021c",
+        "side": "SELL"
+      },
+      {
+        "id": "ord_d83b7eec783736d33b",
+        "side": "BUY"
+      }
+    ]
+  },
+  {
+    "id": "NET04",
+    "title": "Place pending order -> Disconnect -> Reconnect",
+    "status": "PASS",
+    "pendingCount": 1,
+    "pendingOrders": [
+      {
+        "id": "ord_994f3f7b3b153534fd",
+        "price": 49000,
+        "qty": 0.01,
+        "state": "PENDING"
+      }
+    ]
+  },
+  {
+    "id": "NET08",
+    "title": "Click Cancel Order repeatedly (5x Concurrent Cancel Burst)",
+    "status": "PASS",
+    "statuses": [
+      400,
+      400,
+      200,
+      400,
+      400
+    ],
+    "okCount": 1,
+    "rejectCount": 4,
+    "serverErrors": 0,
+    "sampleRejectMessage": "{\"error\":\"order is CANCELLED (only PENDING orders can be cancelled)\"}",
+    "finalState": "CANCELLED"
+  },
+  {
+    "id": "NET10",
+    "title": "Place BUY -> Switch to another module before response",
+    "status": "PASS",
+    "positionsCount": 1
+  },
+  {
+    "id": "NET14",
+    "title": "Slow internet -> Switch broker during order submission",
+    "status": "PASS",
+    "realDelta": 0,
+    "paperDelta": 1,
+    "misrouted": false
+  },
+  {
+    "id": "NET15",
+    "title": "Reconnect repeatedly during order execution (Network Flapping)",
+    "status": "PASS",
+    "orderDelta": 1,
+    "positionsCount": 1
+  }
+]

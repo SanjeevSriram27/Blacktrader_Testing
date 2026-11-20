@@ -1,0 +1,2579 @@
+{
+  "runid": "2026-11-19T07-44-54-712Z",
+  "results": [
+    {
+      "id": "PAMM-X01-01",
+      "status": "PASS",
+      "details": {
+        "member": "mem_4669b36f00cc55347e"
+      }
+    },
+    {
+      "id": "PAMM-X01-02",
+      "status": "PASS",
+      "details": {
+        "count": 10
+      }
+    },
+    {
+      "id": "PAMM-X01-03",
+      "status": "PASS",
+      "details": {
+        "total": 1000
+      }
+    },
+    {
+      "id": "PAMM-X01-04",
+      "status": "PASS",
+      "details": {
+        "deposits": [
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100
+        ]
+      }
+    },
+    {
+      "id": "PAMM-X01-05",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "id": "PAMM-X01-06",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "id": "PAMM-X01-07",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "id": "PAMM-X01-08",
+      "status": "PASS",
+      "details": {
+        "current": "pmm_29ae0205fcd285f09b",
+        "supplied": "pmm_e2c856e42324fbb8a3"
+      }
+    },
+    {
+      "id": "PAMM-X01-09",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "id": "PAMM-X01-10",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "id": "PAMM-X02-01",
+      "status": "PASS",
+      "details": {
+        "subscription": {
+          "pamm_id": "pmm_cbb6cf0570fe937afb",
+          "master_client_id": "mem_4669b36f00cc55347e",
+          "follower_client_id": "mem_e26aa534f801d04237",
+          "instance": "real",
+          "deposit": 100,
+          "share_percent": 20,
+          "running_pnl": 0.22,
+          "status": "active",
+          "joined_at": "2026-11-18T09:26:38.845833Z"
+        },
+        "master": {
+          "pamm_id": "pmm_cbb6cf0570fe937afb",
+          "master_client_id": "mem_4669b36f00cc55347e",
+          "follower_client_id": "mem_e26aa534f801d04237",
+          "instance": "real",
+          "deposit": 100,
+          "share_percent": 20,
+          "running_pnl": 0.22,
+          "status": "active",
+          "joined_at": "2026-11-18T09:26:38.845833Z",
+          "follower_name": "PM Follower One"
+        }
+      }
+    },
+    {
+      "id": "PAMM-X02-02",
+      "status": "PASS",
+      "details": {
+        "subscription": {
+          "pamm_id": "pmm_29ee697c1401a4de18",
+          "master_client_id": "mem_4669b36f00cc55347e",
+          "follower_client_id": "mem_d418c85a28182db953",
+          "instance": "real",
+          "deposit": 100,
+          "share_percent": 20,
+          "running_pnl": 0.22,
+          "status": "active",
+          "joined_at": "2026-11-18T09:26:39.06463Z"
+        },
+        "master": {
+          "pamm_id": "pmm_29ee697c1401a4de18",
+          "master_client_id": "mem_4669b36f00cc55347e",
+          "follower_client_id": "mem_d418c85a28182db953",
+          "instance": "real",
+          "deposit": 100,
+          "share_percent": 20,
+          "running_pnl": 0.22,
+          "status": "active",
+          "joined_at": "2026-11-18T09:26:39.06463Z",
+          "follower_name": "PM Follower Two"
+        }
+      }
+    },
+    {
+      "id": "PAMM-X02-03",
+      "status": "PASS",
+      "details": {
+        "subscription": {
+          "pamm_id": "pmm_20e4b47143a7524da7",
+          "master_client_id": "mem_4669b36f00cc55347e",
+          "follower_client_id": "mem_2b4b6755ae8ed059a9",
+          "instance": "real",
+          "deposit": 100,
+          "share_percent": 20,
+          "running_pnl": 0.22,
+          "status": "active",
+          "joined_at": "2026-11-18T09:26:39.28036Z"
+        },
+        "master": {
+          "pamm_id": "pmm_20e4b47143a7524da7",
+          "master_client_id": "mem_4669b36f00cc55347e",
+          "follower_client_id": "mem_2b4b6755ae8ed059a9",
+          "instance": "real",
+          "deposit": 100,
+          "share_percent": 20,
+          "running_pnl": 0.22,
+          "status": "active",
+          "joined_at": "2026-11-18T09:26:39.28036Z",
+          "follower_name": "PM Follower Three"
+        }
+      }
+    },
+    {
+      "id": "PAMM-X02-04",
+      "status": "PASS",
+      "details": {
+        "subscription": {
+          "pamm_id": "pmm_dee21db280ff786bf1",
+          "master_client_id": "mem_4669b36f00cc55347e",
+          "follower_client_id": "mem_7d5a18611d1a51731e",
+          "instance": "real",
+          "deposit": 100,
+          "share_percent": 20,
+          "running_pnl": 0.22,
+          "status": "active",
+          "joined_at": "2026-11-18T09:26:39.46Z"
+        },
+        "master": {
+          "pamm_id": "pmm_dee21db280ff786bf1",
+          "master_client_id": "mem_4669b36f00cc55347e",
+          "follower_client_id": "mem_7d5a18611d1a51731e",
+          "instance": "real",
+          "deposit": 100,
+          "share_percent": 20,
+          "running_pnl": 0.22,
+          "status": "active",
+          "joined_at": "2026-11-18T09:26:39.46Z",
+          "follower_name": "PM Follower Four"
+        }
+      }
+    },
+    {
+      "id": "PAMM-X02-05",
+      "status": "PASS",
+      "details": {
+        "subscription": {
+          "pamm_id": "pmm_b4b6b2fdc206f3b97b",
+          "master_client_id": "mem_4669b36f00cc55347e",
+          "follower_client_id": "mem_1c6beb7764028720cc",
+          "instance": "real",
+          "deposit": 100,
+          "share_percent": 20,
+          "running_pnl": 0.22,
+          "status": "active",
+          "joined_at": "2026-11-18T09:26:39.655862Z"
+        },
+        "master": {
+          "pamm_id": "pmm_b4b6b2fdc206f3b97b",
+          "master_client_id": "mem_4669b36f00cc55347e",
+          "follower_client_id": "mem_1c6beb7764028720cc",
+          "instance": "real",
+          "deposit": 100,
+          "share_percent": 20,
+          "running_pnl": 0.22,
+          "status": "active",
+          "joined_at": "2026-11-18T09:26:39.655862Z",
+          "follower_name": "PM Follower Five"
+        }
+      }
+    },
+    {
+      "id": "PAMM-X02-06",
+      "status": "PASS",
+      "details": {
+        "subscription": {
+          "pamm_id": "pmm_f695e2dbe19c031f73",
+          "master_client_id": "mem_4669b36f00cc55347e",
+          "follower_client_id": "mem_8080a5bca2119a3fe9",
+          "instance": "real",
+          "deposit": 100,
+          "share_percent": 20,
+          "running_pnl": 0.22,
+          "status": "active",
+          "joined_at": "2026-11-18T09:26:39.839459Z"
+        },
+        "master": {
+          "pamm_id": "pmm_f695e2dbe19c031f73",
+          "master_client_id": "mem_4669b36f00cc55347e",
+          "follower_client_id": "mem_8080a5bca2119a3fe9",
+          "instance": "real",
+          "deposit": 100,
+          "share_percent": 20,
+          "running_pnl": 0.22,
+          "status": "active",
+          "joined_at": "2026-11-18T09:26:39.839459Z",
+          "follower_name": "PM Follower Six"
+        }
+      }
+    },
+    {
+      "id": "PAMM-X02-07",
+      "status": "PASS",
+      "details": {
+        "subscription": {
+          "pamm_id": "pmm_9b2ef011487b6e2fc1",
+          "master_client_id": "mem_4669b36f00cc55347e",
+          "follower_client_id": "mem_ecc6ae933d48a7c380",
+          "instance": "real",
+          "deposit": 100,
+          "share_percent": 20,
+          "running_pnl": 0.22,
+          "status": "active",
+          "joined_at": "2026-11-18T09:26:40.082737Z"
+        },
+        "master": {
+          "pamm_id": "pmm_9b2ef011487b6e2fc1",
+          "master_client_id": "mem_4669b36f00cc55347e",
+          "follower_client_id": "mem_ecc6ae933d48a7c380",
+          "instance": "real",
+          "deposit": 100,
+          "share_percent": 20,
+          "running_pnl": 0.22,
+          "status": "active",
+          "joined_at": "2026-11-18T09:26:40.082737Z",
+          "follower_name": "PM Follower Seven"
+        }
+      }
+    },
+    {
+      "id": "PAMM-X02-08",
+      "status": "PASS",
+      "details": {
+        "subscription": {
+          "pamm_id": "pmm_698ca5e9fb7e2d3205",
+          "master_client_id": "mem_4669b36f00cc55347e",
+          "follower_client_id": "mem_5452eb488b8622756f",
+          "instance": "real",
+          "deposit": 100,
+          "share_percent": 20,
+          "running_pnl": 0.22,
+          "status": "active",
+          "joined_at": "2026-11-18T09:26:40.289343Z"
+        },
+        "master": {
+          "pamm_id": "pmm_698ca5e9fb7e2d3205",
+          "master_client_id": "mem_4669b36f00cc55347e",
+          "follower_client_id": "mem_5452eb488b8622756f",
+          "instance": "real",
+          "deposit": 100,
+          "share_percent": 20,
+          "running_pnl": 0.22,
+          "status": "active",
+          "joined_at": "2026-11-18T09:26:40.289343Z",
+          "follower_name": "PM Follower Eight"
+        }
+      }
+    },
+    {
+      "id": "PAMM-X02-09",
+      "status": "PASS",
+      "details": {
+        "subscription": {
+          "pamm_id": "pmm_1eb3590078a1244b56",
+          "master_client_id": "mem_4669b36f00cc55347e",
+          "follower_client_id": "mem_d4696d922fdee6d886",
+          "instance": "real",
+          "deposit": 100,
+          "share_percent": 20,
+          "running_pnl": 0.22,
+          "status": "active",
+          "joined_at": "2026-11-18T09:26:40.492343Z"
+        },
+        "master": {
+          "pamm_id": "pmm_1eb3590078a1244b56",
+          "master_client_id": "mem_4669b36f00cc55347e",
+          "follower_client_id": "mem_d4696d922fdee6d886",
+          "instance": "real",
+          "deposit": 100,
+          "share_percent": 20,
+          "running_pnl": 0.22,
+          "status": "active",
+          "joined_at": "2026-11-18T09:26:40.492343Z",
+          "follower_name": "PM Follower Nine"
+        }
+      }
+    },
+    {
+      "id": "PAMM-X02-10",
+      "status": "PASS",
+      "details": {
+        "subscription": {
+          "pamm_id": "pmm_29ae0205fcd285f09b",
+          "master_client_id": "mem_4669b36f00cc55347e",
+          "follower_client_id": "mem_822cf51b32a092c7ac",
+          "instance": "real",
+          "deposit": 100,
+          "share_percent": 20,
+          "running_pnl": -0.02,
+          "status": "active",
+          "joined_at": "2026-11-19T07:36:03.031164Z"
+        },
+        "master": {
+          "pamm_id": "pmm_29ae0205fcd285f09b",
+          "master_client_id": "mem_4669b36f00cc55347e",
+          "follower_client_id": "mem_822cf51b32a092c7ac",
+          "instance": "real",
+          "deposit": 100,
+          "share_percent": 20,
+          "running_pnl": -0.02,
+          "status": "active",
+          "joined_at": "2026-11-19T07:36:03.031164Z",
+          "follower_name": "PM Follower Ten"
+        }
+      }
+    },
+    {
+      "id": "PAMM-X20-01",
+      "status": "PASS",
+      "details": {
+        "count": 10
+      }
+    },
+    {
+      "id": "PAMM-X03-01",
+      "status": "PASS",
+      "details": {
+        "status": 400,
+        "response": {
+          "error": "deposit must be greater than zero"
+        }
+      }
+    },
+    {
+      "id": "PAMM-X03-02",
+      "status": "PASS",
+      "details": {
+        "status": 400,
+        "response": {
+          "error": "deposit must be greater than zero"
+        }
+      }
+    },
+    {
+      "id": "PAMM-X03-03",
+      "status": "PASS",
+      "details": {
+        "status": 400,
+        "response": {
+          "error": "deposit must be greater than zero"
+        }
+      }
+    },
+    {
+      "id": "PAMM-X03-04",
+      "status": "PASS",
+      "details": {
+        "status": 400,
+        "response": {
+          "error": "invalid JSON body"
+        }
+      }
+    },
+    {
+      "id": "PAMM-X03-05",
+      "status": "PASS",
+      "details": {
+        "status": 400,
+        "response": {
+          "error": "deposit must be greater than zero"
+        }
+      }
+    },
+    {
+      "id": "PAMM-X03-06",
+      "status": "PASS",
+      "details": {
+        "status": 400,
+        "response": {
+          "error": "you already have an active subscription with this pool — leave it to settle before joining again"
+        }
+      }
+    },
+    {
+      "id": "PAMM-X03-07",
+      "status": "PASS",
+      "details": {
+        "status": 400,
+        "response": {
+          "error": "that account is not an active PAMM master"
+        }
+      }
+    },
+    {
+      "id": "PAMM-X03-08",
+      "status": "PASS",
+      "details": {
+        "status": 400,
+        "response": {
+          "error": "that account is not an active PAMM master"
+        }
+      }
+    },
+    {
+      "id": "PAMM-X03-09",
+      "status": "PASS",
+      "details": {
+        "response": {
+          "error": "you already have an active subscription with this pool — leave it to settle before joining again"
+        },
+        "before": {
+          "balance": 900.19,
+          "equity": 900.19,
+          "free_margin": 900.19,
+          "margin_call_level": 100,
+          "margin_level": null,
+          "starting_balance": 900,
+          "stop_out_level": 50,
+          "unrealized_pnl": 0,
+          "used_margin": 0
+        },
+        "after": {
+          "balance": 900.19,
+          "equity": 900.19,
+          "free_margin": 900.19,
+          "margin_call_level": 100,
+          "margin_level": null,
+          "starting_balance": 900,
+          "stop_out_level": 50,
+          "unrealized_pnl": 0,
+          "used_margin": 0
+        }
+      }
+    },
+    {
+      "id": "PAMM-X03-10",
+      "status": "PASS",
+      "details": {
+        "responses": [
+          {
+            "status": 400,
+            "j": {
+              "error": "you already have an active subscription with this pool — leave it to settle before joining again"
+            },
+            "text": "{\"error\":\"you already have an active subscription with this pool — leave it to settle before joining again\"}\n"
+          },
+          {
+            "status": 400,
+            "j": {
+              "error": "you already have an active subscription with this pool — leave it to settle before joining again"
+            },
+            "text": "{\"error\":\"you already have an active subscription with this pool — leave it to settle before joining again\"}\n"
+          },
+          {
+            "status": 400,
+            "j": {
+              "error": "you already have an active subscription with this pool — leave it to settle before joining again"
+            },
+            "text": "{\"error\":\"you already have an active subscription with this pool — leave it to settle before joining again\"}\n"
+          },
+          {
+            "status": 400,
+            "j": {
+              "error": "you already have an active subscription with this pool — leave it to settle before joining again"
+            },
+            "text": "{\"error\":\"you already have an active subscription with this pool — leave it to settle before joining again\"}\n"
+          },
+          {
+            "status": 400,
+            "j": {
+              "error": "you already have an active subscription with this pool — leave it to settle before joining again"
+            },
+            "text": "{\"error\":\"you already have an active subscription with this pool — leave it to settle before joining again\"}\n"
+          }
+        ],
+        "before": {
+          "balance": 900.19,
+          "equity": 900.19,
+          "free_margin": 900.19,
+          "margin_call_level": 100,
+          "margin_level": null,
+          "starting_balance": 900,
+          "stop_out_level": 50,
+          "unrealized_pnl": 0,
+          "used_margin": 0
+        },
+        "after": {
+          "balance": 900.19,
+          "equity": 900.19,
+          "free_margin": 900.19,
+          "margin_call_level": 100,
+          "margin_level": null,
+          "starting_balance": 900,
+          "stop_out_level": 50,
+          "unrealized_pnl": 0,
+          "used_margin": 0
+        }
+      }
+    },
+    {
+      "id": "PAMM-X18-08",
+      "status": "PASS",
+      "details": {
+        "before": {
+          "balance": 900.19,
+          "equity": 900.19,
+          "free_margin": 900.19,
+          "margin_call_level": 100,
+          "margin_level": null,
+          "starting_balance": 900,
+          "stop_out_level": 50,
+          "unrealized_pnl": 0,
+          "used_margin": 0
+        },
+        "after": {
+          "balance": 900.19,
+          "equity": 900.19,
+          "free_margin": 900.19,
+          "margin_call_level": 100,
+          "margin_level": null,
+          "starting_balance": 900,
+          "stop_out_level": 50,
+          "unrealized_pnl": 0,
+          "used_margin": 0
+        }
+      }
+    },
+    {
+      "id": "PAMM-X05-01",
+      "status": "PASS",
+      "details": {
+        "count": 50
+      }
+    },
+    {
+      "id": "PAMM-X05-02",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "id": "PAMM-X05-03",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "id": "PAMM-X05-04",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "id": "PAMM-X05-05",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "id": "PAMM-X05-06",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "id": "PAMM-X20-02",
+      "status": "PASS",
+      "details": {
+        "counts": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ]
+      }
+    },
+    {
+      "id": "PAMM-X05-07",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "id": "PAMM-X05-08",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "id": "PAMM-X05-09",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "id": "PAMM-X05-10",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "id": "PAMM-X17-01",
+      "status": "PASS",
+      "details": {
+        "status": 400,
+        "response": {
+          "error": "symbol, side (BUY/SELL) and a positive qty are required"
+        }
+      }
+    },
+    {
+      "id": "PAMM-X17-02",
+      "status": "PASS",
+      "details": {
+        "status": 400,
+        "response": {
+          "error": "symbol, side (BUY/SELL) and a positive qty are required"
+        }
+      }
+    },
+    {
+      "id": "PAMM-X17-03",
+      "status": "PASS",
+      "details": {
+        "status": 400,
+        "response": {
+          "error": "symbol, side (BUY/SELL) and a positive qty are required"
+        }
+      }
+    },
+    {
+      "id": "PAMM-X17-04",
+      "status": "PASS",
+      "details": {
+        "status": 400,
+        "response": {
+          "error": "symbol, side (BUY/SELL) and a positive qty are required"
+        }
+      }
+    },
+    {
+      "id": "PAMM-X17-05",
+      "status": "PASS",
+      "details": {
+        "status": 400,
+        "response": {
+          "error": "invalid JSON body"
+        }
+      }
+    },
+    {
+      "id": "PAMM-X17-06",
+      "status": "PASS",
+      "details": {
+        "status": 400,
+        "response": {
+          "error": "symbol, side (BUY/SELL) and a positive qty are required"
+        }
+      }
+    },
+    {
+      "id": "PAMM-X17-07",
+      "status": "PASS",
+      "details": {
+        "status": 400,
+        "response": {
+          "error": "symbol, side (BUY/SELL) and a positive qty are required"
+        }
+      }
+    },
+    {
+      "id": "PAMM-X17-08",
+      "status": "PASS",
+      "details": {
+        "status": 400,
+        "response": {
+          "error": "symbol, side (BUY/SELL) and a positive qty are required"
+        }
+      }
+    },
+    {
+      "id": "PAMM-X17-09",
+      "status": "PASS",
+      "details": {
+        "status": 400,
+        "response": {
+          "error": "insufficient free margin: required 3179745.00, free 1969.04",
+          "order": {
+            "order_id": "ord_f282d2ecc85859d377",
+            "market_order_id": "ord_f282d2ecc85859d377",
+            "symbol": "BINANCE:BTCUSDT.P",
+            "side": "BUY",
+            "type": "MARKET",
+            "state": "REJECTED",
+            "reject_reason": "insufficient free margin: required 3179745.00, free 1969.04",
+            "requested_qty": 500,
+            "filled_qty": 0,
+            "created_at": "2026-11-19T07:44:59.623455936Z",
+            "updated_at": "2026-11-19T07:44:59.623455936Z"
+          },
+          "order_id": "ord_f282d2ecc85859d377"
+        }
+      }
+    },
+    {
+      "id": "PAMM-X17-10",
+      "status": "PASS",
+      "details": {
+        "status": 400,
+        "response": {
+          "error": "type must be MARKET on this endpoint (LIMIT and STOP orders go to /orders/pending)"
+        }
+      }
+    },
+    {
+      "id": "PAMM-X18-09",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "id": "PAMM-X06-01",
+      "status": "PASS",
+      "details": {
+        "response": {
+          "order": {
+            "order_id": "ord_b88c35539ec04a4af7",
+            "market_order_id": "ord_b88c35539ec04a4af7",
+            "symbol": "BINANCE:BTCUSDT.P",
+            "side": "BUY",
+            "type": "MARKET",
+            "state": "FILLED",
+            "requested_qty": 0.001,
+            "filled_qty": 0.001,
+            "avg_fill_price": 63594.9,
+            "created_at": "2026-11-19T07:44:59.766206589Z",
+            "updated_at": "2026-11-19T07:44:59.766206589Z"
+          },
+          "position": {
+            "position_id": "pos_87f7b39b440e3738aa",
+            "market_order_id": "ord_b88c35539ec04a4af7",
+            "symbol": "BINANCE:BTCUSDT.P",
+            "side": "BUY",
+            "net_qty": 0.001,
+            "avg_entry_price": 63594.9,
+            "full_margin": 6.35949,
+            "margin_percent": 100,
+            "margin_used": 6.35949,
+            "entry_markup": 0,
+            "status": "OPEN",
+            "opened_at": "2026-11-19T07:44:59.766311Z"
+          },
+          "success": true
+        }
+      }
+    },
+    {
+      "id": "EXEC-BUY-POSITION",
+      "status": "PASS",
+      "details": {
+        "id": "ord_b88c35539ec04a4af7"
+      }
+    },
+    {
+      "id": "PAMM-X06-06",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "id": "PAMM-X06-08",
+      "status": "PASS",
+      "details": {
+        "price": 63594.9
+      }
+    },
+    {
+      "id": "EXEC-BUY-CLOSE",
+      "status": "PASS",
+      "details": {
+        "response": {
+          "exit_price": 63594.9,
+          "market_order_id": "ord_b88c35539ec04a4af7",
+          "price_source": "live",
+          "realized_pnl": 0,
+          "success": true,
+          "symbol": "BINANCE:BTCUSDT.P"
+        }
+      }
+    },
+    {
+      "id": "PAMM-X06-02",
+      "status": "PASS",
+      "details": {
+        "response": {
+          "order": {
+            "order_id": "ord_7b880a83a17ac630f2",
+            "market_order_id": "ord_7b880a83a17ac630f2",
+            "symbol": "BINANCE:BTCUSDT.P",
+            "side": "SELL",
+            "type": "MARKET",
+            "state": "FILLED",
+            "requested_qty": 0.001,
+            "filled_qty": 0.001,
+            "avg_fill_price": 63594.8,
+            "created_at": "2026-11-19T07:45:00.045086384Z",
+            "updated_at": "2026-11-19T07:45:00.045086384Z"
+          },
+          "position": {
+            "position_id": "pos_ed7699e5ccb3f97d3b",
+            "market_order_id": "ord_7b880a83a17ac630f2",
+            "symbol": "BINANCE:BTCUSDT.P",
+            "side": "SELL",
+            "net_qty": 0.001,
+            "avg_entry_price": 63594.8,
+            "full_margin": 6.3594800000000005,
+            "margin_percent": 100,
+            "margin_used": 6.3594800000000005,
+            "entry_markup": 0,
+            "status": "OPEN",
+            "opened_at": "2026-11-19T07:45:00.045153Z"
+          },
+          "success": true
+        }
+      }
+    },
+    {
+      "id": "EXEC-SELL-POSITION",
+      "status": "PASS",
+      "details": {
+        "id": "ord_7b880a83a17ac630f2"
+      }
+    },
+    {
+      "id": "EXEC-SELL-CLOSE",
+      "status": "PASS",
+      "details": {
+        "response": {
+          "exit_price": 63594.9,
+          "market_order_id": "ord_7b880a83a17ac630f2",
+          "price_source": "live",
+          "realized_pnl": -0.00009999999999854482,
+          "success": true,
+          "symbol": "BINANCE:BTCUSDT.P"
+        }
+      }
+    },
+    {
+      "id": "PAMM-X06-03",
+      "status": "PASS",
+      "details": {
+        "positions": [
+          {
+            "algo_id": null,
+            "avg_entry_price": 63594.8,
+            "closed_at": null,
+            "comment": null,
+            "current_price": 63594.9,
+            "full_margin": 6.3594800000000005,
+            "group_id": null,
+            "margin_percent": 100,
+            "margin_used": 6.3594800000000005,
+            "market_order_id": "ord_14e3393e655c3a3533",
+            "net_qty": 0.001,
+            "oco_key": null,
+            "opened_at": "2026-11-19T07:45:00.3732Z",
+            "position_id": "pos_7e8697289e68c691e3",
+            "side": "SELL",
+            "source": null,
+            "status": "OPEN",
+            "strategy_name": null,
+            "symbol": "BINANCE:BTCUSDT.P",
+            "tag": null,
+            "trailing": null,
+            "unrealized_pnl": -0.00009999999999854482
+          },
+          {
+            "algo_id": null,
+            "avg_entry_price": 63594.9,
+            "closed_at": null,
+            "comment": null,
+            "current_price": 63594.9,
+            "full_margin": 6.35949,
+            "group_id": null,
+            "margin_percent": 100,
+            "margin_used": 6.35949,
+            "market_order_id": "ord_0da32c9f2057707e1a",
+            "net_qty": 0.001,
+            "oco_key": null,
+            "opened_at": "2026-11-19T07:45:00.288756Z",
+            "position_id": "pos_b6ae31bcc641cb381e",
+            "side": "BUY",
+            "source": null,
+            "status": "OPEN",
+            "strategy_name": null,
+            "symbol": "BINANCE:BTCUSDT.P",
+            "tag": null,
+            "trailing": null,
+            "unrealized_pnl": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "PAMM-X09-08",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "id": "PAMM-X09-01",
+      "status": "PASS",
+      "details": {
+        "id": "ord_f0316f29535c7f4ee2",
+        "responses": [
+          {
+            "status": 404,
+            "j": {
+              "error": "No open position for ord_f0316f29535c7f4ee2"
+            },
+            "text": "{\"error\":\"No open position for ord_f0316f29535c7f4ee2\"}\n"
+          },
+          {
+            "status": 200,
+            "j": {
+              "exit_price": 63594.8,
+              "market_order_id": "ord_f0316f29535c7f4ee2",
+              "price_source": "live",
+              "realized_pnl": -0.00009999999999854482,
+              "success": true,
+              "symbol": "BINANCE:BTCUSDT.P"
+            },
+            "text": "{\"exit_price\":63594.8,\"market_order_id\":\"ord_f0316f29535c7f4ee2\",\"price_source\":\"live\",\"realized_pnl\":-0.00009999999999854482,\"success\":true,\"symbol\":\"BINANCE:BTCUSDT.P\"}\n"
+          }
+        ],
+        "closeCount": 1,
+        "positions": [],
+        "allocations": [
+          {
+            "alloc_id": 12287,
+            "at": "2026-11-19T07:36:15.592925Z",
+            "deposit": 100,
+            "follower": "mem_e26aa534f801d04237",
+            "follower_name": "PM Follower One",
+            "master": "mem_4669b36f00cc55347e",
+            "order_pnl": -0.18400000000001457,
+            "pamm_id": "pmm_cbb6cf0570fe937afb",
+            "percentage": 10,
+            "pool_total": 1000,
+            "running_pnl": 0.22,
+            "shared_pnl": -0.02,
+            "trade_id": 1413712
+          },
+          {
+            "alloc_id": 12286,
+            "at": "2026-11-19T07:36:15.592753Z",
+            "deposit": 100,
+            "follower": "mem_d418c85a28182db953",
+            "follower_name": "PM Follower Two",
+            "master": "mem_4669b36f00cc55347e",
+            "order_pnl": -0.18400000000001457,
+            "pamm_id": "pmm_29ee697c1401a4de18",
+            "percentage": 10,
+            "pool_total": 1000,
+            "running_pnl": 0.22,
+            "shared_pnl": -0.02,
+            "trade_id": 1413712
+          },
+          {
+            "alloc_id": 12285,
+            "at": "2026-11-19T07:36:15.591943Z",
+            "deposit": 100,
+            "follower": "mem_2b4b6755ae8ed059a9",
+            "follower_name": "PM Follower Three",
+            "master": "mem_4669b36f00cc55347e",
+            "order_pnl": -0.18400000000001457,
+            "pamm_id": "pmm_20e4b47143a7524da7",
+            "percentage": 10,
+            "pool_total": 1000,
+            "running_pnl": 0.22,
+            "shared_pnl": -0.02,
+            "trade_id": 1413712
+          },
+          {
+            "alloc_id": 12284,
+            "at": "2026-11-19T07:36:15.590213Z",
+            "deposit": 100,
+            "follower": "mem_7d5a18611d1a51731e",
+            "follower_name": "PM Follower Four",
+            "master": "mem_4669b36f00cc55347e",
+            "order_pnl": -0.18400000000001457,
+            "pamm_id": "pmm_dee21db280ff786bf1",
+            "percentage": 10,
+            "pool_total": 1000,
+            "running_pnl": 0.22,
+            "shared_pnl": -0.02,
+            "trade_id": 1413712
+          },
+          {
+            "alloc_id": 12283,
+            "at": "2026-11-19T07:36:15.589153Z",
+            "deposit": 100,
+            "follower": "mem_1c6beb7764028720cc",
+            "follower_name": "PM Follower Five",
+            "master": "mem_4669b36f00cc55347e",
+            "order_pnl": -0.18400000000001457,
+            "pamm_id": "pmm_b4b6b2fdc206f3b97b",
+            "percentage": 10,
+            "pool_total": 1000,
+            "running_pnl": 0.22,
+            "shared_pnl": -0.02,
+            "trade_id": 1413712
+          },
+          {
+            "alloc_id": 12282,
+            "at": "2026-11-19T07:36:15.587342Z",
+            "deposit": 100,
+            "follower": "mem_8080a5bca2119a3fe9",
+            "follower_name": "PM Follower Six",
+            "master": "mem_4669b36f00cc55347e",
+            "order_pnl": -0.18400000000001457,
+            "pamm_id": "pmm_f695e2dbe19c031f73",
+            "percentage": 10,
+            "pool_total": 1000,
+            "running_pnl": 0.22,
+            "shared_pnl": -0.02,
+            "trade_id": 1413712
+          },
+          {
+            "alloc_id": 12281,
+            "at": "2026-11-19T07:36:15.585497Z",
+            "deposit": 100,
+            "follower": "mem_ecc6ae933d48a7c380",
+            "follower_name": "PM Follower Seven",
+            "master": "mem_4669b36f00cc55347e",
+            "order_pnl": -0.18400000000001457,
+            "pamm_id": "pmm_9b2ef011487b6e2fc1",
+            "percentage": 10,
+            "pool_total": 1000,
+            "running_pnl": 0.22,
+            "shared_pnl": -0.02,
+            "trade_id": 1413712
+          },
+          {
+            "alloc_id": 12280,
+            "at": "2026-11-19T07:36:15.583685Z",
+            "deposit": 100,
+            "follower": "mem_5452eb488b8622756f",
+            "follower_name": "PM Follower Eight",
+            "master": "mem_4669b36f00cc55347e",
+            "order_pnl": -0.18400000000001457,
+            "pamm_id": "pmm_698ca5e9fb7e2d3205",
+            "percentage": 10,
+            "pool_total": 1000,
+            "running_pnl": 0.22,
+            "shared_pnl": -0.02,
+            "trade_id": 1413712
+          },
+          {
+            "alloc_id": 12279,
+            "at": "2026-11-19T07:36:15.581903Z",
+            "deposit": 100,
+            "follower": "mem_d4696d922fdee6d886",
+            "follower_name": "PM Follower Nine",
+            "master": "mem_4669b36f00cc55347e",
+            "order_pnl": -0.18400000000001457,
+            "pamm_id": "pmm_1eb3590078a1244b56",
+            "percentage": 10,
+            "pool_total": 1000,
+            "running_pnl": 0.22,
+            "shared_pnl": -0.02,
+            "trade_id": 1413712
+          },
+          {
+            "alloc_id": 12278,
+            "at": "2026-11-19T07:36:15.576018Z",
+            "deposit": 100,
+            "follower": "mem_822cf51b32a092c7ac",
+            "follower_name": "PM Follower Ten",
+            "master": "mem_4669b36f00cc55347e",
+            "order_pnl": -0.18400000000001457,
+            "pamm_id": "pmm_29ae0205fcd285f09b",
+            "percentage": 10,
+            "pool_total": 1000,
+            "running_pnl": -0.02,
+            "shared_pnl": -0.02,
+            "trade_id": 1413712
+          }
+        ]
+      }
+    },
+    {
+      "id": "PAMM-X09-02",
+      "status": "PASS",
+      "details": {
+        "id": "ord_ed27497c694c9a4684",
+        "responses": [
+          {
+            "status": 404,
+            "j": {
+              "error": "No open position for ord_ed27497c694c9a4684"
+            },
+            "text": "{\"error\":\"No open position for ord_ed27497c694c9a4684\"}\n"
+          },
+          {
+            "status": 404,
+            "j": {
+              "error": "No open position for ord_ed27497c694c9a4684"
+            },
+            "text": "{\"error\":\"No open position for ord_ed27497c694c9a4684\"}\n"
+          },
+          {
+            "status": 404,
+            "j": {
+              "error": "No open position for ord_ed27497c694c9a4684"
+            },
+            "text": "{\"error\":\"No open position for ord_ed27497c694c9a4684\"}\n"
+          },
+          {
+            "status": 200,
+            "j": {
+              "exit_price": 63594.9,
+              "market_order_id": "ord_ed27497c694c9a4684",
+              "price_source": "live",
+              "realized_pnl": 0,
+              "success": true,
+              "symbol": "BINANCE:BTCUSDT.P"
+            },
+            "text": "{\"exit_price\":63594.9,\"market_order_id\":\"ord_ed27497c694c9a4684\",\"price_source\":\"live\",\"realized_pnl\":0,\"success\":true,\"symbol\":\"BINANCE:BTCUSDT.P\"}\n"
+          },
+          {
+            "status": 404,
+            "j": {
+              "error": "No open position for ord_ed27497c694c9a4684"
+            },
+            "text": "{\"error\":\"No open position for ord_ed27497c694c9a4684\"}\n"
+          }
+        ],
+        "closeCount": 1,
+        "positions": [],
+        "allocations": [
+          {
+            "alloc_id": 12287,
+            "at": "2026-11-19T07:36:15.592925Z",
+            "deposit": 100,
+            "follower": "mem_e26aa534f801d04237",
+            "follower_name": "PM Follower One",
+            "master": "mem_4669b36f00cc55347e",
+            "order_pnl": -0.18400000000001457,
+            "pamm_id": "pmm_cbb6cf0570fe937afb",
+            "percentage": 10,
+            "pool_total": 1000,
+            "running_pnl": 0.22,
+            "shared_pnl": -0.02,
+            "trade_id": 1413712
+          },
+          {
+            "alloc_id": 12286,
+            "at": "2026-11-19T07:36:15.592753Z",
+            "deposit": 100,
+            "follower": "mem_d418c85a28182db953",
+            "follower_name": "PM Follower Two",
+            "master": "mem_4669b36f00cc55347e",
+            "order_pnl": -0.18400000000001457,
+            "pamm_id": "pmm_29ee697c1401a4de18",
+            "percentage": 10,
+            "pool_total": 1000,
+            "running_pnl": 0.22,
+            "shared_pnl": -0.02,
+            "trade_id": 1413712
+          },
+          {
+            "alloc_id": 12285,
+            "at": "2026-11-19T07:36:15.591943Z",
+            "deposit": 100,
+            "follower": "mem_2b4b6755ae8ed059a9",
+            "follower_name": "PM Follower Three",
+            "master": "mem_4669b36f00cc55347e",
+            "order_pnl": -0.18400000000001457,
+            "pamm_id": "pmm_20e4b47143a7524da7",
+            "percentage": 10,
+            "pool_total": 1000,
+            "running_pnl": 0.22,
+            "shared_pnl": -0.02,
+            "trade_id": 1413712
+          },
+          {
+            "alloc_id": 12284,
+            "at": "2026-11-19T07:36:15.590213Z",
+            "deposit": 100,
+            "follower": "mem_7d5a18611d1a51731e",
+            "follower_name": "PM Follower Four",
+            "master": "mem_4669b36f00cc55347e",
+            "order_pnl": -0.18400000000001457,
+            "pamm_id": "pmm_dee21db280ff786bf1",
+            "percentage": 10,
+            "pool_total": 1000,
+            "running_pnl": 0.22,
+            "shared_pnl": -0.02,
+            "trade_id": 1413712
+          },
+          {
+            "alloc_id": 12283,
+            "at": "2026-11-19T07:36:15.589153Z",
+            "deposit": 100,
+            "follower": "mem_1c6beb7764028720cc",
+            "follower_name": "PM Follower Five",
+            "master": "mem_4669b36f00cc55347e",
+            "order_pnl": -0.18400000000001457,
+            "pamm_id": "pmm_b4b6b2fdc206f3b97b",
+            "percentage": 10,
+            "pool_total": 1000,
+            "running_pnl": 0.22,
+            "shared_pnl": -0.02,
+            "trade_id": 1413712
+          },
+          {
+            "alloc_id": 12282,
+            "at": "2026-11-19T07:36:15.587342Z",
+            "deposit": 100,
+            "follower": "mem_8080a5bca2119a3fe9",
+            "follower_name": "PM Follower Six",
+            "master": "mem_4669b36f00cc55347e",
+            "order_pnl": -0.18400000000001457,
+            "pamm_id": "pmm_f695e2dbe19c031f73",
+            "percentage": 10,
+            "pool_total": 1000,
+            "running_pnl": 0.22,
+            "shared_pnl": -0.02,
+            "trade_id": 1413712
+          },
+          {
+            "alloc_id": 12281,
+            "at": "2026-11-19T07:36:15.585497Z",
+            "deposit": 100,
+            "follower": "mem_ecc6ae933d48a7c380",
+            "follower_name": "PM Follower Seven",
+            "master": "mem_4669b36f00cc55347e",
+            "order_pnl": -0.18400000000001457,
+            "pamm_id": "pmm_9b2ef011487b6e2fc1",
+            "percentage": 10,
+            "pool_total": 1000,
+            "running_pnl": 0.22,
+            "shared_pnl": -0.02,
+            "trade_id": 1413712
+          },
+          {
+            "alloc_id": 12280,
+            "at": "2026-11-19T07:36:15.583685Z",
+            "deposit": 100,
+            "follower": "mem_5452eb488b8622756f",
+            "follower_name": "PM Follower Eight",
+            "master": "mem_4669b36f00cc55347e",
+            "order_pnl": -0.18400000000001457,
+            "pamm_id": "pmm_698ca5e9fb7e2d3205",
+            "percentage": 10,
+            "pool_total": 1000,
+            "running_pnl": 0.22,
+            "shared_pnl": -0.02,
+            "trade_id": 1413712
+          },
+          {
+            "alloc_id": 12279,
+            "at": "2026-11-19T07:36:15.581903Z",
+            "deposit": 100,
+            "follower": "mem_d4696d922fdee6d886",
+            "follower_name": "PM Follower Nine",
+            "master": "mem_4669b36f00cc55347e",
+            "order_pnl": -0.18400000000001457,
+            "pamm_id": "pmm_1eb3590078a1244b56",
+            "percentage": 10,
+            "pool_total": 1000,
+            "running_pnl": 0.22,
+            "shared_pnl": -0.02,
+            "trade_id": 1413712
+          },
+          {
+            "alloc_id": 12278,
+            "at": "2026-11-19T07:36:15.576018Z",
+            "deposit": 100,
+            "follower": "mem_822cf51b32a092c7ac",
+            "follower_name": "PM Follower Ten",
+            "master": "mem_4669b36f00cc55347e",
+            "order_pnl": -0.18400000000001457,
+            "pamm_id": "pmm_29ae0205fcd285f09b",
+            "percentage": 10,
+            "pool_total": 1000,
+            "running_pnl": -0.02,
+            "shared_pnl": -0.02,
+            "trade_id": 1413712
+          }
+        ]
+      }
+    },
+    {
+      "id": "PAMM-X09-03",
+      "status": "PASS",
+      "details": {
+        "id": "ord_e6bab9da7afd5b3aa3",
+        "responses": [
+          {
+            "status": 200,
+            "j": {
+              "exit_price": 63594.8,
+              "market_order_id": "ord_e6bab9da7afd5b3aa3",
+              "price_source": "live",
+              "realized_pnl": -0.00009999999999854482,
+              "success": true,
+              "symbol": "BINANCE:BTCUSDT.P"
+            },
+            "text": "{\"exit_price\":63594.8,\"market_order_id\":\"ord_e6bab9da7afd5b3aa3\",\"price_source\":\"live\",\"realized_pnl\":-0.00009999999999854482,\"success\":true,\"symbol\":\"BINANCE:BTCUSDT.P\"}\n"
+          },
+          {
+            "status": 404,
+            "j": {
+              "error": "No open position for ord_e6bab9da7afd5b3aa3"
+            },
+            "text": "{\"error\":\"No open position for ord_e6bab9da7afd5b3aa3\"}\n"
+          }
+        ],
+        "closeCount": 1,
+        "positions": [],
+        "allocations": [
+          {
+            "alloc_id": 12287,
+            "at": "2026-11-19T07:36:15.592925Z",
+            "deposit": 100,
+            "follower": "mem_e26aa534f801d04237",
+            "follower_name": "PM Follower One",
+            "master": "mem_4669b36f00cc55347e",
+            "order_pnl": -0.18400000000001457,
+            "pamm_id": "pmm_cbb6cf0570fe937afb",
+            "percentage": 10,
+            "pool_total": 1000,
+            "running_pnl": 0.22,
+            "shared_pnl": -0.02,
+            "trade_id": 1413712
+          },
+          {
+            "alloc_id": 12286,
+            "at": "2026-11-19T07:36:15.592753Z",
+            "deposit": 100,
+            "follower": "mem_d418c85a28182db953",
+            "follower_name": "PM Follower Two",
+            "master": "mem_4669b36f00cc55347e",
+            "order_pnl": -0.18400000000001457,
+            "pamm_id": "pmm_29ee697c1401a4de18",
+            "percentage": 10,
+            "pool_total": 1000,
+            "running_pnl": 0.22,
+            "shared_pnl": -0.02,
+            "trade_id": 1413712
+          },
+          {
+            "alloc_id": 12285,
+            "at": "2026-11-19T07:36:15.591943Z",
+            "deposit": 100,
+            "follower": "mem_2b4b6755ae8ed059a9",
+            "follower_name": "PM Follower Three",
+            "master": "mem_4669b36f00cc55347e",
+            "order_pnl": -0.18400000000001457,
+            "pamm_id": "pmm_20e4b47143a7524da7",
+            "percentage": 10,
+            "pool_total": 1000,
+            "running_pnl": 0.22,
+            "shared_pnl": -0.02,
+            "trade_id": 1413712
+          },
+          {
+            "alloc_id": 12284,
+            "at": "2026-11-19T07:36:15.590213Z",
+            "deposit": 100,
+            "follower": "mem_7d5a18611d1a51731e",
+            "follower_name": "PM Follower Four",
+            "master": "mem_4669b36f00cc55347e",
+            "order_pnl": -0.18400000000001457,
+            "pamm_id": "pmm_dee21db280ff786bf1",
+            "percentage": 10,
+            "pool_total": 1000,
+            "running_pnl": 0.22,
+            "shared_pnl": -0.02,
+            "trade_id": 1413712
+          },
+          {
+            "alloc_id": 12283,
+            "at": "2026-11-19T07:36:15.589153Z",
+            "deposit": 100,
+            "follower": "mem_1c6beb7764028720cc",
+            "follower_name": "PM Follower Five",
+            "master": "mem_4669b36f00cc55347e",
+            "order_pnl": -0.18400000000001457,
+            "pamm_id": "pmm_b4b6b2fdc206f3b97b",
+            "percentage": 10,
+            "pool_total": 1000,
+            "running_pnl": 0.22,
+            "shared_pnl": -0.02,
+            "trade_id": 1413712
+          },
+          {
+            "alloc_id": 12282,
+            "at": "2026-11-19T07:36:15.587342Z",
+            "deposit": 100,
+            "follower": "mem_8080a5bca2119a3fe9",
+            "follower_name": "PM Follower Six",
+            "master": "mem_4669b36f00cc55347e",
+            "order_pnl": -0.18400000000001457,
+            "pamm_id": "pmm_f695e2dbe19c031f73",
+            "percentage": 10,
+            "pool_total": 1000,
+            "running_pnl": 0.22,
+            "shared_pnl": -0.02,
+            "trade_id": 1413712
+          },
+          {
+            "alloc_id": 12281,
+            "at": "2026-11-19T07:36:15.585497Z",
+            "deposit": 100,
+            "follower": "mem_ecc6ae933d48a7c380",
+            "follower_name": "PM Follower Seven",
+            "master": "mem_4669b36f00cc55347e",
+            "order_pnl": -0.18400000000001457,
+            "pamm_id": "pmm_9b2ef011487b6e2fc1",
+            "percentage": 10,
+            "pool_total": 1000,
+            "running_pnl": 0.22,
+            "shared_pnl": -0.02,
+            "trade_id": 1413712
+          },
+          {
+            "alloc_id": 12280,
+            "at": "2026-11-19T07:36:15.583685Z",
+            "deposit": 100,
+            "follower": "mem_5452eb488b8622756f",
+            "follower_name": "PM Follower Eight",
+            "master": "mem_4669b36f00cc55347e",
+            "order_pnl": -0.18400000000001457,
+            "pamm_id": "pmm_698ca5e9fb7e2d3205",
+            "percentage": 10,
+            "pool_total": 1000,
+            "running_pnl": 0.22,
+            "shared_pnl": -0.02,
+            "trade_id": 1413712
+          },
+          {
+            "alloc_id": 12279,
+            "at": "2026-11-19T07:36:15.581903Z",
+            "deposit": 100,
+            "follower": "mem_d4696d922fdee6d886",
+            "follower_name": "PM Follower Nine",
+            "master": "mem_4669b36f00cc55347e",
+            "order_pnl": -0.18400000000001457,
+            "pamm_id": "pmm_1eb3590078a1244b56",
+            "percentage": 10,
+            "pool_total": 1000,
+            "running_pnl": 0.22,
+            "shared_pnl": -0.02,
+            "trade_id": 1413712
+          },
+          {
+            "alloc_id": 12278,
+            "at": "2026-11-19T07:36:15.576018Z",
+            "deposit": 100,
+            "follower": "mem_822cf51b32a092c7ac",
+            "follower_name": "PM Follower Ten",
+            "master": "mem_4669b36f00cc55347e",
+            "order_pnl": -0.18400000000001457,
+            "pamm_id": "pmm_29ae0205fcd285f09b",
+            "percentage": 10,
+            "pool_total": 1000,
+            "running_pnl": -0.02,
+            "shared_pnl": -0.02,
+            "trade_id": 1413712
+          }
+        ]
+      }
+    },
+    {
+      "id": "PAMM-X09-04",
+      "status": "PASS",
+      "details": {
+        "id": "ord_25bed8ef1e48e6bdc0",
+        "responses": [
+          {
+            "status": 200,
+            "j": {
+              "exit_price": 63594.9,
+              "market_order_id": "ord_25bed8ef1e48e6bdc0",
+              "price_source": "live",
+              "realized_pnl": 0,
+              "success": true,
+              "symbol": "BINANCE:BTCUSDT.P"
+            },
+            "text": "{\"exit_price\":63594.9,\"market_order_id\":\"ord_25bed8ef1e48e6bdc0\",\"price_source\":\"live\",\"realized_pnl\":0,\"success\":true,\"symbol\":\"BINANCE:BTCUSDT.P\"}\n"
+          },
+          {
+            "status": 404,
+            "j": {
+              "error": "No open position for ord_25bed8ef1e48e6bdc0"
+            },
+            "text": "{\"error\":\"No open position for ord_25bed8ef1e48e6bdc0\"}\n"
+          }
+        ],
+        "closeCount": 1,
+        "positions": [],
+        "allocations": [
+          {
+            "alloc_id": 12287,
+            "at": "2026-11-19T07:36:15.592925Z",
+            "deposit": 100,
+            "follower": "mem_e26aa534f801d04237",
+            "follower_name": "PM Follower One",
+            "master": "mem_4669b36f00cc55347e",
+            "order_pnl": -0.18400000000001457,
+            "pamm_id": "pmm_cbb6cf0570fe937afb",
+            "percentage": 10,
+            "pool_total": 1000,
+            "running_pnl": 0.22,
+            "shared_pnl": -0.02,
+            "trade_id": 1413712
+          },
+          {
+            "alloc_id": 12286,
+            "at": "2026-11-19T07:36:15.592753Z",
+            "deposit": 100,
+            "follower": "mem_d418c85a28182db953",
+            "follower_name": "PM Follower Two",
+            "master": "mem_4669b36f00cc55347e",
+            "order_pnl": -0.18400000000001457,
+            "pamm_id": "pmm_29ee697c1401a4de18",
+            "percentage": 10,
+            "pool_total": 1000,
+            "running_pnl": 0.22,
+            "shared_pnl": -0.02,
+            "trade_id": 1413712
+          },
+          {
+            "alloc_id": 12285,
+            "at": "2026-11-19T07:36:15.591943Z",
+            "deposit": 100,
+            "follower": "mem_2b4b6755ae8ed059a9",
+            "follower_name": "PM Follower Three",
+            "master": "mem_4669b36f00cc55347e",
+            "order_pnl": -0.18400000000001457,
+            "pamm_id": "pmm_20e4b47143a7524da7",
+            "percentage": 10,
+            "pool_total": 1000,
+            "running_pnl": 0.22,
+            "shared_pnl": -0.02,
+            "trade_id": 1413712
+          },
+          {
+            "alloc_id": 12284,
+            "at": "2026-11-19T07:36:15.590213Z",
+            "deposit": 100,
+            "follower": "mem_7d5a18611d1a51731e",
+            "follower_name": "PM Follower Four",
+            "master": "mem_4669b36f00cc55347e",
+            "order_pnl": -0.18400000000001457,
+            "pamm_id": "pmm_dee21db280ff786bf1",
+            "percentage": 10,
+            "pool_total": 1000,
+            "running_pnl": 0.22,
+            "shared_pnl": -0.02,
+            "trade_id": 1413712
+          },
+          {
+            "alloc_id": 12283,
+            "at": "2026-11-19T07:36:15.589153Z",
+            "deposit": 100,
+            "follower": "mem_1c6beb7764028720cc",
+            "follower_name": "PM Follower Five",
+            "master": "mem_4669b36f00cc55347e",
+            "order_pnl": -0.18400000000001457,
+            "pamm_id": "pmm_b4b6b2fdc206f3b97b",
+            "percentage": 10,
+            "pool_total": 1000,
+            "running_pnl": 0.22,
+            "shared_pnl": -0.02,
+            "trade_id": 1413712
+          },
+          {
+            "alloc_id": 12282,
+            "at": "2026-11-19T07:36:15.587342Z",
+            "deposit": 100,
+            "follower": "mem_8080a5bca2119a3fe9",
+            "follower_name": "PM Follower Six",
+            "master": "mem_4669b36f00cc55347e",
+            "order_pnl": -0.18400000000001457,
+            "pamm_id": "pmm_f695e2dbe19c031f73",
+            "percentage": 10,
+            "pool_total": 1000,
+            "running_pnl": 0.22,
+            "shared_pnl": -0.02,
+            "trade_id": 1413712
+          },
+          {
+            "alloc_id": 12281,
+            "at": "2026-11-19T07:36:15.585497Z",
+            "deposit": 100,
+            "follower": "mem_ecc6ae933d48a7c380",
+            "follower_name": "PM Follower Seven",
+            "master": "mem_4669b36f00cc55347e",
+            "order_pnl": -0.18400000000001457,
+            "pamm_id": "pmm_9b2ef011487b6e2fc1",
+            "percentage": 10,
+            "pool_total": 1000,
+            "running_pnl": 0.22,
+            "shared_pnl": -0.02,
+            "trade_id": 1413712
+          },
+          {
+            "alloc_id": 12280,
+            "at": "2026-11-19T07:36:15.583685Z",
+            "deposit": 100,
+            "follower": "mem_5452eb488b8622756f",
+            "follower_name": "PM Follower Eight",
+            "master": "mem_4669b36f00cc55347e",
+            "order_pnl": -0.18400000000001457,
+            "pamm_id": "pmm_698ca5e9fb7e2d3205",
+            "percentage": 10,
+            "pool_total": 1000,
+            "running_pnl": 0.22,
+            "shared_pnl": -0.02,
+            "trade_id": 1413712
+          },
+          {
+            "alloc_id": 12279,
+            "at": "2026-11-19T07:36:15.581903Z",
+            "deposit": 100,
+            "follower": "mem_d4696d922fdee6d886",
+            "follower_name": "PM Follower Nine",
+            "master": "mem_4669b36f00cc55347e",
+            "order_pnl": -0.18400000000001457,
+            "pamm_id": "pmm_1eb3590078a1244b56",
+            "percentage": 10,
+            "pool_total": 1000,
+            "running_pnl": 0.22,
+            "shared_pnl": -0.02,
+            "trade_id": 1413712
+          },
+          {
+            "alloc_id": 12278,
+            "at": "2026-11-19T07:36:15.576018Z",
+            "deposit": 100,
+            "follower": "mem_822cf51b32a092c7ac",
+            "follower_name": "PM Follower Ten",
+            "master": "mem_4669b36f00cc55347e",
+            "order_pnl": -0.18400000000001457,
+            "pamm_id": "pmm_29ae0205fcd285f09b",
+            "percentage": 10,
+            "pool_total": 1000,
+            "running_pnl": -0.02,
+            "shared_pnl": -0.02,
+            "trade_id": 1413712
+          }
+        ]
+      }
+    },
+    {
+      "id": "PAMM-X09-05",
+      "status": "PASS",
+      "details": {
+        "id": "ord_915960cfc4cf7707ee",
+        "responses": [
+          {
+            "status": 200,
+            "j": {
+              "exit_price": 63594.9,
+              "market_order_id": "ord_915960cfc4cf7707ee",
+              "price_source": "live",
+              "realized_pnl": 0,
+              "success": true,
+              "symbol": "BINANCE:BTCUSDT.P"
+            },
+            "text": "{\"exit_price\":63594.9,\"market_order_id\":\"ord_915960cfc4cf7707ee\",\"price_source\":\"live\",\"realized_pnl\":0,\"success\":true,\"symbol\":\"BINANCE:BTCUSDT.P\"}\n"
+          },
+          {
+            "status": 404,
+            "j": {
+              "error": "No open position for ord_915960cfc4cf7707ee"
+            },
+            "text": "{\"error\":\"No open position for ord_915960cfc4cf7707ee\"}\n"
+          }
+        ],
+        "closeCount": 1,
+        "positions": [],
+        "allocations": [
+          {
+            "alloc_id": 12287,
+            "at": "2026-11-19T07:36:15.592925Z",
+            "deposit": 100,
+            "follower": "mem_e26aa534f801d04237",
+            "follower_name": "PM Follower One",
+            "master": "mem_4669b36f00cc55347e",
+            "order_pnl": -0.18400000000001457,
+            "pamm_id": "pmm_cbb6cf0570fe937afb",
+            "percentage": 10,
+            "pool_total": 1000,
+            "running_pnl": 0.22,
+            "shared_pnl": -0.02,
+            "trade_id": 1413712
+          },
+          {
+            "alloc_id": 12286,
+            "at": "2026-11-19T07:36:15.592753Z",
+            "deposit": 100,
+            "follower": "mem_d418c85a28182db953",
+            "follower_name": "PM Follower Two",
+            "master": "mem_4669b36f00cc55347e",
+            "order_pnl": -0.18400000000001457,
+            "pamm_id": "pmm_29ee697c1401a4de18",
+            "percentage": 10,
+            "pool_total": 1000,
+            "running_pnl": 0.22,
+            "shared_pnl": -0.02,
+            "trade_id": 1413712
+          },
+          {
+            "alloc_id": 12285,
+            "at": "2026-11-19T07:36:15.591943Z",
+            "deposit": 100,
+            "follower": "mem_2b4b6755ae8ed059a9",
+            "follower_name": "PM Follower Three",
+            "master": "mem_4669b36f00cc55347e",
+            "order_pnl": -0.18400000000001457,
+            "pamm_id": "pmm_20e4b47143a7524da7",
+            "percentage": 10,
+            "pool_total": 1000,
+            "running_pnl": 0.22,
+            "shared_pnl": -0.02,
+            "trade_id": 1413712
+          },
+          {
+            "alloc_id": 12284,
+            "at": "2026-11-19T07:36:15.590213Z",
+            "deposit": 100,
+            "follower": "mem_7d5a18611d1a51731e",
+            "follower_name": "PM Follower Four",
+            "master": "mem_4669b36f00cc55347e",
+            "order_pnl": -0.18400000000001457,
+            "pamm_id": "pmm_dee21db280ff786bf1",
+            "percentage": 10,
+            "pool_total": 1000,
+            "running_pnl": 0.22,
+            "shared_pnl": -0.02,
+            "trade_id": 1413712
+          },
+          {
+            "alloc_id": 12283,
+            "at": "2026-11-19T07:36:15.589153Z",
+            "deposit": 100,
+            "follower": "mem_1c6beb7764028720cc",
+            "follower_name": "PM Follower Five",
+            "master": "mem_4669b36f00cc55347e",
+            "order_pnl": -0.18400000000001457,
+            "pamm_id": "pmm_b4b6b2fdc206f3b97b",
+            "percentage": 10,
+            "pool_total": 1000,
+            "running_pnl": 0.22,
+            "shared_pnl": -0.02,
+            "trade_id": 1413712
+          },
+          {
+            "alloc_id": 12282,
+            "at": "2026-11-19T07:36:15.587342Z",
+            "deposit": 100,
+            "follower": "mem_8080a5bca2119a3fe9",
+            "follower_name": "PM Follower Six",
+            "master": "mem_4669b36f00cc55347e",
+            "order_pnl": -0.18400000000001457,
+            "pamm_id": "pmm_f695e2dbe19c031f73",
+            "percentage": 10,
+            "pool_total": 1000,
+            "running_pnl": 0.22,
+            "shared_pnl": -0.02,
+            "trade_id": 1413712
+          },
+          {
+            "alloc_id": 12281,
+            "at": "2026-11-19T07:36:15.585497Z",
+            "deposit": 100,
+            "follower": "mem_ecc6ae933d48a7c380",
+            "follower_name": "PM Follower Seven",
+            "master": "mem_4669b36f00cc55347e",
+            "order_pnl": -0.18400000000001457,
+            "pamm_id": "pmm_9b2ef011487b6e2fc1",
+            "percentage": 10,
+            "pool_total": 1000,
+            "running_pnl": 0.22,
+            "shared_pnl": -0.02,
+            "trade_id": 1413712
+          },
+          {
+            "alloc_id": 12280,
+            "at": "2026-11-19T07:36:15.583685Z",
+            "deposit": 100,
+            "follower": "mem_5452eb488b8622756f",
+            "follower_name": "PM Follower Eight",
+            "master": "mem_4669b36f00cc55347e",
+            "order_pnl": -0.18400000000001457,
+            "pamm_id": "pmm_698ca5e9fb7e2d3205",
+            "percentage": 10,
+            "pool_total": 1000,
+            "running_pnl": 0.22,
+            "shared_pnl": -0.02,
+            "trade_id": 1413712
+          },
+          {
+            "alloc_id": 12279,
+            "at": "2026-11-19T07:36:15.581903Z",
+            "deposit": 100,
+            "follower": "mem_d4696d922fdee6d886",
+            "follower_name": "PM Follower Nine",
+            "master": "mem_4669b36f00cc55347e",
+            "order_pnl": -0.18400000000001457,
+            "pamm_id": "pmm_1eb3590078a1244b56",
+            "percentage": 10,
+            "pool_total": 1000,
+            "running_pnl": 0.22,
+            "shared_pnl": -0.02,
+            "trade_id": 1413712
+          },
+          {
+            "alloc_id": 12278,
+            "at": "2026-11-19T07:36:15.576018Z",
+            "deposit": 100,
+            "follower": "mem_822cf51b32a092c7ac",
+            "follower_name": "PM Follower Ten",
+            "master": "mem_4669b36f00cc55347e",
+            "order_pnl": -0.18400000000001457,
+            "pamm_id": "pmm_29ae0205fcd285f09b",
+            "percentage": 10,
+            "pool_total": 1000,
+            "running_pnl": -0.02,
+            "shared_pnl": -0.02,
+            "trade_id": 1413712
+          }
+        ]
+      }
+    },
+    {
+      "id": "PAMM-X08-01",
+      "status": "PASS",
+      "details": {
+        "position": {
+          "algo_id": null,
+          "avg_entry_price": 63594.9,
+          "closed_at": null,
+          "comment": null,
+          "current_price": 63594.9,
+          "full_margin": 6.35949,
+          "group_id": null,
+          "margin_percent": 100,
+          "margin_used": 6.35949,
+          "market_order_id": "ord_500e56bd336139c38a",
+          "net_qty": 0.001,
+          "oco_key": null,
+          "opened_at": "2026-11-19T07:45:03.26993Z",
+          "position_id": "pos_b3d93f8003c6f2072b",
+          "side": "BUY",
+          "sl_order": {
+            "created_at": "2026-11-19T07:45:03.26993Z",
+            "filled_qty": 0,
+            "market_order_id": "ord_500e56bd336139c38a",
+            "order_id": "ord_535f19a317479297d6",
+            "requested_qty": 0.001,
+            "side": "SELL",
+            "state": "PENDING",
+            "symbol": "BINANCE:BTCUSDT.P",
+            "trigger_price": 50000,
+            "type": "SL",
+            "updated_at": "2026-11-19T07:45:03.26993Z"
+          },
+          "source": null,
+          "status": "OPEN",
+          "strategy_name": null,
+          "symbol": "BINANCE:BTCUSDT.P",
+          "tag": null,
+          "tp_order": {
+            "created_at": "2026-11-19T07:45:03.26993Z",
+            "filled_qty": 0,
+            "market_order_id": "ord_500e56bd336139c38a",
+            "order_id": "ord_2fe6f6228067808461",
+            "requested_qty": 0.001,
+            "side": "SELL",
+            "state": "PENDING",
+            "symbol": "BINANCE:BTCUSDT.P",
+            "trigger_price": 80000,
+            "type": "TP",
+            "updated_at": "2026-11-19T07:45:03.26993Z"
+          },
+          "trailing": null,
+          "unrealized_pnl": 0
+        }
+      }
+    },
+    {
+      "id": "PAMM-X08-02",
+      "status": "PASS",
+      "details": {
+        "position": {
+          "algo_id": null,
+          "avg_entry_price": 63594.9,
+          "closed_at": null,
+          "comment": null,
+          "current_price": 63594.9,
+          "full_margin": 6.35949,
+          "group_id": null,
+          "margin_percent": 100,
+          "margin_used": 6.35949,
+          "market_order_id": "ord_500e56bd336139c38a",
+          "net_qty": 0.001,
+          "oco_key": null,
+          "opened_at": "2026-11-19T07:45:03.26993Z",
+          "position_id": "pos_b3d93f8003c6f2072b",
+          "side": "BUY",
+          "sl_order": {
+            "created_at": "2026-11-19T07:45:03.26993Z",
+            "filled_qty": 0,
+            "market_order_id": "ord_500e56bd336139c38a",
+            "order_id": "ord_535f19a317479297d6",
+            "requested_qty": 0.001,
+            "side": "SELL",
+            "state": "PENDING",
+            "symbol": "BINANCE:BTCUSDT.P",
+            "trigger_price": 50000,
+            "type": "SL",
+            "updated_at": "2026-11-19T07:45:03.26993Z"
+          },
+          "source": null,
+          "status": "OPEN",
+          "strategy_name": null,
+          "symbol": "BINANCE:BTCUSDT.P",
+          "tag": null,
+          "tp_order": {
+            "created_at": "2026-11-19T07:45:03.26993Z",
+            "filled_qty": 0,
+            "market_order_id": "ord_500e56bd336139c38a",
+            "order_id": "ord_2fe6f6228067808461",
+            "requested_qty": 0.001,
+            "side": "SELL",
+            "state": "PENDING",
+            "symbol": "BINANCE:BTCUSDT.P",
+            "trigger_price": 80000,
+            "type": "TP",
+            "updated_at": "2026-11-19T07:45:03.26993Z"
+          },
+          "trailing": null,
+          "unrealized_pnl": 0
+        }
+      }
+    },
+    {
+      "id": "PAMM-X08-08",
+      "status": "PASS",
+      "details": {
+        "brackets": [
+          {
+            "order_id": "ord_9a90a2c6f987879d35",
+            "market_order_id": "ord_500e56bd336139c38a",
+            "symbol": "BINANCE:BTCUSDT.P",
+            "side": "SELL",
+            "type": "MARKET",
+            "state": "FILLED",
+            "requested_qty": 0.001,
+            "filled_qty": 0.001,
+            "avg_fill_price": 63594.8,
+            "source": "squareoff",
+            "created_at": "2026-11-19T07:45:03.404537Z",
+            "updated_at": "2026-11-19T07:45:03.404537Z",
+            "fee": 3
+          },
+          {
+            "order_id": "ord_535f19a317479297d6",
+            "market_order_id": "ord_500e56bd336139c38a",
+            "symbol": "BINANCE:BTCUSDT.P",
+            "side": "SELL",
+            "type": "SL",
+            "state": "CANCELLED",
+            "requested_qty": 0.001,
+            "filled_qty": 0,
+            "trigger_price": 50000,
+            "created_at": "2026-11-19T07:45:03.26993Z",
+            "updated_at": "2026-11-19T07:45:03.40689Z"
+          },
+          {
+            "order_id": "ord_500e56bd336139c38a",
+            "market_order_id": "ord_500e56bd336139c38a",
+            "symbol": "BINANCE:BTCUSDT.P",
+            "side": "BUY",
+            "type": "MARKET",
+            "state": "FILLED",
+            "requested_qty": 0.001,
+            "filled_qty": 0.001,
+            "avg_fill_price": 63594.9,
+            "created_at": "2026-11-19T07:45:03.26993Z",
+            "updated_at": "2026-11-19T07:45:03.26993Z",
+            "fee": 0
+          },
+          {
+            "order_id": "ord_2fe6f6228067808461",
+            "market_order_id": "ord_500e56bd336139c38a",
+            "symbol": "BINANCE:BTCUSDT.P",
+            "side": "SELL",
+            "type": "TP",
+            "state": "CANCELLED",
+            "requested_qty": 0.001,
+            "filled_qty": 0,
+            "trigger_price": 80000,
+            "created_at": "2026-11-19T07:45:03.26993Z",
+            "updated_at": "2026-11-19T07:45:03.407273Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "PAMM-X07-01",
+      "status": "PASS",
+      "details": {
+        "response": {
+          "order": {
+            "order_id": "ord_572dda41999e5314f8",
+            "market_order_id": "ord_572dda41999e5314f8",
+            "symbol": "BINANCE:BTCUSDT.P",
+            "side": "BUY",
+            "type": "LIMIT",
+            "state": "PENDING",
+            "requested_qty": 0.001,
+            "filled_qty": 0,
+            "price": 45000,
+            "created_at": "2026-11-19T07:45:03.596500226Z",
+            "updated_at": "2026-11-19T07:45:03.596500226Z"
+          },
+          "success": true
+        }
+      }
+    },
+    {
+      "id": "PAMM-X07-05",
+      "status": "PASS",
+      "details": {
+        "responses": [
+          {
+            "status": 200,
+            "j": {
+              "message": "order cancelled",
+              "success": true
+            },
+            "text": "{\"message\":\"order cancelled\",\"success\":true}\n"
+          }
+        ],
+        "order": {
+          "order_id": "ord_572dda41999e5314f8",
+          "market_order_id": "ord_572dda41999e5314f8",
+          "symbol": "BINANCE:BTCUSDT.P",
+          "side": "BUY",
+          "type": "LIMIT",
+          "state": "CANCELLED",
+          "requested_qty": 0.001,
+          "filled_qty": 0,
+          "price": 45000,
+          "created_at": "2026-11-19T07:45:03.596537Z",
+          "updated_at": "2026-11-19T07:45:03.649388Z"
+        }
+      }
+    },
+    {
+      "id": "PAMM-X07-02",
+      "status": "PASS",
+      "details": {
+        "response": {
+          "order": {
+            "order_id": "ord_30d053b65d02054a58",
+            "market_order_id": "ord_30d053b65d02054a58",
+            "symbol": "BINANCE:BTCUSDT.P",
+            "side": "SELL",
+            "type": "LIMIT",
+            "state": "PENDING",
+            "requested_qty": 0.001,
+            "filled_qty": 0,
+            "price": 85000,
+            "created_at": "2026-11-19T07:45:03.781612476Z",
+            "updated_at": "2026-11-19T07:45:03.781612476Z"
+          },
+          "success": true
+        }
+      }
+    },
+    {
+      "id": "PAMM-X07-07",
+      "status": "PASS",
+      "details": {
+        "responses": [
+          {
+            "status": 200,
+            "j": {
+              "message": "order cancelled",
+              "success": true
+            },
+            "text": "{\"message\":\"order cancelled\",\"success\":true}\n"
+          },
+          {
+            "status": 400,
+            "j": {
+              "error": "order is CANCELLED (only PENDING orders can be cancelled)"
+            },
+            "text": "{\"error\":\"order is CANCELLED (only PENDING orders can be cancelled)\"}\n"
+          },
+          {
+            "status": 400,
+            "j": {
+              "error": "order is CANCELLED (only PENDING orders can be cancelled)"
+            },
+            "text": "{\"error\":\"order is CANCELLED (only PENDING orders can be cancelled)\"}\n"
+          },
+          {
+            "status": 400,
+            "j": {
+              "error": "order is CANCELLED (only PENDING orders can be cancelled)"
+            },
+            "text": "{\"error\":\"order is CANCELLED (only PENDING orders can be cancelled)\"}\n"
+          },
+          {
+            "status": 400,
+            "j": {
+              "error": "order is CANCELLED (only PENDING orders can be cancelled)"
+            },
+            "text": "{\"error\":\"order is CANCELLED (only PENDING orders can be cancelled)\"}\n"
+          }
+        ],
+        "order": {
+          "order_id": "ord_30d053b65d02054a58",
+          "market_order_id": "ord_30d053b65d02054a58",
+          "symbol": "BINANCE:BTCUSDT.P",
+          "side": "SELL",
+          "type": "LIMIT",
+          "state": "CANCELLED",
+          "requested_qty": 0.001,
+          "filled_qty": 0,
+          "price": 85000,
+          "created_at": "2026-11-19T07:45:03.781661Z",
+          "updated_at": "2026-11-19T07:45:03.841919Z"
+        }
+      }
+    },
+    {
+      "id": "PAMM-X10-01",
+      "status": "PASS",
+      "details": {
+        "initial": {
+          "pamm_id": "pmm_29ae0205fcd285f09b",
+          "master_client_id": "mem_4669b36f00cc55347e",
+          "follower_client_id": "mem_822cf51b32a092c7ac",
+          "instance": "real",
+          "deposit": 100,
+          "share_percent": 20,
+          "running_pnl": -0.02,
+          "status": "active",
+          "joined_at": "2026-11-19T07:36:03.031164Z"
+        },
+        "exits": [
+          {
+            "status": 200,
+            "j": {
+              "deposit": 100,
+              "master_share": 0,
+              "pamm_id": "pmm_29ae0205fcd285f09b",
+              "payout": 99.98,
+              "running_pnl": -0.02,
+              "success": true
+            },
+            "text": "{\"deposit\":100,\"master_share\":0,\"pamm_id\":\"pmm_29ae0205fcd285f09b\",\"payout\":99.98,\"running_pnl\":-0.02,\"success\":true}\n"
+          },
+          {
+            "status": 404,
+            "j": {
+              "error": "no active PAMM subscription with that master"
+            },
+            "text": "{\"error\":\"no active PAMM subscription with that master\"}\n"
+          }
+        ],
+        "fb": {
+          "balance": 900.19,
+          "equity": 900.19,
+          "free_margin": 900.19,
+          "margin_call_level": 100,
+          "margin_level": null,
+          "starting_balance": 900,
+          "stop_out_level": 50,
+          "unrealized_pnl": 0,
+          "used_margin": 0
+        },
+        "fa": {
+          "balance": 1000.1700000000001,
+          "equity": 1000.1700000000001,
+          "free_margin": 1000.1700000000001,
+          "margin_call_level": 100,
+          "margin_level": null,
+          "starting_balance": 1000,
+          "stop_out_level": 50,
+          "unrealized_pnl": 0,
+          "used_margin": 0
+        },
+        "mb": {
+          "balance": 1939.0441000000005,
+          "equity": 1939.0441000000005,
+          "free_margin": 1939.0441000000005,
+          "margin_call_level": 100,
+          "margin_level": null,
+          "starting_balance": 2000,
+          "stop_out_level": 50,
+          "unrealized_pnl": 0,
+          "used_margin": 0
+        },
+        "ma": {
+          "balance": 1839.0641000000005,
+          "equity": 1839.0641000000005,
+          "free_margin": 1839.0641000000005,
+          "margin_call_level": 100,
+          "margin_level": null,
+          "starting_balance": 1900,
+          "stop_out_level": 50,
+          "unrealized_pnl": 0,
+          "used_margin": 0
+        },
+        "state": {
+          "follow_blocked_reason": "",
+          "is_master": false,
+          "master": null,
+          "master_blocked_reason": "Accounts that have followed a master can't become a master, even after unfollowing.",
+          "pool": [],
+          "pool_history": [],
+          "pool_total": 0,
+          "subscriptions": [
+            {
+              "pamm_id": "pmm_29ae0205fcd285f09b",
+              "master_client_id": "mem_4669b36f00cc55347e",
+              "follower_client_id": "mem_822cf51b32a092c7ac",
+              "instance": "real",
+              "deposit": 100,
+              "share_percent": 20,
+              "running_pnl": -0.02,
+              "status": "closed",
+              "joined_at": "2026-11-19T07:36:03.031164Z",
+              "ended_at": "2026-11-19T07:45:04.143083Z",
+              "final_payout": 99.98,
+              "final_master_share": 0
+            },
+            {
+              "pamm_id": "pmm_845ef9a0738f2d5b58",
+              "master_client_id": "mem_4669b36f00cc55347e",
+              "follower_client_id": "mem_822cf51b32a092c7ac",
+              "instance": "real",
+              "deposit": 100,
+              "share_percent": 20,
+              "running_pnl": 0,
+              "status": "closed",
+              "joined_at": "2026-11-18T12:28:54.834558Z",
+              "ended_at": "2026-11-19T07:36:01.312346Z",
+              "final_payout": 100,
+              "final_master_share": 0
+            },
+            {
+              "pamm_id": "pmm_2637bb55c2d229f5a3",
+              "master_client_id": "mem_4669b36f00cc55347e",
+              "follower_client_id": "mem_822cf51b32a092c7ac",
+              "instance": "real",
+              "deposit": 100,
+              "share_percent": 20,
+              "running_pnl": 0,
+              "status": "closed",
+              "joined_at": "2026-11-18T12:21:22.86449Z",
+              "ended_at": "2026-11-18T12:28:52.618503Z",
+              "final_payout": 100,
+              "final_master_share": 0
+            },
+            {
+              "pamm_id": "pmm_a698f4327556876ab3",
+              "master_client_id": "mem_4669b36f00cc55347e",
+              "follower_client_id": "mem_822cf51b32a092c7ac",
+              "instance": "real",
+              "deposit": 100,
+              "share_percent": 20,
+              "running_pnl": 0.27,
+              "status": "closed",
+              "joined_at": "2026-11-18T10:37:49.855796Z",
+              "ended_at": "2026-11-18T12:21:21.673827Z",
+              "final_payout": 100.22,
+              "final_master_share": 0.05
+            },
+            {
+              "pamm_id": "pmm_e2c856e42324fbb8a3",
+              "master_client_id": "mem_4669b36f00cc55347e",
+              "follower_client_id": "mem_822cf51b32a092c7ac",
+              "instance": "real",
+              "deposit": 100,
+              "share_percent": 20,
+              "running_pnl": -0.03,
+              "status": "closed",
+              "joined_at": "2026-11-18T09:26:40.689722Z",
+              "ended_at": "2026-11-18T10:37:48.957539Z",
+              "final_payout": 99.97,
+              "final_master_share": 0
+            }
+          ],
+          "success": true
+        }
+      }
+    },
+    {
+      "id": "PAMM-X10-03",
+      "status": "PASS",
+      "details": {
+        "joins": [
+          {
+            "status": 200,
+            "j": {
+              "subscription": {
+                "pamm_id": "pmm_52f300814614b06a19",
+                "master_client_id": "mem_4669b36f00cc55347e",
+                "follower_client_id": "mem_822cf51b32a092c7ac",
+                "instance": "real",
+                "deposit": 100,
+                "share_percent": 20,
+                "running_pnl": 0,
+                "status": "active",
+                "joined_at": "2026-11-19T07:45:04.443234Z"
+              },
+              "success": true
+            },
+            "text": "{\"subscription\":{\"pamm_id\":\"pmm_52f300814614b06a19\",\"master_client_id\":\"mem_4669b36f00cc55347e\",\"follower_client_id\":\"mem_822cf51b32a092c7ac\",\"instance\":\"real\",\"deposit\":100,\"share_percent\":20,\"running_pnl\":0,\"status\":\"active\",\"joined_at\":\"2026-11-19T07:45:04.443234Z\"},\"success\":true}\n"
+          },
+          {
+            "status": 400,
+            "j": {
+              "error": "you already have an active subscription with this pool — leave it to settle before joining again"
+            },
+            "text": "{\"error\":\"you already have an active subscription with this pool — leave it to settle before joining again\"}\n"
+          }
+        ],
+        "newState": {
+          "follow_blocked_reason": "",
+          "is_master": false,
+          "master": null,
+          "master_blocked_reason": "Accounts that have followed a master can't become a master, even after unfollowing.",
+          "pool": [],
+          "pool_history": [],
+          "pool_total": 0,
+          "subscriptions": [
+            {
+              "pamm_id": "pmm_52f300814614b06a19",
+              "master_client_id": "mem_4669b36f00cc55347e",
+              "follower_client_id": "mem_822cf51b32a092c7ac",
+              "instance": "real",
+              "deposit": 100,
+              "share_percent": 20,
+              "running_pnl": 0,
+              "status": "active",
+              "joined_at": "2026-11-19T07:45:04.443234Z"
+            },
+            {
+              "pamm_id": "pmm_29ae0205fcd285f09b",
+              "master_client_id": "mem_4669b36f00cc55347e",
+              "follower_client_id": "mem_822cf51b32a092c7ac",
+              "instance": "real",
+              "deposit": 100,
+              "share_percent": 20,
+              "running_pnl": -0.02,
+              "status": "closed",
+              "joined_at": "2026-11-19T07:36:03.031164Z",
+              "ended_at": "2026-11-19T07:45:04.143083Z",
+              "final_payout": 99.98,
+              "final_master_share": 0
+            },
+            {
+              "pamm_id": "pmm_845ef9a0738f2d5b58",
+              "master_client_id": "mem_4669b36f00cc55347e",
+              "follower_client_id": "mem_822cf51b32a092c7ac",
+              "instance": "real",
+              "deposit": 100,
+              "share_percent": 20,
+              "running_pnl": 0,
+              "status": "closed",
+              "joined_at": "2026-11-18T12:28:54.834558Z",
+              "ended_at": "2026-11-19T07:36:01.312346Z",
+              "final_payout": 100,
+              "final_master_share": 0
+            },
+            {
+              "pamm_id": "pmm_2637bb55c2d229f5a3",
+              "master_client_id": "mem_4669b36f00cc55347e",
+              "follower_client_id": "mem_822cf51b32a092c7ac",
+              "instance": "real",
+              "deposit": 100,
+              "share_percent": 20,
+              "running_pnl": 0,
+              "status": "closed",
+              "joined_at": "2026-11-18T12:21:22.86449Z",
+              "ended_at": "2026-11-18T12:28:52.618503Z",
+              "final_payout": 100,
+              "final_master_share": 0
+            },
+            {
+              "pamm_id": "pmm_a698f4327556876ab3",
+              "master_client_id": "mem_4669b36f00cc55347e",
+              "follower_client_id": "mem_822cf51b32a092c7ac",
+              "instance": "real",
+              "deposit": 100,
+              "share_percent": 20,
+              "running_pnl": 0.27,
+              "status": "closed",
+              "joined_at": "2026-11-18T10:37:49.855796Z",
+              "ended_at": "2026-11-18T12:21:21.673827Z",
+              "final_payout": 100.22,
+              "final_master_share": 0.05
+            },
+            {
+              "pamm_id": "pmm_e2c856e42324fbb8a3",
+              "master_client_id": "mem_4669b36f00cc55347e",
+              "follower_client_id": "mem_822cf51b32a092c7ac",
+              "instance": "real",
+              "deposit": 100,
+              "share_percent": 20,
+              "running_pnl": -0.03,
+              "status": "closed",
+              "joined_at": "2026-11-18T09:26:40.689722Z",
+              "ended_at": "2026-11-18T10:37:48.957539Z",
+              "final_payout": 99.97,
+              "final_master_share": 0
+            }
+          ],
+          "success": true
+        },
+        "fa": {
+          "balance": 1000.1700000000001,
+          "equity": 1000.1700000000001,
+          "free_margin": 1000.1700000000001,
+          "margin_call_level": 100,
+          "margin_level": null,
+          "starting_balance": 1000,
+          "stop_out_level": 50,
+          "unrealized_pnl": 0,
+          "used_margin": 0
+        },
+        "newFunds": {
+          "balance": 900.1700000000001,
+          "equity": 900.1700000000001,
+          "free_margin": 900.1700000000001,
+          "margin_call_level": 100,
+          "margin_level": null,
+          "starting_balance": 900,
+          "stop_out_level": 50,
+          "unrealized_pnl": 0,
+          "used_margin": 0
+        }
+      }
+    },
+    {
+      "id": "PAMM-X10-04",
+      "status": "PASS",
+      "details": {
+        "response": {
+          "error": "you already have an active subscription with this pool — leave it to settle before joining again"
+        }
+      }
+    },
+    {
+      "id": "PAMM-X20-05",
+      "status": "PASS",
+      "details": {
+        "statuses": [
+          200,
+          200,
+          200,
+          200,
+          200,
+          200,
+          200,
+          200,
+          200,
+          200,
+          200,
+          200,
+          200,
+          200,
+          200,
+          200,
+          200,
+          200,
+          200,
+          200
+        ]
+      }
+    },
+    {
+      "id": "PAMM-X18-02",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "id": "PAMM-X18-03",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "id": "PAMM-X18-04",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "id": "PAMM-X18-05",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "id": "PAMM-X18-06",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "id": "PAMM-X18-07",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "id": "PAMM-X18-10",
+      "status": "PASS",
+      "details": {
+        "openPositions": 0,
+        "pendingCleanup": [],
+        "poolTotal": 1000,
+        "investors": 10
+      }
+    }
+  ]
+}

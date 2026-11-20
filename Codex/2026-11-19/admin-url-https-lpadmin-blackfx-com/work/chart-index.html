@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- viewport-fit=cover: without it iOS reports every env(safe-area-inset-*) as 0, so the
+         mobile tab bar's home-indicator padding (src/styles/workspace.css, .mt-bar) never
+         applied and the bar sat under the indicator. Pairs with the 100dvh shell height. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>blackchart — BlackTrader</title>
+    <!-- Referrer: origin only. The page URL carries the trader's userToken and brokerToken as
+         query params (that is the embed contract — _docs/client-auth.md), and the default policy
+         still sends the FULL url as the Referer on every same-origin request, i.e. into the access
+         log line of every asset, plugin and image this page fetches. Nothing here reads a Referer
+         path: the control plane, the feeds and the install services key on the Origin header,
+         which this does not touch. -->
+    <meta name="referrer" content="origin" />
+    <!-- Warm the connection to the control plane before the bundle has even arrived: the first
+         thing src/main.js does after evaluating is POST /session there, and DNS + TCP + TLS to a
+         host the browser has never seen is a good part of that round trip. `crossorigin` because
+         the fetch is a CORS request without credentials — the preconnect must open the same kind
+         of connection or the browser cannot reuse it. Locally this warms a connection nothing
+         uses, which costs nothing. The feed hosts are only dns-prefetched: they are the
+         client-zero defaults, an install may point elsewhere, and the sockets open seconds later. -->
+    <link rel="preconnect" href="https://terminal.blacktrader.com" crossorigin />
+    <link rel="dns-prefetch" href="https://watchlist.99algo.com" />
+    <link rel="dns-prefetch" href="https://ohlcv.99algo.com" />
+    <link rel="dns-prefetch" href="https://trade.xtremenext.com" />
+    <script>
+      // theme before first paint, so there is no flash of the wrong theme.
+      // BOTH the attribute and the class: `data-theme` drives our own tokens, but tailwind's
+      // `dark:` variants key off a `.dark` ANCESTOR (darkMode: ['selector', '.dark']), and the
+      // only things that carried that class were the panel hosts, mirrored by JS after mount.
+      // So every `dark:bg-…` in the vendored tree — the chart navbar most visibly — painted its
+      // LIGHT value until hydration and then flipped: a white navbar blinking black on reload.
+      // Setting the class on <html> here resolves those variants in the first paint instead.
+      try {
+        var t = localStorage.getItem('bc_theme') || 'dark';
+        document.documentElement.dataset.theme = t;
+        document.documentElement.classList.toggle('dark', t !== 'light');
+      } catch {}
+
+      // The vendored xtreme tree reads window.__INITIAL_MODE__ AT IMPORT TIME
+      // (src/xt/lib/runes/scope.svelte.js: `let mode = window.__INITIAL_MODE__ || 'blacktraderM'`),
+      // so it must be set before any module script evaluates — which is what this classic
+      // inline script guarantees, and it is where xtreme itself sets it.
+      //
+      // shared/bridge/xtGlobals.js ALSO sets it, and that was the only place until 2026-08-10.
+      // That works under `vite dev`, where every module is fetched lazily and the dynamic
+      // import of xt code genuinely happens after ensureXtGlobals() runs. It does NOT survive
+      // `vite build`: rolldown merges the graph into shared chunks, and one carrying
+      // scope.svelte.js evaluated first — so mode fell back to 'blacktraderM' and the chart
+      // opened on `${exchange}:X.BTCUSD` with exchange undefined, i.e. a blank chart with no
+      // feed. Dev was always fine, so only the deployed bundle showed it.
+      //
+      // blackchart has exactly one mode, so this is unconditional. Keep xtGlobals' assignment
+      // too: it is the documented seam, and it is idempotent.
+      window.__INITIAL_MODE__ = 'iframeMode';
+    </script>
+    <script type="module" crossorigin src="/assets/index-B2RiwrT-.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/rolldown-runtime-B_MQnBba.js">
+    <link rel="modulepreload" crossorigin href="/assets/index-client-Za-Yr9RG.js">
+    <link rel="modulepreload" crossorigin href="/assets/disclose-version-BF6RoQfM.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-Nwctuy5d.css">
+    <script>window.__BC_PRELOAD__={"chart":["/assets/xtApp-BWY7eK94.js","/assets/fetchFunc-WYahQVzt.js","/assets/iframeBoot-BrCTeNv3.js","/assets/rate-zD52j8P9.js","/assets/ltpStore-DvRVZAw5.js","/assets/tradeSettings-wYh18qZ8.js","/assets/broker_endpoints-B5YrzQPz.js","/assets/tradeTableRefreshBus-6kgK5FyE.js","/assets/vendor-lwc-_4P3eiUe.js","/assets/vendor-compiler-DEbySoH6.js","/assets/algoManager.svelte-BjmAigB1.js","/assets/backtestConfig.svelte-C8Y7st4b.js","/assets/plugins.svelte-ma5AimzM.js","/assets/loading-_CtuV2gt.js","/assets/UpgradePopup-D3JQ3qfO.js","/assets/magnifying-glass-20-solid-DU0IW0c0.js","/assets/info-outline-BhmSqo80.js","/assets/simpleToolTip-DFK3e3AF.js","/assets/visibility-off-CWFsYeoq.js","/assets/add-BAGi3jYB.js","/assets/search-Clf7J6CD.js","/assets/dateUtils-BqEU0XGg.js","/assets/leftbarMain-D0wQ5a5p.js","/assets/editor.svelte-C9a4YZ-s.js","/assets/pluginList-DJm3d1k0.js","/assets/REQUEST-BeidhOgy.js","/assets/visibility-CTpq1MTj.js"]};</script>
+  </head>
+  <body>
+    <div id="app"></div>
+  <script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a5cd9ed32aa4a913',t:'MTc5NTA3NDU4OA=='};var l=window.parent.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='/cdn-cgi/challenge-platform/scripts/jsd/main.js?ray=a5cd9ed32aa4a913',a=document.createElement('script');a.src=o?new URL(u,o).href:u;document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

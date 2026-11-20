@@ -1,0 +1,182 @@
+- complementary:
+  - generic: blacktrader
+  - generic: Client Admin
+  - button "Collapse sidebar":
+  - navigation:
+    - button "Overview":
+      - generic: Overview
+    - button "Client Home":
+      - generic: Client Home
+    - button "Chart":
+      - generic: Chart
+    - button "OMS" [expanded]:
+      - generic: OMS
+    - button "Accounts & feed":
+      - generic: Accounts & feed
+    - button "Trading terms":
+      - generic: Trading terms
+    - button "Trading rules":
+      - generic: Trading rules
+    - button "Liquidity":
+      - generic: Liquidity
+    - button "Order book":
+      - generic: Order book
+    - button "Money" [expanded]:
+      - generic: Money
+    - button "Payments":
+      - generic: Payments
+    - button "Requests":
+      - generic: Requests
+    - button "People" [expanded]:
+      - generic: People
+    - button "Members":
+      - generic: Members
+    - button "Staff":
+      - generic: Staff
+    - button "Trades":
+      - generic: Trades
+    - button "Account requests":
+      - generic: Account requests
+    - button "Install" [expanded]:
+      - generic: Install
+    - button "Data settings":
+      - generic: Data settings
+  - generic: LP
+  - generic "lpadmin@blacktrader.com"
+  - text: Client admin
+  - button "Sign out":
+    - text: Sign out
+- banner:
+  - heading "Trades" [level=1]
+  - generic: active
+  - button "v1.1.18 · Versions"
+  - button "Toggle theme":
+- main:
+  - heading "Trades" [level=2]
+  - paragraph: Closed trades for one member, newest first. Pick a member — the list is per member or per account, never install-wide.
+  - generic: Member
+  - combobox:
+  - generic: Account
+  - combobox:
+  - generic: From
+  - textbox
+  - generic: To (inclusive)
+  - textbox
+  - generic: Per page
+  - combobox:
+  - button "Refresh"
+  - paragraph: Dates are UTC days.
+  - table:
+    - rowgroup:
+      - row "Closed Account Instance Symbol Side Qty Entry Exit P&L Exit":
+        - columnheader "Closed"
+        - columnheader "Account"
+        - columnheader "Instance"
+        - columnheader "Symbol"
+        - columnheader "Side"
+        - columnheader "Qty"
+        - columnheader "Entry"
+        - columnheader "Exit"
+        - columnheader "P&L"
+        - columnheader "Exit"
+    - rowgroup:
+      - row "19/11/2026, 17:00:11 Primary Real (Hedging) BINANCE:BTCUSDT.P BUY 0.5 63857.3 63859.3 1.00 closed":
+        - cell "19/11/2026, 17:00:11"
+        - cell "Primary"
+        - cell "Real (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "BUY"
+        - cell "0.5"
+        - cell "63857.3"
+        - cell "63859.3"
+        - cell "1.00"
+        - cell "closed"
+      - row "19/11/2026, 17:00:11 Primary Real (Hedging) BINANCE:BTCUSDT.P BUY 0.5 63857.3 63859.3 1.00 stop-out":
+        - cell "19/11/2026, 17:00:11"
+        - cell "Primary"
+        - cell "Real (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "BUY"
+        - cell "0.5"
+        - cell "63857.3"
+        - cell "63859.3"
+        - cell "1.00"
+        - cell "stop-out"
+      - row "19/11/2026, 16:59:33 Primary Real (Hedging) BINANCE:BTCUSDT.P BUY 0.5 63865.1 63868.5 1.70 stop-out":
+        - cell "19/11/2026, 16:59:33"
+        - cell "Primary"
+        - cell "Real (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "BUY"
+        - cell "0.5"
+        - cell "63865.1"
+        - cell "63868.5"
+        - cell "1.70"
+        - cell "stop-out"
+      - row "19/11/2026, 16:59:33 Primary Real (Hedging) BINANCE:BTCUSDT.P SELL 0.5 63865 63868.5 -1.75 closed":
+        - cell "19/11/2026, 16:59:33"
+        - cell "Primary"
+        - cell "Real (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "SELL"
+        - cell "0.5"
+        - cell "63865"
+        - cell "63868.5"
+        - cell "-1.75"
+        - cell "closed"
+      - row "19/11/2026, 16:55:41 Primary Real (Hedging) BINANCE:BTCUSDT.P BUY 0.001 63779.4 63783.1 0.00 closed":
+        - cell "19/11/2026, 16:55:41"
+        - cell "Primary"
+        - cell "Real (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "BUY"
+        - cell "0.001"
+        - cell "63779.4"
+        - cell "63783.1"
+        - cell "0.00"
+        - cell "closed"
+      - row "19/11/2026, 16:54:44 Primary Real (Hedging) BINANCE:BTCUSDT.P BUY 0.001 63763.8 63774.1 0.01 closed":
+        - cell "19/11/2026, 16:54:44"
+        - cell "Primary"
+        - cell "Real (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "BUY"
+        - cell "0.001"
+        - cell "63763.8"
+        - cell "63774.1"
+        - cell "0.01"
+        - cell "closed"
+      - row "19/11/2026, 16:52:15 Primary Real (Hedging) BINANCE:BTCUSDT.P BUY 0.001 63711.8 63749.6 0.04 closed":
+        - cell "19/11/2026, 16:52:15"
+        - cell "Primary"
+        - cell "Real (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "BUY"
+        - cell "0.001"
+        - cell "63711.8"
+        - cell "63749.6"
+        - cell "0.04"
+        - cell "closed"
+      - row "19/11/2026, 16:50:24 Primary Real (Hedging) BINANCE:BTCUSDT.P BUY 1 63713.8 63736.6 22.80 stop-out":
+        - cell "19/11/2026, 16:50:24"
+        - cell "Primary"
+        - cell "Real (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "BUY"
+        - cell "1"
+        - cell "63713.8"
+        - cell "63736.6"
+        - cell "22.80"
+        - cell "stop-out"
+      - row "19/11/2026, 16:31:43 Primary Real (Hedging) BINANCE:BTCUSDT.P BUY 1 63779.8 63748.4 -31.40 stop-out":
+        - cell "19/11/2026, 16:31:43"
+        - cell "Primary"
+        - cell "Real (Hedging)"
+        - cell "BINANCE:BTCUSDT.P"
+        - cell "BUY"
+        - cell "1"
+        - cell "63779.8"
+        - cell "63748.4"
+        - cell "-31.40"
+        - cell "stop-out"
+- alert

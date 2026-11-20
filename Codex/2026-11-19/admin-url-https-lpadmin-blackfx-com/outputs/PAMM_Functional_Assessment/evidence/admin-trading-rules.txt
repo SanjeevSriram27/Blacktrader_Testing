@@ -1,0 +1,194 @@
+- complementary:
+  - generic: blacktrader
+  - generic: Client Admin
+  - button "Collapse sidebar":
+  - navigation:
+    - button "Overview":
+      - generic: Overview
+    - button "Client Home":
+      - generic: Client Home
+    - button "Chart":
+      - generic: Chart
+    - button "OMS" [expanded]:
+      - generic: OMS
+    - button "Accounts & feed":
+      - generic: Accounts & feed
+    - button "Trading terms":
+      - generic: Trading terms
+    - button "Trading rules" [active]:
+      - generic: Trading rules
+    - button "Liquidity":
+      - generic: Liquidity
+    - button "Order book":
+      - generic: Order book
+    - button "Money" [expanded]:
+      - generic: Money
+    - button "Payments":
+      - generic: Payments
+    - button "Requests":
+      - generic: Requests
+    - button "People" [expanded]:
+      - generic: People
+    - button "Members":
+      - generic: Members
+    - button "Staff":
+      - generic: Staff
+    - button "Trades":
+      - generic: Trades
+    - button "Account requests":
+      - generic: Account requests
+    - button "Install" [expanded]:
+      - generic: Install
+    - button "Data settings":
+      - generic: Data settings
+  - generic: LP
+  - generic "lpadmin@blacktrader.com"
+  - text: Client admin
+  - button "Sign out":
+    - text: Sign out
+- banner:
+  - heading "Trading rules" [level=1]
+  - generic: active
+  - button "v1.1.18 · Versions"
+  - button "Toggle theme":
+- main:
+  - heading "Trading rules" [level=2]
+  - paragraph: Rules apply separately to each account instance. Only the client owner can change them; every change is recorded.
+  - table:
+    - rowgroup:
+      - row "Rule Paper (Hedging) paper Real (Hedging) real Paper (Netting) paper-net Real (Netting) real-net":
+        - columnheader "Rule"
+        - columnheader "Paper (Hedging) paper":
+          - text: Paper (Hedging)
+          - generic: paper
+        - columnheader "Real (Hedging) real":
+          - text: Real (Hedging)
+          - generic: real
+        - columnheader "Paper (Netting) paper-net":
+          - text: Paper (Netting)
+          - generic: paper-net
+        - columnheader "Real (Netting) real-net":
+          - text: Real (Netting)
+          - generic: real-net
+    - rowgroup:
+      - 'row "Value positions at the closing quote Open BUY positions use bid and SELL positions use ask in funds, margin and risk checks; a missing side uses the last price. Value positions at the closing quote: Paper (Hedging) Value positions at the closing quote: Real (Hedging) Value positions at the closing quote: Paper (Netting) Value positions at the closing quote: Real (Netting)"':
+        - cell "Value positions at the closing quote Open BUY positions use bid and SELL positions use ask in funds, margin and risk checks; a missing side uses the last price.":
+          - text: Value positions at the closing quote
+          - generic: Open BUY positions use bid and SELL positions use ask in funds, margin and risk checks; a missing side uses the last price.
+        - 'cell "Value positions at the closing quote: Paper (Hedging)"':
+          - 'checkbox "Value positions at the closing quote: Paper (Hedging)"'
+        - 'cell "Value positions at the closing quote: Real (Hedging)"':
+          - 'checkbox "Value positions at the closing quote: Real (Hedging)"'
+        - 'cell "Value positions at the closing quote: Paper (Netting)"':
+          - 'checkbox "Value positions at the closing quote: Paper (Netting)"'
+        - 'cell "Value positions at the closing quote: Real (Netting)"':
+          - 'checkbox "Value positions at the closing quote: Real (Netting)"'
+      - 'row "Require currency conversion for new entries Refuse new risk without a conversion quote; open positions and closes retain the last known conversion rate. Require currency conversion for new entries: Paper (Hedging) Require currency conversion for new entries: Real (Hedging) Require currency conversion for new entries: Paper (Netting) Require currency conversion for new entries: Real (Netting)"':
+        - cell "Require currency conversion for new entries Refuse new risk without a conversion quote; open positions and closes retain the last known conversion rate.":
+          - text: Require currency conversion for new entries
+          - generic: Refuse new risk without a conversion quote; open positions and closes retain the last known conversion rate.
+        - 'cell "Require currency conversion for new entries: Paper (Hedging)"':
+          - 'checkbox "Require currency conversion for new entries: Paper (Hedging)"'
+        - 'cell "Require currency conversion for new entries: Real (Hedging)"':
+          - 'checkbox "Require currency conversion for new entries: Real (Hedging)"'
+        - 'cell "Require currency conversion for new entries: Paper (Netting)"':
+          - 'checkbox "Require currency conversion for new entries: Paper (Netting)"'
+        - 'cell "Require currency conversion for new entries: Real (Netting)"':
+          - 'checkbox "Require currency conversion for new entries: Real (Netting)"'
+      - 'row "Round money bookings to cents Round each cash booking to two decimals, half away from zero. Prices, quantities, floating profit and reserved margin are unchanged. Round money bookings to cents: Paper (Hedging) Round money bookings to cents: Real (Hedging) Round money bookings to cents: Paper (Netting) Round money bookings to cents: Real (Netting)"':
+        - cell "Round money bookings to cents Round each cash booking to two decimals, half away from zero. Prices, quantities, floating profit and reserved margin are unchanged.":
+          - text: Round money bookings to cents
+          - generic: Round each cash booking to two decimals, half away from zero. Prices, quantities, floating profit and reserved margin are unchanged.
+        - 'cell "Round money bookings to cents: Paper (Hedging)"':
+          - 'checkbox "Round money bookings to cents: Paper (Hedging)"'
+        - 'cell "Round money bookings to cents: Real (Hedging)"':
+          - 'checkbox "Round money bookings to cents: Real (Hedging)"'
+        - 'cell "Round money bookings to cents: Paper (Netting)"':
+          - 'checkbox "Round money bookings to cents: Paper (Netting)"'
+        - 'cell "Round money bookings to cents: Real (Netting)"':
+          - 'checkbox "Round money bookings to cents: Real (Netting)"'
+      - 'row "Charge commission when the trade opens New positions pay commission at entry. Existing positions keep their recorded charging basis. Charge commission when the trade opens: Paper (Hedging) Charge commission when the trade opens: Real (Hedging) Charge commission when the trade opens: Paper (Netting) Charge commission when the trade opens: Real (Netting)"':
+        - cell "Charge commission when the trade opens New positions pay commission at entry. Existing positions keep their recorded charging basis.":
+          - text: Charge commission when the trade opens
+          - generic: New positions pay commission at entry. Existing positions keep their recorded charging basis.
+        - 'cell "Charge commission when the trade opens: Paper (Hedging)"':
+          - 'checkbox "Charge commission when the trade opens: Paper (Hedging)"'
+        - 'cell "Charge commission when the trade opens: Real (Hedging)"':
+          - 'checkbox "Charge commission when the trade opens: Real (Hedging)"'
+        - 'cell "Charge commission when the trade opens: Paper (Netting)"':
+          - 'checkbox "Charge commission when the trade opens: Paper (Netting)"'
+        - 'cell "Charge commission when the trade opens: Real (Netting)"':
+          - 'checkbox "Charge commission when the trade opens: Real (Netting)"'
+      - 'row "Same profit formula for BUY and SELL Value SELL trades without the catalog P&L spread, including open positions and risk checks. Same profit formula for BUY and SELL: Paper (Hedging) Same profit formula for BUY and SELL: Real (Hedging) Same profit formula for BUY and SELL: Paper (Netting) Same profit formula for BUY and SELL: Real (Netting)"':
+        - cell "Same profit formula for BUY and SELL Value SELL trades without the catalog P&L spread, including open positions and risk checks.":
+          - text: Same profit formula for BUY and SELL
+          - generic: Value SELL trades without the catalog P&L spread, including open positions and risk checks.
+        - 'cell "Same profit formula for BUY and SELL: Paper (Hedging)"':
+          - 'checkbox "Same profit formula for BUY and SELL: Paper (Hedging)"'
+        - 'cell "Same profit formula for BUY and SELL: Real (Hedging)"':
+          - 'checkbox "Same profit formula for BUY and SELL: Real (Hedging)"'
+        - 'cell "Same profit formula for BUY and SELL: Paper (Netting)"':
+          - 'checkbox "Same profit formula for BUY and SELL: Paper (Netting)"'
+        - 'cell "Same profit formula for BUY and SELL: Real (Netting)"':
+          - 'checkbox "Same profit formula for BUY and SELL: Real (Netting)"'
+      - 'row "Count spread earnings in real money New positions record spread earnings with contract size and currency conversion. Referral payouts follow these earnings; outside LP spread is report only. Count spread earnings in real money: Paper (Hedging) Count spread earnings in real money: Real (Hedging) Count spread earnings in real money: Paper (Netting) Count spread earnings in real money: Real (Netting)"':
+        - cell "Count spread earnings in real money New positions record spread earnings with contract size and currency conversion. Referral payouts follow these earnings; outside LP spread is report only.":
+          - text: Count spread earnings in real money
+          - generic: New positions record spread earnings with contract size and currency conversion. Referral payouts follow these earnings; outside LP spread is report only.
+        - 'cell "Count spread earnings in real money: Paper (Hedging)"':
+          - 'checkbox "Count spread earnings in real money: Paper (Hedging)"'
+        - 'cell "Count spread earnings in real money: Real (Hedging)"':
+          - 'checkbox "Count spread earnings in real money: Real (Hedging)"'
+        - 'cell "Count spread earnings in real money: Paper (Netting)"':
+          - 'checkbox "Count spread earnings in real money: Paper (Netting)"'
+        - 'cell "Count spread earnings in real money: Real (Netting)"':
+          - 'checkbox "Count spread earnings in real money: Real (Netting)"'
+      - 'row "One book per account Refuse A-book openings on symbols the liquidity provider does not list. One book per account: Paper (Hedging) One book per account: Real (Hedging) One book per account: Paper (Netting) One book per account: Real (Netting)"':
+        - cell "One book per account Refuse A-book openings on symbols the liquidity provider does not list.":
+          - text: One book per account
+          - generic: Refuse A-book openings on symbols the liquidity provider does not list.
+        - 'cell "One book per account: Paper (Hedging)"':
+          - 'checkbox "One book per account: Paper (Hedging)"'
+        - 'cell "One book per account: Real (Hedging)"':
+          - 'checkbox "One book per account: Real (Hedging)"'
+        - 'cell "One book per account: Paper (Netting)"':
+          - 'checkbox "One book per account: Paper (Netting)"'
+        - 'cell "One book per account: Real (Netting)"':
+          - 'checkbox "One book per account: Real (Netting)"'
+      - 'row "LP money check Check Black exchange free margin before adding A-book exposure. Client-managed liquidity is exempt. LP money check: Paper (Hedging) LP money check: Real (Hedging) LP money check: Paper (Netting) LP money check: Real (Netting)"':
+        - cell "LP money check Check Black exchange free margin before adding A-book exposure. Client-managed liquidity is exempt.":
+          - text: LP money check
+          - generic: Check Black exchange free margin before adding A-book exposure. Client-managed liquidity is exempt.
+        - 'cell "LP money check: Paper (Hedging)"':
+          - 'checkbox "LP money check: Paper (Hedging)"'
+        - 'cell "LP money check: Real (Hedging)"':
+          - 'checkbox "LP money check: Real (Hedging)"'
+        - 'cell "LP money check: Paper (Netting)"':
+          - 'checkbox "LP money check: Paper (Netting)"'
+        - 'cell "LP money check: Real (Netting)"':
+          - 'checkbox "LP money check: Real (Netting)"'
+      - 'row "Bonus credit Allow dated bonus as trading collateral with the 100% credit risk rule. Never withdrawable or transferable. Switching off removes active grants permanently. Bonus credit: Paper (Hedging) Bonus credit: Real (Hedging) Bonus credit: Paper (Netting) Bonus credit: Real (Netting)"':
+        - cell "Bonus credit Allow dated bonus as trading collateral with the 100% credit risk rule. Never withdrawable or transferable. Switching off removes active grants permanently.":
+          - text: Bonus credit
+          - generic: Allow dated bonus as trading collateral with the 100% credit risk rule. Never withdrawable or transferable. Switching off removes active grants permanently.
+        - 'cell "Bonus credit: Paper (Hedging)"':
+          - 'checkbox "Bonus credit: Paper (Hedging)"'
+        - 'cell "Bonus credit: Real (Hedging)"':
+          - 'checkbox "Bonus credit: Real (Hedging)"'
+        - 'cell "Bonus credit: Paper (Netting)"':
+          - 'checkbox "Bonus credit: Paper (Netting)"'
+        - 'cell "Bonus credit: Real (Netting)"':
+          - 'checkbox "Bonus credit: Real (Netting)"'
+      - 'row "Basket incremental margin Admit a basket against only the margin it adds after hedge offsets. Basket incremental margin: Paper (Hedging) Basket incremental margin: Real (Hedging) Basket incremental margin: Paper (Netting) Basket incremental margin: Real (Netting)"':
+        - cell "Basket incremental margin Admit a basket against only the margin it adds after hedge offsets.":
+          - text: Basket incremental margin
+          - generic: Admit a basket against only the margin it adds after hedge offsets.
+        - 'cell "Basket incremental margin: Paper (Hedging)"':
+          - 'checkbox "Basket incremental margin: Paper (Hedging)"'
+        - 'cell "Basket incremental margin: Real (Hedging)"':
+          - 'checkbox "Basket incremental margin: Real (Hedging)"'
+        - 'cell "Basket incremental margin: Paper (Netting)"':
+          - 'checkbox "Basket incremental margin: Paper (Netting)"'
+        - 'cell "Basket incremental margin: Real (Netting)"':
+          - 'checkbox "Basket incremental margin: Real (Netting)"'
+- alert

@@ -1,0 +1,107 @@
+[
+  {
+    "tc_id": "BTPAMM-F001",
+    "title": "Open PAMM Window & Mount Dock Widget (Live UI)",
+    "status": "PASS",
+    "details": {
+      "mounted": true,
+      "tabTitles": [
+        "Watchlist",
+        "Chart",
+        "Trades",
+        "Trade Statistics",
+        "PAMM"
+      ]
+    }
+  },
+  {
+    "tc_id": "BTPAMM-F012-UI",
+    "title": "PM Master Visible in PAMM Managers Leaderboard (Live UI)",
+    "status": "FAIL",
+    "details": {
+      "hasPmMasterCard": false
+    }
+  },
+  {
+    "tc_id": "BTPAMM-F007-UI",
+    "title": "Role Exclusivity: Master Invest/Join Disabled in UI (pmmaster)",
+    "status": "PASS",
+    "details": {
+      "hasMasterBlockedBanner": true,
+      "sampleBtn": {
+        "text": "Invest",
+        "disabled": true,
+        "title": "Master accounts can't follow another master."
+      }
+    }
+  },
+  {
+    "tc_id": "BTPAMM-F002",
+    "title": "Navigate PAMM managers <-> My subscription (Live UI)",
+    "status": "PASS",
+    "details": {
+      "hasManagingPool": true,
+      "hasPmMaster": true,
+      "hasInvestorsTable": true
+    }
+  },
+  {
+    "tc_id": "BTPAMM-F004",
+    "title": "Granular Share Adjustment Notice in Settings Drawer (Live UI)",
+    "status": "FAIL",
+    "details": {
+      "settingsOpened": true,
+      "hasShareFootnote": false,
+      "excerpt": "My subscription10\nMANAGING A POOL\nPM Master\nSettings\n1,000.00\nPool under management\n10\nInvestors\n20%\nMy share of net profit\nINVESTORS\nActive10\nHistory1\nINVESTOR\tDEPOSIT\tSHARE OF POOL\tTHEIR RUNNING\tJOINED\nPM Follower Ten\t100.00\t10.00%\t0.00\t18 Nov 2026, 16:07\nPM Follower Nine\t100.00\t10.00%\t-0.03\t18 Nov 2026, 14:56\nPM Follower Eight\t100.00\t10.00%\t-0.03\t18 Nov 2026, 14:56\nPM Follower Seven\t100.00\t10.00%\t-0.03\t18 Nov 2026, 14:56\nPM Follower Six\t100.00"
+    }
+  },
+  {
+    "tc_id": "DEFECT-UI-007",
+    "title": "PAMM Managing Settings Drawer Renders Properly (Re-verify BUG-UI-007)",
+    "status": "PASS",
+    "details": {
+      "settingsOpened": true,
+      "hasSaveBtn": true
+    }
+  },
+  {
+    "tc_id": "BTPAMM-F015",
+    "title": "PAMM Dock Tab Maximize & Restore Controls (Live UI)",
+    "status": "PASS",
+    "details": {
+      "toggledMax": true
+    }
+  },
+  {
+    "tc_id": "DEFECT-CSP",
+    "title": "Cloudflare CSP Console Violation (BUG-SEC-003)",
+    "status": "DEFECT",
+    "details": {
+      "count": 3,
+      "sample": "Loading the script 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' violates the following Content Security Policy directive: \"s"
+    }
+  },
+  {
+    "tc_id": "DEFECT-401",
+    "title": "Premature 401 Errors During Dashboard Load (BUG-AUTH-002)",
+    "status": "DEFECT",
+    "details": {
+      "count": 1,
+      "urls": [
+        "https://lpadmin.blackfx.com/api/auth/me"
+      ]
+    }
+  },
+  {
+    "tc_id": "BTPAMM-F008-UI",
+    "title": "Follower My Subscription View & Role Exclusivity in UI (pmf1)",
+    "status": "PASS",
+    "details": {
+      "showsPmMaster": true,
+      "showsDeposit100": true,
+      "showsBlockedText": true,
+      "becomeBtnDisabled": null,
+      "excerpt": "My subscription1\nMY POOLS\nActive1\nHistory\n100.00\nDeposited into pools\n-0.03\nRunning share (not yet paid)\nMANAGER\tDEPOSIT\tRUNNING\tIF I LEAVE NOW\tJOINED\t\nPM Master\t100.00\t-0.03\t99.97\t18 Nov 2026, 14:56\tLeave\n\nYour share of each closed trade is not paid into your balance as it happens — it builds up in “Running” and settles when you leave. Only trades the manager opened after you joined count towards"
+    }
+  }
+]

@@ -1,0 +1,29 @@
+PAMM-X18-01 PASS Independent authenticated reads returned the same manager identifiers.
+PAMM-X20-06 PASS Concurrent directory and allocation reads returned valid successful structures.
+BTPAMM-F006-master PASS Paper pamm/master returned HTTP 400.
+BTPAMM-F006-join PASS Paper pamm/join returned HTTP 400.
+PAMM-X03-06 PASS Excess deposit tested without an existing subscription; {"error":"insufficient free margin for that deposit"}
+PAMM-X06-04 PASS Separate 0.001 and 0.002 BUY quantities were preserved.
+PAMM-X06-05 PASS One logical squareoff created exactly one close fill.
+PAMM-X06-07 PASS Entry, position and close preserve the parent market_order_id.
+PAMM-X06-09 PASS After closing the two test positions, used margin returned to baseline.
+PAMM-X06-10 PASS Margin-rejected oversized order created no allocation.
+BTPAMM-M007 PASS Pre-trade free-margin check rejected the oversized order.
+PAMM-X07-06 PASS Repeating cancellation retained a single cancelled order.
+PAMM-X07-08 PASS Concurrent order read and cancellation converged to CANCELLED.
+PAMM-X07-10 PASS Cancelled order remains in history under its original ID.
+PAMM-X10-06 PASS Sequential exit/rejoin preserves closed history and creates one new active relationship.
+PAMM-X10-07 PASS Concurrent exit and join returned a defined active/closed state; at most one active relationship.
+JOIN-EXIT-CASH-CONSERVATION PASS Cash movement equals accepted settlement payout minus accepted join debit.
+PAMM-X10-10 PASS Two different investors received exactly their own settlement payouts.
+PAMM-X14-03 PASS Unequal 99/101 principal accepted and pool total remains 1000; equity-weight allocation still requires a close.
+PAMM-X09-06 PASS Close performed with concurrent allocation read; final allocation rows=10.
+PAMM-X09-07 PASS Funds remained readable during close and the account settled flat.
+PAMM-X20-07 PASS Observed close acknowledgement plus full allocation read in 561 ms; no undocumented SLA verdict.
+UNEQUAL-ALLOCATION-WEIGHTS PASS Allocation weights follow actual unequal deposits.
+PAMM-X11-07 PASS Independent sessions concurrently saved fees; final record is one complete submitted value.
+PAMM-X11-08 PASS Fee-change/join race stored one allowed agreement snapshot, 20 or 37 percent.
+PAMM-X11-09 PASS Exit retained the joined contract fee during concurrent manager fee change.
+PAMM-X20-10 PASS Three double-close repetitions each produced one close and no reverse position.
+BTPAMM-E007 PASS Bulk squareoff endpoint returned 200; remaining positions=0.
+FOLLOWUP-CLEANUP PASS Restored ten investors, 1000 pooled principal, original manager fee and zero open/pending exposure.

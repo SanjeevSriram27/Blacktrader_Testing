@@ -1,0 +1,68 @@
+[
+  {
+    "id": "BR01",
+    "title": "Open same account in Chrome and Edge -> Place BUY simultaneously",
+    "status": "PASS",
+    "details": {
+      "newOrders": 2,
+      "openPositions": 2,
+      "hasDuplicates": false,
+      "orderIds": [
+        "ord_2c5df7f594cd8fb41f",
+        "ord_99b99ea295790f9cbe"
+      ]
+    }
+  },
+  {
+    "id": "BR02",
+    "title": "Browser A places BUY -> Browser B closes position immediately",
+    "status": "PASS",
+    "details": {
+      "detectedPosId": "ord_c109ba07816950eacd",
+      "closeStatus": 200,
+      "remainingPositionsCount": 0
+    }
+  },
+  {
+    "id": "BR04",
+    "title": "Chrome cancels pending order -> Edge cancels same order simultaneously",
+    "status": "PASS",
+    "details": {
+      "orderId": "ord_bd130420e5e90cbe25",
+      "statusA": 200,
+      "statusB": 400,
+      "okCount": 1,
+      "rejectCount": 1
+    }
+  },
+  {
+    "id": "BR05",
+    "title": "Chrome places order -> Immediately close Chrome -> Reopen verification",
+    "status": "PASS",
+    "details": {
+      "serverPositionsCount": 1,
+      "uiPositionsCount": 1,
+      "uiSnippet": "BTCUSDT.P\\t03d3396a541fd40391\\t0.001\\t6355",
+      "reconciled": true,
+      "verdict": "Server committed order authoritatively; new browser session displayed position cleanly."
+    }
+  },
+  {
+    "id": "BR06",
+    "title": "Place BUY in Chrome -> Switch to Edge before response (WebSocket sync latency)",
+    "status": "PASS",
+    "details": {
+      "livePropagationReceived": true,
+      "propagationLatencyMs": 2
+    }
+  },
+  {
+    "id": "BR10",
+    "title": "Log out in Chrome while Edge submits order (Session boundary race)",
+    "status": "PASS",
+    "details": {
+      "serverPositionsCount": 2,
+      "notes": "Edge order executed safely within active token context; no session crash or 500 error."
+    }
+  }
+]

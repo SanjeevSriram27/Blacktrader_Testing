@@ -1,0 +1,216 @@
+{
+  "events": [
+    {
+      "at": "2026-11-19T10:55:15.239Z",
+      "action": "QA_EXTRA_READY",
+      "key": "directoryI",
+      "member_id": "mem_bb444c3e086f03b5bf",
+      "instance": "real"
+    }
+  ],
+  "other": [
+    {
+      "key": "directoryA",
+      "name": "PAMM QA Manager A",
+      "email": "pammqa.20261119.f452cc.directorya@mailinator.com",
+      "member_id": "mem_592602338df1aa6e29",
+      "public_id": "b4bf7a99-ef16-46c7-a630-df3dc798e2a2",
+      "instance": "real",
+      "balance": 20000,
+      "master": true,
+      "ready": true,
+      "pamm_master": {
+        "client_id": "mem_592602338df1aa6e29",
+        "display_name": "PAMM QA Manager A",
+        "share_percent": 20,
+        "status": "active"
+      }
+    },
+    {
+      "key": "directoryB",
+      "name": "PAMM QA Manager B",
+      "email": "pammqa.20261119.f452cc.directoryb@mailinator.com",
+      "member_id": "mem_eacecd47d30ad9d3f1",
+      "public_id": "0448ec4c-45bc-4db0-a1ee-a75635e6d860",
+      "instance": "real",
+      "balance": 20000,
+      "master": true,
+      "ready": true,
+      "pamm_master": {
+        "client_id": "mem_eacecd47d30ad9d3f1",
+        "display_name": "PAMM QA Manager B",
+        "share_percent": 20,
+        "status": "active"
+      }
+    },
+    {
+      "key": "directoryC",
+      "name": "PAMM QA Manager C",
+      "email": "pammqa.20261119.f452cc.directoryc@mailinator.com",
+      "member_id": "mem_550a4e91e0ce62a93f",
+      "public_id": "3e80dfe9-e7b4-491f-b475-9de0ea7c0450",
+      "instance": "real",
+      "balance": 20000,
+      "master": true,
+      "ready": true,
+      "pamm_master": {
+        "client_id": "mem_550a4e91e0ce62a93f",
+        "display_name": "PAMM QA Manager C",
+        "share_percent": 20,
+        "status": "active"
+      }
+    },
+    {
+      "key": "directoryD",
+      "name": "PAMM QA Manager D",
+      "email": "pammqa.20261119.f452cc.directoryd@mailinator.com",
+      "member_id": "mem_cf2d7ec558552629e7",
+      "public_id": "45138702-a084-4b2e-8dfe-d2f0c8925a5a",
+      "instance": "real",
+      "balance": 20000,
+      "master": true,
+      "ready": true,
+      "pamm_master": {
+        "client_id": "mem_cf2d7ec558552629e7",
+        "display_name": "PAMM QA Manager D",
+        "share_percent": 20,
+        "status": "active"
+      }
+    },
+    {
+      "key": "directoryE",
+      "name": "PAMM QA Manager E",
+      "email": "pammqa.20261119.f452cc.directorye@mailinator.com",
+      "member_id": "mem_ccd867405a50240dac",
+      "public_id": "21198d96-e8d7-4520-9793-6023670f3078",
+      "instance": "real",
+      "balance": 20000,
+      "master": true,
+      "ready": true,
+      "pamm_master": {
+        "client_id": "mem_ccd867405a50240dac",
+        "display_name": "PAMM QA Manager E",
+        "share_percent": 20,
+        "status": "active"
+      }
+    },
+    {
+      "key": "directoryF",
+      "name": "PAMM QA Manager F",
+      "email": "pammqa.20261119.f452cc.directoryf@mailinator.com",
+      "member_id": "mem_30b18226d4c85695a3",
+      "public_id": "65a60c0e-314d-48d8-bf3b-b79c78036731",
+      "instance": "real",
+      "balance": 20000,
+      "master": true,
+      "ready": true,
+      "pamm_master": {
+        "client_id": "mem_30b18226d4c85695a3",
+        "display_name": "PAMM QA Manager F",
+        "share_percent": 20,
+        "status": "active"
+      }
+    },
+    {
+      "key": "directoryG",
+      "name": "PAMM QA Manager G",
+      "email": "pammqa.20261119.f452cc.directoryg@mailinator.com",
+      "member_id": "mem_3ad120b8517d5d1bfb",
+      "public_id": "425990ff-48b6-4d27-803a-fb0fe177e01b",
+      "instance": "real",
+      "balance": 20000,
+      "master": true,
+      "ready": true,
+      "pamm_master": {
+        "client_id": "mem_3ad120b8517d5d1bfb",
+        "display_name": "PAMM QA Manager G",
+        "share_percent": 20,
+        "status": "active"
+      }
+    },
+    {
+      "key": "directoryH",
+      "name": "PAMM QA Manager H",
+      "email": "pammqa.20261119.f452cc.directoryh@mailinator.com",
+      "member_id": "mem_f97821a29a50a12290",
+      "public_id": "c3b40a30-ceee-4d08-b5cf-5fb92842015a",
+      "instance": "real",
+      "balance": 20000,
+      "master": true,
+      "ready": true,
+      "pamm_master": {
+        "client_id": "mem_f97821a29a50a12290",
+        "display_name": "PAMM QA Manager H",
+        "share_percent": 20,
+        "status": "active"
+      }
+    },
+    {
+      "key": "netmaster",
+      "name": "PAMM QA Netting Master",
+      "email": "pammqa.20261119.f452cc.netmaster@mailinator.com",
+      "member_id": "mem_8a2c572cfe5d57ec59",
+      "public_id": "67297085-ed1e-436a-aa9c-cf8a9a85c91f",
+      "instance": "real-net",
+      "balance": 20000,
+      "master": true,
+      "ready": true,
+      "pamm_master": {
+        "client_id": "mem_8a2c572cfe5d57ec59",
+        "display_name": "PAMM QA Netting Master",
+        "share_percent": 20,
+        "status": "active"
+      }
+    },
+    {
+      "key": "netinvestor",
+      "name": "PAMM QA Netting Investor",
+      "email": "pammqa.20261119.f452cc.netinvestor@mailinator.com",
+      "member_id": "mem_dbd58fba902ac589a7",
+      "public_id": "e7989324-a786-4772-a5c7-629c0e0bdebd",
+      "instance": "real-net",
+      "balance": 5000,
+      "master": false,
+      "ready": true
+    },
+    {
+      "key": "feeinvestor",
+      "name": "PAMM QA Fee Investor",
+      "email": "pammqa.20261119.f452cc.feeinvestor@mailinator.com",
+      "member_id": "mem_b24631d6d2f30c7920",
+      "public_id": "cb9d83b5-848d-46e3-9a1e-79d1a36e5ed2",
+      "instance": "real",
+      "balance": 5000,
+      "master": false,
+      "ready": true
+    },
+    {
+      "key": "riskinvestor",
+      "name": "PAMM QA Risk Investor",
+      "email": "pammqa.20261119.f452cc.riskinvestor@mailinator.com",
+      "member_id": "mem_593e2db012d725b4b5",
+      "public_id": "fe4b79a3-68c8-4597-8e45-15fbaa9d9020",
+      "instance": "real",
+      "balance": 5000,
+      "master": false,
+      "ready": true
+    },
+    {
+      "key": "directoryI",
+      "name": "PAMM QA Manager I",
+      "email": "pammqa.20261119.f452cc.directoryi@mailinator.com",
+      "member_id": "mem_bb444c3e086f03b5bf",
+      "public_id": "18044226-657c-4a2f-adb5-e4ee3c486846",
+      "instance": "real",
+      "balance": 20000,
+      "master": true,
+      "ready": true,
+      "pamm_master": {
+        "client_id": "mem_bb444c3e086f03b5bf",
+        "display_name": "PAMM QA Manager I",
+        "share_percent": 20,
+        "status": "active"
+      }
+    }
+  ]
+}

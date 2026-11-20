@@ -1,0 +1,17 @@
+[
+  {
+    "pool_id": "mem_4669b36f00cc55347e",
+    "master_client_id": "mem_4669b36f00cc55347e",
+    "pool_name": "PM Master",
+    "display_name": "PM Master",
+    "instance": "real",
+    "master_email": "pmmaster@mailinator.com",
+    "manager_email": "pmmaster@mailinator.com",
+    "manager_share_percent": 20,
+    "share_percent": 20,
+    "total_equity": 2000,
+    "follower_fund": 1000,
+    "followers_count": 10,
+    "status": "ACTIVE"
+  }
+]

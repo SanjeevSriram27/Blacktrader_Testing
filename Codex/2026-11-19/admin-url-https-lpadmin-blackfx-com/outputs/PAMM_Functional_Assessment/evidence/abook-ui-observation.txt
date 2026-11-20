@@ -1,0 +1,13 @@
+A-book routing UI observation — 20 November 2026
+
+Admin > Members > isolated PAMM QA Manager I:
+- Initial Book: B-book (real orders booked on the broker's own engine).
+- Test Book: A-book (UI confirmed "Real orders go to Black exchange").
+
+Admin > Liquidity during the test:
+- Provider: Black exchange.
+- Routing: active/up.
+- UI states that A-book real orders are executed at this provider.
+- Supported paths shown: hedging market entries, full/partial closes, reverse, and pending LIMIT/STOP orders.
+
+After the recorded market, rejection, concurrency and pending-order tests completed, Manager I was restored to B-book. The manager was flat, had no pending orders, and the temporary follower relationship had been settled before restoration.

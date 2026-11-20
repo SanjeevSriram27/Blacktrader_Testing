@@ -1,0 +1,191 @@
+- banner:
+  - button "Account menu":
+    - generic: P
+  - button "Default ▾":
+    - generic: Default
+    - generic: ▾
+  - button "Add widget":
+  - button "Floating view — free-floating, overlapping windows":
+  - button "Comfortable view — restore panel spacing":
+  - button "Toggle theme":
+- button "Watchlist":
+  - generic: Watchlist
+- 'textbox "Search eg: EURUSD, BTC"'
+- button "Filter by category and exchange":
+- button "W1":
+  - generic: W1
+- button "W2":
+  - generic: W2
+- button "W3":
+  - generic: W3
+- button "W4":
+  - generic: W4
+- button "W5":
+  - generic: W5
+- button "Rename Watchlist 1":
+  - generic: Watchlist 1
+- button "Visible watchlist columns":
+  - generic: Columns
+- button "Sort this section":
+  - generic: Original
+- button "Note":
+  - text: Note
+- generic: No symbols yet — search above to add one
+- button "Chart":
+  - generic: Chart
+- button "Drawing Tools":
+- button "Line Tools":
+- button "Patterns":
+- button "Text Tools":
+- button "Measure Tools":
+- button "Fibonacci Tools":
+- tooltip "Lock All Drawings":
+  - button "Lock All Drawings":
+- tooltip "Hide All Drawings":
+  - button "Hide All Drawings":
+- tooltip "Enable Magnet Mode":
+  - button "Enable Magnet Mode":
+- tooltip "Enable Keep Drawing":
+  - button "Enable Keep Drawing":
+- button "Delete Tools":
+- tooltip "Show Favorite Drawing Tools Toolbar":
+  - button "Show Favorite Drawing Tools Toolbar":
+- button "Scroll tools down":
+- navigation:
+  - button "SAVE":
+    - generic: SAVE
+  - button:
+  - tooltip "Undo":
+    - button "Undo" [disabled]:
+  - tooltip "Redo":
+    - button "Redo" [disabled]:
+  - tooltip "Hide All Trades":
+    - button "Hide All Trades":
+  - button "BTCUSDT.P":
+    - generic: BTCUSDT.P
+  - button "1 Min":
+    - text: 1 Min
+  - button "Select chart type":
+  - button "Indicators":
+    - generic: Indicators
+  - tooltip:
+    - button:
+  - tooltip "Fullscreen chart panel":
+    - button "Fullscreen chart panel":
+  - tooltip "Chart snapshot":
+    - button "Chart snapshot":
+  - button:
+- img "Xtreme Logo"
+- table:
+  - 'row "BINANCE:BTCUSDT.P | 1m | O: 63916.9 H: 63920.1 L: 63862 C: 63862 63862.0 63862.1 S 0.001 B"':
+    - cell
+    - 'cell "BINANCE:BTCUSDT.P | 1m | O: 63916.9 H: 63920.1 L: 63862 C: 63862 63862.0 63862.1 S 0.001 B"':
+      - button "BINANCE:BTCUSDT.P"
+      - generic: "|"
+      - generic: 1m
+      - generic: "|"
+      - generic: "O:"
+      - generic: "63916.9"
+      - generic: "H:"
+      - generic: "63920.1"
+      - generic: "L:"
+      - generic: "63862"
+      - generic: "C:"
+      - generic: "63862"
+      - button "63862.0":
+        - generic: "63862.0"
+      - button "63862.1":
+        - generic: "63862.1"
+      - button "S 0.001 B":
+        - generic: S
+        - generic: "0.001"
+        - generic: B
+      - button "Hide Trades":
+      - button "Trade Settings":
+    - cell
+  - row:
+    - cell
+    - cell
+    - cell:
+      - button "Fit Price Scale":
+      - button "Fit Time Scale":
+      - button "Reset to Initial Position":
+- button "Hide drawing toolbar":
+- button "Trades":
+  - generic: Trades
+- generic: Trades
+- generic: "1"
+- generic: Real (Hedging)
+- button "Refresh":
+- button "Broker settings":
+- button "Positions"
+- button "Pending 1" [active]:
+  - text: Pending
+  - generic: "1"
+- button "Orders 22":
+  - text: Orders
+  - generic: "22"
+- button "History 10":
+  - text: History
+  - generic: "10"
+- button "Funds"
+- table:
+  - rowgroup:
+    - row "Symbol Order ID Side Qty Trigger / Price SL TP LTP Type Status Time Info Cancel":
+      - columnheader "Symbol"
+      - columnheader "Order ID"
+      - columnheader "Side"
+      - columnheader "Qty"
+      - columnheader "Trigger / Price"
+      - columnheader "SL"
+      - columnheader "TP"
+      - columnheader "LTP"
+      - columnheader "Type"
+      - columnheader "Status"
+      - columnheader "Time"
+      - columnheader "Info"
+      - columnheader "Cancel"
+  - rowgroup:
+    - row "Binance BTCUSDT.P e0fda2e1a6b6546130 BUY (BELOW) 0.001 45000.0 - - 63862.0 LIMIT (TRGR) PENDING 2026-11-19 17:11:28 Order information for e0fda2e1a6b6546130":
+      - cell "Binance BTCUSDT.P":
+        - button "Binance BTCUSDT.P":
+          - img "Binance":
+          - text: BTCUSDT.P
+      - cell "e0fda2e1a6b6546130"
+      - cell "BUY (BELOW)"
+      - cell "0.001"
+      - cell "45000.0":
+        - button "45000.0":
+          - generic: "45000.0"
+      - cell "-":
+        - button "-":
+          - generic: "-"
+      - cell "-":
+        - button "-":
+          - generic: "-"
+      - cell "63862.0"
+      - cell "LIMIT (TRGR)"
+      - cell "PENDING":
+        - generic: PENDING
+      - cell "2026-11-19 17:11:28"
+      - cell "Order information for e0fda2e1a6b6546130":
+        - button "Order information for e0fda2e1a6b6546130": ⓘ
+      - cell:
+        - button "Cancel Order":
+  - rowgroup:
+    - row "Bulk close and cancel":
+      - cell
+      - cell
+      - cell
+      - cell
+      - cell
+      - cell
+      - cell
+      - cell
+      - cell
+      - cell
+      - cell
+      - cell
+      - cell "Bulk close and cancel":
+        - button "Cancel All Pending Orders":
+        - button "Bulk close and cancel":

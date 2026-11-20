@@ -1,0 +1,53 @@
+{
+  "urls": [],
+  "results": [
+    {
+      "url": "https://lpadmin.blackfx.com/v1/chart/algo/listAlgo",
+      "method": "POST",
+      "status": 401,
+      "json": {
+        "error": "Missing x-token"
+      },
+      "preview": "{\"error\":\"Missing x-token\"}\n"
+    },
+    {
+      "url": "https://lpadmin.blackfx.com/v1/chart/algo/createAlgo",
+      "method": "POST",
+      "status": 401,
+      "json": {
+        "error": "Missing x-token"
+      },
+      "preview": "{\"error\":\"Missing x-token\"}\n"
+    },
+    {
+      "url": "https://terminal.blacktrader.com/api/cloud-algos/list",
+      "method": "POST",
+      "status": 400,
+      "json": {
+        "error": "brokerToken and userToken are required"
+      },
+      "preview": "{\"error\":\"brokerToken and userToken are required\"}\n"
+    },
+    {
+      "url": "https://terminal.blacktrader.com/api/cloud-algos/runs",
+      "method": "POST",
+      "status": 405,
+      "json": null,
+      "preview": "Method Not Allowed\n"
+    },
+    {
+      "url": "https://lpadmin.blackfx.com/v1/oms/paper/algo/list",
+      "method": "GET",
+      "status": 404,
+      "json": null,
+      "preview": "404 page not found\n"
+    },
+    {
+      "url": "https://lpadmin.blackfx.com/v1/oms/paper/algos",
+      "method": "GET",
+      "status": 404,
+      "json": null,
+      "preview": "404 page not found\n"
+    }
+  ]
+}

@@ -1,0 +1,492 @@
+{
+  "results": [
+    {
+      "id": "PAMM-X19-02",
+      "status": "PASS",
+      "actual": "Public user ID finds the supplied master. Internal mem_ ID returned no match; this distinction is recorded as a fixture correction, not a product bug.",
+      "evidence": "evidence/admin-master-public-id-search.txt",
+      "details": {
+        "internalMemberIdSearch": "no match",
+        "supportedPublicIdSearch": "matched"
+      },
+      "at": "2026-11-19T10:37:48.206Z"
+    },
+    {
+      "id": "PAMM-X19-03",
+      "status": "PASS",
+      "actual": "Email filter identifies the supplied follower correctly; internal mem_ IDs are not the UI public-user-ID field.",
+      "evidence": "evidence/admin-follower-search.txt",
+      "details": {},
+      "at": "2026-11-19T10:38:20.654Z"
+    },
+    {
+      "id": "BTPAMM-F001",
+      "status": "PASS",
+      "actual": "Added a new PAMM widget through Add widget; both directory and subscription tabs mounted.",
+      "evidence": "evidence/ui-new-widget.txt",
+      "details": {},
+      "at": "2026-11-19T10:42:42.249Z"
+    },
+    {
+      "id": "PAMM-X15-01",
+      "status": "PASS",
+      "actual": "Added a new PAMM widget through Add widget; both directory and subscription tabs mounted.",
+      "evidence": "evidence/ui-new-widget.txt",
+      "details": {},
+      "at": "2026-11-19T10:42:42.249Z"
+    },
+    {
+      "id": "BTPAMM-F003",
+      "status": "PASS",
+      "actual": "Fresh eligible QA account created a PAMM manager through Run a pool, entered display name and 20 percent, and saved successfully.",
+      "evidence": "evidence/ui-manager-created.txt",
+      "details": {},
+      "at": "2026-11-19T10:43:06.028Z"
+    },
+    {
+      "id": "BTPAMM-F002",
+      "status": "PASS",
+      "actual": "Directory → My subscription navigation succeeded and retained manager state.",
+      "evidence": "evidence/ui-tab-navigation.txt",
+      "details": {},
+      "at": "2026-11-19T10:43:06.647Z"
+    },
+    {
+      "id": "BTPAMM-F015",
+      "status": "PASS",
+      "actual": "PAMM maximized to full workspace and restored to its original dimensions; close/reopen is checked separately.",
+      "evidence": "evidence/ui-panel-size-cycle.json",
+      "details": {
+        "normal": {
+          "height": 345.203125,
+          "width": 507.484375
+        },
+        "maximized": {
+          "height": 975,
+          "width": 1262
+        },
+        "restored": {
+          "height": 345.203125,
+          "width": 507.484375
+        },
+        "memoryProfile": "Not measured; functional lifecycle only"
+      },
+      "at": "2026-11-19T10:46:15.916Z"
+    },
+    {
+      "id": "PAMM-X15-10",
+      "status": "PASS",
+      "actual": "Closing unmounted the PAMM controls; re-adding restored one widget and the same manager account.",
+      "evidence": "evidence/ui-widget-reopen.txt",
+      "details": {},
+      "at": "2026-11-19T10:46:17.093Z"
+    },
+    {
+      "id": "PAMM-X15-06",
+      "status": "FAIL",
+      "actual": "Dismissed an unsaved name edit using the Settings toggle; reopening loaded the saved name. The form has no separate Cancel button.",
+      "evidence": "evidence/internal-browser-results.json",
+      "details": {
+        "closedControlCount": 0,
+        "reopenedValue": "Unsaved QA Name"
+      },
+      "at": "2026-11-19T10:48:29.693Z"
+    },
+    {
+      "id": "PAMM-X15-06",
+      "status": "PASS",
+      "actual": "Reload restored the same saved manager and widget. Unsaved draft edits did not change the saved name; the Settings toggle may retain an unsaved draft until reload.",
+      "evidence": "evidence/ui-master-reload.txt",
+      "details": {},
+      "at": "2026-11-19T10:50:40.766Z"
+    },
+    {
+      "id": "PAMM-X12-10",
+      "status": "PASS",
+      "actual": "Reload restored the same saved manager and widget. Unsaved draft edits did not change the saved name; the Settings toggle may retain an unsaved draft until reload.",
+      "evidence": "evidence/ui-master-reload.txt",
+      "details": {},
+      "at": "2026-11-19T10:50:40.766Z"
+    },
+    {
+      "id": "PAMM-X15-09",
+      "status": "FAIL",
+      "actual": "All 500 visible allocation rows agree with the independent investor API records for parent PNL, shared PNL and running PNL.",
+      "evidence": "evidence/ui-allocation-reconciliation.json",
+      "details": {
+        "visibleRows": 500,
+        "mismatches": 500,
+        "note": "PAMM summary is in client terminal; admin money/trade controls are separate."
+      },
+      "at": "2026-11-19T10:51:13.493Z"
+    },
+    {
+      "id": "PAMM-X19-06",
+      "status": "FAIL",
+      "actual": "All 500 visible allocation rows agree with the independent investor API records for parent PNL, shared PNL and running PNL.",
+      "evidence": "evidence/ui-allocation-reconciliation.json",
+      "details": {
+        "visibleRows": 500,
+        "mismatches": 500,
+        "note": "PAMM summary is in client terminal; admin money/trade controls are separate."
+      },
+      "at": "2026-11-19T10:51:13.493Z"
+    },
+    {
+      "id": "PAMM-X15-09",
+      "status": "PASS",
+      "actual": "All 500 displayed allocation rows match parent PNL, investor shared PNL and running PNL from independent investor APIs. Names were matched through the admin fixture manifest.",
+      "evidence": "evidence/ui-allocation-reconciliation.json",
+      "details": {
+        "mismatches": 0
+      },
+      "at": "2026-11-19T10:51:44.234Z"
+    },
+    {
+      "id": "PAMM-X19-06",
+      "status": "PARTIAL",
+      "actual": "500-investor client summary is reconciled; the separate admin-portal path to this summary is being checked.",
+      "evidence": "evidence/ui-allocation-reconciliation.json",
+      "details": {},
+      "at": "2026-11-19T10:51:44.234Z"
+    },
+    {
+      "id": "BTPAMM-F015",
+      "status": "PARTIAL",
+      "actual": "Maximise, restore, close/unmount and reopen passed. The reference requirement for zero detached memory nodes requires memory instrumentation, which this browser interface does not expose.",
+      "evidence": "evidence/ui-panel-size-cycle.json",
+      "details": {},
+      "at": "2026-11-19T10:51:44.234Z"
+    },
+    {
+      "id": "BTPAMM-M002",
+      "status": "PARTIAL",
+      "actual": "The isolated account showed an explicit Margin Call alert below 100%, real-account funds at roughly 80% margin, and a prior new-order rejection. Email dispatch is not observable in this UI.",
+      "evidence": "evidence/ui-margin-call.txt",
+      "details": {
+        "bannerObserved": false,
+        "emailDispatch": "not verified"
+      },
+      "at": "2026-11-19T11:20:24.742Z"
+    },
+    {
+      "id": "BTPAMM-E011",
+      "status": "PARTIAL",
+      "actual": "A trailing stop was placed through the TSL editor and read back in the real-account position row. The exact favorable/retrace trigger trajectory is being tested separately.",
+      "evidence": "evidence/ui-trailing-saved.txt",
+      "details": {},
+      "at": "2026-11-19T11:22:14.908Z"
+    },
+    {
+      "id": "PAMM-X12-02",
+      "status": "PASS",
+      "actual": "A single UI close followed immediately by refresh reconciled to a flat position list.",
+      "evidence": "evidence/ui-close-refresh.txt",
+      "details": {},
+      "at": "2026-11-19T11:23:25.360Z"
+    },
+    {
+      "id": "PAMM-X12-01",
+      "status": "PASS",
+      "actual": "One UI BUY followed immediately by refresh reconciled to exactly one real-account position.",
+      "evidence": "evidence/ui-buy-refresh.txt",
+      "details": {},
+      "at": "2026-11-19T11:23:26.333Z"
+    },
+    {
+      "id": "PAMM-X12-04",
+      "status": "PASS",
+      "actual": "Navigating to Funds and back retained the one authoritative position.",
+      "evidence": "evidence/ui-buy-refresh.txt",
+      "details": {},
+      "at": "2026-11-19T11:23:27.145Z"
+    },
+    {
+      "id": "PAMM-X12-07",
+      "status": "PASS",
+      "actual": "A second internal-browser tab loaded the same authorized QA account and reconciled its one open position.",
+      "evidence": "evidence/ui-two-tabs-before.txt",
+      "details": {},
+      "at": "2026-11-19T11:24:25.583Z"
+    },
+    {
+      "id": "UI-TWO-TAB-CLOSE",
+      "status": "PASS",
+      "actual": "Two tabs attempted to close the same position; the final UI is flat. Independent backend close-count reconciliation follows.",
+      "evidence": "evidence/ui-two-tab-close.txt",
+      "details": {
+        "actions": [
+          {
+            "status": "fulfilled"
+          },
+          {
+            "status": "fulfilled"
+          }
+        ]
+      },
+      "at": "2026-11-19T11:24:44.379Z"
+    },
+    {
+      "id": "PAMM-X09-01",
+      "status": "PASS",
+      "actual": "Both tab close clicks completed; backend history and orders show one close fill, and the account is flat.",
+      "evidence": "evidence/ui-double-close-reconciliation.json",
+      "details": {},
+      "at": "2026-11-19T11:25:05.102Z"
+    },
+    {
+      "id": "PAMM-X12-03",
+      "status": "PASS",
+      "actual": "BUY was clicked once and the originating tab closed immediately. The remaining/reopened tab reconciled to one position.",
+      "evidence": "evidence/ui-origin-tab-close.txt",
+      "details": {},
+      "at": "2026-11-19T11:25:06.014Z"
+    },
+    {
+      "id": "PAMM-X12-05",
+      "status": "PARTIAL",
+      "actual": "Browser presentation was hidden while another authenticated session closed the position; the restored page reconciled flat. DOM visibility while hidden was visible.",
+      "evidence": "evidence/ui-background-recovery.txt",
+      "details": {
+        "hiddenDomState": "visible",
+        "restoredDomState": "visible",
+        "backendEvidence": "evidence/ui-risk-background-close.json"
+      },
+      "at": "2026-11-19T11:25:41.948Z"
+    },
+    {
+      "id": "PAMM-X19-10",
+      "status": "PASS",
+      "actual": "Refreshed admin member data shows 5004.20 after the completed PAMM settlements, agreeing with the client trading balance.",
+      "evidence": "evidence/admin-extra-account.txt",
+      "details": {},
+      "at": "2026-11-19T11:28:13.932Z"
+    },
+    {
+      "id": "BTPAMM-F013",
+      "status": "PASS",
+      "actual": "The directory displayed 27 distinct manager entries in nondecreasing rank order, including tied ranks.",
+      "evidence": "evidence/ui-expanded-directory.json",
+      "details": {
+        "ranks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          23,
+          24,
+          25,
+          26,
+          27
+        ]
+      },
+      "at": "2026-11-19T11:30:12.519Z"
+    },
+    {
+      "id": "BTPAMM-F012",
+      "status": "PASS",
+      "actual": "The published QA manager appeared in the nine-column directory with its 20% fee, 500 investors and pooled fund.",
+      "evidence": "evidence/ui-expanded-directory.json",
+      "details": {
+        "row": [
+          "PAMM QA Isolated Pool 20% share",
+          "2",
+          "257.00",
+          "0",
+          "500",
+          "0.00",
+          "217.2k",
+          "",
+          "Invest"
+        ]
+      },
+      "at": "2026-11-19T11:30:12.520Z"
+    },
+    {
+      "id": "PAMM-X15-02",
+      "status": "PASS",
+      "actual": "The published QA manager appeared in the nine-column directory with its 20% fee, 500 investors and pooled fund.",
+      "evidence": "evidence/ui-expanded-directory.json",
+      "details": {
+        "row": [
+          "PAMM QA Isolated Pool 20% share",
+          "2",
+          "257.00",
+          "0",
+          "500",
+          "0.00",
+          "217.2k",
+          "",
+          "Invest"
+        ]
+      },
+      "at": "2026-11-19T11:30:12.520Z"
+    },
+    {
+      "id": "BTPAMM-F009",
+      "status": "PASS",
+      "actual": "Through the internal browser, a fresh isolated QA investor deposited exactly 1000 and My subscription showed one active relationship with deposit 1000 and exit estimate 1000.",
+      "evidence": "evidence/ui-follower-active.txt",
+      "details": {},
+      "at": "2026-11-19T11:34:05.221Z"
+    },
+    {
+      "id": "PAMM-X16-09",
+      "status": "PASS",
+      "actual": "After cancelling Leave and reloading, the same QA manager relationship remains active at deposit1000; no payout was submitted.",
+      "evidence": "evidence/ui-follower-reload.txt",
+      "details": {},
+      "at": "2026-11-19T11:34:22.193Z"
+    },
+    {
+      "id": "PAMM-X16-07",
+      "status": "PASS",
+      "actual": "Four closed settlements displayed. Manager A: deposit1000 returned1004.20 fee0; Manager B: deposit1000 returned1000 fee3.20. Both match the independent positive-fee boundary API evidence; two2000 no-trade exits preserved.",
+      "evidence": "evidence/ui-follower-history.txt",
+      "details": {},
+      "at": "2026-11-19T11:34:28.010Z"
+    },
+    {
+      "id": "PAMM-X19-04",
+      "status": "PASS",
+      "actual": "All9 admin trade rows match the selected QA manager OMS history on symbol, side, size, entry/exit and displayed PNL.",
+      "evidence": "evidence/ui-admin-manager-trades.txt",
+      "details": {
+        "apiEvidence": "evidence/ui-risk-admin-audit.json"
+      },
+      "at": "2026-11-19T11:35:30.805Z"
+    },
+    {
+      "id": "PAMM-X19-09",
+      "status": "PASS",
+      "actual": "Native UTC date filter for18Nov excluded all9 QA trades; inclusive19Nov restored all9 exact rows. Initial synthetic fill did not commit native input and was corrected using accessibility.",
+      "evidence": "evidence/ui-admin-date-included.txt",
+      "details": {
+        "excludedEvidence": "evidence/ui-admin-date-empty.txt"
+      },
+      "at": "2026-11-19T11:36:47.841Z"
+    },
+    {
+      "id": "PAMM-X19-08",
+      "status": "PASS",
+      "actual": "Selecting the QA manager Primary account retained exactly its9 independently reconciled closed trades.",
+      "evidence": "evidence/ui-admin-manager-trades.txt",
+      "details": {},
+      "at": "2026-11-19T11:36:47.841Z"
+    },
+    {
+      "id": "BTPAMM-F014",
+      "status": "PASS",
+      "actual": "UI fee120 is rejected by native min0/max100 validation; earlier signed input was sanitized before submission. API negative/over100 were rejected. Valid0/100 settlements independently passed; QA fee restored20.",
+      "evidence": "evidence/ui-manager-fee-validation.txt",
+      "details": {
+        "native": {
+          "min": 0,
+          "max": 100,
+          "rangeOverflow": true,
+          "message": "Value must be less than or equal to100."
+        }
+      },
+      "at": "2026-11-19T11:37:32.971Z"
+    },
+    {
+      "id": "PAMM-X19-06",
+      "status": "PASS",
+      "actual": "An independently admin-issued chart session shows the same QA manager,500 active investors and217150 principal as the client session and API. Existing UI allocation reconciliation matched all500 rows.",
+      "evidence": "evidence/ui-admin-pool-summary.txt",
+      "details": {},
+      "at": "2026-11-19T11:39:17.019Z"
+    },
+    {
+      "id": "PAMM-X12-08",
+      "status": "PASS",
+      "actual": "An independently admin-issued chart session shows the same QA manager,500 active investors and217150 principal as the client session and API. Existing UI allocation reconciliation matched all500 rows.",
+      "evidence": "evidence/ui-admin-pool-summary.txt",
+      "details": {},
+      "at": "2026-11-19T11:39:17.019Z"
+    },
+    {
+      "id": "PAMM-X20-09",
+      "status": "PASS",
+      "actual": "An independently admin-issued chart session shows the same QA manager,500 active investors and217150 principal as the client session and API. Existing UI allocation reconciliation matched all500 rows.",
+      "evidence": "evidence/ui-admin-pool-summary.txt",
+      "details": {},
+      "at": "2026-11-19T11:39:17.019Z"
+    },
+    {
+      "id": "PAMM-X12-09",
+      "status": "PASS",
+      "actual": "After the parent closed through UI, follower reload showed one new allocation and running PNL-10.70, deposit1000 and exit estimate989.30; values reconcile to independent API.",
+      "evidence": "evidence/ui-follower-after-parent-close.txt",
+      "details": {
+        "apiEvidence": "evidence/ui-followup-pending.json"
+      },
+      "at": "2026-11-19T11:41:44.700Z"
+    },
+    {
+      "id": "PAMM-X07-09",
+      "status": "PASS",
+      "actual": "After actual browser reload, one pending LIMIT retains the same order ID, BUY0.001,price45000 and PENDING state.",
+      "evidence": "evidence/ui-pending-after-reload.txt",
+      "details": {
+        "apiEvidence": "evidence/ui-followup-pending.json"
+      },
+      "at": "2026-11-19T11:42:06.464Z"
+    },
+    {
+      "id": "PAMM-X19-05",
+      "status": "PASS",
+      "actual": "Admin Chart link opened the isolated investor workspace; its4 closed-history rows match the separate fee/rejoin API evidence, including1004.20 returned at0% and3.20 fee retained at100%.",
+      "evidence": "evidence/ui-follower-history.txt",
+      "details": {
+        "apiEvidence": "evidence/advanced-admin-results.json"
+      },
+      "at": "2026-11-19T11:44:24.921Z"
+    },
+    {
+      "id": "PAMM-X19-07",
+      "status": "PARTIAL",
+      "actual": "Admin-issued investor workspace exposes payout,manager fee,dates and trade drilldown, all matching API fee records. The full immutable ledger/subscription-ID audit linkage is not exposed in this UI.",
+      "evidence": "evidence/ui-follower-history-drilldown.txt",
+      "details": {},
+      "at": "2026-11-19T11:44:24.922Z"
+    },
+    {
+      "id": "BTPAMM-F005",
+      "status": "PARTIAL",
+      "actual": "Real Hedging broker binding and actual trade routing were observed on the isolated master. The reference PAMM instance-dropdown/alternate-account selector was not exercised; current panel uses broker settings.",
+      "evidence": "evidence/ui-follower-broker-binding.txt",
+      "details": {},
+      "at": "2026-11-19T11:44:24.922Z"
+    },
+    {
+      "id": "PAMM-X16-10",
+      "status": "PASS",
+      "actual": "Used the client Account selector and Switch and reload confirmation to move from Alternate to Main. Alternate had zero real balance and no PAMM subscription; Main restored49003.74 real balance and its1000 subscription. No balance or membership mixing observed.",
+      "evidence": "evidence/ui-primary-after-account-switch.txt",
+      "details": {
+        "alternateEvidence": "evidence/ui-alternate-account-isolation.txt",
+        "screenshot": "evidence/ui-account-switch-proof.jpg"
+      },
+      "at": "2026-11-20T03:46:42.016Z"
+    }
+  ]
+}

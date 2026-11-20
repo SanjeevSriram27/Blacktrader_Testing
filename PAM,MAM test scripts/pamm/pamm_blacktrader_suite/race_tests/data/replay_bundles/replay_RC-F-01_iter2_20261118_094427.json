@@ -1,0 +1,146 @@
+{
+  "bundle_id": "replay_RC-F-01_iter2_20261118_094427",
+  "scenario_id": "RC-F-01",
+  "iteration": 2,
+  "offset_ms": -50,
+  "seed": 963642,
+  "timestamp": 1794975267.431369,
+  "invariants_failed": [
+    {
+      "id": "I-02",
+      "message": "Money Conservation failed: current 27000.00 != expected 22000.00 (diff 5000.00)",
+      "details": {
+        "current": "27000.00",
+        "expected": "22000.00",
+        "diff": "5000.00"
+      }
+    }
+  ],
+  "operation_log": [
+    {
+      "op_index": 1,
+      "t_send_ns": 1794975267376154000,
+      "t_done_ns": 1794975267376174000,
+      "duration_ms": 0.02,
+      "response": {
+        "status": 200,
+        "role": "follower"
+      }
+    },
+    {
+      "op_index": 0,
+      "t_send_ns": 1794975267431206000,
+      "t_done_ns": 1794975267431214000,
+      "duration_ms": 0.008,
+      "response": {
+        "status": 400,
+        "error": "master_blocked_reason"
+      }
+    }
+  ],
+  "snapshot_before_s0": {
+    "total_equity": "12000.00",
+    "total_units": "120",
+    "nav": "100.000000",
+    "used_margin": "0",
+    "free_margin": "12000.00",
+    "reserve_ledger": "0.00",
+    "followers": [
+      {
+        "id": "mem_follower_01",
+        "equity": "1000.00",
+        "balance": "1000.00",
+        "units": "10",
+        "share_pct": "8.333333",
+        "hwm": "1000.00",
+        "fee_deducted": "0.00",
+        "wallet": "5000.00",
+        "is_master": false,
+        "following": true
+      },
+      {
+        "id": "mem_follower_02",
+        "equity": "1000.00",
+        "balance": "1000.00",
+        "units": "10",
+        "share_pct": "8.333334",
+        "hwm": "1000.00",
+        "fee_deducted": "0.00",
+        "wallet": "5000.00",
+        "is_master": false,
+        "following": true
+      }
+    ],
+    "manager": {
+      "id": "mem_manager_01",
+      "equity": "10000.00",
+      "balance": "10000.00",
+      "units": "100",
+      "share_pct": "83.333333",
+      "fee_wallet": "0.00",
+      "is_master": true,
+      "following": false
+    },
+    "positions_count": 0,
+    "system_money": "22000.00"
+  },
+  "snapshot_after_s1": {
+    "total_equity": "13000.00",
+    "total_units": "130.00",
+    "nav": "100.000000",
+    "used_margin": "0",
+    "free_margin": "13000.00",
+    "reserve_ledger": "0.00",
+    "followers": [
+      {
+        "id": "mem_follower_01",
+        "equity": "1000.00",
+        "balance": "1000.00",
+        "units": "10",
+        "share_pct": "7.692308",
+        "hwm": "1000.00",
+        "fee_deducted": "0.00",
+        "wallet": "5000.00",
+        "is_master": false,
+        "following": true
+      },
+      {
+        "id": "mem_follower_02",
+        "equity": "1000.00",
+        "balance": "1000.00",
+        "units": "10",
+        "share_pct": "7.692308",
+        "hwm": "1000.00",
+        "fee_deducted": "0.00",
+        "wallet": "5000.00",
+        "is_master": false,
+        "following": true
+      },
+      {
+        "id": "mem_user_x",
+        "equity": "1000.00",
+        "balance": "1000.00",
+        "units": "10.00",
+        "share_pct": "7.692307",
+        "hwm": "1000.00",
+        "fee_deducted": "0.00",
+        "wallet": "4000.00",
+        "is_master": false,
+        "following": true
+      }
+    ],
+    "manager": {
+      "id": "mem_manager_01",
+      "equity": "10000.00",
+      "balance": "10000.00",
+      "units": "100",
+      "share_pct": "76.923077",
+      "fee_wallet": "0.00",
+      "is_master": true,
+      "following": false
+    },
+    "positions_count": 0,
+    "system_money": "27000.00"
+  },
+  "extra_diagnostics": {}
+}

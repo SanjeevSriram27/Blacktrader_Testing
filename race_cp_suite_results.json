@@ -1,0 +1,42 @@
+[
+  {
+    "id": "CP08",
+    "title": "Follower double-joins pool concurrently (Simultaneous join race)",
+    "status": "PASS",
+    "joinAStatus": 200,
+    "joinBStatus": 400,
+    "activeSubscriptionsCount": 1,
+    "balanceDebited": 100,
+    "sampleReject": "{\"error\":\"you already have an active subscription with this pool — leave it to settle before joining again\"}"
+  },
+  {
+    "id": "CP10",
+    "title": "Follower attempts to manually close Master position (Access & Concurrency Isolation)",
+    "status": "PASS",
+    "rogueCloseStatus": 404,
+    "rogueRejectMessage": "{\"error\":\"No open position for ord_36775ad40bee59cfd4\"}",
+    "masterPositionProtected": true
+  },
+  {
+    "id": "CP01",
+    "title": "Master places BUY -> Follower disconnects / reconnects (Block ledger integrity)",
+    "status": "PASS",
+    "followerChildPositions": 0,
+    "architecture": "Unified block order PAMM (zero child orders on follower account)"
+  },
+  {
+    "id": "CP03",
+    "title": "Master closes BUY -> Follower refreshes (Settlement & reconciliation)",
+    "status": "PASS",
+    "allFollowersActive": true,
+    "totalPoolBalance": 1000
+  },
+  {
+    "id": "CP05",
+    "title": "Follower attempts allocation exit while Master has open trade (Concurrency Lock)",
+    "status": "PASS",
+    "statusReceived": 400,
+    "rejectMessage": "{\"error\":\"You can leave once the manager's open trades you share in are closed.\"}",
+    "lockedDuringTrade": true
+  }
+]

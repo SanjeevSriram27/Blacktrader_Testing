@@ -1,0 +1,17 @@
+ [level=2]
+  - paragraph: Where your A-book members' real orders are executed.
+  - term: Provider
+  - definition: Black exchange
+  - term: Managed by
+  - definition: blacktrader — nothing to configure here.
+  - term: A-book orders
+  - definition:
+    - generic: going to Black exchange
+  - generic: SL/TP trigger location
+  - combobox "SL/TP trigger location":
+    - option "Your OMS" [selected]
+    - option "Liquidity provider — unavailable" [disabled]
+  - paragraph: Your OMS watches SL/TP, trailing stops and stop-out, then sends the closing market order to the liquidity provider. Provider-side protection remains disabled until its order rules and paper-account tests are verified.
+  - paragraph: A-book supports hedging accounts with market entries, full and partial closes, reverse, and pending LIMIT/STOP orders (they rest here and go to the provider as market orders when they trigger). Netting accounts and baskets are unavailable.
+  - paragraph: Choose which members are A-book on the Members screen (the Book column). Everyone else is booked on your own engine.
+- alert

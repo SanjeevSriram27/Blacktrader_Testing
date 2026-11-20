@@ -1,0 +1,189 @@
+{
+  "title": "BlackTrader PAMM Multi-Platform Production Certification (4 Environments)",
+  "generated_at": "2026-11-18 11:48:38",
+  "elapsed_seconds": 114.6,
+  "total_platforms_tested": 4,
+  "platforms_certified": 4,
+  "total_accounts_provisioned": 168,
+  "total_pamm_tests_executed": 660,
+  "total_race_iterations_run": 2532,
+  "total_invariant_violations": 0,
+  "results_by_platform": [
+    {
+      "env_id": "1",
+      "env_name": "Terminal BlackTrader",
+      "platform_url": "https://terminal.blacktrader.com/test",
+      "admin_url": "https://terminal.blacktrader.com/test/admin",
+      "connectivity": {
+        "platform_http": 200,
+        "platform_latency_ms": 322.2,
+        "admin_http": 200,
+        "admin_latency_ms": 162.4
+      },
+      "admin_auth": {
+        "authenticated": true,
+        "token_preview": "8e71db469472584e..."
+      },
+      "provisioning": {
+        "hedging_master": "master_hedge_env1@mailinator.com",
+        "hedging_followers_count": 20,
+        "hedging_pool_equity": 80000.0,
+        "netting_master": "master_net_env1@mailinator.com",
+        "netting_followers_count": 20,
+        "netting_pool_equity": 80000.0,
+        "total_accounts": 42
+      },
+      "pamm_platform_suite": {
+        "total_scenarios": 165,
+        "passed": 165,
+        "failed": 0,
+        "status": "PASS"
+      },
+      "race_condition_suite": {
+        "total_scenarios": 114,
+        "passed": 114,
+        "failed": 0,
+        "iterations_run": 633,
+        "violations": 0,
+        "violation_rate_pct": 0.0,
+        "invariants_passing": "20 / 20",
+        "deadlocks": 0,
+        "status": "PASS"
+      },
+      "certified": true,
+      "audited_at": "2026-11-18 11:47:02"
+    },
+    {
+      "env_id": "2",
+      "env_name": "LP Admin BlackFX",
+      "platform_url": "https://lpadmin.blackfx.com",
+      "admin_url": "https://lpadmin.blackfx.com/blackadmin",
+      "connectivity": {
+        "platform_http": 200,
+        "platform_latency_ms": 389.2,
+        "admin_http": 200,
+        "admin_latency_ms": 112.4
+      },
+      "admin_auth": {
+        "authenticated": true,
+        "token_preview": "ee86653d8f268020..."
+      },
+      "provisioning": {
+        "hedging_master": "master_hedge_env2@mailinator.com",
+        "hedging_followers_count": 20,
+        "hedging_pool_equity": 80000.0,
+        "netting_master": "master_net_env2@mailinator.com",
+        "netting_followers_count": 20,
+        "netting_pool_equity": 80000.0,
+        "total_accounts": 42
+      },
+      "pamm_platform_suite": {
+        "total_scenarios": 165,
+        "passed": 165,
+        "failed": 0,
+        "status": "PASS"
+      },
+      "race_condition_suite": {
+        "total_scenarios": 114,
+        "passed": 114,
+        "failed": 0,
+        "iterations_run": 633,
+        "violations": 0,
+        "violation_rate_pct": 0.0,
+        "invariants_passing": "20 / 20",
+        "deadlocks": 0,
+        "status": "PASS"
+      },
+      "certified": true,
+      "audited_at": "2026-11-18 11:47:33"
+    },
+    {
+      "env_id": "3",
+      "env_name": "LP Client BlackFX",
+      "platform_url": "https://lpclient.blackfx.com",
+      "admin_url": "https://lpclient.blackfx.com/blackadmin",
+      "connectivity": {
+        "platform_http": 200,
+        "platform_latency_ms": 176.0,
+        "admin_http": 200,
+        "admin_latency_ms": 167.9
+      },
+      "admin_auth": {
+        "authenticated": true,
+        "token_preview": "8c0d002621a234f0..."
+      },
+      "provisioning": {
+        "hedging_master": "master_hedge_env3@mailinator.com",
+        "hedging_followers_count": 20,
+        "hedging_pool_equity": 80000.0,
+        "netting_master": "master_net_env3@mailinator.com",
+        "netting_followers_count": 20,
+        "netting_pool_equity": 80000.0,
+        "total_accounts": 42
+      },
+      "pamm_platform_suite": {
+        "total_scenarios": 165,
+        "passed": 165,
+        "failed": 0,
+        "status": "PASS"
+      },
+      "race_condition_suite": {
+        "total_scenarios": 114,
+        "passed": 114,
+        "failed": 0,
+        "iterations_run": 633,
+        "violations": 0,
+        "violation_rate_pct": 0.0,
+        "invariants_passing": "20 / 20",
+        "deadlocks": 0,
+        "status": "PASS"
+      },
+      "certified": true,
+      "audited_at": "2026-11-18 11:48:08"
+    },
+    {
+      "env_id": "4",
+      "env_name": "Netting BlackFX",
+      "platform_url": "https://netting.blackfx.com",
+      "admin_url": "https://netting.blackfx.com/blackadmin",
+      "connectivity": {
+        "platform_http": 200,
+        "platform_latency_ms": 156.3,
+        "admin_http": 200,
+        "admin_latency_ms": 149.4
+      },
+      "admin_auth": {
+        "authenticated": true,
+        "token_preview": "fb177eed2db2112d..."
+      },
+      "provisioning": {
+        "hedging_master": "master_hedge_env4@mailinator.com",
+        "hedging_followers_count": 20,
+        "hedging_pool_equity": 80000.0,
+        "netting_master": "master_net_env4@mailinator.com",
+        "netting_followers_count": 20,
+        "netting_pool_equity": 80000.0,
+        "total_accounts": 42
+      },
+      "pamm_platform_suite": {
+        "total_scenarios": 165,
+        "passed": 165,
+        "failed": 0,
+        "status": "PASS"
+      },
+      "race_condition_suite": {
+        "total_scenarios": 114,
+        "passed": 114,
+        "failed": 0,
+        "iterations_run": 633,
+        "violations": 0,
+        "violation_rate_pct": 0.0,
+        "invariants_passing": "20 / 20",
+        "deadlocks": 0,
+        "status": "PASS"
+      },
+      "certified": true,
+      "audited_at": "2026-11-18 11:48:38"
+    }
+  ]
+}
