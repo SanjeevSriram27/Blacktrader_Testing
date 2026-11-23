@@ -1,6 +1,20 @@
 # New finding disposition
 
-No new confirmed functional defect remains in this assessment after contract review and exclusion of the supplied project's existing issues. This does not mean unexecuted cases passed or the product is bug-free.
+One new functional defect is confirmed after Chromium/network recovery. This finding is separate from the supplied project's existing issues.
+
+## PAMM-FUNC-002 — Real chart order is also routed to Paper
+
+**Severity:** High  
+**Mapped case:** BTPAMM-F005 — FAIL
+
+With Real (Hedging) selected and LIVE in both Orders and Trades, a single chart ask-price click opened one Real position and a second, distinct Paper position. The behavior reproduced on all three browser clicks. Each pair had the same symbol, quantity and timestamp but different order IDs.
+
+Expected: one click routes only to the selected Real account.  
+Actual: the click routes to both Real and Paper, creating unintended account exposure.
+
+Cleanup completed: all three Real positions and all three mirrored Paper positions were closed; both accounts were flat, No throttling was restored, Real Hedging was disabled again, and the temporary watchlist symbol was removed.
+
+Evidence: [Chromium UI observation](evidence/chromium-network-ui.txt).
 
 ## Correction: PAMM-FUNC-001 withdrawn
 

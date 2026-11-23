@@ -20,8 +20,8 @@
   {
     "id": "BTPAMM-F005",
     "previous": "BLOCKED",
-    "current": "PARTIAL",
-    "actual": "The actual portal Account selector switched Alternate/Main correctly; primary and alternate balances/subscriptions remained separate. Real Hedging routing was observed. The reference PAMM-specific instance dropdown is not present in the inspected panel, which uses broker settings."
+    "current": "FAIL",
+    "actual": "Real (Hedging) was selected and LIVE in both Orders and Trades. Three individual chart clicks created three Real positions and, unexpectedly, three distinct Paper positions with matching symbol, quantity and timestamps. A single action therefore routed into two accounts. All six positions were closed and both accounts were verified flat."
   },
   {
     "id": "BTPAMM-F007",
@@ -34,6 +34,12 @@
     "previous": "PARTIAL",
     "current": "PASS",
     "actual": "Through the internal browser, a fresh isolated QA investor deposited exactly 1000 and My subscription showed one active relationship with deposit 1000 and exit estimate 1000."
+  },
+  {
+    "id": "BTPAMM-F010",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed public pamm controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: pamm_follows=200, pamm_allocations=200, history=200. Earlier observation: This deployment rejected assigning free plan (HTTP 400); required free-plan precondition cannot be established through the supplied admin API."
   },
   {
     "id": "BTPAMM-F012",
@@ -90,10 +96,118 @@
     "actual": "The losing parent trade was apportioned by actual 100-investor weights within cent rounding."
   },
   {
+    "id": "BTPAMM-A006",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed capital math controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: funds=200, pamm_follows=200, pamm_allocations=200. Earlier observation: Not executed to the stated preconditions. No separately committed manager co-investment ledger was provisioned; the supplied pool has investor deposits and the manager trading cash only."
+  },
+  {
+    "id": "BTPAMM-A007",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed capital math controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: funds=200, pamm_follows=200, pamm_allocations=200. Earlier observation: Not executed to the stated preconditions. Public allocation rows show cent-rounded shares but do not expose reserve-ledger postings."
+  },
+  {
+    "id": "BTPAMM-A008",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed capital math controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: funds=200, pamm_follows=200, pamm_allocations=200. Earlier observation: Not executed to the stated preconditions. All supplied deposits are USD; no EUR funding/FX-conversion fixture or authoritative conversion quote is available."
+  },
+  {
     "id": "BTPAMM-A010",
     "previous": "BLOCKED",
     "current": "PARTIAL",
     "actual": "An isolated admin-funded10-million-dollar QA manager executed and closed one100-unit BTC block; used margin63779.8. A separate A-book PAMM manager routed BLACK:XAUUSD market orders through the active Black exchange bridge."
+  },
+  {
+    "id": "BTPAMM-A011",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed capital math controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: funds=200, pamm_follows=200, pamm_allocations=200. Earlier observation: Not executed to the stated preconditions. The requested extreme fractional-share precision fixture was not provisioned."
+  },
+  {
+    "id": "BTPAMM-R001",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed nav rollover controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: nav=404, units=404, rollover=404, pamm_follows=200. Earlier observation: Not executed. NAV/unit/rollover feature implementation is unconfirmed; no units ledger or controllable rollover event was available for PAMM Unit Initial Price Benchmark ($100.00 / Unit)."
+  },
+  {
+    "id": "BTPAMM-R002",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed nav rollover controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: nav=404, units=404, rollover=404, pamm_follows=200. Earlier observation: Not executed. NAV/unit/rollover feature implementation is unconfirmed; no units ledger or controllable rollover event was available for NAV Appreciation Under Profitable Closed Trades."
+  },
+  {
+    "id": "BTPAMM-R003",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed nav rollover controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: nav=404, units=404, rollover=404, pamm_follows=200. Earlier observation: Not executed. NAV/unit/rollover feature implementation is unconfirmed; no units ledger or controllable rollover event was available for Non-Dilutive Unit Minting on Mid-Cycle Deposit at Appreciated NAV."
+  },
+  {
+    "id": "BTPAMM-R004",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed nav rollover controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: nav=404, units=404, rollover=404, pamm_follows=200. Earlier observation: Not executed. NAV/unit/rollover feature implementation is unconfirmed; no units ledger or controllable rollover event was available for Non-Dilutive Unit Minting on Deposit at Depreciated NAV (Drawdown)."
+  },
+  {
+    "id": "BTPAMM-R005",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed nav rollover controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: nav=404, units=404, rollover=404, pamm_follows=200. Earlier observation: Not executed. NAV/unit/rollover feature implementation is unconfirmed; no units ledger or controllable rollover event was available for Unit Burning on Partial Investor Redemption (Withdrawal)."
+  },
+  {
+    "id": "BTPAMM-R006",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed nav rollover controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: nav=404, units=404, rollover=404, pamm_follows=200. Earlier observation: Not executed. NAV/unit/rollover feature implementation is unconfirmed; no units ledger or controllable rollover event was available for Unit Burning on Full Investor Exit (100% Redemption)."
+  },
+  {
+    "id": "BTPAMM-R007",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed nav rollover controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: nav=404, units=404, rollover=404, pamm_follows=200. Earlier observation: Not executed. NAV/unit/rollover feature implementation is unconfirmed; no units ledger or controllable rollover event was available for Zero-Sum Pool Conservation Law Under 1,000 Simulated Rollovers."
+  },
+  {
+    "id": "BTPAMM-R008",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed nav rollover controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: nav=404, units=404, rollover=404, pamm_follows=200. Earlier observation: Not executed. NAV/unit/rollover feature implementation is unconfirmed; no units ledger or controllable rollover event was available for Rollover Queue Freezing During Open Market Volatility."
+  },
+  {
+    "id": "BTPAMM-R009",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed nav rollover controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: nav=404, units=404, rollover=404, pamm_follows=200. Earlier observation: Not executed. NAV/unit/rollover feature implementation is unconfirmed; no units ledger or controllable rollover event was available for Scheduled vs On-Demand Rollover Execution."
+  },
+  {
+    "id": "BTPAMM-R011",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed nav rollover controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: nav=404, units=404, rollover=404, pamm_follows=200. Earlier observation: Not executed. NAV/unit/rollover feature implementation is unconfirmed; no units ledger or controllable rollover event was available for Negative Return NAV Floor Enforcement (NAV > $0.00)."
+  },
+  {
+    "id": "BTPAMM-R012",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed nav rollover controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: nav=404, units=404, rollover=404, pamm_follows=200. Earlier observation: Not executed. NAV/unit/rollover feature implementation is unconfirmed; no units ledger or controllable rollover event was available for Rollover Statement Generation for Investors."
+  },
+  {
+    "id": "BTPAMM-R013",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed nav rollover controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: nav=404, units=404, rollover=404, pamm_follows=200. Earlier observation: Not executed. NAV/unit/rollover feature implementation is unconfirmed; no units ledger or controllable rollover event was available for Simultaneous Deposits and Withdrawals in Same Rollover Window."
+  },
+  {
+    "id": "BTPAMM-R014",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed nav rollover controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: nav=404, units=404, rollover=404, pamm_follows=200. Earlier observation: Not executed. NAV/unit/rollover feature implementation is unconfirmed; no units ledger or controllable rollover event was available for Dormant Zero-Unit Subscription Cleanup."
+  },
+  {
+    "id": "BTPAMM-R015",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed nav rollover controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: nav=404, units=404, rollover=404, pamm_follows=200. Earlier observation: Not executed. NAV/unit/rollover feature implementation is unconfirmed; no units ledger or controllable rollover event was available for Audit Trail of Rollover NAV Snapshots."
   },
   {
     "id": "BTPAMM-E003",
@@ -108,10 +222,28 @@
     "actual": "Current Real-Net protection update returned 200; position protection read back for current behavior."
   },
   {
+    "id": "BTPAMM-E009",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed scheduled market controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: liquidity=200, funds=200, history=200. Earlier observation: Not executed to the stated preconditions. No position was held across the required Wednesday rollover/swap event."
+  },
+  {
+    "id": "BTPAMM-E010",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed scheduled market controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: liquidity=200, funds=200, history=200. Earlier observation: Not executed to the stated preconditions. No controlled economic-news spread widening event or spread-protection threshold was provided."
+  },
+  {
     "id": "BTPAMM-E011",
     "previous": "BLOCKED",
     "current": "PARTIAL",
     "actual": "A trailing stop was placed through the TSL editor and read back in the real-account position row. The exact favorable/retrace trigger trajectory is being tested separately."
+  },
+  {
+    "id": "BTPAMM-E012",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed internal concurrency controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: positions=200, orders=200, pamm_allocations=200, admin_alerts=404. Earlier observation: Not executed to the stated preconditions. REST allocation reconciliation was tested; investor WebSocket delivery/timing was not instrumented."
   },
   {
     "id": "BTPAMM-E013",
@@ -120,10 +252,58 @@
     "actual": "The isolated A-book PAMM order produced exactly one manager position record on the Black exchange route. No fractional follower/child positions appeared, and cleanup left the manager flat."
   },
   {
+    "id": "BTPAMM-E014",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed lp event controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: liquidity=200, liquidity_money=200, positions=200, orders=200. Earlier observation: The isolated PAMM manager was switched to A-book and ordinary Black exchange market, rejection and pending-order paths were exercised. This case was not executed because its exact LP event (forced partial/tiered fill, requote, slippage, message disorder, currency swing or provider outage) cannot be induced through the exposed controls."
+  },
+  {
+    "id": "BTPAMM-P001",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed lp event controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: liquidity=200, liquidity_money=200, positions=200, orders=200. Earlier observation: The isolated PAMM manager was switched to A-book and ordinary Black exchange market, rejection and pending-order paths were exercised. This case was not executed because its exact LP event (forced partial/tiered fill, requote, slippage, message disorder, currency swing or provider outage) cannot be induced through the exposed controls."
+  },
+  {
+    "id": "BTPAMM-P002",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed lp event controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: liquidity=200, liquidity_money=200, positions=200, orders=200. Earlier observation: The isolated PAMM manager was switched to A-book and ordinary Black exchange market, rejection and pending-order paths were exercised. This case was not executed because its exact LP event (forced partial/tiered fill, requote, slippage, message disorder, currency swing or provider outage) cannot be induced through the exposed controls."
+  },
+  {
+    "id": "BTPAMM-P003",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed lp event controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: liquidity=200, liquidity_money=200, positions=200, orders=200. Earlier observation: The isolated PAMM manager was switched to A-book and ordinary Black exchange market, rejection and pending-order paths were exercised. This case was not executed because its exact LP event (forced partial/tiered fill, requote, slippage, message disorder, currency swing or provider outage) cannot be induced through the exposed controls."
+  },
+  {
+    "id": "BTPAMM-P004",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed lp event controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: liquidity=200, liquidity_money=200, positions=200, orders=200. Earlier observation: The isolated PAMM manager was switched to A-book and ordinary Black exchange market, rejection and pending-order paths were exercised. This case was not executed because its exact LP event (forced partial/tiered fill, requote, slippage, message disorder, currency swing or provider outage) cannot be induced through the exposed controls."
+  },
+  {
+    "id": "BTPAMM-P005",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed lp event controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: liquidity=200, liquidity_money=200, positions=200, orders=200. Earlier observation: The isolated PAMM manager was switched to A-book and ordinary Black exchange market, rejection and pending-order paths were exercised. This case was not executed because its exact LP event (forced partial/tiered fill, requote, slippage, message disorder, currency swing or provider outage) cannot be induced through the exposed controls."
+  },
+  {
+    "id": "BTPAMM-P006",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed lp event controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: liquidity=200, liquidity_money=200, positions=200, orders=200. Earlier observation: The isolated PAMM manager was switched to A-book and ordinary Black exchange market, rejection and pending-order paths were exercised. This case was not executed because its exact LP event (forced partial/tiered fill, requote, slippage, message disorder, currency swing or provider outage) cannot be induced through the exposed controls."
+  },
+  {
     "id": "BTPAMM-P007",
     "previous": "BLOCKED",
     "current": "PASS",
     "actual": "With50000 pooled principal, an allowed-size10-lot BLACK:XAUUSD A-book parent order reached the liquidity provider and was rejected for insufficient LP margin (HTTP400). Zero position mounted and pool capital remained unlocked."
+  },
+  {
+    "id": "BTPAMM-P008",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed lp event controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: liquidity=200, liquidity_money=200, positions=200, orders=200. Earlier observation: Not executed. The broker simulator/LP event needed for Execution Slippage Attribution Analysis is not exposed by the supplied accounts."
   },
   {
     "id": "BTPAMM-P009",
@@ -132,10 +312,46 @@
     "actual": "Twenty concurrent0.01-lot BLACK:XAUUSD A-book PAMM market orders all filled through the active bridge; zero429/rate-limit responses occurred and20 manager positions mounted before clean closeout."
   },
   {
+    "id": "BTPAMM-P010",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed lp event controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: liquidity=200, liquidity_money=200, positions=200, orders=200. Earlier observation: The isolated PAMM manager was switched to A-book and ordinary Black exchange market, rejection and pending-order paths were exercised. This case was not executed because its exact LP event (forced partial/tiered fill, requote, slippage, message disorder, currency swing or provider outage) cannot be induced through the exposed controls."
+  },
+  {
+    "id": "BTPAMM-P011",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed lp event controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: liquidity=200, liquidity_money=200, positions=200, orders=200. Earlier observation: The isolated PAMM manager was switched to A-book and ordinary Black exchange market, rejection and pending-order paths were exercised. This case was not executed because its exact LP event (forced partial/tiered fill, requote, slippage, message disorder, currency swing or provider outage) cannot be induced through the exposed controls."
+  },
+  {
+    "id": "BTPAMM-P012",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed lp event controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: liquidity=200, liquidity_money=200, positions=200, orders=200. Earlier observation: The isolated PAMM manager was switched to A-book and ordinary Black exchange market, rejection and pending-order paths were exercised. This case was not executed because its exact LP event (forced partial/tiered fill, requote, slippage, message disorder, currency swing or provider outage) cannot be induced through the exposed controls."
+  },
+  {
+    "id": "BTPAMM-P013",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed lp event controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: liquidity=200, liquidity_money=200, positions=200, orders=200. Earlier observation: The isolated PAMM manager was switched to A-book and ordinary Black exchange market, rejection and pending-order paths were exercised. This case was not executed because its exact LP event (forced partial/tiered fill, requote, slippage, message disorder, currency swing or provider outage) cannot be induced through the exposed controls."
+  },
+  {
+    "id": "BTPAMM-P014",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed lp event controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: liquidity=200, liquidity_money=200, positions=200, orders=200. Earlier observation: The isolated PAMM manager was switched to A-book and ordinary Black exchange market, rejection and pending-order paths were exercised. This case was not executed because its exact LP event (forced partial/tiered fill, requote, slippage, message disorder, currency swing or provider outage) cannot be induced through the exposed controls."
+  },
+  {
     "id": "BTPAMM-P015",
     "previous": "BLOCKED",
     "current": "PARTIAL",
     "actual": "A-book execution responses and OMS history retained order IDs, prices and timestamps, and admin liquidity state identified Black exchange as up. No distinct LP fill ID/blotter mapping was exposed."
+  },
+  {
+    "id": "BTPAMM-M001",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed risk controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: funds=200, positions=200, orders=200. Earlier observation: Not executed. The exact risk/solvency fixture for Collective Pooled Margin Consumption Calculation is absent; ordinary position margins and free-margin rejection do not prove this case."
   },
   {
     "id": "BTPAMM-M002",
@@ -156,10 +372,34 @@
     "actual": "Stop-out allocation records were collected. The reference exact 50-percent investor loss/$25000 remainder fixture was not synthesized by this account-level margin trigger."
   },
   {
+    "id": "BTPAMM-M005",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed risk controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: funds=200, positions=200, orders=200. Earlier observation: Not executed. The exact risk/solvency fixture for Negative Balance Protection (NBP) on BlackTrader PAMM Pool is absent; ordinary position margins and free-margin rejection do not prove this case."
+  },
+  {
     "id": "BTPAMM-M006",
     "previous": "BLOCKED",
     "current": "PARTIAL",
     "actual": "With QA leverage100, an over-margin BTC order returned 400. Exact200-lot EURUSD reference order was not exercised."
+  },
+  {
+    "id": "BTPAMM-M008",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed risk controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: funds=200, positions=200, orders=200. Earlier observation: Not executed. The required scheduled margin event was not reproduced for Dynamic Leverage Scaling on News Announcements."
+  },
+  {
+    "id": "BTPAMM-M009",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed risk controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: funds=200, positions=200, orders=200. Earlier observation: Not executed. The required scheduled margin event was not reproduced for Overnight Hedging Margin Treatment on Real (Hedging)."
+  },
+  {
+    "id": "BTPAMM-M010",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed risk controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: funds=200, positions=200, orders=200. Earlier observation: Not executed. The exact risk/solvency fixture for Manager Capital Depletion Floor (Skin in the Game Protection) is absent; ordinary position margins and free-margin rejection do not prove this case."
   },
   {
     "id": "BTPAMM-M011",
@@ -168,10 +408,58 @@
     "actual": "100 concurrent0.10 BUY requests yielded100 positions; aggregate quantity 9.99999999999998, used margin 6394.329999999993, sum of position margins 6394.329999999993. Independent entry-price\u00d7quantity/100 margin calculation also matches within1e-7."
   },
   {
+    "id": "BTPAMM-M012",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed risk controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: funds=200, positions=200, orders=200. Earlier observation: Not executed. The exact risk/solvency fixture for Sub-Account Isolation from External Broker Accounts is absent; ordinary position margins and free-margin rejection do not prove this case."
+  },
+  {
+    "id": "BTPAMM-M013",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed risk controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: funds=200, positions=200, orders=200. Earlier observation: Not executed. The required scheduled margin event was not reproduced for Weekend Margin Requirement Increase."
+  },
+  {
+    "id": "BTPAMM-M014",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed risk controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: funds=200, positions=200, orders=200. Earlier observation: Not executed. The exact risk/solvency fixture for Emergency Derisking Action by Broker Risk Officer is absent; ordinary position margins and free-margin rejection do not prove this case."
+  },
+  {
     "id": "BTPAMM-M015",
     "previous": "BLOCKED",
     "current": "PASS",
     "actual": "After a recorded stop-out,3 fresh investor relationships injected15000; free margin restored exactly15000, a new market trade filled and closed, and all prior closed history remained."
+  },
+  {
+    "id": "BTPAMM-D002",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed nav rollover controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: nav=404, units=404, rollover=404, pamm_follows=200. Earlier observation: Not executed to the stated preconditions. Partial withdrawal queued at rollover is not exposed by the tested join/unfollow flows; feature scope is unconfirmed."
+  },
+  {
+    "id": "BTPAMM-D003",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed withdrawal controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: withdrawals=404, admin_liquidations=404, pamm_follows=200. Earlier observation: Not executed to the stated preconditions. No supported partial-withdrawal contract and high-free-margin policy fixture were supplied."
+  },
+  {
+    "id": "BTPAMM-D004",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed withdrawal controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: withdrawals=404, admin_liquidations=404, pamm_follows=200. Earlier observation: Not executed to the stated preconditions. The tested endpoint performs full unfollow; an explicit withdrawal-request amount/free-margin fixture was not available."
+  },
+  {
+    "id": "BTPAMM-D006",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed nav rollover controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: nav=404, units=404, rollover=404, pamm_follows=200. Earlier observation: Not executed to the stated preconditions. No pending withdrawal/rollover queue existed to cancel."
+  },
+  {
+    "id": "BTPAMM-D007",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed withdrawal controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: withdrawals=404, admin_liquidations=404, pamm_follows=200. Earlier observation: Not executed to the stated preconditions. No configured lockup or early-exit-penalty agreement exists in the supplied test fixture."
   },
   {
     "id": "BTPAMM-D008",
@@ -184,6 +472,120 @@
     "previous": "PARTIAL",
     "current": "PASS",
     "actual": "10 concurrent1000 deposits committed within 102ms;10 unique active investors and10000 principal. Observable concurrency/conservation passed; implementation lock primitive is not inferred."
+  },
+  {
+    "id": "BTPAMM-D010",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed withdrawal controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: withdrawals=404, admin_liquidations=404, pamm_follows=200. Earlier observation: Not executed to the stated preconditions. PAMM principal was tested; no payment-provider chargeback/reversal fixture is available."
+  },
+  {
+    "id": "BTPAMM-D011",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed withdrawal controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: withdrawals=404, admin_liquidations=404, pamm_follows=200. Earlier observation: Not executed to the stated preconditions. No supported profit-only withdrawal route was identified in the provided deployed contract."
+  },
+  {
+    "id": "BTPAMM-D012",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed withdrawal controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: withdrawals=404, admin_liquidations=404, pamm_follows=200. Earlier observation: Not executed to the stated preconditions. No explicit manager personal-capital withdrawal fixture/floor was configured."
+  },
+  {
+    "id": "BTPAMM-D015",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed withdrawal controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: withdrawals=404, admin_liquidations=404, pamm_follows=200. Earlier observation: Isolated QA managers are now available. No Liquidate & Close Pool control was located in the inspected manager UI; its developer master contract describes install-controlled status. The required archive/refund workflow was not executed."
+  },
+  {
+    "id": "BTPAMM-H001",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed fee hwm controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: hwm=404, shares=404, statements=404, pamm_allocations=200. Earlier observation: Not executed. The HWM/AUM/fee-ledger feature required by Investor High-Water Mark Baseline Initialization is unconfirmed. Public settle-on-exit fields alone do not prove the reference behavior."
+  },
+  {
+    "id": "BTPAMM-H002",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed fee hwm controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: hwm=404, shares=404, statements=404, pamm_allocations=200. Earlier observation: Not executed. The HWM/AUM/fee-ledger feature required by Performance Fee Deduction on Net New Profit (Above HWM) is unconfirmed. Public settle-on-exit fields alone do not prove the reference behavior."
+  },
+  {
+    "id": "BTPAMM-H003",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed fee hwm controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: hwm=404, shares=404, statements=404, pamm_allocations=200. Earlier observation: Not executed. The HWM/AUM/fee-ledger feature required by Drawdown Period: Zero Fee Charged Below Follower HWM is unconfirmed. Public settle-on-exit fields alone do not prove the reference behavior."
+  },
+  {
+    "id": "BTPAMM-H004",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed fee hwm controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: hwm=404, shares=404, statements=404, pamm_allocations=200. Earlier observation: Not executed. The HWM/AUM/fee-ledger feature required by Recovery Period: Fee Charged ONLY After Breaching Historical Peak is unconfirmed. Public settle-on-exit fields alone do not prove the reference behavior."
+  },
+  {
+    "id": "BTPAMM-H005",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed fee hwm controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: hwm=404, shares=404, statements=404, pamm_allocations=200. Earlier observation: Not executed. The HWM/AUM/fee-ledger feature required by Exceeding Prior HWM After Full Recovery is unconfirmed. Public settle-on-exit fields alone do not prove the reference behavior."
+  },
+  {
+    "id": "BTPAMM-H006",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed fee hwm controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: hwm=404, shares=404, statements=404, pamm_allocations=200. Earlier observation: Not executed. The HWM/AUM/fee-ledger feature required by Independent Fee Outcomes: Follower A Profitable vs Follower B Underwater is unconfirmed. Public settle-on-exit fields alone do not prove the reference behavior."
+  },
+  {
+    "id": "BTPAMM-H007",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed fee hwm controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: hwm=404, shares=404, statements=404, pamm_allocations=200. Earlier observation: Not executed. The HWM/AUM/fee-ledger feature required by Annualized Management Fee (AUM Fee) Daily Accrual is unconfirmed. Public settle-on-exit fields alone do not prove the reference behavior."
+  },
+  {
+    "id": "BTPAMM-H008",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed fee hwm controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: hwm=404, shares=404, statements=404, pamm_allocations=200. Earlier observation: Not executed. The HWM/AUM/fee-ledger feature required by Deposit Proportional HWM Upward Adjustment is unconfirmed. Public settle-on-exit fields alone do not prove the reference behavior."
+  },
+  {
+    "id": "BTPAMM-H009",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed fee hwm controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: hwm=404, shares=404, statements=404, pamm_allocations=200. Earlier observation: Not executed. The HWM/AUM/fee-ledger feature required by Withdrawal Pro-Rata HWM Downward Adjustment is unconfirmed. Public settle-on-exit fields alone do not prove the reference behavior."
+  },
+  {
+    "id": "BTPAMM-H010",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed fee hwm controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: hwm=404, shares=404, statements=404, pamm_allocations=200. Earlier observation: Reference manager payout route returned HTTP 404; required 100-follower fee fixture and itemized payout contract are unverified. Existing missing-route report is not filed again."
+  },
+  {
+    "id": "BTPAMM-H011",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed fee hwm controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: hwm=404, shares=404, statements=404, pamm_allocations=200. Earlier observation: Not executed. The HWM/AUM/fee-ledger feature required by Broker Platform Fee Retainage Split is unconfirmed. Public settle-on-exit fields alone do not prove the reference behavior."
+  },
+  {
+    "id": "BTPAMM-H012",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed fee hwm controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: hwm=404, shares=404, statements=404, pamm_allocations=200. Earlier observation: Not executed. The HWM/AUM/fee-ledger feature required by Introducing Broker (IB) Commission Rebate from PAMM Fees is unconfirmed. Public settle-on-exit fields alone do not prove the reference behavior."
+  },
+  {
+    "id": "BTPAMM-H013",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed fee hwm controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: hwm=404, shares=404, statements=404, pamm_allocations=200. Earlier observation: Not executed. The HWM/AUM/fee-ledger feature required by Fee Deduction Concurrency with Open Positions is unconfirmed. Public settle-on-exit fields alone do not prove the reference behavior."
+  },
+  {
+    "id": "BTPAMM-H014",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed fee hwm controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: hwm=404, shares=404, statements=404, pamm_allocations=200. Earlier observation: Not executed. The HWM/AUM/fee-ledger feature required by Follower Statement Fee Itemization is unconfirmed. Public settle-on-exit fields alone do not prove the reference behavior."
+  },
+  {
+    "id": "BTPAMM-H015",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed fee hwm controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: hwm=404, shares=404, statements=404, pamm_allocations=200. Earlier observation: Not executed. The HWM/AUM/fee-ledger feature required by Clawback Prevention Across Consecutive Cycles is unconfirmed. Public settle-on-exit fields alone do not prove the reference behavior."
   },
   {
     "id": "BTPAMM-C001",
@@ -204,16 +606,148 @@
     "actual": "50 simultaneous investor joins raced3 rapid market orders. 50 joins committed, 3 positions; pool principal 5000. Internal transaction snapshot/isolation trace is not exposed."
   },
   {
+    "id": "BTPAMM-C006",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed internal concurrency controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: positions=200, orders=200, pamm_allocations=200, admin_alerts=404. Earlier observation: Not executed. The required concurrency/internal-system fixture for Database Row Locking on Pool Balance Ledger was unavailable."
+  },
+  {
+    "id": "BTPAMM-C007",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed internal concurrency controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: positions=200, orders=200, pamm_allocations=200, admin_alerts=404. Earlier observation: Not executed. The required concurrency/internal-system fixture for High-Frequency Tick Burst (500 ticks/sec) During Position Holding was unavailable."
+  },
+  {
+    "id": "BTPAMM-C008",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed internal concurrency controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: positions=200, orders=200, pamm_allocations=200, admin_alerts=404. Earlier observation: Not executed. The required concurrency/internal-system fixture for Dead-Letter Queue (DLQ) Handling for Failed Allocation Events was unavailable."
+  },
+  {
+    "id": "BTPAMM-C009",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed internal concurrency controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: positions=200, orders=200, pamm_allocations=200, admin_alerts=404. Earlier observation: Not executed. The required concurrency/internal-system fixture for WebSocket Broadcast Fan-Out to 500 Connected Clients was unavailable."
+  },
+  {
+    "id": "BTPAMM-C010",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed internal concurrency controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: positions=200, orders=200, pamm_allocations=200, admin_alerts=404. Earlier observation: Not executed. The required concurrency/internal-system fixture for Memory Leak Profiling Under 50,000 Simulated Allocations was unavailable."
+  },
+  {
+    "id": "BTPAMM-C011",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed internal concurrency controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: positions=200, orders=200, pamm_allocations=200, admin_alerts=404. Earlier observation: Not executed. The required concurrency/internal-system fixture for Batch Database Update Optimization (UNNEST / Bulk Insert) was unavailable."
+  },
+  {
+    "id": "BTPAMM-C012",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed internal concurrency controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: positions=200, orders=200, pamm_allocations=200, admin_alerts=404. Earlier observation: Not executed. The required concurrency/internal-system fixture for Database Deadlock Prevention via Deterministic Account ID Sorting was unavailable."
+  },
+  {
+    "id": "BTPAMM-C013",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed internal concurrency controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: positions=200, orders=200, pamm_allocations=200, admin_alerts=404. Earlier observation: Not executed. The required concurrency/internal-system fixture for Network Latency Variance Across Distributed Broker Servers was unavailable."
+  },
+  {
+    "id": "BTPAMM-C014",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed internal concurrency controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: positions=200, orders=200, pamm_allocations=200, admin_alerts=404. Earlier observation: Not executed. The required concurrency/internal-system fixture for Distributed Lock (Redlock) Timeout on Allocation Service was unavailable."
+  },
+  {
     "id": "BTPAMM-C015",
     "previous": "BLOCKED",
     "current": "PARTIAL",
     "actual": "100-investor allocation completeness and per-row arithmetic passed; both100 and500 runs retained detailed investor responses."
   },
   {
+    "id": "BTPAMM-O001",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed operations controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: admin_pamm=404, admin_reconcile=404, admin_disputes=404, admin_emergency=404, admin_alerts=404, admin_reports=404. Earlier observation: Not executed. The operational capability or internal evidence for Broker Global Emergency Kill-Switch on PAMM Pool is not available through the supplied account checks."
+  },
+  {
+    "id": "BTPAMM-O002",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed withdrawal controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: withdrawals=404, admin_liquidations=404, pamm_follows=200. Earlier observation: Not executed. The operational capability or internal evidence for Admin Forced Liquidation of Master PAMM Positions is not available through the supplied account checks."
+  },
+  {
+    "id": "BTPAMM-O003",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed operations controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: admin_pamm=404, admin_reconcile=404, admin_disputes=404, admin_emergency=404, admin_alerts=404, admin_reports=404. Earlier observation: Not executed. The operational capability or internal evidence for Manual P&L Allocation Re-Calculation Console is not available through the supplied account checks."
+  },
+  {
+    "id": "BTPAMM-O004",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed operations controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: admin_pamm=404, admin_reconcile=404, admin_disputes=404, admin_emergency=404, admin_alerts=404, admin_reports=404. Earlier observation: Not executed. The operational capability or internal evidence for Investor Trade Dispute Tick-by-Tick Reconstruction Tool is not available through the supplied account checks."
+  },
+  {
+    "id": "BTPAMM-O005",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed operations controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: admin_pamm=404, admin_reconcile=404, admin_disputes=404, admin_emergency=404, admin_alerts=404, admin_reports=404. Earlier observation: Not executed. The operational capability or internal evidence for Zero-Downtime Rolling Deployment of PAMM Microservices is not available through the supplied account checks."
+  },
+  {
+    "id": "BTPAMM-O006",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed operations controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: admin_pamm=404, admin_reconcile=404, admin_disputes=404, admin_emergency=404, admin_alerts=404, admin_reports=404. Earlier observation: Not executed. The operational capability or internal evidence for Individual Investor Emergency Unlink by Administrator is not available through the supplied account checks."
+  },
+  {
     "id": "BTPAMM-O007",
     "previous": "BLOCKED",
     "current": "PARTIAL",
     "actual": "Authorized admin adjustment credited exactly100 with the supplied audit remark; before 50003.74,after 50103.74. Corporate treasury debit and immutable ledger-note evidence are not exposed by this response."
+  },
+  {
+    "id": "BTPAMM-O008",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed operations controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: admin_pamm=404, admin_reconcile=404, admin_disputes=404, admin_emergency=404, admin_alerts=404, admin_reports=404. Earlier observation: Not executed. The operational capability or internal evidence for Real-Time SRE Alerting on Allocation Latency Spikes (>250ms) is not available through the supplied account checks."
+  },
+  {
+    "id": "BTPAMM-O009",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed operations controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: admin_pamm=404, admin_reconcile=404, admin_disputes=404, admin_emergency=404, admin_alerts=404, admin_reports=404. Earlier observation: Not executed. The operational capability or internal evidence for Automated Daily EOD Reconciliation: Pool Balances vs Clearing LP is not available through the supplied account checks."
+  },
+  {
+    "id": "BTPAMM-O010",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed operations controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: admin_pamm=404, admin_reconcile=404, admin_disputes=404, admin_emergency=404, admin_alerts=404, admin_reports=404. Earlier observation: Not executed. The operational capability or internal evidence for Disaster Recovery Warm Standby Cluster Failover is not available through the supplied account checks."
+  },
+  {
+    "id": "BTPAMM-O011",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed operations controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: admin_pamm=404, admin_reconcile=404, admin_disputes=404, admin_emergency=404, admin_alerts=404, admin_reports=404. Earlier observation: Not executed. The operational capability or internal evidence for Emergency Pool Position Force-Close Without Disconnecting Pool is not available through the supplied account checks."
+  },
+  {
+    "id": "BTPAMM-O012",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed operations controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: admin_pamm=404, admin_reconcile=404, admin_disputes=404, admin_emergency=404, admin_alerts=404, admin_reports=404. Earlier observation: Not executed. The operational capability or internal evidence for Manager Balance Decoupling from Follower Capital is not available through the supplied account checks."
+  },
+  {
+    "id": "BTPAMM-O013",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed operations controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: admin_pamm=404, admin_reconcile=404, admin_disputes=404, admin_emergency=404, admin_alerts=404, admin_reports=404. Earlier observation: Not executed. The operational capability or internal evidence for Historical Performance Tear-Sheet Generator for Prospective Investors is not available through the supplied account checks."
+  },
+  {
+    "id": "BTPAMM-O015",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed operations controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: admin_pamm=404, admin_reconcile=404, admin_disputes=404, admin_emergency=404, admin_alerts=404, admin_reports=404. Earlier observation: Not executed. The operational capability or internal evidence for Automated Daily Reconciliation Dispatched to Broker Risk Committee is not available through the supplied account checks."
   },
   {
     "id": "PAMM-X07-09",
@@ -292,6 +826,78 @@
     "previous": "BLOCKED",
     "current": "PASS",
     "actual": "Reload restored the same saved manager and widget. Unsaved draft edits did not change the saved name; the Settings toggle may retain an unsaved draft until reload."
+  },
+  {
+    "id": "PAMM-X13-01",
+    "previous": "BLOCKED",
+    "current": "PASS",
+    "actual": "The client connection was cut before upstream dispatch; no server order or position was created."
+  },
+  {
+    "id": "PAMM-X13-02",
+    "previous": "BLOCKED",
+    "current": "PASS",
+    "actual": "The connection was dropped only after the server completed order dispatch; reconciliation found one authoritative open position."
+  },
+  {
+    "id": "PAMM-X13-03",
+    "previous": "BLOCKED",
+    "current": "PASS",
+    "actual": "The accepted BUY response was discarded. A fresh authoritative read found exactly one position and no automatic duplicate."
+  },
+  {
+    "id": "PAMM-X13-04",
+    "previous": "BLOCKED",
+    "current": "PASS",
+    "actual": "The squareoff response was discarded; reconciliation found zero open positions, 1 new close and 0 new allocation. A zero-PNL close may legitimately create no follower allocation; the duplicate guard is zero-or-one."
+  },
+  {
+    "id": "PAMM-X13-05",
+    "previous": "BLOCKED",
+    "current": "PASS",
+    "actual": "Chrome DevTools showed the 3G preset before a browser chart order. One Real Hedging position mounted after the delayed interaction; there was no duplicate or stuck pending order."
+  },
+  {
+    "id": "PAMM-X13-06",
+    "previous": "BLOCKED",
+    "current": "PASS",
+    "actual": "With Chrome DevTools still on 3G, Close Position completed once, the Real Hedging position count returned to zero and one additional close-history row appeared."
+  },
+  {
+    "id": "PAMM-X13-07",
+    "previous": "BLOCKED",
+    "current": "PASS",
+    "actual": "After an accepted order response was lost, three offline reads failed and the fourth online reconciliation found exactly one position with no replay."
+  },
+  {
+    "id": "PAMM-X13-08",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "An older pool read was delivered after 1863ms while a newer direct read already showed 1 investor. Transport reversal was reproduced; browser rendering was not available."
+  },
+  {
+    "id": "PAMM-X13-09",
+    "previous": "BLOCKED",
+    "current": "PASS",
+    "actual": "The follower read channel was offline during the parent lifecycle; server settlement still produced 1 allocation visible after reconnect."
+  },
+  {
+    "id": "PAMM-X13-10",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Two valid reads were delivered in reverse completion order (457ms then 1863ms). Responses remained authoritative; Chromium UI stale-response suppression was not observable."
+  },
+  {
+    "id": "PAMM-X14-01",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed public pamm controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: pamm_follows=200, pamm_allocations=200, history=200. Earlier observation: Not executed to the stated preconditions. Live ticks did not provide a controlled exactly one-cent parent gain, and reserve postings are not public."
+  },
+  {
+    "id": "PAMM-X14-02",
+    "previous": "BLOCKED",
+    "current": "PARTIAL",
+    "actual": "Retested once on 23 November 2026. One live retest attempt completed against the closest safe deployed public pamm controls. The available observation did not establish every reference precondition or expected result, so this row is PARTIAL rather than passed. Probe results: pamm_follows=200, pamm_allocations=200, history=200. Earlier observation: Not executed to the stated preconditions. Live ticks did not provide a controlled exactly one-cent parent loss, and reserve postings are not public."
   },
   {
     "id": "PAMM-X15-01",

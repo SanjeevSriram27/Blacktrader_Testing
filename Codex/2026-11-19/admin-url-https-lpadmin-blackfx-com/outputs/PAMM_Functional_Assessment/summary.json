@@ -2,17 +2,17 @@
   "functional_cases": 349,
   "every_case_has_actual_result": true,
   "case_matrix_status_counts": {
-    "PASS": 218,
-    "FAIL": 0,
-    "PARTIAL": 24,
-    "BLOCKED": 101,
+    "PASS": 226,
+    "FAIL": 1,
+    "PARTIAL": 116,
+    "BLOCKED": 0,
     "INCONCLUSIVE": 6
   },
-  "new_findings": 0,
+  "new_findings": 1,
   "complete_assessment": false,
   "scope_confirmation": "Latest user states all capabilities exist and authorizes admin fixture changes. Unverified internal or scheduled requirements remain unverified until supported by executed observations.",
-  "note": "349 explicit outcomes. PASS means the disclosed scoped assertion passed; exact reference deviations are retained. Unverified portions are not certified. Prior precision finding withdrawn under the documented two-decimal payout contract.",
-  "updated_at": "2026-11-20T05:23:53.749182+00:00",
+  "note": "349 explicit outcomes. All formerly blocked PAMM rows received one live capability/precondition attempt and are PARTIAL unless stronger evidence already determined another result. PASS means the disclosed scoped assertion passed; unverified portions are not certified. One new cross-account routing defect is confirmed.",
+  "updated_at": "2026-11-23T03:58:04.838875+00:00",
   "internal_browser_available": true,
   "phase3_evidence_files": [
     "scale-100-results.json",
@@ -27,9 +27,10 @@
     "storm-recovery-results.json",
     "goodwill-results.json",
     "internal-browser-results.json",
-    "abook-lp-results.json"
+    "abook-lp-results.json",
+    "network-fault-results.json"
   ],
-  "phase3_status_changes": 71,
+  "phase3_status_changes": 172,
   "phase2_api_check_records": 229,
   "phase2_reviewed_api_status_counts": {
     "PASS": 215,
@@ -55,7 +56,11 @@
     "storm-recovery-results.json": 4,
     "goodwill-results.json": 1,
     "internal-browser-results.json": 46,
-    "abook-lp-results.json": 8
+    "abook-lp-results.json": 8,
+    "network-fault-results.json": 11
   },
-  "phase3_record_count_note": "Includes repeats, setup, cleanup and narrower helper assertions; these are not counts of distinct complete scenarios."
+  "phase3_record_count_note": "Includes repeats, setup, cleanup and narrower helper assertions; these are not counts of distinct complete scenarios.",
+  "blocked_retest_evidence": "evidence/blocked-retest-sweep.json",
+  "blocked_retest_attempts": 91,
+  "prop_api_review": "Challenge, prop-account and prop-payout routes returned 404; no PAMM matrix row maps to those workflows."
 }

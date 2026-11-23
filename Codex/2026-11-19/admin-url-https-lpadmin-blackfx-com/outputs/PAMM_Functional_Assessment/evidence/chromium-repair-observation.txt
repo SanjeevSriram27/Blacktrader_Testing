@@ -1,0 +1,6 @@
+Chromium repair observation — 20 November 2026
+
+- Installed Playwright expected Chromium revision 1255 while the cache contained revision 1254.
+- Playwright's Chromium installer removed the unused revision and installed Chrome for Testing and headless shell revision 1255.
+- Direct shell launch still aborts inside the command sandbox with a macOS Mach-port/bootstrap permission error; reinstalling does not change that sandbox restriction.
+- The repaired Chrome for Testing application launched through the internal computer-use browser and completed the browser-side tests recorded in chromium-network-ui.txt.

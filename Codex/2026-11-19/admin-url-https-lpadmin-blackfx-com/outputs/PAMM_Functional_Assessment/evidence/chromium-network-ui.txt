@@ -1,0 +1,32 @@
+Chromium network and account-routing observation — 20 November 2026
+
+Environment
+- Repaired Playwright Chromium to the revision required by the installed Playwright package: Chromium/Chrome for Testing 159.0.8154.6, revision 1255.
+- Chrome for Testing opened successfully through the internal computer-use browser.
+- The supplied PAMM master logged in through the client portal.
+- Real (Hedging) was temporarily enabled, selected in both Orders and Trades, and confirmed LIVE.
+- BTCUSDT.P quantity was 0.001. The account uses simulated QA balances.
+
+3G execution
+- Chrome DevTools Network showed Presets: 3G before the browser order.
+- A single chart ask-price click created exactly one Real (Hedging) position; the Trades panel changed from LIVE 0 to LIVE 1.
+- Close Position under the same 3G preset returned the Real panel to LIVE 0 with one additional close-history row.
+- No residual Real position remained.
+
+Offline attempt
+- Chrome DevTools showed Presets: Offline before a chart click.
+- An already-open application channel remained capable of placing an order, so this was not a valid physical-disconnect assertion. The position was closed after restoring No throttling.
+- The independent fault proxy result is authoritative for cut-before-dispatch: the request never reached the server and no position was created (PAMM-X13-01).
+
+New cross-account routing defect
+- Although Real (Hedging) was the selected LIVE account in Orders and Trades, each of the three browser chart clicks also created a Paper (Hedging) position.
+- Paper positions had the same symbols, quantities and timestamps as the corresponding Real interactions, but distinct order IDs.
+- After Real was disabled, the Paper panel displayed three open positions at the three browser-click timestamps. This is a reproducible one-click-to-two-accounts routing failure.
+- All three mirrored Paper positions were bulk squared off; the UI confirmed "Bulk square off complete: 3 of 3."
+
+Cleanup verified
+- Real and Paper positions: zero.
+- Network preset: Disabled / No throttling.
+- Real (Hedging): restored to disabled.
+- Temporary BTCUSDT.P watchlist row: removed.
+

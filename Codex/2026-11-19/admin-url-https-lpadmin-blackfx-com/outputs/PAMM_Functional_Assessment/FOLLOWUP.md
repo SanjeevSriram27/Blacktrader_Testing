@@ -1,6 +1,6 @@
 # Internal-browser and admin-fixture follow-up
 
-All349 scenarios have a result row. Current totals are218 PASS,24 PARTIAL,101 BLOCKED and6 INCONCLUSIVE; zero current FAIL.71 rows changed status from the phase2 snapshot. This is an assessment of observed behavior, not a complete certification of every reference requirement.
+All349 scenarios have a result row. Current totals are226 PASS,1 FAIL,116 PARTIAL,0 BLOCKED and6 INCONCLUSIVE.172 rows changed status from the phase2 snapshot. This is an assessment of observed behavior, not a complete certification of every reference requirement.
 
 ## Work completed
 
@@ -36,7 +36,7 @@ Member search accepts public account UUID/email; the internal `mem_` identifier 
 
 ## Finding correction and final state
 
-The proposed fractional-cent payout bug was withdrawn: the documented unfollow formula explicitly rounds payouts to2 decimals. Both boundary observations match that contract. No existing issue was filed again. See [finding disposition](NEW_BUGS.md).
+The proposed fractional-cent payout bug was withdrawn: the documented unfollow formula explicitly rounds payouts to2 decimals. Both boundary observations match that contract. No existing issue was filed again. A separate new cross-account routing defect was later confirmed by the Chromium continuation. See [finding disposition](NEW_BUGS.md).
 
 The final audit reads the original11 accounts and14 isolated actors (including the scale master). All are flat with no pending orders. Original PM Master remains at10 investors and1000 pooled principal with20% fee. Original accounts were not modified in this follow-up; earlier test PNL remains in their historical balances. The isolated500-investor fixture is retained for reuse. Temporary relationships used by fee/risk cases were closed. Simulated account balances retain actual QA PNL and authorized setup adjustments rather than erasing their history.
 
@@ -61,6 +61,28 @@ Evidence: [whale/100-order run](evidence/whale-margin-results.json), [deposit st
 
 Isolated Manager I was changed from B-book to A-book through Admin > Members. The Liquidity page identified Black exchange as active/up. With50000 pooled principal, one BLACK:XAUUSD parent market order filled and mounted exactly once. Twenty concurrent0.01-lot market orders all filled, with zero429 responses. A valid-size10-lot order reached the LP and returned `the liquidity provider rejected the order: Not enough margin!`; no position mounted and no pool capital remained locked. An A-book LIMIT order also persisted under its original ID and was cancelled cleanly.
 
-These observations move A001,E013,P007 andP009 to PASS, and P015 from BLOCKED to PARTIAL because OMS history still does not expose a distinct LP fill ID/blotter mapping. Exact partial-fill,VWAP,requote,slippage,message-ordering,IOC/FOK and failover rows remain BLOCKED pending a scoped LP event-injection control. Manager I was flat,had no pending orders,had its temporary follower settled and was restored to B-book after testing.
+These observations move A001,E013,P007 andP009 to PASS, and P015 to PARTIAL because OMS history still does not expose a distinct LP fill ID/blotter mapping. Exact partial-fill,VWAP,requote,slippage,message-ordering,IOC/FOK and failover rows were each retested once against the available LP/admin controls and remain PARTIAL pending a scoped event-injection control. Manager I was flat,had no pending orders,had its temporary follower settled and was restored to B-book after testing.
 
 Evidence: [A-book API run](evidence/abook-lp-results.json), [admin routing observation](evidence/abook-ui-observation.txt).
+
+## Chromium and network-fault continuation
+
+Playwright's cached Chromium revision was repaired to the revision required by the installed package. Direct shell launch remains restricted by the command sandbox, but Chrome for Testing launched through the internal browser and completed the UI work.
+
+The localhost fault proxy passed cut-before-dispatch, cut-after-dispatch, lost BUY response, lost close response, three disconnect/reconnect cycles and follower-offline settlement. A nonzero-PNL follower-offline close produced exactly one allocation after reconnect. Older and newer reads were deliberately completed out of order; transport reversal passed, while proof that the browser rejects stale rendering remains PARTIAL.
+
+Chrome DevTools 3G testing passed one Real order and one Real close without duplicates or a residual position. DevTools Offline did not sever the application's already-open channel and therefore is not treated as a physical-disconnect pass or failure; the cut-before proxy case supplies the authoritative disconnected-submit result.
+
+The Chromium run exposed PAMM-FUNC-002: Real was selected in Orders and Trades, but each of three chart clicks also opened a distinct Paper position at the same timestamp. All Real and Paper positions were closed. Network throttling, Real enablement and the watchlist were restored to their original state.
+
+Evidence: [network-fault results](evidence/network-fault-results.json), [Chromium UI observation](evidence/chromium-network-ui.txt), [Chromium repair](evidence/chromium-repair-observation.txt).
+
+## Formerly blocked-row retest on 23 November
+
+All91 rows that were still BLOCKED received one live read-only retest against the closest safe deployed control. Core admin member,liquidity,OMS funds/positions/orders/history and PAMM follows/allocations endpoints returned200. NAV,units,rollover,partial withdrawals,HWM,statements,consolidated shares and the probed PAMM operations/SRE endpoints returned404. A404 is recorded as an observed capability result, not by itself as proof of a functional defect.
+
+Every attempted row is now PARTIAL unless stronger prior evidence already determined PASS,FAIL or INCONCLUSIVE. Its original missing precondition and completion requirement remain in the sheet. This prevents an attempted capability check from being presented as a complete behavioral pass.
+
+The prop API family was separately identified from the deployed admin client as Challenges,Prop accounts and Prop payouts. The inspected `/admin/api/prop/settings`,programs,accounts,enrolments and payouts routes returned404. None of the349 PAMM scenarios describes those prop workflows, so no PAMM row was left BLOCKED under the prop exception.
+
+Evidence: [blocked-row retest sweep](evidence/blocked-retest-sweep.json).
